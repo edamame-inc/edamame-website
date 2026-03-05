@@ -1,487 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF1198H5CL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-YF1198H5CL');
-    </script>
-    
-    <title>Kintone Philippines Blog | No-Code Tips, Guides & Comparisons | Edamame Inc.</title>
-    <meta name="description" content="Learn about no-code development, business automation, and digital transformation in the Philippines. Expert guides on CRM, inventory, HR software, Kintone tutorials, and platform comparisons.">
-    <meta name="keywords" content="Kintone blog, no-code Philippines, CRM software guide, business automation tips, Kintone tutorial, Kintone vs Airtable, Kintone vs Odoo, digital transformation Philippines">
-    
-    <meta name="author" content="Edamame Inc.">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://edamame-jp.com/kintone-philippines/en/blog/">
-    
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://edamame-jp.com/kintone-philippines/en/blog/">
-    <meta property="og:title" content="Kintone Philippines Blog | No-Code Tips & Guides">
-    <meta property="og:description" content="Expert guides on CRM, inventory, HR software, and digital transformation in the Philippines.">
-    <meta property="og:image" content="https://edamame-jp.com/og-image-kintone-philippines.png">
-    <meta property="og:locale" content="en_PH">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Kintone Philippines Blog">
-    <meta name="twitter:description" content="Expert guides on no-code development and business automation.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://edamame-jp.com/favicon.png">
-    
-    <!-- Schema.org Blog -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Kintone Philippines Blog",
-        "description": "Expert guides on no-code development, CRM, and business automation in the Philippines",
-        "url": "https://edamame-jp.com/kintone-philippines/en/blog/",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Edamame Inc.",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://edamame-jp.com/logo.png"
-            }
-        },
-        "blogPost": [
-            {
-                "@type": "BlogPosting",
-                "headline": "15 Best CRM Software in Philippines 2026 (Complete Guide)",
-                "url": "https://edamame-jp.com/kintone-philippines/en/blog/best-crm-software-philippines-2026/",
-                "datePublished": "2026-01-03",
-                "author": {"@type": "Organization", "name": "Edamame Inc."}
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Kintone vs Airtable: Complete Comparison for Philippine Businesses",
-                "url": "https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-airtable/",
-                "datePublished": "2026-01-03",
-                "author": {"@type": "Organization", "name": "Edamame Inc."}
-            },
-            {
-                "@type": "BlogPosting",
-                "headline": "Kintone vs Odoo: Which Platform is Right for Your Business?",
-                "url": "https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-odoo/",
-                "datePublished": "2026-01-03",
-                "author": {"@type": "Organization", "name": "Edamame Inc."}
-            }
-        ]
-    }
-    </script>
-    
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
-        }
-        
-        /* Header */
-        .header {
-            background: linear-gradient(135deg, #4A7C59 0%, #5C956C 100%);
-            color: white;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-inner {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: white;
-            text-decoration: none;
-        }
-        
-        .nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-weight: 500;
-            transition: opacity 0.3s;
-        }
-        
-        .nav a:hover { opacity: 0.8; }
-        
-        .btn-cta {
-            background: white;
-            color: #4A7C59;
-            padding: 10px 20px;
-            border-radius: 5px;
-            font-weight: 600;
-            margin-left: 25px;
-        }
-        
-        /* Hero */
-        .hero {
-            background: linear-gradient(135deg, #4A7C59 0%, #3d6b4a 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        /* Blog Grid */
-        .blog-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 50px 20px;
-        }
-        
-        .section-title {
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            color: #333;
-        }
-        
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 30px;
-        }
-        
-        .blog-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
-        }
-        
-        .blog-card-image {
-            height: 200px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-        }
-        
-        .blog-card-image.crm { background: linear-gradient(135deg, #4A7C59 0%, #5C956C 100%); }
-        .blog-card-image.comparison { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
-        .blog-card-image.guide { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
-        .blog-card-image.industry { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
-        
-        .blog-card-content {
-            padding: 25px;
-        }
-        
-        .blog-card-category {
-            display: inline-block;
-            background: #e8f5e9;
-            color: #4A7C59;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        
-        .blog-card h2 {
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-        
-        .blog-card h2 a {
-            color: #333;
-            text-decoration: none;
-        }
-        
-        .blog-card h2 a:hover {
-            color: #4A7C59;
-        }
-        
-        .blog-card p {
-            color: #666;
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-        }
-        
-        .blog-card-meta {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #999;
-            font-size: 0.85rem;
-        }
-        
-        .read-more {
-            color: #4A7C59;
-            text-decoration: none;
-            font-weight: 600;
-        }
-        
-        .read-more:hover {
-            text-decoration: underline;
-        }
-        
-        /* Categories */
-        .categories {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        
-        .category-btn {
-            padding: 10px 20px;
-            background: white;
-            border: 2px solid #e0e0e0;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        
-        .category-btn:hover, .category-btn.active {
-            border-color: #4A7C59;
-            background: #4A7C59;
-            color: white;
-        }
-        
-        /* Newsletter */
-        .newsletter {
-            background: linear-gradient(135deg, #4A7C59 0%, #3d6b4a 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-            margin-top: 50px;
-        }
-        
-        .newsletter h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-        }
-        
-        .newsletter p {
-            opacity: 0.9;
-            margin-bottom: 25px;
-        }
-        
-        .newsletter-form {
-            display: flex;
-            max-width: 500px;
-            margin: 0 auto;
-            gap: 10px;
-        }
-        
-        .newsletter-form input {
-            flex: 1;
-            padding: 15px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-        }
-        
-        .newsletter-form button {
-            padding: 15px 30px;
-            background: white;
-            color: #4A7C59;
-            border: none;
-            border-radius: 5px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
-        /* Footer */
-        .footer {
-            background: #1a1a2e;
-            color: #aaa;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        
-        .footer a {
-            color: #aaa;
-            text-decoration: none;
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
-            .blog-grid { grid-template-columns: 1fr; }
-            .newsletter-form { flex-direction: column; }
-            .nav { display: none; }
-        }
-    </style>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Kintone Philippines Blog 2026 | No-Code, CRM, Workflow Automation Guides | Edamame Inc.</title>
+<meta name="description" content="Expert guides on no-code app development, CRM, workflow automation, and digital transformation for Philippine businesses. Updated 2026."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://edamame-jp.com/kintone-philippines/en/blog/"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,400&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YF1198H5CL"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YF1198H5CL');</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"Kintone Philippines Blog","url":"https://edamame-jp.com/kintone-philippines/en/blog/","publisher":{"@type":"Organization","name":"Edamame Inc.","url":"https://edamame-jp.com"},"description":"Expert guides on no-code app development, CRM, and workflow automation for Philippine businesses."}</script>
+<style>
+:root{--g:#4A7C59;--gd:#3d6b4a;--gdd:#2c4f36;--gl:#e8f5e9;--gm:#c8e6c9;--ink:#1a2a1e;--mut:#6b7f70;--bdr:#d4e8d8;--off:#f8fdf9;--fh:'Fraunces',Georgia,serif;--fb:'DM Sans',system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--fb);color:var(--ink);background:var(--off);-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.hdr{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,var(--gd),var(--g));height:64px;padding:0 5%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 2px 16px rgba(0,0,0,.18)}
+.hdr-logo{display:flex;align-items:center;gap:10px;font-family:var(--fh);font-size:1.05rem;color:#fff;font-weight:700}
+.logo-box{width:36px;height:36px;background:rgba(255,255,255,.15);border-radius:8px;display:flex;align-items:center;justify-content:center}
+.hdr-nav{display:flex;align-items:center;gap:24px}
+.hdr-nav a{color:rgba(255,255,255,.8);font-size:.85rem;font-weight:500;transition:color .2s}
+.hdr-nav a:hover,.hdr-nav a.active{color:#fff}
+.hdr-cta{background:#fff;color:var(--gd)!important;padding:8px 18px;border-radius:8px;font-weight:700!important}
+/* HERO */
+.hero{background:linear-gradient(155deg,var(--gdd),var(--gd));padding:64px 5% 72px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E")}
+.hero-inner{max-width:1160px;margin:0 auto;position:relative}
+.hero-kicker{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.12);color:rgba(255,255,255,.9);font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;padding:5px 14px;border-radius:100px;margin-bottom:18px}
+.hero h1{font-family:var(--fh);font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#fff;line-height:1.2;margin-bottom:12px;letter-spacing:-.02em}
+.hero p{color:rgba(255,255,255,.75);font-size:1rem;max-width:560px;line-height:1.7;margin-bottom:28px}
+.hero-stats{display:flex;gap:24px;flex-wrap:wrap}
+.h-stat{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);border-radius:10px;padding:12px 20px;text-align:center}
+.h-stat .n{font-family:var(--fh);font-size:1.6rem;font-weight:700;color:#fff;line-height:1}
+.h-stat .l{font-size:.72rem;color:rgba(255,255,255,.65);margin-top:3px}
+/* TOOLS STRIP */
+.tools-strip{background:#fff;border-bottom:1px solid var(--bdr);padding:20px 5%}
+.tools-inner{max-width:1160px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.tools-label{font-size:.75rem;font-weight:700;color:var(--mut);letter-spacing:.08em;text-transform:uppercase;flex-shrink:0}
+.tool-pill{display:inline-flex;align-items:center;gap:8px;background:var(--gl);border:1px solid var(--gm);color:var(--gd);font-size:.82rem;font-weight:700;padding:8px 16px;border-radius:100px;transition:all .2s}
+.tool-pill:hover{background:var(--gd);color:#fff;border-color:var(--gd)}
+.tool-pill .tp-new{background:var(--gd);color:#fff;font-size:.65rem;font-weight:700;padding:2px 6px;border-radius:4px;letter-spacing:.04em}
+/* MAIN */
+.main{max-width:1160px;margin:0 auto;padding:48px 5% 80px;display:grid;grid-template-columns:1fr 320px;gap:40px}
+/* POSTS */
+.post-grid{display:flex;flex-direction:column;gap:20px}
+/* Section headers */
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--bdr)}
+.sec-title{font-family:var(--fh);font-size:1.25rem;font-weight:700;color:var(--ink)}
+.sec-tag{font-size:.72rem;font-weight:700;color:var(--g);background:var(--gl);padding:4px 10px;border-radius:100px;text-transform:uppercase;letter-spacing:.06em}
+/* Post card */
+.post-card{background:#fff;border:1px solid var(--bdr);border-radius:14px;overflow:hidden;display:grid;grid-template-columns:200px 1fr;transition:transform .2s,box-shadow .2s}
+.post-card:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(74,124,89,.12)}
+.post-card.featured{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+.post-thumb{background:linear-gradient(135deg,var(--gd),var(--g));display:flex;align-items:center;justify-content:center;font-size:3rem;min-height:130px}
+.post-card.featured .post-thumb{min-height:180px;font-size:4rem}
+.post-body{padding:20px 22px;display:flex;flex-direction:column}
+.post-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.post-tag{font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--gl);color:var(--gd);padding:3px 9px;border-radius:100px}
+.post-tag.new{background:var(--gd);color:#fff}
+.post-title{font-family:var(--fh);font-size:1.05rem;font-weight:700;color:var(--ink);line-height:1.35;margin-bottom:8px;flex-grow:1}
+.post-card.featured .post-title{font-size:1.35rem}
+.post-desc{font-size:.83rem;color:var(--mut);line-height:1.5;margin-bottom:12px}
+.post-meta{display:flex;align-items:center;justify-content:space-between;font-size:.75rem;color:var(--mut)}
+.post-date{display:flex;align-items:center;gap:4px}
+.post-read{display:inline-flex;align-items:center;gap:4px;color:var(--g);font-weight:700;font-size:.78rem}
+.post-read svg{transition:transform .2s}
+.post-card:hover .post-read svg{transform:translateX(3px)}
+/* SIDEBAR */
+.sidebar{display:flex;flex-direction:column;gap:20px}
+.sidebar-card{background:#fff;border:1px solid var(--bdr);border-radius:14px;overflow:hidden}
+.sc-head{background:linear-gradient(135deg,var(--gd),var(--g));padding:16px 20px}
+.sc-head h3{font-family:var(--fh);font-size:1rem;font-weight:700;color:#fff}
+.sc-head p{font-size:.78rem;color:rgba(255,255,255,.75);margin-top:3px}
+.sc-body{padding:16px 20px}
+.industry-list{display:flex;flex-direction:column;gap:6px}
+.ind-link{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-radius:8px;font-size:.85rem;font-weight:600;color:var(--ink2);background:var(--off);border:1px solid var(--bdr);transition:all .2s}
+.ind-link:hover{background:var(--gl);border-color:var(--gm);color:var(--gd)}
+.ind-link .ind-icon{font-size:1rem}
+.sc-cta{background:linear-gradient(135deg,var(--gd),var(--g));padding:20px;text-align:center}
+.sc-cta h3{font-family:var(--fh);font-size:1rem;color:#fff;margin-bottom:6px}
+.sc-cta p{font-size:.8rem;color:rgba(255,255,255,.8);margin-bottom:14px;line-height:1.5}
+.sc-cta a{display:block;background:#fff;color:var(--gd);font-weight:700;font-size:.85rem;padding:10px 16px;border-radius:8px;transition:transform .2s}
+.sc-cta a:hover{transform:translateY(-1px)}
+/* FOOTER */
+.ftr{background:#1a2a1e;color:rgba(255,255,255,.55);padding:36px 5%;text-align:center;font-size:.8rem}
+.ftr-links{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:12px}
+.ftr-links a:hover{color:#fff}
+@media(max-width:900px){.main{grid-template-columns:1fr}.sidebar{display:none}}
+@media(max-width:600px){.hdr-nav a:not(.hdr-cta){display:none}.post-card{grid-template-columns:1fr}.post-thumb{min-height:100px}}
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-inner">
-            <a href="/kintone-philippines/en/" class="logo">Kintone Philippines<small style="display:block;font-size:0.55rem;font-weight:400;opacity:0.85;margin-top:-2px;">Powered by Edamame Inc.</small></a>
-            <nav class="nav">
-                <a href="/kintone-philippines/en/#possibilities">Solutions</a>
-                <a href="/kintone-philippines/en/#services">Services</a>
-                <a href="/kintone-philippines/en/blog/">Blog</a>
-                <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="btn-cta">Free Demo</a>
-            </nav>
+<header class="hdr">
+  <a href="/kintone-philippines/en/" class="hdr-logo">
+    <div class="logo-box"><svg width="20" height="20" viewBox="0 0 40 40" fill="none"><ellipse cx="20" cy="28" rx="16" ry="8" fill="rgba(255,255,255,.9)"/><circle cx="13" cy="26" r="4" fill="#4A7C59"/><circle cx="20" cy="24" r="4" fill="#4A7C59"/><circle cx="27" cy="26" r="4" fill="#4A7C59"/><path d="M4 28 Q20 12 36 28" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/></svg></div>
+    Kintone Philippines
+  </a>
+  <nav class="hdr-nav">
+    <a href="/kintone-philippines/en/">Home</a>
+    <a href="/kintone-philippines/en/customers/">Customers</a>
+    <a href="/kintone-philippines/en/blog/" class="active">Blog</a>
+    <a href="/kintone-philippines/en/events/">Events</a>
+    <a href="https://calendly.com/kintoneph/freekintoneappconsultation" target="_blank" class="hdr-cta">Free Demo</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-kicker">📚 Knowledge Base</div>
+    <h1>No-Code & Digital Transformation<br/>Guides for Philippine Businesses</h1>
+    <p>Expert articles on building business apps, automating workflows, and competing through technology — written for the Philippine market.</p>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="n">10+</div><div class="l">Articles published</div></div>
+      <div class="h-stat"><div class="n">8</div><div class="l">Industries covered</div></div>
+      <div class="h-stat"><div class="n">🇵🇭</div><div class="l">Philippines-focused</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS STRIP -->
+<div class="tools-strip">
+  <div class="tools-inner">
+    <div class="tools-label">Free Tools:</div>
+    <a href="/kintone-philippines/en/tools/app-estimator/" class="tool-pill">⚡ App Builder Estimator <span class="tp-new">NEW</span></a>
+    <a href="/kintone-philippines/en/tools/digital-readiness/" class="tool-pill">📊 Digital Readiness Assessment <span class="tp-new">NEW</span></a>
+    <a href="/kintone-philippines/en/customers/" class="tool-pill">🏆 Customer Success Stories</a>
+  </div>
+</div>
+
+<div class="main">
+  <div>
+    <!-- NEW THIS MONTH -->
+    <div class="sec-head"><div class="sec-title">New This Month</div><div class="sec-tag">March 2026</div></div>
+    <div class="post-grid" style="margin-bottom:48px">
+
+      <a href="/kintone-philippines/en/blog/no-code-app-development-philippines/" class="post-card featured">
+        <div class="post-thumb">📱</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag new">NEW</span><span class="post-tag">No-Code</span><span class="post-tag">Philippines</span></div>
+          <div class="post-title">No-Code App Development Philippines 2026: Build Business Apps in Days, Not Months</div>
+          <div class="post-desc">Complete guide to no-code development for Philippine businesses. See how companies like Guhring Philippines built 20+ apps with zero coding.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 19, 2026 · 10 min read</span><span class="post-read">Read article <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
         </div>
-    </header>
-    
-    <!-- Hero -->
-    <section class="hero">
-        <h1>Kintone Philippines Blog</h1>
-        <p>Expert guides, tutorials, and insights on no-code development, business automation, and digital transformation for Philippine businesses.</p>
-    </section>
-    
-    <!-- Blog Content -->
-    <section class="blog-section">
-        <!-- Categories -->
-        <div class="categories">
-            <button class="category-btn active">All Posts</button>
-            <button class="category-btn">Comparisons</button>
-            <button class="category-btn">Guides</button>
-            <button class="category-btn">Industry</button>
-            <button class="category-btn">Tutorials</button>
+      </a>
+
+      <a href="/kintone-philippines/en/blog/workflow-automation-philippines/" class="post-card">
+        <div class="post-thumb">⚙️</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag new">NEW</span><span class="post-tag">Automation</span></div>
+          <div class="post-title">Workflow Automation Philippines 2026: Stop Chasing Approvals. Start Automating Them.</div>
+          <div class="post-desc">How Philippine businesses automate purchase requests, leave approvals, and data routing — without coding.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 19, 2026 · 9 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
         </div>
-        
-        <h2 class="section-title">📚 Latest Articles</h2>
-        
-        <div class="blog-grid">
-            <!-- Featured Post 1 -->
-            <article class="blog-card">
-                <div class="blog-card-image crm">📊</div>
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Guide</span>
-                    <h2><a href="best-crm-software-philippines-2026/">15 Best CRM Software in Philippines 2026 (Complete Guide)</a></h2>
-                    <p>Comprehensive comparison of CRM platforms for Philippine businesses. Find the perfect CRM for your company size and industry.</p>
-                    <div class="blog-card-meta">
-                        <span>January 3, 2026 • 15 min read</span>
-                        <a href="best-crm-software-philippines-2026/" class="read-more">Read More →</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Featured Post 2 -->
-            <article class="blog-card">
-                <div class="blog-card-image comparison">⚔️</div>
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Comparison</span>
-                    <h2><a href="kintone-vs-airtable/">Kintone vs Airtable 2026: Complete Comparison for Philippine Businesses</a></h2>
-                    <p>Side-by-side comparison of features, pricing, limitations, and use cases. Which platform is right for your business?</p>
-                    <div class="blog-card-meta">
-                        <span>January 3, 2026 • 12 min read</span>
-                        <a href="kintone-vs-airtable/" class="read-more">Read More →</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Featured Post 3 -->
-            <article class="blog-card">
-                <div class="blog-card-image comparison">🔄</div>
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Comparison</span>
-                    <h2><a href="kintone-vs-odoo/">Kintone vs Odoo: Which Platform is Right for Your Business?</a></h2>
-                    <p>ERP vs No-Code platform comparison. Implementation time, cost, complexity, and when to choose each solution.</p>
-                    <div class="blog-card-meta">
-                        <span>January 3, 2026 • 14 min read</span>
-                        <a href="kintone-vs-odoo/" class="read-more">Read More →</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Post 4 -->
-            <article class="blog-card">
-                <div class="blog-card-image comparison">📋</div>
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Comparison</span>
-                    <h2><a href="kintone-vs-monday/">Kintone vs Monday.com: Project Management & Beyond</a></h2>
-                    <p>Beyond project management—compare full business automation capabilities, pricing models, and customization options.</p>
-                    <div class="blog-card-meta">
-                        <span>January 3, 2026 • 10 min read</span>
-                        <a href="kintone-vs-monday/" class="read-more">Read More →</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Post 5 -->
-            <article class="blog-card">
-                <div class="blog-card-image guide">🏭</div>
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Industry</span>
-                    <h2><a href="/kintone-philippines/en/industries/manufacturing/">Manufacturing Software Philippines: Complete Digital Transformation Guide</a></h2>
-                    <p>Production tracking, quality control, inventory management, and workflow automation for Philippine manufacturers.</p>
-                    <div class="blog-card-meta">
-                        <span>January 3, 2026 • 11 min read</span>
-                        <a href="/kintone-philippines/en/industries/manufacturing/" class="read-more">Read More →</a>
-                    </div>
-                </div>
-            </article>
-            
-            <!-- Post 6 -->
-            <article class="blog-card">
-                <div class="blog-card-image industry">🚚</div>
-                <div class="blog-card-content">
-                    <span class="blog-card-category">Industry</span>
-                    <h2><a href="/kintone-philippines/en/industries/logistics/">Logistics & Fleet Management Software Philippines 2026</a></h2>
-                    <p>Delivery tracking, route optimization, fleet management, and dispatch automation for logistics companies.</p>
-                    <div class="blog-card-meta">
-                        <span>January 3, 2026 • 9 min read</span>
-                        <a href="/kintone-philippines/en/industries/logistics/" class="read-more">Read More →</a>
-                    </div>
-                </div>
-            </article>
+      </a>
+
+      <a href="/kintone-philippines/en/blog/custom-crm-philippines/" class="post-card">
+        <div class="post-thumb">💼</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag new">NEW</span><span class="post-tag">CRM</span><span class="post-tag">Sales</span></div>
+          <div class="post-title">Custom CRM Philippines 2026: Build the Exact Sales System Your Business Needs</div>
+          <div class="post-desc">Why off-the-shelf CRM fails Philippine businesses — and how to build a custom one in days without a single developer.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 19, 2026 · 10 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
         </div>
-    </section>
-    
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <h2>📬 Get Business Automation Tips</h2>
-        <p>Subscribe to receive guides, tutorials, and insights on no-code development and digital transformation.</p>
-        <form class="newsletter-form" action="#" method="POST">
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit">Subscribe</button>
-        </form>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 Edamame Inc. | Official Kintone Partner Philippines</p>
-        <p style="margin-top: 10px;">
-            <a href="/kintone-philippines/en/">Home</a> • 
-            <a href="/kintone-philippines/en/privacy-policy/">Privacy Policy</a> • 
-            <a href="https://calendly.com/kintoneph/freekintoneappconsultation">Contact</a>
-        </p>
-    </footer>
+      </a>
+
+      <a href="/kintone-philippines/en/blog/hr-system-philippines/" class="post-card">
+        <div class="post-thumb">👥</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag new">NEW</span><span class="post-tag">HR</span><span class="post-tag">Philippines</span></div>
+          <div class="post-title">HR System Philippines 2026: Build Custom HR Software Without Coding</div>
+          <div class="post-desc">Leave management, expense reports, employee records, and DOLE compliance — all in one custom Kintone HR system.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 19, 2026 · 9 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- COMPARISONS -->
+    <div class="sec-head"><div class="sec-title">Platform Comparisons</div><div class="sec-tag">Compare</div></div>
+    <div class="post-grid" style="margin-bottom:48px">
+      <a href="/kintone-philippines/en/blog/kintone-vs-salesforce/" class="post-card">
+        <div class="post-thumb" style="font-size:2rem">⚔️</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag new">NEW</span><span class="post-tag">vs Salesforce</span></div>
+          <div class="post-title">Kintone vs Salesforce Philippines 2026: Is Salesforce Worth the Price?</div>
+          <div class="post-desc">Real cost breakdown, features, and why most Philippine businesses are overpaying for Salesforce.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 19, 2026 · 9 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+      <a href="/kintone-philippines/en/blog/kintone-vs-monday/" class="post-card">
+        <div class="post-thumb" style="font-size:2rem">⚔️</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag new">NEW</span><span class="post-tag">vs Monday.com</span></div>
+          <div class="post-title">Kintone vs Monday.com Philippines 2026: Which Platform Wins?</div>
+          <div class="post-desc">Project management tool vs business application platform — the difference matters for Philippine businesses.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 19, 2026 · 9 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+      <a href="/kintone-philippines/en/blog/kintone-vs-odoo/" class="post-card">
+        <div class="post-thumb" style="font-size:2rem">⚔️</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag">vs Odoo</span></div>
+          <div class="post-title">Kintone vs Odoo Philippines 2026: Full Comparison for Philippine Businesses</div>
+          <div class="post-desc">ERP complexity vs no-code flexibility — what actually makes sense for the Philippine market.</div>
+          <div class="post-meta"><span class="post-date">📅 Jan 2026 · 10 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+      <a href="/kintone-philippines/en/blog/kintone-vs-airtable/" class="post-card">
+        <div class="post-thumb" style="font-size:2rem">⚔️</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag">vs Airtable</span></div>
+          <div class="post-title">Kintone vs Airtable Philippines 2026: Which is Better?</div>
+          <div class="post-desc">Database flexibility vs enterprise depth — a side-by-side for Philippine businesses choosing a platform.</div>
+          <div class="post-meta"><span class="post-date">📅 Jan 2026 · 9 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+    </div>
+
+    <!-- GUIDES -->
+    <div class="sec-head"><div class="sec-title">Industry &amp; Topic Guides</div><div class="sec-tag">Deep Dives</div></div>
+    <div class="post-grid">
+      <a href="/kintone-philippines/en/blog/best-crm-software-philippines-2026/" class="post-card">
+        <div class="post-thumb">🏆</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag">CRM Rankings</span><span class="post-tag">2026</span></div>
+          <div class="post-title">Best CRM Software Philippines 2026: Full Comparison + Rankings</div>
+          <div class="post-desc">The definitive ranking of CRM platforms for Philippine businesses — with real pricing in pesos.</div>
+          <div class="post-meta"><span class="post-date">📅 Jan 2026 · 12 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+      <a href="/kintone-philippines/en/blog/manufacturing-software-philippines/" class="post-card">
+        <div class="post-thumb">🏭</div>
+        <div class="post-body">
+          <div class="post-tags"><span class="post-tag">Manufacturing</span><span class="post-tag">Industry</span></div>
+          <div class="post-title">Manufacturing Software Philippines 2026: The Complete Guide</div>
+          <div class="post-desc">Production tracking, QC, procurement, and maintenance apps for Philippine manufacturers — no coding.</div>
+          <div class="post-meta"><span class="post-date">📅 Feb 2026 · 11 min</span><span class="post-read">Read <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-card">
+      <div class="sc-head"><h3>🏭 Industry Solutions</h3><p>Pages built for your sector</p></div>
+      <div class="sc-body">
+        <div class="industry-list">
+          <a href="/kintone-philippines/en/industries/manufacturing/" class="ind-link"><span><span class="ind-icon">🏭</span> Manufacturing</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/logistics/" class="ind-link"><span><span class="ind-icon">🚚</span> Logistics</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/real-estate/" class="ind-link"><span><span class="ind-icon">🏠</span> Real Estate</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/healthcare/" class="ind-link"><span><span class="ind-icon">🏥</span> Healthcare</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/bpo/" class="ind-link"><span><span class="ind-icon">💻</span> BPO / IT</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/construction/" class="ind-link"><span><span class="ind-icon">🏗</span> Construction</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/education/" class="ind-link"><span><span class="ind-icon">🎓</span> Education</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/industries/retail/" class="ind-link"><span><span class="ind-icon">🛍</span> Retail</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sc-head"><h3>🛠 Free Tools</h3><p>Interactive assessments</p></div>
+      <div class="sc-body">
+        <div class="industry-list">
+          <a href="/kintone-philippines/en/tools/app-estimator/" class="ind-link"><span><span class="ind-icon">⚡</span> App Builder Estimator</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/tools/digital-readiness/" class="ind-link"><span><span class="ind-icon">📊</span> Digital Readiness Quiz</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="/kintone-philippines/en/customers/" class="ind-link"><span><span class="ind-icon">🏆</span> Customer Stories</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <div class="sc-cta">
+        <h3>See Kintone built for your business</h3>
+        <p>30-minute free demo. We build a live app for your specific use case during the call.</p>
+        <a href="https://calendly.com/kintoneph/freekintoneappconsultation" target="_blank">Book Free Demo →</a>
+      </div>
+    </div>
+  </aside>
+</div>
+
+<footer class="ftr">
+  <div class="ftr-links"><a href="/kintone-philippines/en/">Home</a><a href="/kintone-philippines/en/customers/">Customers</a><a href="/kintone-philippines/en/blog/">Blog</a><a href="/kintone-philippines/en/events/">Events</a><a href="mailto:kintone@edamame-jp.com">Contact</a></div>
+  <div style="color:rgba(255,255,255,.3);font-size:.76rem">© 2026 Edamame Inc. — Official Kintone Partner in the Philippines | 2024 Kintone Global Partner of the Year</div>
+</footer>
 </body>
 </html>
