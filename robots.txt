@@ -4,10 +4,22 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://edamame-jp.com/kintone-philippines/sitemap.xml
+# AI Search Crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
 
-# Specific bot rules
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 User-agent: Googlebot
 Allow: /
 
@@ -17,12 +29,15 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# Rate limit aggressive crawlers
+# Rate limit aggressive SEO crawlers
 User-agent: AhrefsBot
 Crawl-delay: 10
 
 User-agent: SemrushBot
 Crawl-delay: 10
+
+# Sitemaps
+Sitemap: https://edamame-jp.com/kintone-philippines/sitemap.xml
 
 # Host directive
 Host: https://edamame-jp.com
