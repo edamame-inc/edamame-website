@@ -5317,14 +5317,39 @@
                 };
                 
                 try {
-                    await fetch('https://script.google.com/macros/s/AKfycbz5vVl2EmzGOCfjMNmZ0nIGsPyRel3yg4fq0yNIcTvMbY0pFOpym3yuVPkvY6VP4DEcTg/exec', {
+                    // PRIMARY: Save to Kintone App 906
+                    const kintoneRecord = {
+                        Name: { value: data.name },
+                        Company: { value: data.company },
+                        Email: { value: data.email },
+                        Phone: { value: data.phone },
+                        Message: { value: (data.interest ? '[' + data.interest + '] ' : '') + data.message },
+                        Lead_Source: { value: 'Website Contact Form' },
+                        Lead_Status: { value: 'New' },
+                        Page_URL: { value: data.page_url },
+                        Referrer: { value: data.referrer },
+                        Device_Type: { value: data.device_type },
+                        User_Agent: { value: (data.user_agent || '').substring(0, 200) },
+                        Browser_Language: { value: data.browser_language },
+                    };
+                    
+                    await fetch('https://edamame.kintone.com/k/v1/record.json', {
+                        method: 'POST',
+                        headers: {
+                            'X-Cybozu-Authorization': btoa('Administrator:edamame12345'),
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ app: 906, record: kintoneRecord })
+                    });
+                    
+                    // BACKUP: Also send to Google Sheets (fire-and-forget)
+                    fetch('https://script.google.com/macros/s/AKfycbz5vVl2EmzGOCfjMNmZ0nIGsPyRel3yg4fq0yNIcTvMbY0pFOpym3yuVPkvY6VP4DEcTg/exec', {
                         method: 'POST',
                         mode: 'no-cors',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(data)
-                    });
+                    }).catch(() => {});
                     
-                    // no-cors doesn't return response, assume success
                     showFormMessage('success', 'Thank You!', "We've received your message and will get back to you within 24 hours.");
                     this.reset();
                 } catch (error) {
