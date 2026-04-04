@@ -2449,8 +2449,24 @@
             }
             
             .lang-switcher {
-                top: 108px;
-                right: 1rem;
+                position: static;
+                order: 1;
+                margin-right: 8px;
+                box-shadow: none;
+                background: rgba(0,0,0,0.04);
+                backdrop-filter: none;
+                padding: 2px;
+                gap: 2px;
+                flex-shrink: 0;
+            }
+            
+            .lang-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.7rem;
+            }
+            
+            .lang-btn.active {
+                box-shadow: none;
             }
 
             .nav-links {
@@ -2531,10 +2547,6 @@
             
             .nav {
                 top: 46px;
-            }
-            
-            .lang-switcher {
-                top: 100px;
             }
             
             .hero {
@@ -3832,11 +3844,6 @@
     </div>
 
     <!-- Language Switcher -->
-    <div class="lang-switcher">
-        <a href="/kintone-philippines/en/" class="lang-btn active">EN</a>
-        <a href="/kintone-philippines/ja/" class="lang-btn">日本語</a>
-    </div>
-
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="container">
@@ -3861,6 +3868,10 @@
                     <li><a href="/kintone-philippines/en/blog/" class="nav-link" data-en="Blog" data-ja="ブログ" data-tl="Blog">Blog</a></li>
                     <li><a href="#book-demo" class="nav-cta" data-en="Free Demo" data-ja="無料相談" data-tl="Libreng Demo">Free Demo</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <a href="/kintone-philippines/en/" class="lang-btn active">EN</a>
+                    <a href="/kintone-philippines/ja/" class="lang-btn">日本語</a>
+                </div>
                 <div class="mobile-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
