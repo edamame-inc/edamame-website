@@ -5297,14 +5297,14 @@
                 };
                 
                 try {
-                    await fetch('https://script.google.com/macros/s/AKfycbz5vVl2EmzGOCfjMNmZ0nIGsPyRel3yg4fq0yNIcTvMbY0pFOpym3yuVPkvY6VP4DEcTg/exec', {
+                    // Save via server-side proxy (Kintone + Telegram + Google Sheets)
+                    const res = await fetch('https://camille-chatbot.tom-arai.workers.dev/api/contact', {
                         method: 'POST',
-                        mode: 'no-cors',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(data)
                     });
+                    if (!res.ok) throw new Error('Server error');
                     
-                    // no-cors doesn't return response, assume success
                     showFormMessage('success', 'ありがとうございます！', '24時間以内にご連絡いたします。');
                     this.reset();
                 } catch (error) {
