@@ -10,7 +10,7 @@
     <xhtml:link rel="alternate" hreflang="en-ph" href="https://edamame-jp.com/kintone-philippines/en/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/"/>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -22,12 +22,10 @@
     <xhtml:link rel="alternate" hreflang="en-ph" href="https://edamame-jp.com/kintone-philippines/en/"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/"/>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  
-  <!-- Homepage - Filipino/Tagalog -->
   
   <!-- Privacy Policy - English -->
   <url>
@@ -51,58 +49,147 @@
     <priority>0.3</priority>
   </url>
   
-  <!-- Privacy Policy - Filipino -->
-  
   <!-- Blog Index -->
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/</loc>
-    <lastmod>2026-02-04</lastmod>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- ROI Calculator -->
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/roi-calculator/</loc>
+    <lastmod>2026-02-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   
-  <!-- Blog Post: Best CRM Software Philippines 2026 -->
+  <!-- ==================== BLOG POSTS: Best-Of Lists ==================== -->
+
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-crm-software-philippines-2026/</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Blog Post: Kintone vs Airtable -->
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-erp-software-philippines-2026/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-hr-software-philippines-2026/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-inventory-management-philippines-2026/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-accounting-software-philippines-2026/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================== BLOG POSTS: Kintone vs Competitors ==================== -->
+
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-airtable/</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-  <!-- Blog Post: Kintone vs Odoo -->
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-odoo/</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-  
-<!-- Industry: Manufacturing -->
-  
-<!-- Industry: Real Estate -->
-  
-<!-- Industry: Retail -->
-  
-<!-- Industry: Construction -->
-  
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-salesforce/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-monday/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-hubspot/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-notion/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-smartsheet/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-zoho/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-erpnext/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 
-  <!-- Blog - Manufacturing Software Philippines -->
+  <!-- ==================== BLOG POSTS: Competitor Alternatives & Pricing ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/odoo-alternative-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/odoo-pricing-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/salesforce-pricing-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/sap-alternative-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== BLOG POSTS: Industry Pages ==================== -->
+
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/manufacturing-software-philippines/</loc>
     <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Industry Pages - Added 2026-02-06 -->
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/logistics-software-philippines/</loc>
     <lastmod>2026-02-06</lastmod>
@@ -140,10 +227,45 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/roi-calculator/</loc>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/retail-software-philippines/</loc>
     <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== BLOG POSTS: Use Case / Topic Pages ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/custom-crm-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/hr-system-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/no-code-app-development-philippines/</loc>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/workflow-automation-philippines/</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- NEW: Project Management Software Philippines — Added 2026-04-04 -->
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/project-management-software-philippines/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
   </url>
 
 </urlset>
