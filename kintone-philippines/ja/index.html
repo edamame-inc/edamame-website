@@ -1182,13 +1182,15 @@
             position: fixed;
             top: 115px;
             right: 2rem;
-            z-index: 999;
-            background: white;
+            z-index: 998;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(8px);
             border-radius: 100px;
             padding: 4px;
             box-shadow: var(--shadow-md), 0 0 0 1px rgba(0,0,0,0.03);
             display: flex;
             gap: 4px;
+            transition: top 0.3s ease;
         }
 
         .lang-btn {
@@ -2445,8 +2447,24 @@
             }
             
             .lang-switcher {
-                top: 90px;
-                right: 1rem;
+                position: static;
+                order: 1;
+                margin-right: 8px;
+                box-shadow: none;
+                background: rgba(0,0,0,0.04);
+                backdrop-filter: none;
+                padding: 2px;
+                gap: 2px;
+                flex-shrink: 0;
+            }
+            
+            .lang-btn {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.7rem;
+            }
+            
+            .lang-btn.active {
+                box-shadow: none;
             }
 
             .nav-links {
@@ -2527,10 +2545,6 @@
             
             .nav {
                 top: 32px;
-            }
-            
-            .lang-switcher {
-                top: 85px;
             }
             
             .hero {
@@ -3329,10 +3343,28 @@
 
         .comparison-table-wrapper {
             overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+        }
+        
+        .comparison-table-wrapper::after {
+            content: '← スクロール →';
+            display: none;
+            text-align: center;
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            padding: 8px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-table-wrapper::after {
+                display: block;
+            }
         }
 
         .comparison-table {
             width: 100%;
+            min-width: 600px;
             border-collapse: collapse;
             background: white;
             border-radius: var(--radius-lg);
@@ -3810,11 +3842,6 @@
     </div>
 
     <!-- Language Switcher -->
-    <div class="lang-switcher">
-        <a href="/kintone-philippines/en/" class="lang-btn">EN</a>
-        <a href="/kintone-philippines/ja/" class="lang-btn active">日本語</a>
-    </div>
-
     <!-- Navigation -->
     <nav class="nav" id="nav">
         <div class="container">
@@ -3838,6 +3865,10 @@
                     <li><a href="#contact-form" class="nav-link" data-en="Contact" data-ja="お問い合わせ" data-tl="Contact">Contact</a></li>
                     <li><a href="#book-demo" class="nav-cta" data-en="Free Demo" data-ja="無料相談" data-tl="Libreng Demo">Free Demo</a></li>
                 </ul>
+                <div class="lang-switcher">
+                    <a href="/kintone-philippines/en/" class="lang-btn">EN</a>
+                    <a href="/kintone-philippines/ja/" class="lang-btn active">日本語</a>
+                </div>
                 <div class="mobile-toggle" onclick="toggleMobileMenu()">
                     <span></span>
                     <span></span>
@@ -5087,165 +5118,6 @@
     </footer>
 
     <!-- SEO Content (hidden but crawlable) - COMPREHENSIVE KEYWORD TARGETING -->
-    <div class="seo-content" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">
-        <h2>Kintone Philippines - Official Partner | #1 No-Code Business App Platform</h2>
-        <p>Edamame Inc. is the official Kintone partner in the Philippines, providing enterprise no-code and low-code solutions for businesses in Metro Manila, Makati, BGC, Pasig, Ortigas, Quezon City, Cebu, Davao, Clark, and nationwide. Build any business app without coding. Free demo available.</p>
-        
-        <h3>What is Kintone? Complete Guide 2025</h3>
-        <p>Kintone is a no-code/low-code platform by Cybozu that allows anyone to build custom business applications without programming. What can Kintone do? Kintone can build CRM, inventory systems, HR apps, project management tools, and virtually any database application. How does Kintone work? Simply drag and drop fields to create apps, then add workflows and automations. Is Kintone easy to use? Yes, Kintone requires no coding knowledge. How much does Kintone cost? Pricing starts from ₱1,500/user/month in Philippines.</p>
-        
-        <h3>Kintone vs Airtable - Complete Comparison 2025</h3>
-        <p>Kintone vs Airtable comparison Philippines. Is Kintone better than Airtable? Yes - Kintone offers 50,000+ records/app while Airtable limits 50,000 per base. Kintone has true workflow automation, Airtable needs add-ons. Kintone allows JavaScript customization, Airtable doesn't. Kintone is SOC 2 certified, more secure than Airtable. Best Airtable alternative Philippines? Kintone. Airtable alternative with 50,000+ records/app? Kintone. Airtable replacement for enterprises? Kintone.</p>
-        
-        <h3>Kintone vs Monday.com - Which is Better?</h3>
-        <p>Kintone vs Monday.com comparison. Why choose Kintone over Monday.com? Kintone builds any app type, Monday focuses on projects. Kintone has flexible pricing, Monday.com charges per seat with limits. Kintone offers full customization, Monday.com uses rigid templates. Monday.com alternative Philippines? Kintone. Monday.com competitor with better features? Kintone. Project management software better than Monday.com? Kintone.</p>
-        
-        <h3>Kintone vs Smartsheet - Full Analysis</h3>
-        <p>Kintone vs Smartsheet comparison 2025. Kintone is easier to use than Smartsheet's spreadsheet complexity. Kintone includes enterprise features, Smartsheet charges extra. Kintone mobile apps work better than Smartsheet. Smartsheet alternative Philippines? Kintone. Smartsheet replacement for business? Kintone. Spreadsheet software alternative? Kintone. Better than Smartsheet? Kintone.</p>
-        
-        <h3>Kintone vs Notion - Business Platform Comparison</h3>
-        <p>Kintone vs Notion for business. Is Kintone better than Notion for databases? Yes, Kintone has proper relational database, workflow automation, and enterprise security. Notion is for documentation, Kintone is for business operations. Notion alternative for business apps? Kintone. Notion replacement for CRM? Kintone. Notion alternative with workflows? Kintone.</p>
-        
-        <h3>Kintone vs Salesforce - CRM Comparison</h3>
-        <p>Kintone vs Salesforce comparison. Is Kintone cheaper than Salesforce? Yes, significantly. Is Kintone easier than Salesforce? Yes, no admin certification needed. Kintone vs Salesforce for SME? Kintone wins on cost and simplicity. Salesforce alternative Philippines? Kintone. Salesforce replacement for small business? Kintone. CRM cheaper than Salesforce? Kintone.</p>
-        
-        <h3>Kintone vs Zoho - Platform Comparison</h3>
-        <p>Kintone vs Zoho CRM comparison. Kintone vs Zoho Creator. Kintone offers better customization than Zoho. Kintone has cleaner interface than Zoho. Zoho alternative Philippines? Kintone. Zoho Creator alternative? Kintone. Zoho One alternative? Kintone.</p>
-        
-        <h3>Best CRM Software Philippines 2025</h3>
-        <p>What is the best CRM software in Philippines? Kintone is the best CRM for Philippine businesses because it's customizable, affordable, and has local support. Best CRM for small business Philippines? Kintone. Best CRM for sales teams Philippines? Kintone. Best CRM for real estate Philippines? Kintone. Best CRM for manufacturing Philippines? Kintone. Top 10 CRM software Philippines includes Kintone, Salesforce, HubSpot, Zoho - but Kintone offers best value.</p>
-        
-        <h3>Best Inventory Management System Philippines 2025</h3>
-        <p>What is the best inventory software in Philippines? Kintone for inventory management. Best inventory system for small business Philippines? Kintone. Best warehouse management system Philippines? Kintone. Inventory tracking software Philippines? Kintone. Stock management system Philippines? Kintone. Barcode inventory system Philippines? Kintone. Best inventory app Philippines? Kintone.</p>
-        
-        <h3>Best HR Software Philippines 2025 | HRIS System</h3>
-        <p>What is the best HR software in Philippines? Kintone HRIS. Best HRIS Philippines 2025? Kintone. Best employee management system Philippines? Kintone. Leave management system Philippines? Kintone. Attendance tracking software Philippines? Kintone. Payroll system Philippines integration? Kintone. HR software for SME Philippines? Kintone. Best human resource management system Philippines? Kintone.</p>
-        
-        <h3>Best Project Management Software Philippines 2025</h3>
-        <p>What is the best project management tool Philippines? Kintone project management. Best task management app Philippines? Kintone. Gantt chart software Philippines? Kintone. Construction project management software Philippines? Kintone. Engineering project tracking Philippines? Kintone. Project portfolio management Philippines? Kintone.</p>
-        
-        <h3>Workflow Automation Software Philippines</h3>
-        <p>Best workflow automation Philippines? Kintone. Approval workflow software Philippines? Kintone. Business process automation Philippines? Kintone. Document workflow Philippines? Kintone. Digital transformation software Philippines? Kintone. How to automate business processes Philippines? Use Kintone.</p>
-        
-        <h3>No-Code Platform Philippines 2025</h3>
-        <p>What is the best no-code platform Philippines? Kintone. Low-code development platform Philippines? Kintone. No-code app builder Philippines? Kintone. Build app without coding Philippines? Kintone. Citizen developer platform Philippines? Kintone. How to build business app without programming? Use Kintone.</p>
-        
-        <h3>Replace Excel Spreadsheets Philippines</h3>
-        <p>How to replace Excel with database? Use Kintone. Excel replacement software Philippines? Kintone. Spreadsheet alternative for business? Kintone. Google Sheets alternative with workflows? Kintone. Stop using Excel for business? Switch to Kintone. Excel to database migration Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Manufacturing Software Philippines</h3>
-        <p>Best manufacturing software Philippines 2025? Kintone. Production tracking system Philippines? Kintone. Quality control software Philippines? Kintone. Manufacturing execution system MES Philippines? Kintone. Factory management software Philippines? Kintone. Shop floor management Philippines? Kintone. Manufacturing ERP Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Logistics Software Philippines</h3>
-        <p>Best logistics software Philippines 2025? Kintone. Fleet management system Philippines? Kintone. Delivery tracking software Philippines? Kintone. Transportation management system TMS Philippines? Kintone. Route optimization software Philippines? Kintone. Trucking software Philippines? Kintone. Freight management Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Real Estate Software Philippines</h3>
-        <p>Best real estate software Philippines 2025? Kintone. Real estate CRM Philippines? Kintone. Property management software Philippines? Kintone. Real estate listing management Philippines? Kintone. Broker management system Philippines? Kintone. Real estate lead tracking Philippines? Kintone. Property sales tracking Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Healthcare Software Philippines</h3>
-        <p>Best healthcare software Philippines 2025? Kintone. Hospital management system Philippines? Kintone. Clinic management software Philippines? Kintone. Patient management system Philippines? Kintone. Medical records software Philippines? Kintone. Healthcare CRM Philippines? Kintone. EMR EHR Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Construction Software Philippines</h3>
-        <p>Best construction software Philippines 2025? Kintone. Construction project management Philippines? Kintone. Contractor management software Philippines? Kintone. Construction document management Philippines? Kintone. Construction bidding software Philippines? Kintone. Building management software Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Education Software Philippines</h3>
-        <p>Best school management software Philippines 2025? Kintone. Student information system SIS Philippines? Kintone. Learning management system LMS Philippines? Kintone. Enrollment system Philippines? Kintone. School ERP Philippines? Kintone. University management system Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - Retail Software Philippines</h3>
-        <p>Best retail software Philippines 2025? Kintone. POS system Philippines? Kintone integration. Retail inventory management Philippines? Kintone. E-commerce management software Philippines? Kintone. Customer loyalty program software Philippines? Kintone. Retail CRM Philippines? Kintone.</p>
-        
-        <h3>Industry Solutions - BPO Software Philippines</h3>
-        <p>Best BPO software Philippines 2025? Kintone. Call center software Philippines? Kintone. Ticket management system Philippines? Kintone. Help desk software Philippines? Kintone. SLA tracking software Philippines? Kintone. Customer service software Philippines? Kintone. BPO operations management Philippines? Kintone.</p>
-        
-        <h3>Japanese Companies Philippines - Business Software</h3>
-        <p>日系企業向けソフトウェア フィリピン。Japanese business software Philippines. Software for Japanese companies in Philippines. サイボウズ キントーン フィリピン公式パートナー。Cybozu Kintone official partner Philippines. Japanese enterprise software Manila. Japanese company IT solutions Philippines. PEZA Japanese companies software. Japanese manufacturing company software Philippines.</p>
-        
-        <h3>キントーン フィリピン - 日本語サポート対応</h3>
-        <p>Kintone フィリピン正規代理店。ノーコードで業務アプリを構築。顧客管理CRM、在庫管理、人事管理HRIS、会計経理、プロジェクト管理。無料相談・デモ受付中。日本語サポート対応。マニラ、マカティ、BGC、オルティガス、セブ、ダバオ対応。フィリピン進出日系企業向けシステム構築。Edamame Inc.エダマメ株式会社。</p>
-        
-        <h3>Kintone Free Trial Philippines</h3>
-        <p>How to get Kintone free trial Philippines? Contact Edamame Inc. for free 30-day Kintone trial. Kintone demo Philippines? Book free demo at calendly.com/kintoneph. Kintone consultation free Philippines? Yes, Edamame Inc. offers free consultation. Try Kintone free Philippines? Yes, 30-day free trial available.</p>
-        
-        <h3>Kintone Training Philippines</h3>
-        <p>Kintone training Philippines 2025. Kintone certification Philippines? Through Edamame Inc. Kintone tutorial Philippines? We provide training. Learn Kintone Philippines? Training available in English, Filipino, Japanese. Kintone course Philippines? Contact Edamame Inc. Kintone workshop Philippines? Available for teams.</p>
-        
-        <h3>Location-Based Services - Metro Manila</h3>
-        <p>Kintone Makati City software development. Kintone BGC Taguig business apps. Kintone Pasig Ortigas implementation. Kintone Quezon City solutions. Kintone Mandaluyong consulting. Kintone San Juan development. Kintone Parañaque services. Kintone Alabang Muntinlupa. Kintone Las Piñas. Kintone Marikina. Kintone Caloocan. Kintone Valenzuela.</p>
-        
-        <h3>Location-Based Services - Provincial</h3>
-        <p>Kintone Cebu City business solutions. Kintone Davao City enterprise software. Kintone Clark Pampanga PEZA companies. Kintone Laguna industrial park. Kintone Cavite manufacturing. Kintone Batangas. Kintone Bulacan. Kintone Iloilo. Kintone Bacolod. Kintone Cagayan de Oro. Kintone General Santos. Kintone Zamboanga.</p>
-        
-        <h3>Kintone AI Features 2025 - AI Lab</h3>
-        <p>Kintone AI features 2025. Kintone AI Lab Philippines. Does Kintone have AI? Yes, Kintone has AI app builder. Kintone AI App Creator. Kintone AI Process Creator. Kintone AI View Analysis. Kintone AI Thread Summary. AI no-code platform Philippines. AI business app builder. Generative AI for business apps. Build apps with AI Philippines. Natural language app builder. AI workflow automation Philippines. Best AI no-code platform 2025.</p>
-        
-        <h3>AI App Builder Philippines 2025</h3>
-        <p>AI app builder Philippines. Build apps with AI Philippines. AI no-code development Philippines. Natural language app creation. Chat-based app builder. AI generative app development. Best AI app builder for business. AI-powered business software Philippines. Conversational app development. No-code AI platform Philippines. Low-code AI platform. AI automation software Philippines.</p>
-        
-        <h3>Kintone AI vs Competitors</h3>
-        <p>Kintone AI vs Airtable AI. Kintone AI vs Monday.com AI. Kintone AI vs Notion AI. Kintone AI vs Smartsheet. Best AI no-code platform comparison. AI app builder comparison 2025. Kintone generative AI features. AI workflow automation comparison. Which no-code platform has best AI? Kintone AI Lab vs competitors. Enterprise AI app builder.</p>
-        
-        <h3>Kintone vs Odoo - Complete Comparison 2025</h3>
-        <p>Kintone vs Odoo comparison Philippines. Is Kintone better than Odoo? Yes - Kintone deploys in days while Odoo takes months. Kintone requires no technical skills, Odoo needs Python developers. Kintone has transparent pricing, Odoo has hidden costs for modules and customization. Kintone has AI app builder, Odoo doesn't. Odoo alternative Philippines? Kintone. Odoo replacement? Kintone. Better than Odoo for SME? Kintone. Easier than Odoo? Kintone. Faster than Odoo implementation? Kintone.</p>
-        
-        <h3>Odoo Disadvantages and Problems</h3>
-        <p>Odoo disadvantages Philippines. Odoo problems. Odoo cons. Odoo limitations. Odoo hidden costs. Odoo implementation time. Odoo complexity. Odoo requires developers. Odoo steep learning curve. Odoo support issues. Odoo customization expensive. Odoo upgrade problems. Odoo ERP disadvantages. Why not choose Odoo? Odoo alternative without developers? Kintone.</p>
-        
-        <h3>Switch from Odoo to Kintone</h3>
-        <p>Switch from Odoo to Kintone Philippines. Migrate Odoo to Kintone. Odoo migration Philippines. Replace Odoo with Kintone. Odoo to Kintone migration service. Better ERP than Odoo? Kintone. Simpler than Odoo? Kintone. Faster deployment than Odoo? Kintone. Less expensive than Odoo customization? Kintone. No developers needed unlike Odoo? Kintone.</p>
-        
-        <h3>AI Business Process Automation Philippines</h3>
-        <p>AI business process automation Philippines. AI workflow automation Manila. AI approval system Philippines. AI-powered business software. Intelligent process automation Philippines. AI digital transformation Philippines. Machine learning business apps. AI-assisted app development Philippines. Smart business automation. AI enterprise software Philippines.</p>
-        
-        <h3>Contact Edamame Inc. - Official Kintone Partner Philippines</h3>
-        <p>Edamame Inc. Official Kintone Partner Philippines since 2020. Office: 15F Jollibee Tower, Ortigas Center, Pasig City, Metro Manila 1605, Philippines. Phone: +63 928 872 7958. Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="62090b0c160d0c07220706030f030f074f08124c010d0f">[email&#160;protected]</a>. Website: edamame-jp.com. Book free consultation: calendly.com/kintoneph. Business hours: Monday-Friday 9AM-6PM. We speak English, Filipino, Japanese. Free Kintone demo and consultation available.</p>
-        
-        <!-- FEATURED SNIPPET OPTIMIZED DEFINITIONS -->
-        <h3>What is Kintone? Definition</h3>
-        <p>Kintone is a no-code business application platform developed by Cybozu Inc. that allows users to build custom database apps, workflows, and business processes without any programming knowledge. Users create apps through a drag-and-drop interface to manage CRM, inventory, HR, projects, and more. Kintone serves over 37,000 companies worldwide.</p>
-        
-        <h3>How does Kintone work?</h3>
-        <p>Kintone works by letting users create custom apps through drag-and-drop: (1) Add fields like text, numbers, dates, dropdowns. (2) Define relationships between apps. (3) Set up workflows and approval processes. (4) Configure permissions and views. (5) Deploy instantly - no coding or IT help needed. Apps sync across web and mobile.</p>
-        
-        <h3>Why choose Kintone over competitors?</h3>
-        <p>Choose Kintone because: 50,000+ Records/App (competitors limit data), True workflow automation built-in, JavaScript customization for unlimited possibilities, Enterprise security (SOC 2, ISO 27001), AI-powered app building with Kintone AI Lab, Local support in Philippines from Edamame Inc., Multilingual (English, Japanese, Filipino), 30-day free trial, No credit card required.</p>
-        
-        <!-- VOICE SEARCH OPTIMIZED Q&A -->
-        <h3>Hey Google, what is the best CRM for small business in Philippines?</h3>
-        <p>The best CRM for small business in Philippines is Kintone because it is affordable, customizable without coding, includes workflow automation, has mobile apps, and offers local support from Edamame Inc. in Metro Manila. Kintone starts at ₱1,500 per user per month with a free 30-day trial.</p>
-        
-        <h3>How to build a business app without coding in Philippines?</h3>
-        <p>To build a business app without coding in Philippines, use Kintone from Edamame Inc. Steps: (1) Sign up for free trial. (2) Choose app template or start from scratch. (3) Drag and drop fields you need. (4) Set up workflows and automations. (5) Invite your team. That's it - no programming required.</p>
-        
-        <h3>Is Kintone worth it for my business?</h3>
-        <p>Kintone is worth it if you need custom business apps without hiring developers, want to replace multiple spreadsheets and tools, need workflow automation, require mobile access, want enterprise-level security. Kintone typically saves businesses 50-80% compared to custom development and deploys in days, not months.</p>
-        
-        <!-- LONG-TAIL CONVERSION KEYWORDS -->
-        <h3>Kintone pricing Philippines 2025</h3>
-        <p>Kintone pricing Philippines 2025: Light plan approximately ₱1,500/user/month, Standard plan approximately ₱3,000/user/month, Professional plan approximately ₱5,000/user/month. Volume discounts available. Contact Edamame Inc. for exact Philippines pricing. Free consultation and 30-day trial included.</p>
-        
-        <h3>Kintone demo booking Philippines</h3>
-        <p>Book Kintone demo Philippines: Visit calendly.com/kintoneph or call +63 928 872 7958 or email <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fd96949389929398bd98999c909c9098d0978dd39e9290">[email&#160;protected]</a>. Free 30-minute demo shows CRM, inventory, HR, workflow capabilities. Available in English, Filipino, Japanese. Demo includes free trial setup and implementation guidance.</p>
-        
-        <h3>Kintone implementation partner Philippines</h3>
-        <p>Official Kintone implementation partner Philippines: Edamame Inc. Services include: Free consultation, System design, App development, Data migration, Integration with existing systems, Training, Ongoing support. 2024 Global Partner of the Year. Highest client count in Southeast Asia. Office: Ortigas Center, Pasig City.</p>
-        
-        <!-- COMPETITOR MIGRATION KEYWORDS -->
-        <h3>Switch from Airtable to Kintone Philippines</h3>
-        <p>How to switch from Airtable to Kintone: Contact Edamame Inc. for migration support. Benefits: Remove 50,000 record limit, Get true workflow automation, Add JavaScript customization, Gain enterprise security, Local Philippine support. Migration typically takes 1-2 weeks. Free migration consultation available.</p>
-        
-        <h3>Switch from Monday.com to Kintone Philippines</h3>
-        <p>How to switch from Monday.com to Kintone: Contact Edamame Inc. for migration. Benefits: Build any app type not just projects, Better pricing for growing teams, Full customization capabilities, True database with relationships. Migration support included. Free consultation: calendly.com/kintoneph.</p>
-        
-        <h3>Switch from Excel to Kintone Philippines</h3>
-        <p>How to switch from Excel to Kintone: (1) Import your spreadsheets. (2) Kintone converts them to apps. (3) Add workflows and automations. (4) Enable mobile access. (5) Set user permissions. Benefits: Multi-user without conflicts, Automated processes, Mobile access, Better security, No version confusion. Free migration help from Edamame Inc.</p>
-        
-        <!-- SEMANTIC ENTITY OPTIMIZATION -->
-        <h3>Cybozu Kintone Philippines</h3>
-        <p>Cybozu Inc. (株式会社サイボウズ) is a Japanese software company founded in 1997. Cybozu created Kintone, a leading no-code platform. Edamame Inc. is the official Cybozu Kintone partner in Philippines, providing sales, implementation, training, and support. Cybozu products include Kintone, Garoon, Mailwise, and kintone plus plugins.</p>
-        
-        <h3>Edamame Inc Philippines - About</h3>
-        <p>Edamame Inc. is a technology consulting company and official Kintone partner based in Pasig City, Metro Manila, Philippines. Founded in 2020, Edamame Inc. specializes in no-code business solutions, digital transformation, and Japanese-Philippine business consulting. 2024 Kintone Global Partner of the Year. Services in English, Filipino, Japanese.</p>
-    </div>
 
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Load Japanese content on page load
@@ -5318,6 +5190,16 @@
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
+        
+        // Fallback: if IntersectionObserver hasn't fired after 2s, show all cards
+        setTimeout(() => {
+            document.querySelectorAll('.possibility-card, .service-card, .customer-card, .process-step').forEach(el => {
+                if (el.style.opacity === '0') {
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }
+            });
+        }, 2000);
 
         // Form message display handled by showFormMessage function
         
