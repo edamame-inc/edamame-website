@@ -314,4 +314,16 @@
     <priority>0.8</priority>
   </url>
 
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/why-edamame-kintone-partner-philippines/</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/ja/blog/edamame-kintone-partner/</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
