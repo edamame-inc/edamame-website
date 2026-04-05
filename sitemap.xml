@@ -268,4 +268,50 @@
     <priority>0.9</priority>
   </url>
 
+
+  <!-- ==================== JAPANESE BLOG POSTS ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/kintone-philippines-guide/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-nikkei-dx/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-manufacturing-dx/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-crm-nihongo/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-workflow-shinsei/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-it-checklist/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
