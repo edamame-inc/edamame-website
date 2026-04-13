@@ -5330,7 +5330,7 @@
                 
                 try {
                     // Save via server-side proxy (credentials hidden)
-                    const res = await fetch('https://camille-chatbot.tom-arai.workers.dev/api/contact', {
+                    const res = await fetch('https://digital-tom.tom-arai.workers.dev/webhook/contact-form', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(data)
