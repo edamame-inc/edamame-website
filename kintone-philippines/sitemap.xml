@@ -1,292 +1,449 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage - English -->
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/"/>
+    <xhtml:link rel="alternate" hreflang="en-ph" href="https://edamame-jp.com/kintone-philippines/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/"/>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- Homepage - Japanese -->
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/ja/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/customers/</loc>
-    <lastmod>2026-03-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/"/>
+    <xhtml:link rel="alternate" hreflang="en-ph" href="https://edamame-jp.com/kintone-philippines/en/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/"/>
+    <lastmod>2026-04-04</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.95</priority>
+    <priority>1.0</priority>
   </url>
+  
+  <!-- Privacy Policy - English -->
   <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/events/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/tools/app-estimator/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/tools/digital-readiness/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-crm-software-philippines-2026/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-airtable/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-odoo/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-monday/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-salesforce/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/no-code-app-development-philippines/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/workflow-automation-philippines/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/custom-crm-philippines/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/hr-system-philippines/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/manufacturing-software-philippines/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/manufacturing/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/logistics/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/real-estate/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/healthcare/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/bpo/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/construction/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/education/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/industries/retail/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/odoo-alternative-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/bpo-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/construction-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/education-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/healthcare-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/logistics-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/real-estate-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/odoo-pricing-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
     <loc>https://edamame-jp.com/kintone-philippines/en/privacy-policy/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/privacy-policy/"/>
+    <lastmod>2026-02-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
+  
+  <!-- Privacy Policy - Japanese -->
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/ja/privacy-policy/</loc>
-    <lastmod>2026-03-05</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-zoho/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/privacy-policy/"/>
+    <lastmod>2026-02-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.3</priority>
   </url>
+  
+  <!-- Blog Index -->
   <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-hubspot/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ROI Calculator -->
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/roi-calculator/</loc>
+    <lastmod>2026-02-06</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
+    <priority>0.7</priority>
   </url>
+  
+  <!-- ==================== BLOG POSTS: Best-Of Lists ==================== -->
+
   <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-notion/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-smartsheet/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/kintone-philippines-guide/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-crm-software-philippines-2026/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-erp-software-philippines-2026/</loc>
-    <lastmod>2026-03-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-inventory-management-philippines-2026/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-hr-software-philippines-2026/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/sap-alternative-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-inventory-management-philippines-2026/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://edamame-jp.com/kintone-philippines/en/blog/retail-software-philippines/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-accounting-software-philippines-2026/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ==================== BLOG POSTS: Kintone vs Competitors ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-airtable/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-odoo/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-salesforce/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-monday/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-hubspot/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-notion/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-smartsheet/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-zoho/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-erpnext/</loc>
-    <lastmod>2026-03-14</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- ==================== BLOG POSTS: Competitor Alternatives & Pricing ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/odoo-alternative-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/odoo-pricing-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/salesforce-pricing-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/sap-alternative-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== BLOG POSTS: Industry Pages ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/manufacturing-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/logistics-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/real-estate-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/healthcare-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/bpo-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/construction-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/education-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/retail-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ==================== BLOG POSTS: Use Case / Topic Pages ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/custom-crm-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/hr-system-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/no-code-app-development-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/workflow-automation-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- NEW: Project Management Software Philippines — Added 2026-04-04 -->
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/blog/project-management-software-philippines/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+
+  <!-- ==================== JAPANESE BLOG POSTS ==================== -->
+
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/kintone-philippines-guide/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-nikkei-dx/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-manufacturing-dx/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-crm-nihongo/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-workflow-shinsei/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/blog/philippines-it-checklist/</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
     <url>
-        <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-accounting-software-philippines-2026/</loc>
-        <lastmod>2026-04-04</lastmod>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/why-edamame-kintone-partner-philippines/</loc>
+        <lastmod>2026-04-05</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/ja/blog/edamame-kintone-partner/</loc>
+        <lastmod>2026-04-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/hubspot-pricing-philippines/</loc>
+        <lastmod>2026-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/monday-com-pricing-philippines/</loc>
+        <lastmod>2026-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/zoho-crm-review-philippines/</loc>
+        <lastmod>2026-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/digital-transformation-philippines-2026/</loc>
+        <lastmod>2026-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-database-software-philippines/</loc>
+        <lastmod>2026-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/how-to-replace-excel-philippines/</loc>
+        <lastmod>2026-04-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/hubspot-alternative-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/zoho-alternative-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/monday-alternative-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/airtable-alternative-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/smartsheet-alternative-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/approval-workflow-software-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/document-management-system-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/employee-onboarding-software-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/customer-portal-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/kintone-pricing-philippines-2026/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/no-code-vs-low-code-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/business-process-automation-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/blog/best-software-japanese-companies-philippines/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://edamame-jp.com/kintone-philippines/en/contact/</loc>
+        <lastmod>2026-04-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>

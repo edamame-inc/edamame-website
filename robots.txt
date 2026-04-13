@@ -37,6 +37,7 @@ User-agent: SemrushBot
 Crawl-delay: 10
 
 # Sitemaps
+Sitemap: https://edamame-jp.com/sitemap.xml
 Sitemap: https://edamame-jp.com/kintone-philippines/sitemap.xml
 
 # Host directive
