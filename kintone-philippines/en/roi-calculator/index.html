@@ -26,6 +26,7 @@
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Kintone ROI Calculator Philippines","description":"Calculate potential savings from switching to Kintone","applicationCategory":"BusinessApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"PHP"},"author":{"@type":"Organization","name":"Edamame Inc."}}</script>
 
     <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
         :root {
             --primary: #4A7C59;
             --primary-dark: #3d6b4a;
@@ -36,13 +37,13 @@
             --white: #fff;
             --border: #e0e0e0;
             --accent: #ff6d00;
-            --savings: #2e7d32;
+            --savings: #4A7C59;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
             line-height: 1.7;
             color: var(--text);
             background: var(--bg);
@@ -323,7 +324,7 @@
             font-weight: 800;
         }
 
-        .result-value.current { color: #c62828; }
+        .result-value.current { color: #C41118; }
         .result-value.kintone { color: var(--primary); }
         .result-value.savings { color: var(--savings); }
 
@@ -357,7 +358,7 @@
         .breakdown-row:last-child { border-bottom: none; }
 
         .breakdown-row .cost { font-weight: 600; }
-        .breakdown-row .cost.old { color: #c62828; text-decoration: line-through; }
+        .breakdown-row .cost.old { color: #C41118; text-decoration: line-through; }
         .breakdown-row .cost.new { color: var(--primary); }
 
         /* CTA */
