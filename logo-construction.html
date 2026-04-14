@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>edamame — Logo Construction Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e1a12;--surface:rgba(255,255,255,0.04);--border:rgba(255,255,255,0.06);--text:#e8e6e0;--muted:rgba(255,255,255,0.45);--dim:rgba(255,255,255,0.2);--green:#4A7C59;--green-l:#6B9B7A;--gold:#C4A35A}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased}
+.cover{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 0 80px;position:relative;overflow:hidden}
+.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 600px 600px at 30% 40%,rgba(74,124,89,0.12) 0%,transparent 70%),radial-gradient(ellipse 400px 400px at 70% 60%,rgba(196,163,90,0.06) 0%,transparent 70%)}
+.cover-grid{position:absolute;inset:0;opacity:0.03;background-image:linear-gradient(rgba(255,255,255,0.3) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.3) 1px,transparent 1px);background-size:60px 60px}
+.cover-inner{position:relative;padding:0 clamp(32px,6vw,80px)}
+.cover-label{font-size:0.7rem;font-weight:600;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:32px}
+.cover h1{font-family:'DM Serif Display',serif;font-size:clamp(3rem,7vw,5.5rem);line-height:1.05;letter-spacing:-0.02em;margin-bottom:16px}
+.cover h1 span{color:var(--gold)}
+.cover-sub{font-size:clamp(1rem,2vw,1.2rem);color:var(--muted);max-width:420px;font-weight:300}
+.cover-ver{position:absolute;bottom:40px;right:clamp(32px,6vw,80px);font-size:0.72rem;color:var(--dim);letter-spacing:0.15em}
+.cover-logo{position:absolute;top:clamp(40px,8vw,80px);right:clamp(32px,6vw,120px);opacity:0.08}
+.cover-logo svg{width:clamp(200px,30vw,400px)}
+.wrap{max-width:900px;margin:0 auto;padding:0 clamp(24px,5vw,64px)}
+.step{padding:clamp(64px,10vw,120px) 0;border-top:1px solid var(--border);opacity:0;transform:translateY(30px);transition:opacity 0.8s,transform 0.8s}
+.step.visible{opacity:1;transform:translateY(0)}
+.step-num{font-size:0.65rem;font-weight:700;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;display:block}
+.step h2{font-family:'DM Serif Display',serif;font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.15;margin-bottom:12px}
+.step-lead{font-size:clamp(0.95rem,1.8vw,1.08rem);color:var(--muted);max-width:520px;margin-bottom:clamp(32px,5vw,48px);font-weight:300;line-height:1.7}
+.diagram{margin:0 -12px clamp(24px,3vw,32px);background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:clamp(16px,3vw,32px)}
+.diagram svg{width:100%;display:block}
+.math-block{font-family:'DM Sans',monospace;font-size:0.82rem;color:rgba(255,255,255,0.55);line-height:2;padding:clamp(16px,3vw,24px);background:var(--bg);border:1px solid var(--border);border-radius:12px;white-space:pre-wrap;margin-bottom:20px}
+.math-block strong{color:var(--gold);font-weight:600}
+.insight{font-size:0.92rem;color:var(--muted);line-height:1.75;padding-left:16px;border-left:2px solid var(--gold)}
+.footer-doc{padding:48px 0;text-align:center;border-top:1px solid var(--border);font-size:0.75rem;color:var(--dim);letter-spacing:0.08em}
+@media(max-width:600px){.cover-logo{display:none}}
+</style>
+</head>
+<body>
+<section class="cover">
+<div class="cover-grid"></div>
+<div class="cover-logo"><svg viewBox="0 0 108 90" xmlns="http://www.w3.org/2000/svg"><path d="M9 12 C0 27,0 63,9 78" stroke="#6B9B7A" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="18" y="27" width="18" height="36" rx="9" fill="#6B9B7A"/><rect x="42" y="18" width="24" height="54" rx="12" fill="#C4A35A"/><rect x="72" y="27" width="18" height="36" rx="9" fill="#6B9B7A"/><path d="M99 12 C108 27,108 63,99 78" stroke="#6B9B7A" stroke-width="3" fill="none" stroke-linecap="round"/></svg></div>
+<div class="cover-inner">
+<div class="cover-label">Logo construction guide</div>
+<h1>Sacred<br>Geo<span>metry</span></h1>
+<p class="cover-sub">How the edamame mark is built from the Flower of Life, the vesica piscis, and the golden ratio.</p>
+</div>
+<div class="cover-ver">v1.0 — April 2026</div>
+</section>
+<div class="wrap">
+<section class="step" id="s1"><span class="step-num">01 — Foundation</span><h2>The Seed of Life</h2><p class="step-lead">Seven equal circles arranged in sixfold symmetry. One center, six surrounding — each touching the center and its neighbors.</p><div class="diagram"><svg viewBox="0 0 600 420" id="svg1"></svg></div>
+<div class="math-block">Seed of Life: 1 center + 6 surrounding circles
+All circles: radius <strong>R</strong>
+Centers separated by <strong>R</strong> at 60° intervals
+
+Circle positions (i = 1..6):
+  x = center + R × cos(i × 60°)
+  y = center + R × sin(i × 60°)
+
+Key: <strong>sin(60°) = √3/2 ≈ 0.8660</strong>
+This value defines ALL coordinates in the grid.</div>
+<p class="insight">The Seed of Life is found in ancient Egyptian temples, Leonardo da Vinci's notebooks, and across sacred architecture worldwide. It encodes sixfold symmetry — the same pattern that governs snowflakes, honeycombs, and carbon molecules.</p></section>
+
+<section class="step" id="s2"><span class="step-num">02 — The bean shape</span><h2>Vesica Piscis</h2><p class="step-lead">Where two circles of the seed overlap, they form an almond shape — the vesica piscis. This is the exact geometry of each edamame bean.</p><div class="diagram"><svg viewBox="0 0 600 420" id="svg2"></svg></div>
+<div class="math-block">Two circles, radius <strong>R</strong>, centers <strong>R</strong> apart:
+
+  Circle A: x² + y² = R²
+  Circle B: (x − R)² + y² = R²
+
+Intersection:  <strong>x = R/2,  y = ±R√3/2</strong>
+
+Vesica dimensions:
+  Width  = <strong>R</strong>
+  Height = <strong>R√3 ≈ 1.7321 × R</strong>
+  Aspect = <strong>√3 : 1</strong>
+
+This is the bean shape.</div>
+<p class="insight">The vesica piscis proportions are pure — governed entirely by √3, which emerges inevitably from the 60° hexagonal angle. It cannot be any other ratio. Two arcs, one shape, one number.</p></section>
+
+<section class="step" id="s3"><span class="step-num">03 — The golden center</span><h2>φ — The Golden Ratio</h2><p class="step-lead">The center bean is scaled by φ (1.618...) relative to the sides. Two additional circles — radius φR — generate the larger vesica piscis at the heart of the mark.</p><div class="diagram"><svg viewBox="0 0 600 480" id="svg3"></svg></div>
+<div class="math-block">Side beans:   radius <strong>R</strong>
+  Width  = R        Height = R√3
+
+Center bean:  radius <strong>φR = 1.6180 × R</strong>
+  Width  = φR       Height = φR√3
+
+Ratios:
+  Center ÷ Side (any dimension) = <strong>φ = 1.618034</strong>
+  Center area ÷ Side area       = <strong>φ² = 2.618034</strong>
+
+<strong>φ = (1 + √5) / 2</strong></div>
+<p class="insight">The golden ratio appears in sunflower spirals, nautilus shells, and the proportions of the Parthenon. In our mark, it governs the visual weight of the center bean — the gold bean that represents the core value edamame delivers.</p></section>
+
+<section class="step" id="s4"><span class="step-num">04 — The pattern</span><h2>3 — 6 — 9</h2><p class="step-lead">Three beans. Six seed circles. Nine total construction circles. Tesla's sacred numbers are the structure itself.</p><div class="diagram"><svg viewBox="0 0 600 420" id="svg4"></svg></div>
+<div class="math-block"><strong>3</strong> = vesica piscis beans in the pod
+<strong>6</strong> = circles in the seed ring
+<strong>9</strong> = total construction circles (6 seed + 1 center + 2 φ-scaled)
+
+<strong>3 + 6 = 9</strong>
+
+360° ÷ 6 = <strong>60°</strong>
+cos 60° = <strong>1/2</strong>     sin 60° = <strong>√3/2</strong>
+
+Every coordinate from these two values.
+Every proportion from <strong>√3</strong>.
+The center bean from <strong>φ</strong>.</div>
+<p class="insight">"If you only knew the magnificence of the 3, 6, and 9, then you would have the key to the universe." — Nikola Tesla</p></section>
+
+<section class="step" id="s5"><span class="step-num">05 — The mark</span><h2>Final Construction</h2><p class="step-lead">The construction circles fade. What remains: three vesica piscis beans in a pod, built entirely from the Flower of Life.</p><div class="diagram" style="background:rgba(255,255,255,0.02);padding:clamp(32px,5vw,64px) clamp(16px,3vw,32px)"><svg viewBox="0 0 600 400" id="svg5"></svg></div>
+<div class="math-block">Left bean:    vesica piscis, R,  fill <strong>#4A7C59</strong> (forest green)
+Center bean:  vesica piscis, φR, fill <strong>#C4A35A</strong> (warm gold)
+Right bean:   vesica piscis, R,  fill <strong>#4A7C59</strong> (forest green)
+Pod curves:   cubic bézier arcs
+Wordmark:     "edamame" · DM Sans 700
+
+Encoded: <strong>√3 · φ · 3 · 6 · 9 · 60°</strong></div></section>
+</div>
+<div class="footer-doc">edamame brand construction guide · confidential · april 2026</div>
+
+<script>
+const phi=(1+Math.sqrt(5))/2,s3=Math.sqrt(3),R=80,CX=300,CY=210,Rc=R*phi;
+const pts=[[CX,CY]];
+for(let i=0;i<6;i++){const a=i*Math.PI/3;pts.push([CX+R*Math.cos(a),CY+R*Math.sin(a)])}
+
+function vp(cx1,cy1,cx2,cy2,r){
+const dx=cx2-cx1,dy=cy2-cy1,d=Math.sqrt(dx*dx+dy*dy);
+if(d>=2*r)return null;
+const a=Math.acos(d/(2*r)),ang=Math.atan2(dy,dx);
+const x1=cx1+r*Math.cos(ang+a),y1=cy1+r*Math.sin(ang+a),x2=cx1+r*Math.cos(ang-a),y2=cy1+r*Math.sin(ang-a);
+return`M${x1.toFixed(1)} ${y1.toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${x2.toFixed(1)} ${y2.toFixed(1)}A${r.toFixed(1)} ${r.toFixed(1)} 0 0 1 ${x1.toFixed(1)} ${y1.toFixed(1)}Z`}
+
+function c(cx,cy,r,stroke,sw,op,dash){return`<circle cx="${cx.toFixed(1)}" cy="${cy.toFixed(1)}" r="${r.toFixed(1)}" fill="none" stroke="${stroke}" stroke-width="${sw}" opacity="${op}"${dash?' stroke-dasharray="5 4"':''}/>`}
+function dot(x,y,r,col){return`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}" fill="${col}"/>`}
+function tx(x,y,str,fill,size,weight,anchor){return`<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" fill="${fill}" font-family="'DM Sans'" font-size="${size||11}" font-weight="${weight||400}" text-anchor="${anchor||'middle'}" dominant-baseline="central">${str}</text>`}
+function bean(cx1,cy1,cx2,cy2,r,fill,stroke,op){const d=vp(cx1,cy1,cx2,cy2,r);return d?`<path d="${d}" fill="${fill}" opacity="${op||1}" stroke="${stroke}" stroke-width="1.2"/>`:''}
+
+// S1: Seed
+let h='';
+pts.forEach(([x,y],i)=>{h+=c(x,y,R,i?'rgba(255,255,255,0.08)':'rgba(107,155,122,0.35)',i?0.5:1,1);h+=dot(x,y,i?2.5:4,i?'rgba(255,255,255,0.2)':'#6B9B7A')});
+h+=`<line x1="${CX}" y1="${CY}" x2="${CX+R}" y2="${CY}" stroke="#C4A35A" stroke-width="0.6" opacity="0.5"/>`;
+h+=`<line x1="${CX}" y1="${CY}" x2="${pts[2][0]}" y2="${pts[2][1]}" stroke="#C4A35A" stroke-width="0.6" opacity="0.5"/>`;
+h+=`<path d="M${CX+28} ${CY} A28 28 0 0 0 ${CX+14} ${CY-24.2}" fill="none" stroke="#C4A35A" stroke-width="0.6" opacity="0.6"/>`;
+h+=tx(CX+38,CY-12,'60°','#C4A35A',11,500);
+h+=tx(CX,CY+R+32,'7 circles · radius R · 60° hexagonal symmetry','rgba(255,255,255,0.25)',11);
+document.getElementById('svg1').innerHTML=h;
+
+// S2: Vesica
+h='';
+pts.forEach(([x,y])=>{h+=c(x,y,R,'rgba(255,255,255,0.04)',0.4,1)});
+h+=c(CX,CY,R,'rgba(107,155,122,0.4)',0.8,1);h+=c(CX+R,CY,R,'rgba(107,155,122,0.4)',0.8,1);
+const vpd=vp(CX,CY,CX+R,CY,R);
+if(vpd)h+=`<path d="${vpd}" fill="rgba(74,124,89,0.25)" stroke="#4A7C59" stroke-width="1.2"/>`;
+const iy1=CY-R*s3/2,iy2=CY+R*s3/2,ix=CX+R/2;
+h+=dot(ix,iy1,4,'#4A7C59');h+=dot(ix,iy2,4,'#4A7C59');
+h+=`<line x1="${ix+22}" y1="${iy1}" x2="${ix+22}" y2="${iy2}" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>`;
+h+=`<line x1="${ix+17}" y1="${iy1}" x2="${ix+27}" y2="${iy1}" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>`;
+h+=`<line x1="${ix+17}" y1="${iy2}" x2="${ix+27}" y2="${iy2}" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>`;
+h+=tx(ix+38,(iy1+iy2)/2,'R√3','#C4A35A',12,500);
+h+=`<line x1="${CX}" y1="${iy2+18}" x2="${CX+R}" y2="${iy2+18}" stroke="rgba(255,255,255,0.12)" stroke-width="0.5"/>`;
+h+=tx(CX+R/2,iy2+34,'R','#C4A35A',12,500);
+h+=tx(CX-10,CY,'A','rgba(255,255,255,0.3)',12,600,'end');
+h+=tx(CX+R+12,CY,'B','rgba(255,255,255,0.3)',12,600,'start');
+document.getElementById('svg2').innerHTML=h;
+
+// S3: Golden ratio
+h='';
+pts.forEach(([x,y])=>{h+=c(x,y,R,'rgba(255,255,255,0.03)',0.3,1)});
+h+=c(CX,CY,R,'rgba(107,155,122,0.15)',0.5,1);h+=c(CX-R,CY,R,'rgba(107,155,122,0.15)',0.5,1);h+=c(CX+R,CY,R,'rgba(107,155,122,0.15)',0.5,1);
+h+=c(CX,CY-Rc/2,Rc,'rgba(196,163,90,0.15)',0.7,1,true);h+=c(CX,CY+Rc/2,Rc,'rgba(196,163,90,0.15)',0.7,1,true);
+h+=dot(CX,CY-Rc/2,3,'rgba(196,163,90,0.6)');h+=dot(CX,CY+Rc/2,3,'rgba(196,163,90,0.6)');
+h+=bean(CX,CY,CX-R,CY,R,'rgba(74,124,89,0.45)','#4A7C59');
+h+=bean(CX,CY-Rc/2,CX,CY+Rc/2,Rc,'rgba(196,163,90,0.4)','#C4A35A');
+h+=bean(CX,CY,CX+R,CY,R,'rgba(74,124,89,0.45)','#4A7C59');
+h+=tx(CX-R/2,CY+R*s3/2+22,'R','rgba(255,255,255,0.25)',11);
+h+=tx(CX,CY+Rc*s3/2+22,'φR','#C4A35A',11,500);
+h+=tx(CX+R/2,CY+R*s3/2+22,'R','rgba(255,255,255,0.25)',11);
+h+=tx(CX,CY+Rc*s3/2+46,'center ÷ side = φ = 1.618','#C4A35A',12,600);
+document.getElementById('svg3').innerHTML=h;
+
+// S4: 369
+h='';
+pts.forEach(([x,y],i)=>{h+=c(x,y,R,'rgba(255,255,255,0.04)',0.4,1);if(i>0){const a2=Math.atan2(y-CY,x-CX),lx=x+R*0.15*Math.cos(a2),ly=y+R*0.15*Math.sin(a2);h+=tx(lx,ly,i.toString(),'rgba(255,255,255,0.12)',14,600)}});
+h+=c(CX,CY-Rc/2,Rc,'rgba(255,255,255,0.04)',0.4,1);h+=c(CX,CY+Rc/2,Rc,'rgba(255,255,255,0.04)',0.4,1);
+h+=tx(CX-Rc*0.12,CY-Rc/2,'8','rgba(255,255,255,0.12)',13,600,'end');
+h+=tx(CX-Rc*0.12,CY+Rc/2,'9','rgba(255,255,255,0.12)',13,600,'end');
+h+=bean(CX,CY,CX-R,CY,R,'rgba(74,124,89,0.4)','#4A7C59');
+h+=bean(CX,CY-Rc/2,CX,CY+Rc/2,Rc,'rgba(196,163,90,0.35)','#C4A35A');
+h+=bean(CX,CY,CX+R,CY,R,'rgba(74,124,89,0.4)','#4A7C59');
+const bx=470,by=55;
+h+=`<text x="${bx}" y="${by}" fill="#C4A35A" font-family="'DM Serif Display'" font-size="28">3 · 6 · 9</text>`;
+['3 beans','6 seed circles','9 total circles'].forEach((t,i)=>{h+=tx(bx,by+26+i*18,t,'rgba(255,255,255,0.3)',12,400,'start')});
+h+=`<line x1="${bx}" y1="${by+82}" x2="${bx+100}" y2="${by+82}" stroke="rgba(255,255,255,0.06)" stroke-width="0.5"/>`;
+['3 + 6 = 9','360° ÷ 6 = 60°','sin 60° = √3/2'].forEach((t,i)=>{h+=tx(bx,by+100+i*18,t,'rgba(255,255,255,0.2)',12,400,'start')});
+document.getElementById('svg4').innerHTML=h;
+
+// S5: Final
+h='';
+pts.forEach(([x,y])=>{h+=c(x,y,R,'rgba(255,255,255,0.02)',0.3,1)});
+h+=c(CX,CY-Rc/2,Rc,'rgba(255,255,255,0.02)',0.3,1);h+=c(CX,CY+Rc/2,Rc,'rgba(255,255,255,0.02)',0.3,1);
+h+=bean(CX,CY,CX-R,CY,R,'#4A7C59','#3A6349');
+h+=bean(CX,CY-Rc/2,CX,CY+Rc/2,Rc,'#C4A35A','#B8943F');
+h+=bean(CX,CY,CX+R,CY,R,'#4A7C59','#3A6349');
+const cTop=CY-Rc*s3/2-6,cBot=CY+Rc*s3/2+6,pL=CX-R/2-R/2-5,pR=CX+R/2+R/2+5;
+h+=`<path d="M${pL-14} ${cTop} C${pL-30} ${CY-40},${pL-30} ${CY+40},${pL-14} ${cBot}" stroke="#4A7C59" stroke-width="3.5" fill="none" stroke-linecap="round"/>`;
+h+=`<path d="M${pR+14} ${cTop} C${pR+30} ${CY-40},${pR+30} ${CY+40},${pR+14} ${cBot}" stroke="#4A7C59" stroke-width="3.5" fill="none" stroke-linecap="round"/>`;
+h+=`<text x="${CX}" y="${cBot+52}" text-anchor="middle" font-family="'DM Sans'" font-size="34" font-weight="700" fill="#e8e6e0" letter-spacing="-0.5">edamame</text>`;
+h+=`<text x="${CX}" y="${cBot+76}" text-anchor="middle" font-family="'DM Sans'" font-size="12" fill="rgba(255,255,255,0.22)" letter-spacing="0.5">Your apps. Your rules. No code.</text>`;
+document.getElementById('svg5').innerHTML=h;
+
+new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.15}).observe(document.querySelectorAll('.step').forEach(s=>new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible')})},{threshold:0.15}).observe(s)));
+</script>
+</body>
+</html>
