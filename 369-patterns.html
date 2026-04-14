@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>edamame — 369 Deep Patterns</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f0d;--card:rgba(255,255,255,0.03);--bdr:rgba(255,255,255,0.05);--tx:#ddd8ce;--sub:rgba(255,255,255,0.38);--dim:rgba(255,255,255,0.15);--g:#4A7C59;--a:#C4A35A}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.hero{padding:clamp(80px,15vw,160px) 0 clamp(40px,6vw,80px);text-align:center}
+.ey{font-size:10px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--a);margin-bottom:20px}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(2.2rem,6vw,4rem);letter-spacing:-.02em;line-height:1.05}
+h1 em{font-style:normal;color:var(--a)}
+.hero p{font-size:clamp(.9rem,1.4vw,1rem);color:var(--sub);max-width:380px;margin:14px auto 0;line-height:1.7;font-weight:300}
+section{padding:clamp(56px,9vw,96px) 0;border-top:1px solid var(--bdr)}
+.sn{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--a);margin-bottom:16px;opacity:0;transform:translateY(12px);transition:all .7s cubic-bezier(.22,1,.36,1)}
+section.v .sn{opacity:1;transform:none}
+section h2{font-family:'DM Serif Display',serif;font-size:clamp(1.4rem,3vw,2.1rem);line-height:1.15;margin-bottom:10px;opacity:0;transform:translateY(16px);transition:all .7s .08s cubic-bezier(.22,1,.36,1)}
+section.v h2{opacity:1;transform:none}
+.ld{font-size:clamp(.9rem,1.4vw,.98rem);color:var(--sub);max-width:460px;line-height:1.7;font-weight:300;margin-bottom:clamp(24px,4vw,40px);opacity:0;transform:translateY(12px);transition:all .6s .14s cubic-bezier(.22,1,.36,1)}
+section.v .ld{opacity:1;transform:none}
+.fig{background:var(--card);border:1px solid var(--bdr);border-radius:20px;padding:clamp(20px,4vw,40px);margin-bottom:18px;opacity:0;transform:translateY(16px);transition:all .7s .1s cubic-bezier(.22,1,.36,1)}
+section.v .fig{opacity:1;transform:none}
+.fig svg{width:100%;display:block}
+.note{font-size:12px;color:rgba(255,255,255,.35);line-height:2;padding:14px 18px;border:1px solid var(--bdr);border-radius:12px;white-space:pre-wrap;background:rgba(0,0,0,.25);opacity:0;transition:opacity .5s .25s}
+section.v .note{opacity:1}
+.note b{color:var(--a);font-weight:600}
+.as{font-size:13px;color:var(--sub);line-height:1.8;padding-left:16px;border-left:2px solid rgba(196,163,90,.2);margin-top:14px;opacity:0;transition:opacity .5s .3s}
+section.v .as{opacity:1}
+.jp{font-family:'Noto Sans JP','DM Sans',sans-serif}
+.fin{text-align:center;padding:56px 0 36px;border-top:1px solid var(--bdr);font-size:10px;color:var(--dim);letter-spacing:.12em}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+<div class="ey">Deep patterns</div>
+<h1>3 <em>6</em> 9</h1>
+<p>Twelve patterns across mathematics, language, music, time, philosophy, and nature.</p>
+</div>
+
+<!-- 01 MIROKU -->
+<section id="s1"><div class="sn">01 — Language</div>
+<h2>369 = ミロク = 弥勒</h2>
+<p class="ld">In Japanese number wordplay (goroawase), 3-6-9 reads み-ろ-く: Mi-Ro-Ku. Miroku is Maitreya — the future Buddha who will bring the next age of enlightenment.</p>
+<div class="fig"><svg viewBox="0 0 640 260" id="d1"></svg></div>
+<div class="note"><b>3</b> = み (mi)   <b>6</b> = ろ (ro)   <b>9</b> = く (ku)
+み-ろ-く = <b>ミロク = 弥勒</b> = Maitreya
+
+Maitreya is the bodhisattva prophesied to appear
+on Earth, achieve complete enlightenment, and teach
+the pure dharma. The Buddha of the future.
+
+369 is not just a number. In Japanese,
+it is a <b>name</b> — and it means <b>the one who is coming</b>.</div>
+<p class="as">A Filipino-based company, founded by a Japanese CEO, whose GitHub handle is tomarai-369. The number was never arbitrary. It was always Miroku.</p>
+</section>
+
+<!-- 02 FACTORIAL -->
+<section id="s2"><div class="sn">02 — Arithmetic</div>
+<h2>3! = 6, and 3 + 6 = 9</h2>
+<p class="ld">Three factorial is six. Their sum is nine. The three numbers are not independent — they generate each other.</p>
+<div class="fig"><svg viewBox="0 0 640 220" id="d2"></svg></div>
+<div class="note"><b>3!</b> = 3 x 2 x 1 = <b>6</b>
+<b>3 + 6</b> = <b>9</b>
+<b>3 x 6</b> = 18 -> 1+8 = <b>9</b>
+<b>6 + 9</b> = 15 -> 1+5 = <b>6</b>
+<b>3 x 9</b> = 27 -> 2+7 = <b>9</b>
+<b>6 x 9</b> = 54 -> 5+4 = <b>9</b>
+
+Any operation on these three numbers
+returns one of these three numbers.</div>
+</section>
+
+<!-- 03 BINARY MIRROR -->
+<section id="s3"><div class="sn">03 — Binary</div>
+<h2>3 and 6 are reflections</h2>
+<p class="ld">In binary, 3 is 011 and 6 is 110 — exact mirror images. One is the other reversed. They orbit each other. 9 (1001) is palindromic — it reflects itself.</p>
+<div class="fig"><svg viewBox="0 0 640 200" id="d3"></svg></div>
+<div class="note"><b>3</b> = 0 1 1     <b>6</b> = 1 1 0     (mirror)
+<b>9</b> = 1 0 0 1                       (palindrome)
+
+3 XOR 6 = 0 1 1 XOR 1 1 0 = <b>1 0 1 = 5</b>
+3 AND 6 = 0 1 1 AND 1 1 0 = <b>0 1 0 = 2</b>
+3 OR  6 = 0 1 1 OR  1 1 0 = <b>1 1 1 = 7</b>
+
+5 + 2 + 7 = 14 -> 1+4 = <b>5</b>
+But 3 + 6 + 9 = 18 -> 1+8 = <b>9</b>
+
+Binary mirrors. Digital roots converge.</div>
+</section>
+
+<!-- 04 CLOCK -->
+<section id="s4"><div class="sn">04 — Time</div>
+<h2>The three cardinals</h2>
+<p class="ld">On a clock face, 3, 6, and 9 are the three cardinal positions — East, South, West. They divide the circle into three equal arcs. 12 (the North) reduces to 3.</p>
+<div class="fig"><svg viewBox="0 0 640 360" id="d4"></svg></div>
+<div class="note"><b>12</b> (top)    -> 1+2 = <b>3</b>
+<b>3</b>  (right)  -> <b>3</b>
+<b>6</b>  (bottom) -> <b>6</b>
+<b>9</b>  (left)   -> <b>9</b>
+
+The four cardinal positions are all <b>3, 6, 9</b>.
+
+Hours in a day: 24 -> 2+4 = <b>6</b>
+Minutes in an hour: 60 -> 6+0 = <b>6</b>
+Seconds in a minute: 60 -> <b>6</b>
+Time itself is governed by 6.</div>
+</section>
+
+<!-- 05 SOLFEGGIO -->
+<section id="s5"><div class="sn">05 — Sound</div>
+<h2>Solfeggio frequencies</h2>
+<p class="ld">The ancient Solfeggio scale contains six core frequencies. Every single one reduces to 3, 6, or 9. And three of them are direct permutations of the digits 3, 6, 9.</p>
+<div class="fig"><svg viewBox="0 0 640 280" id="d5"></svg></div>
+<div class="note"><b>396</b> Hz  Liberation     -> 3+9+6 = 18 -> <b>9</b>
+<b>417</b> Hz  Transformation -> 4+1+7 = 12 -> <b>3</b>
+<b>528</b> Hz  Miracles       -> 5+2+8 = 15 -> <b>6</b>
+<b>639</b> Hz  Connection     -> 6+3+9 = 18 -> <b>9</b>
+<b>741</b> Hz  Expression     -> 7+4+1 = 12 -> <b>3</b>
+<b>852</b> Hz  Intuition      -> 8+5+2 = 15 -> <b>6</b>
+<b>963</b> Hz  Awakening      -> 9+6+3 = 18 -> <b>9</b>
+
+396, 639, 963 — three frequencies that are
+literal rearrangements of the digits <b>3, 6, 9</b>.</div>
+</section>
+
+<!-- 06 POWERS -->
+<section id="s6"><div class="sn">06 — Powers</div>
+<h2>The attractor</h2>
+<p class="ld">Raise 3, 6, or 9 to any power. The digital root is always 9. Nine is the attractor — every exponential computation collapses back to it.</p>
+<div class="fig"><svg viewBox="0 0 640 280" id="d6"></svg></div>
+<div class="note"><b>3^1</b>=3  <b>3^2</b>=9  <b>3^3</b>=27->9  <b>3^4</b>=81->9  <b>3^5</b>=243->9
+<b>6^1</b>=6  <b>6^2</b>=36->9  <b>6^3</b>=216->9  <b>6^4</b>=1296->9
+<b>9^1</b>=9  <b>9^2</b>=81->9  <b>9^3</b>=729->9  <b>9^n</b>=always 9
+
+After the first power, <b>everything is 9</b>.
+9 is the only non-trivial digit whose powers
+always have digital root 9.
+
+Also: <b>9 x any number</b>, the digit sum is always 9.
+9x1=9, 9x2=18->9, 9x3=27->9, ... always <b>9</b>.</div>
+</section>
+
+<!-- 07 ENNEAGRAM -->
+<section id="s7"><div class="sn">07 — Psychology</div>
+<h2>The Enneagram triangle</h2>
+<p class="ld">The Enneagram's inner triangle connects exactly three points: 3, 6, and 9. These are the three centers of intelligence — heart, head, and gut.</p>
+<div class="fig"><svg viewBox="0 0 640 380" id="d7"></svg></div>
+<div class="note">The Enneagram: 9 personality types on a circle.
+The inner structure has two shapes:
+
+  <b>Triangle: 3 - 6 - 9</b> (the three centers)
+  Hexad: 1 - 4 - 2 - 8 - 5 - 7 (the six types)
+
+  <b>3</b> = Heart center (image, feeling, identity)
+  <b>6</b> = Head center (thinking, anxiety, loyalty)
+  <b>9</b> = Gut center (instinct, peace, presence)
+
+Same structure as Tesla's number wheel.
+Same triangle. Same governing three.</div>
+</section>
+
+<!-- 08 NATURE -->
+<section id="s8"><div class="sn">08 — Nature</div>
+<h2>Carbon, water, life</h2>
+<p class="ld">Carbon has 6 protons. Water has 3 atoms. DNA uses codons of 3 nucleotides across 6 reading frames. Life is built on 3-6-9.</p>
+<div class="fig"><svg viewBox="0 0 640 200" id="d8"></svg></div>
+<div class="note">Water: <b>H2O = 3 atoms</b>
+Carbon: <b>6 protons, 6 neutrons, 6 electrons</b>
+DNA codon: <b>3 nucleotides</b> per amino acid
+Cell phases: <b>3 stages</b> (G1, S, G2) + mitosis
+Pregnancy: <b>9 months</b> (3 trimesters of 3 months)
+
+Honeycomb: <b>6 sides</b>, interior angle <b>120</b> -> 1+2+0 = <b>3</b>
+Snowflake: <b>6-fold</b> symmetry, made of H2O (<b>3</b> atoms)
+
+Life's molecular architecture = 3, 6, 9.</div>
+</section>
+
+<!-- 09 PHILOSOPHY -->
+<section id="s9"><div class="sn">09 — Philosophy</div>
+<h2>Form, flow, field</h2>
+<p class="ld">3 is structure — the minimum for a shape. 6 is dynamics — the movement between. 9 is the field — the space that holds it all.</p>
+<div class="fig"><svg viewBox="0 0 640 220" id="d9"></svg></div>
+<div class="note"><b>3 = Form</b>
+  Triangle, the first polygon. Structure. The minimum
+  number of points to define a plane. Stability.
+
+<b>6 = Flow</b>
+  Hexagon, the shape of efficiency. Honeycomb, graphene.
+  Movement, exchange, doubling (3! = 6).
+
+<b>9 = Field</b>
+  Completion. The highest digit. Any number multiplied
+  by 9 returns to 9. The container. The whole.
+
+In the mark: green beans = form and flow.
+Gold center = the field that holds them.</div>
+</section>
+
+<!-- 10 MUSIC -->
+<section id="s10"><div class="sn">10 — Harmony</div>
+<h2>The harmonic series</h2>
+<p class="ld">The 3rd harmonic is a perfect fifth. The 6th is a fifth above the octave. The 9th is two octaves plus a major second. They define the backbone of music.</p>
+<div class="fig"><svg viewBox="0 0 640 180" id="d10"></svg></div>
+<div class="note">Harmonic <b>3</b>: perfect 5th (the strongest consonance)
+Harmonic <b>6</b>: perfect 5th + octave
+Harmonic <b>9</b>: major 2nd + 2 octaves
+
+Musical time signatures: <b>3/4</b> (waltz), <b>6/8</b> (march), <b>9/8</b> (compound)
+
+Western scale: <b>12</b> semitones -> 1+2 = <b>3</b>
+Octave ratio: <b>2:1</b> -> 2+1 = <b>3</b>
+
+Music is mathematics made audible.
+3-6-9 is its skeleton.</div>
+</section>
+
+<!-- 11 EDAMAME SPECIFIC -->
+<section id="s11"><div class="sn">11 — edamame</div>
+<h2>The company itself</h2>
+<p class="ld">369 is not imposed on edamame. It already lives there.</p>
+<div class="fig"><svg viewBox="0 0 640 120" id="d11"></svg></div>
+<div class="note"><b>3</b> team members (Tom, Camille, Cielo)
+<b>3</b> languages (English, Japanese, Filipino)
+<b>3</b> product lines (Consulting, KinPlug, Content)
+<b>3</b> markets (PH local, PH Japanese, Global)
+
+<b>6</b> letters in "edamam<b>e</b>" wait... 7.
+
+Actually: <b>e-d-a-m-a-m-e</b> = 7 letters.
+But the unique letters: <b>e, d, a, m</b> = 4.
+Vowels: <b>e, a, a, e</b> = 4 -> but <b>3</b> unique vowel positions.
+
+The company was founded by tomarai-<b>369</b>.
+The rest writes itself.</div>
+</section>
+
+<!-- 12 CONVERGENCE -->
+<section id="s12"><div class="sn">12 — Convergence</div>
+<h2>Why it matters</h2>
+<p class="ld">369 appears across domains not because it is forced, but because it is structural. It is how the universe counts.</p>
+<div class="fig"><svg viewBox="0 0 640 300" id="d12"></svg></div>
+<div class="note">Language:    369 = Miroku = Maitreya = <b>the future Buddha</b>
+Arithmetic:  3! = 6, 3+6 = <b>9</b>
+Binary:      3 and 6 are <b>mirror images</b>
+Time:        clock cardinals = <b>3, 6, 9, 12->3</b>
+Sound:       Solfeggio = all reduce to <b>3, 6, 9</b>
+Powers:      3^n, 6^n, 9^n all -> <b>9</b>
+Psychology:  Enneagram triangle = <b>3, 6, 9</b>
+Nature:      H2O=<b>3</b> atoms, Carbon=<b>6</b> protons, gestation=<b>9</b> months
+Philosophy:  form=<b>3</b>, flow=<b>6</b>, field=<b>9</b>
+Music:       3rd, 6th, 9th harmonics = <b>consonance</b>
+
+The edamame mark encodes all of this in <b>three beans</b>.</div>
+</section>
+
+</div>
+<div class="fin">edamame 369 deep patterns — 2026</div>
+
+<script>
+var PI=Math.PI;
+function f(n){return n.toFixed(1)}
+function tx(x,y,t,c,sz,fw,an,ff){return '<text x="'+f(x)+'" y="'+f(y)+'" fill="'+c+'" font-family="'+(ff||'DM Sans')+'" font-size="'+(sz||12)+'" font-weight="'+(fw||400)+'" text-anchor="'+(an||'middle')+'" dominant-baseline="central">'+t+'</text>';}
+function txs(x,y,t,c,sz){return '<text x="'+f(x)+'" y="'+f(y)+'" fill="'+c+'" font-family="DM Serif Display" font-size="'+(sz||28)+'" text-anchor="middle" dominant-baseline="central">'+t+'</text>';}
+function ci(x,y,r,s,sw,o){return '<circle cx="'+f(x)+'" cy="'+f(y)+'" r="'+f(r)+'" fill="none" stroke="'+s+'" stroke-width="'+sw+'" opacity="'+o+'"/>';}
+function dot(x,y,r,c,o){return '<circle cx="'+f(x)+'" cy="'+f(y)+'" r="'+r+'" fill="'+c+'" opacity="'+(o||1)+'"/>';}
+function ln(x1,y1,x2,y2,s,sw,o){return '<line x1="'+f(x1)+'" y1="'+f(y1)+'" x2="'+f(x2)+'" y2="'+f(y2)+'" stroke="'+s+'" stroke-width="'+sw+'" opacity="'+o+'"/>';}
+
+// D1: Miroku
+(function(){var s='';
+s+=txs(200,80,'3','#6B9B7A',60);
+s+=txs(320,80,'6','#6B9B7A',60);
+s+=txs(440,80,'9','#C4A35A',60);
+s+=tx(200,128,'mi','rgba(255,255,255,.3)',14,400);
+s+=tx(320,128,'ro','rgba(255,255,255,.3)',14,400);
+s+=tx(440,128,'ku','rgba(255,255,255,.3)',14,400);
+s+=tx(200,155,'み','rgba(255,255,255,.4)',18,400,'middle','Noto Sans JP');
+s+=tx(320,155,'ろ','rgba(255,255,255,.4)',18,400,'middle','Noto Sans JP');
+s+=tx(440,155,'く','rgba(255,255,255,.4)',18,400,'middle','Noto Sans JP');
+s+='<line x1="160" y1="178" x2="480" y2="178" stroke="rgba(255,255,255,.04)" stroke-width=".5"/>';
+s+=tx(320,210,'弥勒菩薩','#C4A35A',28,700,'middle','Noto Sans JP');
+s+=tx(320,242,'Miroku Bosatsu — the future Buddha','rgba(255,255,255,.25)',12);
+document.getElementById('d1').innerHTML=s;})();
+
+// D2: Factorial
+(function(){var s='';
+s+=txs(180,70,'3!','#6B9B7A',36);s+=tx(250,70,'=','rgba(255,255,255,.2)',24);s+=txs(300,70,'6','#6B9B7A',36);
+s+=txs(180,140,'3+6','rgba(255,255,255,.3)',28);s+=tx(270,140,'=','rgba(255,255,255,.2)',24);s+=txs(320,140,'9','#C4A35A',36);
+s+=txs(420,105,'closed','rgba(255,255,255,.08)',28);
+s+=tx(520,70,'3 creates 6','rgba(255,255,255,.2)',11,400,'start');
+s+=tx(520,90,'6 needs 3','rgba(255,255,255,.2)',11,400,'start');
+s+=tx(520,140,'Together they make 9','#C4A35A',11,500,'start');
+s+=tx(520,160,'9 contains them both','#C4A35A',11,500,'start');
+document.getElementById('d2').innerHTML=s;})();
+
+// D3: Binary mirror
+(function(){var s='';var y=60;
+var bits=[['3','0','1','1','#6B9B7A'],['6','1','1','0','#6B9B7A'],['9','1','0','0','#C4A35A']];
+bits.forEach(function(b,i){
+  var bx=180;
+  s+=txs(bx-40,y+i*55,b[0],b[4],28);
+  for(var j=1;j<=3;j++){
+    var x=bx+j*50;
+    var isOne=b[j]==='1';
+    s+='<rect x="'+(x-18)+'" y="'+(y+i*55-18)+'" width="36" height="36" rx="8" fill="'+(isOne?'rgba('+( b[4]==='#C4A35A'?'196,163,90':'74,124,89')+',.15)':'rgba(255,255,255,.02)')+'" stroke="'+(isOne?b[4]:'rgba(255,255,255,.06)')+'" stroke-width="'+(isOne?.8:.4)+'"/>';
+    s+=tx(x,y+i*55,b[j],isOne?b[4]:'rgba(255,255,255,.15)',14,isOne?700:400);
+  }
+});
+s+='<path d="M400 '+f(y)+' C430 '+f(y)+' 430 '+f(y+55)+' 400 '+f(y+55)+'" stroke="#6B9B7A" stroke-width=".6" fill="none" opacity=".3"/>';
+s+=tx(440,y+27,'mirror','#6B9B7A',10,500);
+s+='<path d="M400 '+f(y+110)+' C420 '+f(y+110)+' 420 '+f(y+110)+' 400 '+f(y+110)+'" stroke="#C4A35A" stroke-width=".6" fill="none" opacity=".3"/>';
+s+=tx(440,y+110,'palindrome','#C4A35A',10,500);
+document.getElementById('d3').innerHTML=s;})();
+
+// D4: Clock
+(function(){var s='',cx=320,cy=180,r=120;
+s+=ci(cx,cy,r,'rgba(255,255,255,.06)',.5,1);
+s+=ci(cx,cy,r-10,'rgba(255,255,255,.03)',.3,1);
+for(var i=1;i<=12;i++){
+  var ang=-PI/2+(i/12)*2*PI;
+  var px=cx+(r-5)*Math.cos(ang),py=cy+(r-5)*Math.sin(ang);
+  var is369=(i===3||i===6||i===9||i===12);
+  var ir=is369?r+25:r+16;
+  var lx=cx+ir*Math.cos(ang),ly=cy+ir*Math.sin(ang);
+  if(is369){
+    s+=dot(px,py,4,i===12?'#6B9B7A':(i===9?'#C4A35A':'#6B9B7A'),.6);
+    s+=tx(lx,ly,i.toString(),i===9?'#C4A35A':'#6B9B7A',14,700);
+    if(i===12)s+=tx(lx+24,ly,'->3','rgba(255,255,255,.2)',9,400,'start');
+  } else {
+    s+=dot(px,py,1.5,'rgba(255,255,255,.15)',1);
+    s+=tx(lx,ly,i.toString(),'rgba(255,255,255,.12)',10);
+  }
+}
+s+=ln(cx,cy,cx,cy-r+25,'rgba(255,255,255,.1)',.5,1);
+s+=ln(cx,cy,cx+r*0.6*Math.cos(PI/6),cy+r*0.6*Math.sin(PI/6),'rgba(255,255,255,.15)',.8,1);
+s+=dot(cx,cy,3,'rgba(255,255,255,.2)',1);
+document.getElementById('d4').innerHTML=s;})();
+
+// D5: Solfeggio
+(function(){var s='';
+var freqs=[['396','Liberation','9'],['417','Transformation','3'],['528','Miracles','6'],['639','Connection','9'],['741','Expression','3'],['852','Intuition','6'],['963','Awakening','9']];
+var startX=80,gap=75;
+freqs.forEach(function(fr,i){
+  var x=startX+i*gap;
+  var is369=(fr[0]==='396'||fr[0]==='639'||fr[0]==='963');
+  var col=fr[2]==='9'?'#C4A35A':(fr[2]==='3'?'#6B9B7A':'#6B9B7A');
+  var barH=40+parseInt(fr[2])*8;
+  s+='<rect x="'+(x-12)+'" y="'+(200-barH)+'" width="24" height="'+barH+'" rx="4" fill="'+col+'" opacity="'+(is369?.35:.12)+'"/>';
+  s+=tx(x,220,fr[0],is369?col:'rgba(255,255,255,.2)',is369?11:10,is369?700:400);
+  s+=tx(x,238,fr[2],col,is369?13:11,is369?700:500);
+  if(is369)s+=tx(x,255,'*','#C4A35A',8);
+});
+s+=tx(320,275,'* = permutation of 3, 6, 9','rgba(255,255,255,.15)',10);
+document.getElementById('d5').innerHTML=s;})();
+
+// D6: Powers
+(function(){var s='';
+var rows=[['3',3],['6',6],['9',9]];
+var y=50;
+rows.forEach(function(row,ri){
+  var base=row[1], col=base===9?'#C4A35A':'#6B9B7A';
+  s+=txs(70,y+ri*80,base.toString(),col,24);
+  for(var p=1;p<=6;p++){
+    var val=Math.pow(base,p);
+    var dr=val;while(dr>9){var sum=0;var tmp=dr;while(tmp>0){sum+=tmp%10;tmp=Math.floor(tmp/10);}dr=sum;}
+    var x=120+p*82;
+    var isNine=dr===9;
+    s+='<rect x="'+(x-28)+'" y="'+(y+ri*80-16)+'" width="56" height="32" rx="6" fill="'+(isNine?'rgba(196,163,90,.1)':'rgba(255,255,255,.02)')+'" stroke="'+(isNine?'#C4A35A':'rgba(255,255,255,.04)')+'" stroke-width=".5"/>';
+    s+=tx(x,y+ri*80-3,val>9999?val.toString().substring(0,4)+'..':val.toString(),'rgba(255,255,255,.25)',9);
+    s+=tx(x,y+ri*80+10,dr.toString(),isNine?'#C4A35A':col,11,isNine?700:500);
+  }
+  s+=tx(640,y+ri*80,'-> '+String.fromCharCode(8734)+' -> 9',ri===2?'#C4A35A':'rgba(255,255,255,.15)',10,400,'end');
+});
+var pLabels=['n=1','n=2','n=3','n=4','n=5','n=6'];
+pLabels.forEach(function(l,i){s+=tx(120+(i+1)*82,y-30,l,'rgba(255,255,255,.1)',9);});
+document.getElementById('d6').innerHTML=s;})();
+
+// D7: Enneagram
+(function(){var s='',cx=320,cy=190,r=130;
+s+=ci(cx,cy,r,'rgba(255,255,255,.05)',.5,1);
+var pos=[];
+for(var i=0;i<9;i++){var ang=-PI/2+i*2*PI/9;pos.push([cx+r*Math.cos(ang),cy+r*Math.sin(ang)]);}
+var hexad=[0,3,5,7,4,1];
+for(var i=0;i<hexad.length;i++){var j=(i+1)%hexad.length;s+=ln(pos[hexad[i]][0],pos[hexad[i]][1],pos[hexad[j]][0],pos[hexad[j]][1],'#6B9B7A',.5,.15);}
+var tri=[2,5,8];
+for(var i=0;i<3;i++){var j=(i+1)%3;s+=ln(pos[tri[i]][0],pos[tri[i]][1],pos[tri[j]][0],pos[tri[j]][1],'#C4A35A',1.5,.45);}
+var labels=['1','2','3','4','5','6','7','8','9'];
+var roles=['','','Heart','','','Head','','','Gut'];
+for(var i=0;i<9;i++){
+  var is369=i===2||i===5||i===8;
+  var lr=r+22;
+  var ang=-PI/2+i*2*PI/9;
+  var lx=cx+lr*Math.cos(ang),ly=cy+lr*Math.sin(ang);
+  s+=dot(pos[i][0],pos[i][1],is369?5:2.5,is369?'#C4A35A':'rgba(255,255,255,.15)',is369?.7:1);
+  s+=tx(lx,ly,labels[i],is369?'#C4A35A':'rgba(255,255,255,.2)',is369?14:11,is369?700:400);
+  if(roles[i]){
+    var rl=r+40;
+    s+=tx(cx+rl*Math.cos(ang),cy+rl*Math.sin(ang),roles[i],'rgba(196,163,90,.35)',9,500);
+  }
+}
+document.getElementById('d7').innerHTML=s;})();
+
+// D8: Nature
+(function(){var s='';
+s+=txs(120,60,'H','rgba(255,255,255,.15)',32);s+=tx(140,68,'2','rgba(255,255,255,.15)',14);s+=txs(160,60,'O','rgba(255,255,255,.15)',32);
+s+=tx(190,60,'= 3 atoms','#6B9B7A',12,500,'start');
+s+=txs(120,105,'C','rgba(255,255,255,.15)',32);
+s+=tx(160,105,'= 6 protons','#6B9B7A',12,500,'start');
+s+=tx(400,60,'DNA codon = 3 bases','rgba(255,255,255,.2)',12);
+s+=tx(400,85,'Pregnancy = 9 months','rgba(255,255,255,.2)',12);
+s+=tx(400,110,'= 3 trimesters x 3','#C4A35A',12,500);
+document.getElementById('d8').innerHTML=s;})();
+
+// D9: Form Flow Field
+(function(){var s='';
+var items=[
+  {x:160,n:'3',label:'Form',sub:'structure',col:'#6B9B7A',shape:'triangle'},
+  {x:320,n:'6',label:'Flow',sub:'dynamics',col:'#6B9B7A',shape:'hexagon'},
+  {x:480,n:'9',label:'Field',sub:'totality',col:'#C4A35A',shape:'circle'}
+];
+items.forEach(function(it){
+  if(it.shape==='triangle'){
+    var pts='';for(var i=0;i<3;i++){var a=-PI/2+i*2*PI/3;pts+=(it.x+28*Math.cos(a))+','+(90+28*Math.sin(a))+' ';}
+    s+='<polygon points="'+pts+'" fill="none" stroke="'+it.col+'" stroke-width=".8" opacity=".3"/>';
+  }else if(it.shape==='hexagon'){
+    var pts='';for(var i=0;i<6;i++){var a=-PI/2+i*2*PI/6;pts+=(it.x+26*Math.cos(a))+','+(90+26*Math.sin(a))+' ';}
+    s+='<polygon points="'+pts+'" fill="none" stroke="'+it.col+'" stroke-width=".8" opacity=".3"/>';
+  }else{s+=ci(it.x,90,26,it.col,.8,.3);}
+  s+=txs(it.x,90,it.n,it.col,20);
+  s+=tx(it.x,140,it.label,it.col,13,600);
+  s+=tx(it.x,158,it.sub,'rgba(255,255,255,.2)',10);
+});
+s+=ln(200,90,280,90,'rgba(255,255,255,.06)',.5,1);
+s+=ln(360,90,440,90,'rgba(255,255,255,.06)',.5,1);
+document.getElementById('d9').innerHTML=s;})();
+
+// D10: Harmonics
+(function(){var s='';
+var harmonics=[1,2,3,4,5,6,7,8,9];
+var baseY=120, lineY=80;
+harmonics.forEach(function(h,i){
+  var x=80+i*62;
+  var is369=(h===3||h===6||h===9);
+  var col=is369?(h===9?'#C4A35A':'#6B9B7A'):'rgba(255,255,255,.1)';
+  var barH=is369?50:20;
+  s+='<rect x="'+(x-10)+'" y="'+(baseY-barH)+'" width="20" height="'+barH+'" rx="3" fill="'+col+'" opacity="'+(is369?.35:.3)+'"/>';
+  s+=tx(x,baseY+20,h.toString(),is369?col:'rgba(255,255,255,.12)',is369?13:11,is369?700:400);
+});
+s+=tx(320,baseY+50,'3rd, 6th, 9th harmonics define musical consonance','rgba(255,255,255,.15)',10);
+document.getElementById('d10').innerHTML=s;})();
+
+// D11: edamame specific
+(function(){var s='';
+var items=[['3 people','3','#6B9B7A'],['3 languages','3','#6B9B7A'],['3 products','3','#6B9B7A'],['tomarai-369','9','#C4A35A']];
+items.forEach(function(it,i){
+  var x=100+i*140;
+  s+=txs(x,50,it[1],it[2],24);
+  s+=tx(x,78,it[0],'rgba(255,255,255,.25)',10);
+});
+document.getElementById('d11').innerHTML=s;})();
+
+// D12: Convergence
+(function(){var s='';
+var domains=['Language','Math','Binary','Time','Sound','Powers','Mind','Nature','Philosophy','Music'];
+var cx=320,cy=150,r=110;
+domains.forEach(function(d,i){
+  var ang=-PI/2+i*2*PI/domains.length;
+  var px=cx+r*Math.cos(ang),py=cy+r*Math.sin(ang);
+  var lx=cx+(r+30)*Math.cos(ang),ly=cy+(r+30)*Math.sin(ang);
+  s+=ln(cx,cy,px,py,'rgba(255,255,255,.04)',.5,1);
+  s+=dot(px,py,3,'#6B9B7A',.3);
+  s+=tx(lx,ly,d,'rgba(255,255,255,.2)',9,400);
+});
+s+=ci(cx,cy,30,'#C4A35A',.8,.2);
+s+=txs(cx,cy,'369','#C4A35A',18);
+s+=tx(cx,cy+r+50,'Every domain. Same pattern. Same three numbers.','rgba(255,255,255,.2)',11,500);
+document.getElementById('d12').innerHTML=s;})();
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v');});},{threshold:.08});
+var secs=document.querySelectorAll('section');
+for(var i=0;i<secs.length;i++){io.observe(secs[i]);}
+</script>
+</body>
+</html>
