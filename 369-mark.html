@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>edamame — Final Mark with 369</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0f0d;--card:rgba(255,255,255,.03);--bdr:rgba(255,255,255,.05);--tx:#ddd8ce;--sub:rgba(255,255,255,.35);--dim:rgba(255,255,255,.15);--g:#4A7C59;--a:#C4A35A}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);-webkit-font-smoothing:antialiased}
+.wrap{max-width:860px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.hero{padding:clamp(80px,14vw,140px) 0 48px;text-align:center}
+.ey{font-size:10px;font-weight:700;letter-spacing:.35em;text-transform:uppercase;color:var(--a);margin-bottom:20px}
+h1{font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-.02em;line-height:1.05}
+h1 em{font-style:normal;color:var(--a)}
+.hero p{font-size:13px;color:var(--sub);max-width:360px;margin:12px auto 0;line-height:1.7}
+section{padding:clamp(48px,8vw,80px) 0;border-top:1px solid var(--bdr)}
+.sn{font-size:10px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--a);margin-bottom:16px;opacity:0;transform:translateY(10px);transition:all .7s cubic-bezier(.22,1,.36,1)}
+section.v .sn{opacity:1;transform:none}
+section h2{font-family:'DM Serif Display',serif;font-size:clamp(1.3rem,2.8vw,1.9rem);line-height:1.15;margin-bottom:8px;opacity:0;transform:translateY(14px);transition:all .7s .06s cubic-bezier(.22,1,.36,1)}
+section.v h2{opacity:1;transform:none}
+.ld{font-size:clamp(.88rem,1.3vw,.96rem);color:var(--sub);max-width:440px;line-height:1.7;font-weight:300;margin-bottom:clamp(24px,4vw,36px);opacity:0;transform:translateY(10px);transition:all .6s .12s cubic-bezier(.22,1,.36,1)}
+section.v .ld{opacity:1;transform:none}
+.fig{background:var(--card);border:1px solid var(--bdr);border-radius:20px;padding:clamp(20px,3.5vw,36px);margin-bottom:16px;opacity:0;transform:translateY(14px);transition:all .7s .08s cubic-bezier(.22,1,.36,1)}
+section.v .fig{opacity:1;transform:none}
+.fig svg{width:100%;display:block}
+.note{font-size:11.5px;color:rgba(255,255,255,.33);line-height:2;padding:14px 18px;border:1px solid var(--bdr);border-radius:10px;white-space:pre-wrap;background:rgba(0,0,0,.2);opacity:0;transition:opacity .5s .2s}
+section.v .note{opacity:1}
+.note b{color:var(--a);font-weight:600}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
+.box{border-radius:20px;padding:clamp(28px,5vw,52px) 20px;display:flex;align-items:center;justify-content:center}
+.box--d{background:var(--card);border:1px solid var(--bdr)}
+.box--l{background:#FAFAF8;border:1px solid rgba(0,0,0,.05)}
+.cap{font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.18);text-align:center;margin-top:4px}
+.fin{text-align:center;padding:56px 0 36px;border-top:1px solid var(--bdr);font-size:10px;color:var(--dim);letter-spacing:.12em}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+<div class="ey">Final design</div>
+<h1>The <em>369</em> mark</h1>
+<p>Every proportion, every gap, every count encodes 3, 6, or 9.</p>
+</div>
+
+<section id="s0"><div class="sn">The mark</div><h2>edamame</h2>
+<p class="ld">Three vesica piscis beans in a pod. Sides green, center gold. Sacred geometry through and through.</p>
+<div class="row">
+<div class="box box--d"><svg id="mark-d" width="200" height="260" viewBox="0 0 200 260"></svg></div>
+<div class="box box--l"><svg id="mark-l" width="200" height="260" viewBox="0 0 200 260"></svg></div>
+</div>
+<div class="row"><div class="cap">Dark</div><div class="cap">Light</div></div>
+</section>
+
+<section id="s1"><div class="sn">Layer 1 — Count</div><h2>3 beans, 6 circles, 9 total</h2>
+<p class="ld">The construction uses exactly 9 elements. 3 visible beans generated from 6 circles, plus 3 structural elements (pod, stem, wordmark) = 9.</p>
+<div class="fig"><svg viewBox="0 0 640 340" id="d1"></svg></div>
+<div class="note"><b>3</b> vesica piscis beans (visible mark)
+<b>6</b> generating circles (construction)
+<b>3</b> structural elements: pod + stem + wordmark
+<b>3 + 6 = 9</b>  total construction elements
+<b>6 + 3 = 9</b>  total visible elements (beans + structural)</div>
+</section>
+
+<section id="s2"><div class="sn">Layer 2 — Vertical grid</div><h2>9-unit height</h2>
+<p class="ld">The pod interior divides into 9 equal units. The center bean spans all 9. Side beans span the inner 6. The difference is 3.</p>
+<div class="fig"><svg viewBox="0 0 640 400" id="d2"></svg></div>
+<div class="note">Unit U = center bean height / 9
+
+Center bean height = <b>9U</b> (the field)
+Side bean height   = <b>9U / phi = 5.56U</b>
+                   ~ <b>6U</b> on the visual grid
+
+Overshoot: <b>9 - 6 = 3</b> units (1.5U top + 1.5U bottom)
+The center bean extends <b>3</b> half-units beyond each side bean.
+
+Stem height = <b>1U</b> = 1/9 of center bean height</div>
+</section>
+
+<section id="s3"><div class="sn">Layer 3 — Horizontal grid</div><h2>3 columns</h2>
+<p class="ld">The mark divides into 3 equal columns. One bean per column. Each bean is a third of the composition.</p>
+<div class="fig"><svg viewBox="0 0 640 340" id="d3"></svg></div>
+<div class="note">Total mark width = 3 columns
+Each bean centered in its column
+Gap = natural spacing between columns
+
+Horizontal: <b>3</b> zones
+Vertical: <b>9</b> units
+Grid cells: 3 x 9 = <b>27</b> -> 2+7 = <b>9</b></div>
+</section>
+
+<section id="s4"><div class="sn">Layer 4 — The oscillation</div><h2>3 swings to 6, 9 holds</h2>
+<p class="ld">Left bean is 3 — green, structure. Right bean is 6 — green, flow. Center bean is 9 — gold, the stillpoint. The sides oscillate; the center absorbs.</p>
+<div class="fig"><svg viewBox="0 0 640 320" id="d4"></svg></div>
+<div class="note">Left bean  = <b>3</b> (green, form, mi)
+Right bean = <b>6</b> (green, flow, ro)
+Center     = <b>9</b> (gold, field, ku)
+
+3 x 2 = 6    6 x 2 = 12 -> 3    (oscillation)
+9 x 2 = 18 -> 9                  (stillpoint)
+
+Together: <b>mi-ro-ku = 369 = Miroku = Maitreya</b></div>
+</section>
+
+<section id="s5"><div class="sn">Layer 5 — The triangle</div><h2>Tesla's governing triangle</h2>
+<p class="ld">Connect the three bean centers. They form the same triangle that governs the number wheel — 3, 6, 9 standing apart from the material cycle.</p>
+<div class="fig"><svg viewBox="0 0 640 360" id="d5"></svg></div>
+<div class="note">On Tesla's number wheel:
+  1-2-4-8-7-5 = the doubling hexagon (material)
+  3-6-9 = the governing triangle (field)
+
+In the mark:
+  The 3 bean centers form <b>a triangle</b>.
+  The center bean sits higher (taller bean = higher center).
+  The triangle points upward — like the 9 at the apex.</div>
+</section>
+
+<section id="s6"><div class="sn">Layer 6 — 9 anchor points</div><h2>9 points define everything</h2>
+<p class="ld">Exactly 9 points fully determine the mark: 3 tops, 3 centers, 3 bottoms. No more, no less.</p>
+<div class="fig"><svg viewBox="0 0 640 340" id="d6"></svg></div>
+<div class="note"><b>9 anchor points:</b>
+  3 bean tops     (where each bean peaks)
+  3 bean centers  (the widest point of each bean)
+  3 bean bottoms  (where each bean ends)
+
+From these 9 points, every curve can be derived.
+The pod, the stem, the clear space — all computed from 9.</div>
+</section>
+
+<section id="s7"><div class="sn">Layer 7 — Proportional rules</div><h2>Every measure encodes 369</h2>
+<p class="ld">Gap, padding, stem, radius — every dimension is a fraction involving 3, 6, or 9.</p>
+<div class="fig"><svg viewBox="0 0 640 100" id="d7"></svg></div>
+<div class="note">Bean gap      = R / <b>6</b>         (1/6 of side bean width)
+Pod padding   = R / <b>9</b>         (1/9 of side bean width)
+Stem height   = center H / <b>9</b>  (1/9 of center bean height)
+Center scale  = phi = side x <b>1.618</b>  (phi^2 -> 2.618 -> 2+6+1+8=17 -> 8... close)
+Bean aspect   = sqrt(<b>3</b>) : 1
+Bean count    = <b>3</b>
+Circle count  = <b>6</b>
+Total count   = <b>9</b>
+Grid cells    = <b>3</b> x <b>9</b> = 27 -> <b>9</b></div>
+</section>
+
+<section id="s8"><div class="sn">Complete</div><h2>The 369 mark</h2>
+<p class="ld">Seven layers of 3-6-9 encoded into a single pod. Geometry is structure. Narrative is meaning. Together they are the brand.</p>
+<div class="fig" style="padding:clamp(40px,7vw,72px) clamp(20px,3vw,36px);background:rgba(255,255,255,.015)">
+<svg viewBox="0 0 640 380" id="d8"></svg>
+</div>
+<div class="note"><b>Structure:</b> 3 beans, 6 circles, 9 total, sqrt(3) aspect, phi scale, 60 deg
+<b>Grid:</b> 9 vertical units, 3 horizontal columns, 27->9 cells
+<b>Identity:</b> left=3 (mi), center=9 (ku), right=6 (ro) = Miroku
+<b>Dynamics:</b> 3 and 6 oscillate (green), 9 holds (gold)
+<b>Topology:</b> 9 anchor points define every curve
+<b>Proportions:</b> gap=R/6, padding=R/9, stem=H/9
+<b>Meaning:</b> 369 = Miroku = Maitreya = the future Buddha</div>
+</section>
+
+</div>
+<div class="fin">edamame — the 369 mark — 2026</div>
+
+<script>
+var PHI=(1+Math.sqrt(5))/2,S3=Math.sqrt(3),PI=Math.PI;
+var W=44, WC=W*PHI, GAP=W/6, PAD=W/9;
+var CX=320, CY=190;
+var HS=W*S3, HC=WC*S3;
+var STEM=HC/9;
+var TOTAL=W+GAP+WC+GAP+W;
+var LX=CX-TOTAL/2+W/2, RX=CX+TOTAL/2-W/2;
+var UNIT=HC/9;
+
+function f(n){return n.toFixed(1)}
+function vp(cx,cy,bw,r){var c=bw/(2*r);if(c>=1)return null;var A=Math.acos(c);var t=cy-r*Math.sin(A),b=cy+r*Math.sin(A);return{d:'M'+f(cx)+' '+f(t)+'A'+f(r)+' '+f(r)+' 0 0 0 '+f(cx)+' '+f(b)+'A'+f(r)+' '+f(r)+' 0 0 0 '+f(cx)+' '+f(t)+'Z',top:t,bot:b};}
+function bean(cx,cy,bw,r,fill,stroke,sw){var v=vp(cx,cy,bw,r);return v?'<path d="'+v.d+'" fill="'+fill+'" stroke="'+(stroke||'none')+'" stroke-width="'+(sw||.5)+'"/>':'';}
+function ci(x,y,r,s,sw,o,dash){return '<circle cx="'+f(x)+'" cy="'+f(y)+'" r="'+f(r)+'" fill="none" stroke="'+s+'" stroke-width="'+sw+'" opacity="'+o+'"'+(dash?' stroke-dasharray="3 2"':'')+'/>';}
+function dot(x,y,r,c,o){return '<circle cx="'+f(x)+'" cy="'+f(y)+'" r="'+r+'" fill="'+c+'" opacity="'+(o||1)+'"/>';}
+function tx(x,y,t,c,sz,fw,an,ff){return '<text x="'+f(x)+'" y="'+f(y)+'" fill="'+c+'" font-family="'+(ff||'DM Sans')+'" font-size="'+(sz||11)+'" font-weight="'+(fw||400)+'" text-anchor="'+(an||'middle')+'" dominant-baseline="central">'+t+'</text>';}
+function ln(x1,y1,x2,y2,s,sw,o,dash){return '<line x1="'+f(x1)+'" y1="'+f(y1)+'" x2="'+f(x2)+'" y2="'+f(y2)+'" stroke="'+s+'" stroke-width="'+sw+'" opacity="'+o+'"'+(dash?' stroke-dasharray="'+dash+'"':'')+'/>';}
+
+function drawFull(cx,cy,sc,dark,showWord,showTag){
+  var w=W*sc,wc=WC*sc,gap=GAP*sc,pad=PAD*sc;
+  var tot=w+gap+wc+gap+w;
+  var lx=cx-tot/2+w/2,rx=cx+tot/2-w/2;
+  var hc=wc*S3,hs=w*S3;
+  var stem=hc/9;
+  var gF='#4A7C59',gS='#3A6349',aF='#C4A35A',aS='#b0913a';
+  var podS=dark?'#4A7C59':'#3A6349';
+  var podF=dark?'rgba(74,124,89,.06)':'rgba(74,124,89,.04)';
+  var txC=dark?'#ddd8ce':'#2D2D2A';
+  var tagC=dark?'rgba(255,255,255,.18)':'rgba(0,0,0,.2)';
+  var podRx=((tot/2)+pad)*0.92;
+  var podRy=(hc/2+pad);
+  var s='';
+  s+='<ellipse cx="'+f(cx)+'" cy="'+f(cy)+'" rx="'+f(podRx)+'" ry="'+f(podRy)+'" fill="'+podF+'" stroke="'+podS+'" stroke-width="'+(1.6*sc)+'"/>';
+  var sy=cy-podRy;
+  s+='<path d="M'+f(cx)+' '+f(sy)+' C'+f(cx+4*sc)+' '+f(sy-stem*.5)+' '+f(cx+2*sc)+' '+f(sy-stem+sc)+' '+f(cx+6*sc)+' '+f(sy-stem)+'" stroke="'+podS+'" stroke-width="'+(1.3*sc)+'" fill="none" stroke-linecap="round"/>';
+  s+=bean(lx,cy,w,w,gF,gS,.5*sc);
+  s+=bean(cx,cy,wc,wc,aF,aS,.5*sc);
+  s+=bean(rx,cy,w,w,gF,gS,.5*sc);
+  if(showWord){
+    s+='<text x="'+f(cx)+'" y="'+f(cy+podRy+22*sc)+'" text-anchor="middle" font-family="DM Sans" font-size="'+(24*sc)+'" font-weight="700" fill="'+txC+'" letter-spacing="-0.3">edamame</text>';
+    if(showTag)s+='<text x="'+f(cx)+'" y="'+f(cy+podRy+38*sc)+'" text-anchor="middle" font-family="DM Sans" font-size="'+(7*sc)+'" fill="'+tagC+'" letter-spacing="1.2">YOUR APPS. YOUR RULES. NO CODE.</text>';
+  }
+  return s;
+}
+
+function drawBeans(cx,cy){
+  var s='';
+  s+=bean(cx-TOTAL/2+W/2,cy,W,W,'rgba(74,124,89,.35)','#4A7C59',.8);
+  s+=bean(cx,cy,WC,WC,'rgba(196,163,90,.3)','#C4A35A',.8);
+  s+=bean(cx+TOTAL/2-W/2,cy,W,W,'rgba(74,124,89,.35)','#4A7C59',.8);
+  return s;
+}
+
+// Mark dark/light
+document.getElementById('mark-d').innerHTML=drawFull(100,110,.82,true,true,true);
+document.getElementById('mark-l').innerHTML=drawFull(100,110,.82,false,true,true);
+
+// D1: Count
+(function(){var s='';
+s+=ci(LX-W/2,CY,W,'#6B9B7A',.5,.12);s+=ci(LX+W/2,CY,W,'#6B9B7A',.5,.12);
+s+=ci(CX-WC/2,CY,WC,'#C4A35A',.5,.08,true);s+=ci(CX+WC/2,CY,WC,'#C4A35A',.5,.08,true);
+s+=ci(RX-W/2,CY,W,'#6B9B7A',.5,.12);s+=ci(RX+W/2,CY,W,'#6B9B7A',.5,.12);
+s+=drawBeans(CX,CY);
+for(var i=1;i<=6;i++){
+  var positions=[[LX-W/2,CY],[LX+W/2,CY],[CX-WC/2,CY],[CX+WC/2,CY],[RX-W/2,CY],[RX+W/2,CY]];
+  var p=positions[i-1];
+  s+=tx(p[0],p[1]-((i<=2)?W:WC)-10,i.toString(),'rgba(255,255,255,.12)',9,600);
+}
+var bx=490,by=80;
+s+=tx(bx,by,'3 beans','#6B9B7A',12,600,'start');
+s+=tx(bx,by+20,'6 circles','#6B9B7A',12,400,'start');
+s+=tx(bx,by+40,'3 + 6 = 9','#C4A35A',12,700,'start');
+document.getElementById('d1').innerHTML=s;})();
+
+// D2: 9-unit vertical grid
+(function(){var s='';var cy=CY;
+for(var i=0;i<=9;i++){
+  var y=cy-HC/2+i*UNIT;
+  var strong=(i===0||i===9||i===3||i===6);
+  s+=ln(CX-TOTAL/2-30,y,CX+TOTAL/2+30,y,'#fff',.3,strong?.06:.02);
+  if(i<9)s+=tx(CX+TOTAL/2+42,y+UNIT/2,(i+1).toString(),(i>=0)?'rgba(255,255,255,.08)':'rgba(255,255,255,.04)',8);
+}
+s+=drawBeans(CX,cy);
+var vC=vp(CX,cy,WC,WC),vL=vp(LX,cy,W,W);
+s+=ln(CX+TOTAL/2+55,cy-HC/2,CX+TOTAL/2+55,cy+HC/2,'#C4A35A',.4,.25);
+s+=tx(CX+TOTAL/2+68,cy,'9U','#C4A35A',10,700);
+s+=ln(CX+TOTAL/2+80,vL.top,CX+TOTAL/2+80,vL.bot,'#6B9B7A',.4,.2);
+s+=tx(CX+TOTAL/2+96,cy,'~6U','#6B9B7A',10,600);
+var diff=(vL.top-(cy-HC/2));
+s+='<line x1="'+(CX-TOTAL/2-24)+'" y1="'+(cy-HC/2)+'" x2="'+(CX-TOTAL/2-24)+'" y2="'+f(vL.top)+'" stroke="#C4A35A" stroke-width=".4" opacity=".2"/>';
+s+=tx(CX-TOTAL/2-38,(cy-HC/2+vL.top)/2,'~1.5','rgba(196,163,90,.35)',8,600);
+s+='<line x1="'+(CX-TOTAL/2-24)+'" y1="'+f(vL.bot)+'" x2="'+(CX-TOTAL/2-24)+'" y2="'+(cy+HC/2)+'" stroke="#C4A35A" stroke-width=".4" opacity=".2"/>';
+s+=tx(CX-TOTAL/2-38,(cy+HC/2+vL.bot)/2,'~1.5','rgba(196,163,90,.35)',8,600);
+s+=tx(CX,cy+HC/2+30,'Difference = 3U (center extends 1.5U beyond each side)','rgba(255,255,255,.15)',10);
+document.getElementById('d2').innerHTML=s;})();
+
+// D3: 3-column grid
+(function(){var s='';var cy=CY;
+var colW=TOTAL/3;
+for(var i=0;i<=3;i++){
+  var x=CX-TOTAL/2+i*colW;
+  s+=ln(x,cy-HC/2-10,x,cy+HC/2+10,'#fff',.3,.05);
+  if(i<3)s+=tx(x+colW/2,cy-HC/2-22,(i+1).toString(),'rgba(255,255,255,.08)',9,600);
+}
+s+=drawBeans(CX,cy);
+s+=tx(LX,cy+HC/2+20,'col 1','rgba(255,255,255,.1)',9);
+s+=tx(CX,cy+HC/2+20,'col 2','rgba(255,255,255,.1)',9);
+s+=tx(RX,cy+HC/2+20,'col 3','rgba(255,255,255,.1)',9);
+s+=tx(CX,cy+HC/2+42,'3 columns x 9 rows = 27 cells -> 2+7 = 9','rgba(255,255,255,.15)',10);
+document.getElementById('d3').innerHTML=s;})();
+
+// D4: Oscillation
+(function(){var s='';var cy=CY;
+s+=drawBeans(CX,cy);
+s+=tx(LX,cy-HS/2-20,'3','#6B9B7A',18,700);
+s+=tx(CX,cy-HC/2-20,'9','#C4A35A',22,700);
+s+=tx(RX,cy-HS/2-20,'6','#6B9B7A',18,700);
+s+=tx(LX,cy+HS/2+18,'mi','rgba(255,255,255,.2)',11,400);
+s+=tx(CX,cy+HC/2+18,'ku','rgba(196,163,90,.4)',11,500);
+s+=tx(RX,cy+HS/2+18,'ro','rgba(255,255,255,.2)',11,400);
+var arrY=cy+HC/2+44;
+s+='<path d="M'+f(LX+12)+' '+f(arrY)+' Q'+f(CX)+' '+f(arrY+16)+' '+f(RX-12)+' '+f(arrY)+'" stroke="#6B9B7A" stroke-width=".6" fill="none" opacity=".2"/>';
+s+=tx(CX,arrY+22,'oscillation','#6B9B7A',9,500);
+s+=ln(CX,cy+HC/2+2,CX,arrY-6,'#C4A35A',.4,.15,'2 2');
+s+=tx(CX,arrY-12,'stillpoint','#C4A35A',9,500);
+s+=tx(CX,cy+HC/2+70,'mi-ro-ku = Miroku = Maitreya','#C4A35A',11,600,'middle','Noto Sans JP, DM Sans');
+document.getElementById('d4').innerHTML=s;})();
+
+// D5: Tesla triangle
+(function(){var s='';var cy=CY;
+s+=drawBeans(CX,cy);
+var vL=vp(LX,cy,W,W),vC=vp(CX,cy,WC,WC),vR=vp(RX,cy,W,W);
+var pts=[[LX,cy],[CX,(vC.top+cy)/2],[RX,cy]];
+s+='<polygon points="'+pts.map(function(p){return f(p[0])+','+f(p[1])}).join(' ')+'" fill="none" stroke="#C4A35A" stroke-width="1" opacity=".25"/>';
+pts.forEach(function(p,i){s+=dot(p[0],p[1],4,'#C4A35A',.5);});
+s+=tx(LX-16,cy+14,'3','#C4A35A',12,700,'end');
+s+=tx(CX+14,(vC.top+cy)/2-8,'9','#C4A35A',12,700,'start');
+s+=tx(RX+16,cy+14,'6','#C4A35A',12,700,'start');
+s+=ci(CX,cy+10,TOTAL/2+10,'rgba(255,255,255,.03)',.3,1);
+var wheelR=TOTAL/2+10;
+for(var i=0;i<9;i++){
+  var ang=-PI/2+i*2*PI/9;
+  var px=CX+wheelR*Math.cos(ang),py=(cy+10)+wheelR*Math.sin(ang);
+  var is369=(i===2||i===5||i===8);
+  if(!is369)s+=dot(px,py,1.5,'rgba(255,255,255,.06)',1);
+}
+document.getElementById('d5').innerHTML=s;})();
+
+// D6: 9 anchor points
+(function(){var s='';var cy=CY;
+s+=drawBeans(CX,cy);
+var vL=vp(LX,cy,W,W),vC=vp(CX,cy,WC,WC),vR=vp(RX,cy,W,W);
+var anchors=[
+  [LX,vL.top,'1'],[CX,vC.top,'2'],[RX,vR.top,'3'],
+  [LX,cy,'4'],[CX,cy,'5'],[RX,cy,'6'],
+  [LX,vL.bot,'7'],[CX,vC.bot,'8'],[RX,vR.bot,'9']
+];
+anchors.forEach(function(a){
+  s+=dot(a[0],a[1],5,'#C4A35A',.4);
+  s+=tx(a[0],a[1],a[2],'#C4A35A',8,700);
+});
+s+=tx(CX,cy+HC/2+30,'9 points. Every curve derived from these.','rgba(255,255,255,.15)',10);
+document.getElementById('d6').innerHTML=s;})();
+
+// D7: Proportional rules (compact)
+(function(){var s='';
+var items=[
+  ['Gap = R/6',GAP.toFixed(1)+'px'],
+  ['Padding = R/9',PAD.toFixed(1)+'px'],
+  ['Stem = H/9',STEM.toFixed(1)+'px'],
+  ['Aspect = sqrt(3)',S3.toFixed(3)],
+  ['Scale = phi',PHI.toFixed(3)],
+  ['Grid = 3x9','27->9']
+];
+items.forEach(function(it,i){
+  var x=60+i*100;
+  s+=tx(x,35,it[0],'rgba(255,255,255,.25)',9,400);
+  s+=tx(x,52,it[1],'#C4A35A',10,700);
+});
+document.getElementById('d7').innerHTML=s;})();
+
+// D8: Final clean mark
+document.getElementById('d8').innerHTML=drawFull(320,170,.95,true,true,true);
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v');});},{threshold:.08});
+var secs=document.querySelectorAll('section');
+for(var i=0;i<secs.length;i++){io.observe(secs[i]);}
+</script>
+</body>
+</html>
