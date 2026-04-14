@@ -1,110 +1,283 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ブログ | キントーン フィリピン | 日系企業向けガイド | Edamame Inc.</title>
-    <meta name="description" content="フィリピンの日系企業向け業務改善ガイド。キントーン導入事例、DX、製造業、CRM、ワークフロー自動化、フィリピン進出のIT準備まで。日本語で解説。">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://edamame-jp.com/kintone-philippines/ja/blog/">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YF1198H5CL"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-YF1198H5CL');</script>
-    <meta property="og:title" content="ブログ | キントーン フィリピン">
-    <meta property="og:description" content="フィリピンの日系企業向け業務改善ガイド。日本語で解説。">
-    <meta property="og:locale" content="ja_JP">
-    <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-        :root{--primary:#4A7C59;--primary-dark:#3d6b4a;--primary-light:#e8f5e9;--text:#333;--text-light:#666;--bg:#f8f9fa;--white:#fff;--border:#e0e0e0;--kintone:#FF6B35}
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:'Noto Sans JP','DM Sans',sans-serif;color:var(--text);line-height:1.8;background:var(--bg)}
-        .header{background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding:16px 24px;position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.15)}
-        .header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
-        .logo{display:flex;align-items:center;gap:10px;color:white;text-decoration:none;font-weight:700;font-size:1.1rem}
-        .nav{display:flex;gap:20px;align-items:center}
-        .nav a{color:rgba(255,255,255,0.9);text-decoration:none;font-size:0.9rem}
-        .btn-cta{background:var(--kintone)!important;color:white!important;padding:8px 20px;border-radius:6px;font-weight:600}
-        .hero{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);color:white;padding:60px 24px;text-align:center}
-        .hero-inner{max-width:800px;margin:0 auto}
-        .hero h1{font-size:2rem;line-height:1.4;margin-bottom:16px;font-weight:800}
-        .hero p{font-size:1.05rem;opacity:0.9;max-width:600px;margin:0 auto;line-height:1.7}
-        .main{max-width:900px;margin:0 auto;padding:40px 24px}
-        .post-grid{display:grid;grid-template-columns:1fr;gap:20px}
-        .post-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:28px;text-decoration:none;color:var(--text);transition:transform 0.2s,box-shadow 0.2s;display:block}
-        .post-card:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,0.1)}
-        .post-badge{display:inline-block;background:var(--primary-light);color:var(--primary-dark);font-size:0.75rem;font-weight:700;padding:3px 10px;border-radius:100px;margin-bottom:10px}
-        .post-badge.new{background:var(--kintone);color:white}
-        .post-card h2{font-size:1.2rem;font-weight:700;margin:0 0 8px;line-height:1.4;border:none;padding:0;color:var(--text)}
-        .post-card p{font-size:0.9rem;color:var(--text-light);margin:0 0 12px;line-height:1.6}
-        .post-meta{font-size:0.8rem;color:var(--text-light);display:flex;gap:16px}
-        .footer{background:var(--primary-dark);color:rgba(255,255,255,0.8);padding:40px 24px;text-align:center}
-        .footer-inner{max-width:800px;margin:0 auto}
-        .footer-links{margin-top:16px;display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-        .footer-links a{color:rgba(255,255,255,0.7);text-decoration:none;font-size:0.9rem}
-        @media(max-width:768px){.hero h1{font-size:1.5rem}.nav a:not(.btn-cta){display:none}}
-    </style>
-    <link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/blog/">
-    <link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/blog/">
-    <link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/blog/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YF1198H5CL"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-YF1198H5CL');</script>
+<title>ブログ — フィリピンのノーコード・DXガイド | edamame</title>
+<meta name="description" content="フィリピンのビジネスアプリ構築、ワークフロー自動化、DX推進に関する専門ガイド。日系企業・フィリピン企業向け。">
+<meta name="author" content="Edamame Inc.">
+<link rel="canonical" href="https://edamame-jp.com/kintone-philippines/ja/blog/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://edamame-jp.com/kintone-philippines/ja/blog/">
+<meta property="og:title" content="ブログ — フィリピンのノーコード・DXガイド | edamame">
+<meta property="og:image" content="https://edamame-jp.com/og-image-kintone-philippines.png">
+<meta property="og:site_name" content="edamame">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://edamame-jp.com/og-image-kintone-philippines.png">
+<meta name="theme-color" content="#4A7C59">
+<link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/blog/">
+<link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/blog/">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #FAFAF8; --bg-alt: #F0EDE8; --dark: #1A1A18; --text: #2D2D2A; --muted: #6B6B66; --light: #8A8A85;
+    --primary: #4A7C59; --primary-light: #6B9B7A; --primary-dark: #3A6349;
+    --accent: #C4A35A; --kintone: #ED1C24; --kintone-light: #FF5A5F;
+    --font: 'Noto Sans JP', 'DM Sans', sans-serif;
+    --font-display: 'DM Serif Display', Georgia, serif;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    --shadow-md: 0 8px 24px rgba(0,0,0,0.06); --radius: 16px;
+}
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:var(--font); background:var(--bg); color:var(--text); line-height:1.8; -webkit-font-smoothing:antialiased; }
+a { color:inherit; text-decoration:none; }
+.container { max-width:1280px; margin:0 auto; padding:0 clamp(1.5rem,5vw,4rem); }
+
+.nav { position:sticky; top:0; z-index:1000; background:rgba(250,250,248,0.97); backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px); border-bottom:1px solid rgba(0,0,0,0.05); padding:0.85rem 0; }
+.nav-inner { display:flex; align-items:center; justify-content:space-between; }
+.logo { display:flex; align-items:center; gap:0.65rem; }
+.logo-icon { width:42px; height:35px; }
+.logo-text { font-size:1.35rem; font-weight:700; letter-spacing:-0.02em; color:var(--dark); font-family:'DM Sans',sans-serif; }
+.nav-links { display:flex; align-items:center; gap:2rem; list-style:none; }
+.nav-link { font-size:0.85rem; font-weight:600; color:var(--muted); transition:color 0.3s; }
+.nav-link:hover { color:var(--text); }
+.nav-link.active { color:var(--primary); }
+.nav-cta { background:linear-gradient(135deg, #ED1C24, #FF5A5F); color:#fff; padding:0.6rem 1.25rem; border-radius:100px; font-size:0.85rem; font-weight:600; transition:all 0.3s var(--ease); }
+.nav-cta:hover { transform:translateY(-1px); box-shadow:0 6px 20px rgba(237,28,36,0.25); }
+.lang-sw { display:flex; gap:3px; background:var(--bg-alt); border-radius:100px; padding:3px; margin-left:1rem; }
+.lang-btn { padding:0.35rem 0.9rem; border-radius:100px; font-size:0.8rem; font-weight:600; color:var(--muted); transition:all 0.3s; font-family:'DM Sans',sans-serif; }
+.lang-btn.active { background:var(--primary); color:#fff; }
+.mobile-toggle { display:none; flex-direction:column; gap:5px; cursor:pointer; padding:10px; }
+.mobile-toggle span { width:22px; height:2px; background:var(--dark); border-radius:2px; }
+.mobile-menu { position:fixed; inset:0; background:var(--bg); z-index:9999; display:flex; flex-direction:column; align-items:center; justify-content:center; opacity:0; visibility:hidden; transition:all 0.4s var(--ease); }
+.mobile-menu.active { opacity:1; visibility:visible; }
+.mobile-menu-close { position:absolute; top:1.5rem; right:1.5rem; width:48px; height:48px; display:flex; align-items:center; justify-content:center; cursor:pointer; }
+.mobile-menu-links { list-style:none; text-align:center; }
+.mobile-menu-links li { margin-bottom:1.5rem; }
+.mobile-menu-links a { font-size:1.4rem; font-weight:700; color:var(--text); }
+.mobile-cta-btn { display:inline-block; margin-top:12px; padding:14px 28px !important; background:linear-gradient(135deg,var(--primary),var(--primary-dark)) !important; color:#fff !important; border-radius:100px; font-size:1rem !important; }
+
+.hero { background:linear-gradient(145deg, #0d2818 0%, #1a3a2a 40%, #0a1e15 100%); color:#fff; padding:clamp(80px,12vw,120px) 0 clamp(50px,8vw,80px); position:relative; overflow:hidden; }
+.hero::before { content:''; position:absolute; inset:0; background:repeating-linear-gradient(135deg, transparent, transparent 40px, rgba(255,255,255,0.015) 40px, rgba(255,255,255,0.015) 80px); }
+.hero__inner { position:relative; max-width:680px; }
+.hero__badge { display:inline-flex; align-items:center; gap:8px; background:rgba(196,163,90,0.15); border:1px solid rgba(196,163,90,0.3); padding:6px 16px; border-radius:100px; font-size:0.8rem; font-weight:600; color:var(--accent); margin-bottom:1.5rem; letter-spacing:0.05em; }
+.hero h1 { font-family:var(--font); font-size:clamp(1.8rem,4vw,2.6rem); line-height:1.3; margin-bottom:1rem; font-weight:700; }
+.hero p { font-size:clamp(0.95rem,1.8vw,1.1rem); color:rgba(255,255,255,0.7); max-width:520px; line-height:1.8; }
+.hero__stats { display:flex; gap:clamp(20px,4vw,40px); margin-top:2.5rem; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.08); }
+.stat__num { font-family:'DM Serif Display',serif; font-size:1.8rem; color:var(--accent); }
+.stat__label { font-size:0.75rem; color:rgba(255,255,255,0.5); margin-top:2px; }
+
+.section { padding:clamp(40px,6vw,64px) 0; }
+.section__head { margin-bottom:clamp(24px,4vw,36px); }
+.section__title { font-size:clamp(1.4rem,3vw,1.8rem); font-weight:700; color:var(--dark); margin-bottom:4px; }
+.section__sub { font-size:0.9rem; color:var(--muted); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:20px; }
+.card { display:flex; flex-direction:column; padding:clamp(20px,3vw,28px); border-radius:var(--radius); border:1px solid rgba(0,0,0,0.06); background:var(--bg); transition:all 0.3s var(--ease); }
+.card:hover { transform:translateY(-3px); box-shadow:var(--shadow-md); border-color:rgba(74,124,89,0.15); }
+.card__tags { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+.tag { font-size:0.68rem; font-weight:600; padding:3px 8px; border-radius:4px; background:var(--bg-alt); color:var(--muted); }
+.card__title { font-size:clamp(0.95rem,1.5vw,1.05rem); font-weight:700; line-height:1.5; color:var(--dark); margin-bottom:8px; }
+.card:hover .card__title { color:var(--primary); }
+.card__desc { font-size:0.85rem; color:var(--muted); line-height:1.7; flex:1; margin-bottom:12px; }
+.card__cta { font-size:0.8rem; font-weight:600; color:var(--primary); margin-top:auto; }
+
+.cta-banner { background:linear-gradient(135deg, var(--primary-dark), var(--primary)); padding:clamp(40px,6vw,60px) 0; text-align:center; }
+.cta-banner h2 { color:#fff; font-size:clamp(1.3rem,3vw,1.8rem); margin-bottom:8px; font-weight:700; }
+.cta-banner p { color:rgba(255,255,255,0.7); margin-bottom:24px; font-size:0.95rem; }
+.cta-btn { display:inline-flex; padding:14px 32px; background:#fff; color:var(--primary-dark); border-radius:100px; font-weight:700; font-size:0.95rem; transition:all 0.3s var(--ease); }
+.cta-btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.15); }
+
+.footer { background:var(--dark); color:rgba(255,255,255,0.7); padding:clamp(48px,8vw,80px) 0 32px; }
+.footer .logo-text { color:#fff; }
+.footer-grid { display:grid; grid-template-columns:2fr 1fr 1fr 1fr; gap:3rem; margin-bottom:3rem; }
+.footer-brand p { font-size:0.85rem; line-height:1.8; margin:1.25rem 0; max-width:280px; color:rgba(255,255,255,0.5); }
+.footer-social { display:flex; gap:0.75rem; }
+.social-link { width:36px; height:36px; background:rgba(255,255,255,0.08); border-radius:50%; display:flex; align-items:center; justify-content:center; transition:all 0.3s; }
+.social-link:hover { background:var(--kintone); transform:translateY(-2px); }
+.social-link svg { width:16px; height:16px; }
+.footer-title { font-size:0.72rem; text-transform:uppercase; letter-spacing:0.15em; margin-bottom:1.25rem; color:rgba(255,255,255,0.35); font-weight:700; }
+.footer-links { list-style:none; }
+.footer-links li { margin-bottom:0.5rem; }
+.footer-links a, .footer-links span { color:rgba(255,255,255,0.6); font-size:0.85rem; transition:color 0.3s; }
+.footer-links a:hover { color:#fff; }
+.footer-bottom { display:flex; justify-content:space-between; align-items:center; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.06); font-size:0.8rem; color:rgba(255,255,255,0.3); }
+.footer-legal { display:flex; gap:1.5rem; }
+.footer-legal a { color:rgba(255,255,255,0.3); }
+
+@media (max-width:1024px) { .footer-grid { grid-template-columns:1fr 1fr; } }
+@media (max-width:768px) {
+    .nav-links { display:none; } .mobile-toggle { display:flex; }
+    .lang-sw { margin-left:auto; margin-right:8px; }
+    .grid { grid-template-columns:1fr; } .hero__stats { flex-wrap:wrap; }
+    .footer-grid { grid-template-columns:1fr; }
+    .footer-bottom { flex-direction:column; gap:1rem; text-align:center; }
+}
+</style>
 </head>
 <body>
-<header class="header"><div class="header-inner"><a href="/kintone-philippines/ja/" class="logo"><span style="font-size:1.5rem;">🌱</span><span>キントーン フィリピン<small style="display:block;font-size:0.55rem;font-weight:400;opacity:0.85;margin-top:-2px;">edamame — 公式パートナー</small></span></a><nav class="nav"><a href="/kintone-philippines/ja/">ホーム</a><a href="/kintone-philippines/ja/blog/">ブログ</a><a href="/kintone-philippines/en/" style="opacity:0.7;">EN</a><a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="btn-cta">無料相談</a></nav></div></header>
+
+<nav class="nav">
+<div class="container"><div class="nav-inner">
+<a href="/kintone-philippines/ja/" class="logo">
+<svg class="logo-icon" viewBox="0 0 108 90" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12 C0 27, 0 63, 9 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="18" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<rect x="42" y="18" width="24" height="54" rx="12" fill="#C4A35A"/>
+<rect x="72" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<path d="M99 12 C108 27, 108 63, 99 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
+<span class="logo-text">edamame</span>
+</a>
+<ul class="nav-links">
+<li><a href="/kintone-philippines/ja/" class="nav-link">ホーム</a></li>
+<li><a href="/kintone-philippines/ja/blog/" class="nav-link active">ブログ</a></li>
+<li><a href="/kintone-philippines/en/customers/" class="nav-link">導入実績</a></li>
+<li><a href="https://calendly.com/kintoneph/freekintoneappconsultation" target="_blank" class="nav-cta">無料相談</a></li>
+</ul>
+<div class="lang-sw">
+<a href="/kintone-philippines/en/blog/" class="lang-btn">EN</a>
+<a href="/kintone-philippines/ja/blog/" class="lang-btn active">日本語</a>
+</div>
+<div class="mobile-toggle" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+</div></div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu-close" onclick="toggleMobileMenu()">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</div>
+<ul class="mobile-menu-links">
+<li><a href="/kintone-philippines/ja/" onclick="toggleMobileMenu()">ホーム</a></li>
+<li><a href="/kintone-philippines/ja/blog/" onclick="toggleMobileMenu()">ブログ</a></li>
+<li><a href="/kintone-philippines/en/customers/" onclick="toggleMobileMenu()">導入実績</a></li>
+<li><a href="https://calendly.com/kintoneph/freekintoneappconsultation" onclick="toggleMobileMenu()" class="mobile-cta-btn">無料相談 →</a></li>
+</ul>
+</div>
 
 <section class="hero">
-    <div class="hero-inner">
-        <h1>フィリピンの日系企業向け<br>業務改善ガイド</h1>
-        <p>キントーン導入事例、DX、製造業、営業管理、ワークフロー自動化まで。フィリピン拠点の業務課題を解決するヒントを日本語でお届けします。</p>
-    </div>
+<div class="container"><div class="hero__inner">
+<div class="hero__badge">🏆 2024年 グローバルパートナー・オブ・ザ・イヤー</div>
+<h1>ナレッジベース</h1>
+<p>フィリピンのビジネスアプリ構築、ワークフロー自動化、DX推進に関する専門ガイド。日系企業・現地法人向け。</p>
+<div class="hero__stats">
+<div class="stat"><div class="stat__num">7</div><div class="stat__label">記事</div></div>
+<div class="stat"><div class="stat__num">3</div><div class="stat__label">言語対応</div></div>
+</div>
+</div></div>
 </section>
 
-<main class="main">
-<div class="post-grid">
+<section class="section">
+<div class="container">
+<div class="section__head"><h2 class="section__title">すべての記事</h2><p class="section__sub">フィリピン拠点のDX・業務改善ガイド</p></div>
+<div class="grid">
+<a href="/kintone-philippines/ja/blog/edamame-kintone-partner/" class="card">
 
-    <a href="/kintone-philippines/ja/blog/edamame-kintone-partner/" class="blog-card"><div class="blog-tag">パートナー</div><h3>なぜEdamame Inc.が選ばれるのか</h3><p>2024年世界最優秀パートナー。日本人CEO。JavaScript開発対応。ORIX Metro・ダイキン等の導入実績。</p></a><a href="/kintone-philippines/ja/blog/philippines-nikkei-dx/" class="post-card">
-        <span class="post-badge new">NEW</span>
-        <h2>🇯🇵 フィリピン日系企業のDX——なぜ「日本と同じやり方」では失敗するのか</h2>
-        <p>Excelと紙の申請書をそのまま持ち込んでいませんか？フィリピンの現場に合ったデジタル化の進め方を解説。</p>
-        <div class="post-meta"><span>📅 2026年4月</span><span>⏱ 10分</span></div>
-    </a>
+<h3 class="card__title">なぜEdamame Inc.が選ばれるのか</h3>
+<p class="card__desc">フィリピンでキントーン導入パートナーを選ぶなら、2024年グローバルパートナー・オブ・ザ・イヤー受賞のEdamame Inc.。日本人CEO、JavaScript開発対応、ORIX Metro・ダイキン等の実績。他パートナーとの違いを解説。</p>
+<span class="card__cta">記事を読む →</span></a>
+<a href="/kintone-philippines/ja/blog/philippines-nikkei-dx/" class="card">
 
-    <a href="/kintone-philippines/ja/blog/philippines-manufacturing-dx/" class="post-card">
-        <span class="post-badge new">NEW</span>
-        <h2>🏭 フィリピン工場の「見えない」をなくす——生産管理・品質管理をキントーンで</h2>
-        <p>紙の検査記録、Excelの生産日報、ホワイトボードの進捗管理。フィリピン製造業の現場をデジタルで変える。</p>
-        <div class="post-meta"><span>📅 2026年4月</span><span>⏱ 9分</span></div>
-    </a>
+<h3 class="card__title">フィリピン日系企業のDX・業務改善</h3>
+<p class="card__desc">フィリピンの日系企業が直面するExcel散乱・紙の承認・IT人材不足をキントーン（kintone）で解決。導入事例、費用比較、導入の流れを2024年グローバルパートナー・オブ・ザ・イヤー受賞のEdamame Inc.が日本語で徹底解説。</p>
+<span class="card__cta">記事を読む →</span></a>
+<a href="/kintone-philippines/ja/blog/philippines-manufacturing-dx/" class="card">
 
-    <a href="/kintone-philippines/ja/blog/philippines-crm-nihongo/" class="post-card">
-        <span class="post-badge new">NEW</span>
-        <h2>💼 「あの案件、どうなった？」を二度と聞かなくて済むように——フィリピンの顧客管理</h2>
-        <p>営業情報の属人化をなくし、組織的な営業体制を構築。Salesforceの1/10のコストで。</p>
-        <div class="post-meta"><span>📅 2026年4月</span><span>⏱ 10分</span></div>
-    </a>
+<h3 class="card__title">フィリピン製造業の生産管理・品質管理DX</h3>
+<p class="card__desc">フィリピンの製造業向け生産管理・品質管理・在庫管理をキントーンで実現。紙の記録をゼロに、リアルタイムで生産状況を把握。日本品質の現場管理をフィリピン工場で。</p>
+<span class="card__cta">記事を読む →</span></a>
+<a href="/kintone-philippines/ja/blog/philippines-crm-nihongo/" class="card">
 
-    <a href="/kintone-philippines/ja/blog/philippines-workflow-shinsei/" class="post-card">
-        <span class="post-badge new">NEW</span>
-        <h2>📝 「承認待ち」で止まる業務を、今日から加速させる——経費精算・ワークフロー</h2>
-        <p>購買申請、経費精算、有給申請——紙の承認フローをキントーンでデジタル化する方法。</p>
-        <div class="post-meta"><span>📅 2026年4月</span><span>⏱ 9分</span></div>
-    </a>
+<h3 class="card__title">フィリピンで使える顧客管理（CRM）</h3>
+<p class="card__desc">フィリピン拠点の顧客管理・営業管理をキントーンで構築。Salesforceの1/10のコストで、日本語対応の営業支援システムを導入。見込み客管理から受注後のフォローまで一元化。</p>
+<span class="card__cta">記事を読む →</span></a>
+<a href="/kintone-philippines/ja/blog/philippines-workflow-shinsei/" class="card">
 
-    <a href="/kintone-philippines/ja/blog/philippines-it-checklist/" class="post-card">
-        <span class="post-badge new">NEW</span>
-        <h2>🇵🇭 フィリピン進出のIT準備チェックリスト——必要なシステムと選び方</h2>
-        <p>新規拠点の立ち上げで本当に必要なIT環境とは？通信、システム、セキュリティの実践ガイド。</p>
-        <div class="post-meta"><span>📅 2026年4月</span><span>⏱ 10分</span></div>
-    </a>
+<h3 class="card__title">フィリピン拠点の経費精算・承認ワークフロー</h3>
+<p class="card__desc">フィリピン拠点の経費精算、購買申請、有給申請をキントーンでデジタル化。紙の申請書をゼロにして、承認スピードを3倍に。日本語対応の導入支援。</p>
+<span class="card__cta">記事を読む →</span></a>
+<a href="/kintone-philippines/ja/blog/philippines-it-checklist/" class="card">
 
-    <a href="/kintone-philippines/ja/blog/kintone-philippines-guide/" class="post-card">
-        <span class="post-badge">導入ガイド</span>
-        <h2>📘 キントーン フィリピン導入ガイド 2026——日系企業向け完全マニュアル</h2>
-        <p>導入手順、料金、他社比較、FAQ。フィリピンでキントーンを始めるために必要な情報をすべて網羅。</p>
-        <div class="post-meta"><span>📅 2026年2月</span><span>⏱ 15分</span></div>
-    </a>
+<h3 class="card__title">フィリピン進出のIT準備チェックリスト</h3>
+<p class="card__desc">フィリピンに新規進出する日系企業が知っておくべきIT環境の準備リスト。通信環境、業務システム、セキュリティ対策、コスト計画まで。現地パートナーが実体験に基づいて解説。</p>
+<span class="card__cta">記事を読む →</span></a>
+<a href="/kintone-philippines/ja/blog/kintone-philippines-guide/" class="card">
 
+<h3 class="card__title">キントーン フィリピン導入ガイド 2026</h3>
+<p class="card__desc">フィリピンでキントーン（kintone）を導入するなら、2024年グローバルパートナー・オブ・ザ・イヤー受賞のEdamame Inc.にお任せください。日本語・英語・フィリピン語対応。CRM、在庫管理、人事管理アプリを数日で構築。無料相談受付中。</p>
+<span class="card__cta">記事を読む →</span></a>
 </div>
-</main>
+</div>
+</section>
 
-<footer class="footer"><div class="footer-inner"><p><strong>Edamame Inc.</strong> — サイボウズ公式キントーンパートナー（フィリピン）</p><p style="margin-top:8px;font-size:0.9rem;">2024年 グローバルパートナー・オブ・ザ・イヤー 🏆</p><div class="footer-links"><a href="/kintone-philippines/ja/">ホーム</a><a href="/kintone-philippines/en/">English</a><a href="/kintone-philippines/ja/privacy-policy/">プライバシーポリシー</a><a href="https://calendly.com/kintoneph/freekintoneappconsultation">無料相談</a></div><p style="margin-top:20px;font-size:0.85rem;opacity:0.7;">© 2026 Edamame Inc. All rights reserved.</p></div></footer>
+<section class="cta-banner">
+<div class="container">
+<h2>キントーンの導入を検討しませんか？</h2>
+<p>無料の30分コンサルテーション — お客様のビジネスに合ったキントーン活用法をご提案します。</p>
+<a href="https://calendly.com/kintoneph/freekintoneappconsultation" target="_blank" class="cta-btn">無料相談を予約 →</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="/kintone-philippines/ja/" class="logo">
+<svg class="logo-icon" viewBox="0 0 108 90" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12 C0 27, 0 63, 9 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="18" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<rect x="42" y="18" width="24" height="54" rx="12" fill="#C4A35A"/>
+<rect x="72" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<path d="M99 12 C108 27, 108 63, 99 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
+<span class="logo-text">edamame</span>
+</a>
+<p>フィリピンの公式Kintoneパートナー。CRM、在庫、人事、会計、その他あらゆる業務アプリをひとつのプラットフォームで。</p>
+<div class="footer-social">
+<a href="https://ph.linkedin.com/company/kintonephilippines" class="social-link" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="https://www.facebook.com/kintoneph/" class="social-link" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">できること</h4>
+<ul class="footer-links">
+<li><a href="/kintone-philippines/ja/#possibilities">営業・顧客管理</a></li>
+<li><a href="/kintone-philippines/ja/#possibilities">在庫管理</a></li>
+<li><a href="/kintone-philippines/ja/#possibilities">人事・労務</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">会社情報</h4>
+<ul class="footer-links">
+<li><a href="/kintone-philippines/ja/">ホーム</a></li>
+<li><a href="/kintone-philippines/ja/blog/">ブログ</a></li>
+<li><a href="/kintone-philippines/ja/privacy-policy/">プライバシーポリシー</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4 class="footer-title">お問い合わせ</h4>
+<ul class="footer-links">
+<li><span>15F Jollibee Tower, Ortigas</span></li>
+<li><span>Metro Manila, Philippines</span></li>
+<li><a href="mailto:kintone@edamame-jp.com">kintone@edamame-jp.com</a></li>
+<li><a href="tel:+639288727958">+63 928 872 7958</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Edamame Inc. All rights reserved.</p>
+<div class="footer-legal">
+<a href="/kintone-philippines/ja/privacy-policy/">プライバシーポリシー</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+function toggleMobileMenu(){const m=document.getElementById('mobileMenu');m.classList.toggle('active');document.body.style.overflow=m.classList.contains('active')?'hidden':'';}
+</script>
+<script src="https://camille-chatbot.tom-arai.workers.dev/widget.js"></script>
 </body>
 </html>
