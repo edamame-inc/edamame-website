@@ -6,217 +6,279 @@
 <title>edamame — Logo Construction</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0b0f0d;--card:rgba(255,255,255,0.03);--border:rgba(255,255,255,0.05);--text:#ddd8ce;--sub:rgba(255,255,255,0.38);--dim:rgba(255,255,255,0.15);--g:#4A7C59;--gl:#6B9B7A;--a:#C4A35A}
+:root{--bg:#0b0f0d;--card:rgba(255,255,255,0.03);--bdr:rgba(255,255,255,0.05);--tx:#ddd8ce;--sub:rgba(255,255,255,0.38);--dim:rgba(255,255,255,0.15);--g:#4A7C59;--gl:#6B9B7A;--a:#C4A35A}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
-.cover{height:100vh;display:flex;align-items:flex-end;padding:clamp(40px,8vw,100px);position:relative;overflow:hidden}
-.cover::after{content:'';position:absolute;inset:0;background:radial-gradient(circle 500px at 25% 60%,rgba(74,124,89,0.08),transparent),radial-gradient(circle 300px at 75% 30%,rgba(196,163,90,0.04),transparent)}
-.cover-content{position:relative;z-index:1}
-.ey{font-size:11px;font-weight:600;letter-spacing:0.3em;text-transform:uppercase;color:var(--a);margin-bottom:28px}
-.cover h1{font-family:'DM Serif Display',serif;font-size:clamp(2.8rem,7vw,6rem);line-height:1;letter-spacing:-0.03em;margin-bottom:20px}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--tx);-webkit-font-smoothing:antialiased}
+.cover{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden}
+.cover::after{content:'';position:absolute;inset:0;background:radial-gradient(circle 400px at 50% 45%,rgba(74,124,89,0.07),transparent)}
+.cover-mark{position:relative;z-index:1;margin-bottom:40px}
+.cover h1{position:relative;z-index:1;font-family:'DM Serif Display',serif;font-size:clamp(2rem,5vw,3.2rem);letter-spacing:-0.02em;margin-bottom:8px}
 .cover h1 em{font-style:normal;color:var(--a)}
-.cover p{font-size:clamp(0.95rem,1.6vw,1.15rem);color:var(--sub);max-width:380px;line-height:1.7;font-weight:300}
+.cover p{position:relative;z-index:1;font-size:14px;color:var(--sub);letter-spacing:0.15em;text-transform:uppercase;font-weight:500}
 .wrap{max-width:860px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
-section{padding:clamp(72px,12vw,140px) 0;border-top:1px solid var(--border)}
-.sn{font-size:10px;font-weight:700;letter-spacing:0.35em;text-transform:uppercase;color:var(--a);margin-bottom:24px;opacity:0;transform:translateY(16px);transition:all 0.7s cubic-bezier(0.22,1,0.36,1)}
+section{padding:clamp(64px,10vw,120px) 0;border-top:1px solid var(--bdr)}
+.sn{font-size:10px;font-weight:700;letter-spacing:0.35em;text-transform:uppercase;color:var(--a);margin-bottom:20px;opacity:0;transform:translateY(14px);transition:all .7s cubic-bezier(.22,1,.36,1)}
 section.v .sn{opacity:1;transform:none}
-section h2{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3.5vw,2.5rem);line-height:1.12;margin-bottom:14px;opacity:0;transform:translateY(20px);transition:all 0.7s 0.1s cubic-bezier(0.22,1,0.36,1)}
+section h2{font-family:'DM Serif Display',serif;font-size:clamp(1.5rem,3.5vw,2.4rem);line-height:1.12;margin-bottom:12px;opacity:0;transform:translateY(18px);transition:all .7s .08s cubic-bezier(.22,1,.36,1)}
 section.v h2{opacity:1;transform:none}
-.ld{font-size:clamp(0.92rem,1.5vw,1.05rem);color:var(--sub);max-width:480px;line-height:1.75;font-weight:300;margin-bottom:clamp(36px,6vw,56px);opacity:0;transform:translateY(16px);transition:all 0.6s 0.2s cubic-bezier(0.22,1,0.36,1)}
+.ld{font-size:clamp(.92rem,1.5vw,1.02rem);color:var(--sub);max-width:460px;line-height:1.75;font-weight:300;margin-bottom:clamp(32px,5vw,48px);opacity:0;transform:translateY(14px);transition:all .6s .16s cubic-bezier(.22,1,.36,1)}
 section.v .ld{opacity:1;transform:none}
-.fig{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:clamp(24px,4vw,48px);margin-bottom:28px;opacity:0;transform:translateY(24px);transition:all 0.8s 0.15s cubic-bezier(0.22,1,0.36,1)}
+.fig{background:var(--card);border:1px solid var(--bdr);border-radius:20px;padding:clamp(20px,4vw,44px);margin-bottom:24px;opacity:0;transform:translateY(20px);transition:all .8s .12s cubic-bezier(.22,1,.36,1)}
 section.v .fig{opacity:1;transform:none}
 .fig svg{width:100%;display:block}
-.fm{font-family:'DM Sans',monospace;font-size:13px;color:rgba(255,255,255,0.42);line-height:2.1;padding:20px 24px;border:1px solid var(--border);border-radius:14px;white-space:pre-wrap;margin-bottom:20px;background:rgba(0,0,0,0.3);opacity:0;transition:opacity 0.6s 0.3s}
+.fm{font-family:'DM Sans',monospace;font-size:12.5px;color:rgba(255,255,255,.4);line-height:2;padding:18px 22px;border:1px solid var(--bdr);border-radius:12px;white-space:pre-wrap;margin-bottom:18px;background:rgba(0,0,0,.3);opacity:0;transition:opacity .6s .25s}
 section.v .fm{opacity:1}
 .fm b{color:var(--a);font-weight:600}
-.as{font-size:14px;color:var(--sub);line-height:1.8;padding-left:20px;border-left:2px solid rgba(196,163,90,0.3);opacity:0;transition:opacity 0.6s 0.4s}
+.as{font-size:13.5px;color:var(--sub);line-height:1.8;padding-left:18px;border-left:2px solid rgba(196,163,90,.25);opacity:0;transition:opacity .6s .35s}
 section.v .as{opacity:1}
-.fin{text-align:center;padding:80px 0 48px;border-top:1px solid var(--border);font-size:11px;color:var(--dim);letter-spacing:0.12em}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.box{background:var(--card);border:1px solid var(--bdr);border-radius:16px;padding:clamp(24px,4vw,40px);display:flex;align-items:center;justify-content:center;min-height:200px}
+.box--light{background:#FAFAF8}
+.lbl{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);text-align:center;margin-top:8px}
+.sizes{display:flex;align-items:flex-end;gap:clamp(16px,4vw,32px);justify-content:center;flex-wrap:wrap;padding:32px 0}
+.sizes>div{text-align:center}
+.sizes .lbl{margin-top:10px}
+.fin{text-align:center;padding:64px 0 40px;border-top:1px solid var(--bdr);font-size:10px;color:var(--dim);letter-spacing:.15em}
+@media(max-width:560px){.row{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <header class="cover">
-<div class="cover-content">
-<div class="ey">Construction guide</div>
-<h1>The<br>Geo<em>metry</em></h1>
-<p>How the edamame mark emerges from the Flower of Life — through the vesica piscis, the golden ratio, and 3-6-9.</p>
-</div>
+<div class="cover-mark"><svg id="cover-logo" width="160" height="200" viewBox="0 0 160 200"></svg></div>
+<h1>Sacred Geo<em>metry</em></h1>
+<p>Logo construction guide</p>
 </header>
 
 <div class="wrap">
+<section id="s1"><div class="sn">01 — Origin</div><h2>Seed of Life</h2>
+<p class="ld">Seven equal circles. 60-degree hexagonal symmetry. The grid from which all proportions grow.</p>
+<div class="fig"><svg viewBox="0 0 640 360" id="d1"></svg></div>
+<div class="fm">7 circles, radius <b>R</b>, at <b>60 deg</b> intervals
+sin 60 = <b>sqrt(3)/2</b>
+This one value defines every coordinate.</div></section>
 
-<section id="s1"><div class="sn">01 — Origin</div><h2>The Seed of Life</h2>
-<p class="ld">Seven equal circles at 60° intervals. The hexagonal grid from which all sacred geometry grows.</p>
-<div class="fig"><svg viewBox="0 0 640 380" id="d1"></svg></div>
-<div class="fm">7 circles, radius <b>R</b>, at 60° intervals
-sin(60°) = <b>√3/2 ≈ 0.866</b>
-This value defines every coordinate.</div></section>
+<section id="s2"><div class="sn">02 — The bean</div><h2>Vesica Piscis</h2>
+<p class="ld">Two circles side by side. The almond where they overlap is the bean — aspect ratio locked to sqrt(3).</p>
+<div class="fig"><svg viewBox="0 0 640 360" id="d2"></svg></div>
+<div class="fm">Circles at (-R/2, 0) and (R/2, 0), both radius <b>R</b>
 
-<section id="s2"><div class="sn">02 — Form</div><h2>The Vesica Piscis</h2>
-<p class="ld">Two circles side by side, overlapping. The vertical almond where they intersect — that is the bean. Its aspect ratio is locked to √3.</p>
-<div class="fig"><svg viewBox="0 0 640 380" id="d2"></svg></div>
-<div class="fm">Circles at (−R/2, 0) and (R/2, 0), both radius <b>R</b>
-
-Intersection: x = 0, y = ±<b>R√3/2</b>
+Intersection: x=0, y=<b>+/- R*sqrt(3)/2</b>
 
 Bean width  = <b>R</b>
-Bean height = <b>R√3 ≈ 1.732R</b>
-Ratio = <b>√3 : 1</b>
+Bean height = <b>R * sqrt(3)</b>
+Ratio = <b>sqrt(3) : 1 = 1.732 : 1</b></div></section>
 
-Two arcs. One proportion. Irreducible.</div>
-<p class="as">The vesica piscis. Its height-to-width ratio is √3 — a direct consequence of the 60° hexagonal angle. You cannot alter it without breaking the geometry.</p></section>
+<section id="s3"><div class="sn">03 — Golden center</div><h2>The ratio phi</h2>
+<p class="ld">Center bean from circles of radius phi*R. Exactly 1.618x the sides in every dimension. Same aspect. Pure scaling.</p>
+<div class="fig"><svg viewBox="0 0 640 400" id="d3"></svg></div>
+<div class="fm">Side beans:   radius <b>R</b>        ->  W=R, H=R*sqrt(3)
+Center bean:  radius <b>phi*R</b>   ->  W=phi*R, H=phi*R*sqrt(3)
 
-<section id="s3"><div class="sn">03 — Proportion</div><h2>φ — The Golden Ratio</h2>
-<p class="ld">The center bean is generated from circles of radius φR — exactly 1.618 times the sides. Same √3 aspect. Pure scaling.</p>
-<div class="fig"><svg viewBox="0 0 640 440" id="d3"></svg></div>
-<div class="fm">Side beans:   radius <b>R</b>, separation <b>R</b>
-  Width = R, Height = R√3
+Center / Side = <b>phi = 1.618034</b>
+Area ratio    = <b>phi^2 = 2.618</b></div></section>
 
-Center bean:  radius <b>φR</b>, separation <b>φR</b>
-  Width = <b>φR</b>, Height = <b>φR√3</b>
-
-Center ÷ Side = <b>φ = 1.618034</b> (every dimension)
-Center area ÷ Side area = <b>φ² = 2.618</b></div></section>
-
-<section id="s4"><div class="sn">04 — Pattern</div><h2>3 · 6 · 9</h2>
-<p class="ld">Three beans. Six generating circles. Nine total construction circles. Tesla's numbers are the count.</p>
-<div class="fig"><svg viewBox="0 0 640 380" id="d4"></svg></div>
-<div class="fm"><b>3</b> vesica piscis beans
-<b>6</b> generating circles (3 pairs)
-<b>9</b> total construction circles
-
-<b>3 + 6 = 9</b>
-360° ÷ 6 = <b>60°</b> → sin 60° = <b>√3/2</b></div></section>
+<section id="s4"><div class="sn">04 — 3, 6, 9</div><h2>Tesla's numbers</h2>
+<p class="ld">Three beans from six generating circles, nine total. The numbers are the count.</p>
+<div class="fig"><svg viewBox="0 0 640 360" id="d4"></svg></div>
+<div class="fm"><b>3</b> beans    <b>6</b> generating circles    <b>9</b> total
+<b>3 + 6 = 9</b>    360/6 = <b>60 deg</b>    sin 60 = <b>sqrt(3)/2</b></div></section>
 
 <section id="s5"><div class="sn">05 — The mark</div><h2>edamame</h2>
-<p class="ld">Construction fades. Three beans remain — pure geometry that reads as a pod.</p>
-<div class="fig" style="padding:clamp(48px,8vw,80px) clamp(24px,4vw,48px)"><svg viewBox="0 0 640 400" id="d5"></svg></div></section>
+<p class="ld">A closed pod with stem. Three vesica piscis beans inside. Construction disappears — the mark remains.</p>
+<div class="row">
+<div class="box"><svg id="d5d" viewBox="0 0 240 320" width="180"></svg></div>
+<div class="box box--light"><svg id="d5l" viewBox="0 0 240 320" width="180"></svg></div>
+</div>
+<div class="row"><div class="lbl">Dark background</div><div class="lbl">Light background</div></div>
+</section>
+
+<section id="s6"><div class="sn">06 — Family</div><h2>Logo sizes</h2>
+<p class="ld">The mark at every scale — from app icon to favicon. Geometry holds at any resolution.</p>
+<div class="fig">
+<div class="sizes" id="sizes-row"></div>
+</div>
+</section>
 
 </div>
-<div class="fin">edamame · brand construction · 2026</div>
+<div class="fin">edamame brand construction — 2026</div>
 
 <script>
 var PHI=(1+Math.sqrt(5))/2, S3=Math.sqrt(3);
 
-var w=48;
-var wc=w*PHI;
-var gap=5;
-var CX=320, CY=190;
-var totalW=w+gap+wc+gap+w;
-
-var lx=CX-totalW/2+w/2;
-var rx=CX+totalW/2-w/2;
-
-var hSide=w*S3, hCenter=wc*S3;
-
-function vesica(beanCX,beanCY,beanW,beanR){
-  var half=beanW/2;
-  var c1x=beanCX-half, c2x=beanCX+half;
-  var r=beanR;
-  var d=beanW;
-  var cosA=d/(2*r);
-  if(cosA>1)return null;
+function vpPath(cx,cy,bw,r){
+  var half=bw/2;
+  var cosA=bw/(2*r);
+  if(cosA>=1)return null;
   var A=Math.acos(cosA);
-  var topY=beanCY-r*Math.sin(A);
-  var botY=beanCY+r*Math.sin(A);
-  return 'M'+beanCX.toFixed(1)+' '+topY.toFixed(1)+
-    'A'+r.toFixed(1)+' '+r.toFixed(1)+' 0 0 0 '+beanCX.toFixed(1)+' '+botY.toFixed(1)+
-    'A'+r.toFixed(1)+' '+r.toFixed(1)+' 0 0 0 '+beanCX.toFixed(1)+' '+topY.toFixed(1)+'Z';
+  var topY=cy-r*Math.sin(A);
+  var botY=cy+r*Math.sin(A);
+  return 'M'+cx.toFixed(1)+' '+topY.toFixed(1)+
+    'A'+r.toFixed(1)+' '+r.toFixed(1)+' 0 0 0 '+cx.toFixed(1)+' '+botY.toFixed(1)+
+    'A'+r.toFixed(1)+' '+r.toFixed(1)+' 0 0 0 '+cx.toFixed(1)+' '+topY.toFixed(1)+'Z';
 }
 
-function beanPath(cx,cy,bw,r,fill,stroke,op){
-  var d=vesica(cx,cy,bw,r);
-  if(!d)return'';
-  return '<path d="'+d+'" fill="'+fill+'" stroke="'+(stroke||fill)+'" stroke-width="1" opacity="'+(op||1)+'"/>';
+function drawBean(cx,cy,bw,r,fill,stroke){
+  var d=vpPath(cx,cy,bw,r);
+  return d?'<path d="'+d+'" fill="'+fill+'" stroke="'+(stroke||'none')+'" stroke-width="0.8"/>':'';
 }
 
-function circ(cx,cy,r,stroke,sw,op,dash){
-  return '<circle cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="none" stroke="'+stroke+'" stroke-width="'+sw+'" opacity="'+op+'"'+(dash?' stroke-dasharray="4 3"':'')+'/>';
+function drawMark(cx,cy,scale,dark){
+  var w=44*scale, wc=w*PHI, gap=6*scale;
+  var total=w+gap+wc+gap+w;
+  var lx=cx-total/2+w/2, rx=cx+total/2-w/2;
+  var hc=wc*S3, hs=w*S3;
+  
+  var gFill=dark?'#4A7C59':'#4A7C59';
+  var aFill=dark?'#C4A35A':'#C4A35A';
+  var gStroke=dark?'#3A6349':'#3A6349';
+  var aStroke=dark?'#b0913a':'#9c8a42';
+  var podStroke=dark?'#4A7C59':'#3A6349';
+  var podFill=dark?'rgba(74,124,89,0.06)':'rgba(74,124,89,0.04)';
+  var textFill=dark?'#ddd8ce':'#2D2D2A';
+  var tagFill=dark?'rgba(255,255,255,0.18)':'rgba(0,0,0,0.25)';
+  
+  var padX=10*scale, padY=8*scale;
+  var podL=lx-w/2-padX, podR=rx+w/2+padX;
+  var podT=cy-hc/2-padY, podB=cy+hc/2+padY;
+  var podW=podR-podL, podH=podB-podT;
+  var podCX=cx, podCY=cy;
+  
+  var s='';
+  
+  var podRx=(podW/2)*0.92;
+  var podRy=(podH/2)*1.0;
+  s+='<ellipse cx="'+podCX.toFixed(1)+'" cy="'+podCY.toFixed(1)+'" rx="'+podRx.toFixed(1)+'" ry="'+podRy.toFixed(1)+'" fill="'+podFill+'" stroke="'+podStroke+'" stroke-width="'+(1.8*scale)+'"/>';
+  
+  var stemLen=18*scale;
+  var stemX=podCX;
+  var stemY1=podCY-podRy;
+  var stemY0=stemY1-stemLen;
+  s+='<path d="M'+stemX.toFixed(1)+' '+stemY1.toFixed(1)+' C'+(stemX+6*scale).toFixed(1)+' '+(stemY0+stemLen*0.6).toFixed(1)+' '+(stemX+3*scale).toFixed(1)+' '+(stemY0+2*scale).toFixed(1)+' '+(stemX+8*scale).toFixed(1)+' '+stemY0.toFixed(1)+'" stroke="'+podStroke+'" stroke-width="'+(1.5*scale)+'" fill="none" stroke-linecap="round"/>';
+  
+  s+=drawBean(lx,cy,w,w,gFill,gStroke);
+  s+=drawBean(cx,cy,wc,wc,aFill,aStroke);
+  s+=drawBean(rx,cy,w,w,gFill,gStroke);
+  
+  var wordY=podB+28*scale;
+  s+='<text x="'+cx.toFixed(1)+'" y="'+wordY.toFixed(1)+'" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="'+(28*scale)+'" font-weight="700" fill="'+textFill+'" letter-spacing="-0.3">edamame</text>';
+  
+  var tagY=wordY+18*scale;
+  s+='<text x="'+cx.toFixed(1)+'" y="'+tagY.toFixed(1)+'" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="'+(8*scale)+'" fill="'+tagFill+'" letter-spacing="1.2">YOUR APPS. YOUR RULES. NO CODE.</text>';
+  
+  return s;
 }
 
-function dot(x,y,r,c,o){return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+r+'" fill="'+c+'" opacity="'+(o||1)+'"/>';}
+function drawIconOnly(cx,cy,scale,dark){
+  var w=44*scale, wc=w*PHI, gap=6*scale;
+  var total=w+gap+wc+gap+w;
+  var lx=cx-total/2+w/2, rx=cx+total/2-w/2;
+  var hc=wc*S3;
+  var podStroke=dark?'#4A7C59':'#3A6349';
+  var podFill=dark?'rgba(74,124,89,0.06)':'rgba(74,124,89,0.04)';
+  var padX=10*scale, padY=8*scale;
+  var podRx=((total/2)+padX)*0.92;
+  var podRy=(hc/2+padY)*1.0;
+  
+  var s='';
+  s+='<ellipse cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" rx="'+podRx.toFixed(1)+'" ry="'+podRy.toFixed(1)+'" fill="'+podFill+'" stroke="'+podStroke+'" stroke-width="'+(1.8*scale)+'"/>';
+  var stemLen=18*scale;
+  s+='<path d="M'+cx.toFixed(1)+' '+(cy-podRy).toFixed(1)+' C'+(cx+6*scale).toFixed(1)+' '+(cy-podRy-stemLen*0.4).toFixed(1)+' '+(cx+3*scale).toFixed(1)+' '+(cy-podRy-stemLen+2*scale).toFixed(1)+' '+(cx+8*scale).toFixed(1)+' '+(cy-podRy-stemLen).toFixed(1)+'" stroke="'+podStroke+'" stroke-width="'+(1.5*scale)+'" fill="none" stroke-linecap="round"/>';
+  s+=drawBean(lx,cy,w,w,'#4A7C59','#3A6349');
+  s+=drawBean(cx,cy,wc,wc,'#C4A35A','#b0913a');
+  s+=drawBean(rx,cy,w,w,'#4A7C59','#3A6349');
+  return s;
+}
+
+function ci(x,y,r,stroke,sw,op,dash){return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="none" stroke="'+stroke+'" stroke-width="'+sw+'" opacity="'+op+'"'+(dash?' stroke-dasharray="4 3"':'')+'/>';}
+function dt(x,y,r,c,o){return '<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="'+r+'" fill="'+c+'" opacity="'+(o||1)+'"/>';}
 function tx(x,y,t,c,sz,fw,an){return '<text x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" fill="'+c+'" font-family="DM Sans" font-size="'+(sz||11)+'" font-weight="'+(fw||400)+'" text-anchor="'+(an||'middle')+'" dominant-baseline="central">'+t+'</text>';}
 
-var R_seed=72, CXs=320, CYs=190;
-var seedPts=[[CXs,CYs]];
-for(var i=0;i<6;i++){var a=i*Math.PI/3;seedPts.push([CXs+R_seed*Math.cos(a),CYs+R_seed*Math.sin(a)]);}
+var Rs=70, Cs=320, Cy=180;
+var seedPts=[[Cs,Cy]];
+for(var i=0;i<6;i++){var a=i*Math.PI/3;seedPts.push([Cs+Rs*Math.cos(a),Cy+Rs*Math.sin(a)]);}
 
-var s='';
+var h='';
 seedPts.forEach(function(p,i){
-  s+=circ(p[0],p[1],R_seed,i===0?'#6B9B7A':'#ffffff',i===0?0.8:0.4,i===0?0.25:0.05);
-  s+=dot(p[0],p[1],i===0?3:2,i===0?'#6B9B7A':'#ffffff',i===0?0.7:0.12);
+  h+=ci(p[0],p[1],Rs,i===0?'#6B9B7A':'#ffffff',i===0?.8:.4,i===0?.22:.045);
+  h+=dt(p[0],p[1],i===0?3:1.5,i===0?'#6B9B7A':'#ffffff',i===0?.6:.1);
 });
-s+='<line x1="'+CXs+'" y1="'+CYs+'" x2="'+(CXs+R_seed)+'" y2="'+CYs+'" stroke="#C4A35A" stroke-width="0.5" opacity="0.35"/>';
-s+='<line x1="'+CXs+'" y1="'+CYs+'" x2="'+seedPts[2][0]+'" y2="'+seedPts[2][1]+'" stroke="#C4A35A" stroke-width="0.5" opacity="0.35"/>';
-s+=tx(CXs+40,CYs-12,'60°','#C4A35A',10,500);
-document.getElementById('d1').innerHTML=s;
+h+='<line x1="'+Cs+'" y1="'+Cy+'" x2="'+(Cs+Rs)+'" y2="'+Cy+'" stroke="#C4A35A" stroke-width="0.4" opacity="0.3"/>';
+h+='<line x1="'+Cs+'" y1="'+Cy+'" x2="'+seedPts[2][0]+'" y2="'+seedPts[2][1]+'" stroke="#C4A35A" stroke-width="0.4" opacity="0.3"/>';
+h+=tx(Cs+38,Cy-10,'60','#C4A35A',10,500);
+document.getElementById('d1').innerHTML=h;
 
-s='';
-s+=circ(CXs-R_seed/2,CYs,R_seed,'#6B9B7A',0.7,0.25);
-s+=circ(CXs+R_seed/2,CYs,R_seed,'#6B9B7A',0.7,0.25);
-s+=beanPath(CXs,CYs,R_seed,R_seed,'rgba(74,124,89,0.25)','#4A7C59',1);
-var bTop=CYs-R_seed*S3/2, bBot=CYs+R_seed*S3/2;
-s+=dot(CXs,bTop,3.5,'#4A7C59',1);
-s+=dot(CXs,bBot,3.5,'#4A7C59',1);
-s+='<line x1="'+(CXs+24)+'" y1="'+bTop.toFixed(1)+'" x2="'+(CXs+24)+'" y2="'+bBot.toFixed(1)+'" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>';
-s+='<line x1="'+(CXs+19)+'" y1="'+bTop.toFixed(1)+'" x2="'+(CXs+29)+'" y2="'+bTop.toFixed(1)+'" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>';
-s+='<line x1="'+(CXs+19)+'" y1="'+bBot.toFixed(1)+'" x2="'+(CXs+29)+'" y2="'+bBot.toFixed(1)+'" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>';
-s+=tx(CXs+40,(bTop+bBot)/2,'R'+String.fromCharCode(8730)+'3','#C4A35A',11,500);
-s+='<line x1="'+(CXs-R_seed/2)+'" y1="'+(bBot+16)+'" x2="'+(CXs+R_seed/2)+'" y2="'+(bBot+16)+'" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>';
-s+=tx(CXs,bBot+30,'R','#C4A35A',11,500);
-s+=tx(CXs-R_seed/2-10,CYs,'A','rgba(255,255,255,0.2)',11,600,'end');
-s+=tx(CXs+R_seed/2+10,CYs,'B','rgba(255,255,255,0.2)',11,600,'start');
-document.getElementById('d2').innerHTML=s;
+h='';
+h+=ci(Cs-Rs/2,Cy,Rs,'#6B9B7A',.6,.2);h+=ci(Cs+Rs/2,Cy,Rs,'#6B9B7A',.6,.2);
+h+=drawBean(Cs,Cy,Rs,Rs,'rgba(74,124,89,0.2)','#4A7C59');
+var bT=Cy-Rs*S3/2,bB=Cy+Rs*S3/2;
+h+=dt(Cs,bT,3,'#4A7C59',1);h+=dt(Cs,bB,3,'#4A7C59',1);
+h+='<line x1="'+(Cs+22)+'" y1="'+bT.toFixed(1)+'" x2="'+(Cs+22)+'" y2="'+bB.toFixed(1)+'" stroke="rgba(255,255,255,.08)" stroke-width=".4"/>';
+h+='<line x1="'+(Cs+17)+'" y1="'+bT.toFixed(1)+'" x2="'+(Cs+27)+'" y2="'+bT.toFixed(1)+'" stroke="rgba(255,255,255,.08)" stroke-width=".4"/>';
+h+='<line x1="'+(Cs+17)+'" y1="'+bB.toFixed(1)+'" x2="'+(Cs+27)+'" y2="'+bB.toFixed(1)+'" stroke="rgba(255,255,255,.08)" stroke-width=".4"/>';
+h+=tx(Cs+38,(bT+bB)/2,'R*sqrt(3)','#C4A35A',10,500);
+h+='<line x1="'+(Cs-Rs/2)+'" y1="'+(bB+14)+'" x2="'+(Cs+Rs/2)+'" y2="'+(bB+14)+'" stroke="rgba(255,255,255,.08)" stroke-width=".4"/>';
+h+=tx(Cs,bB+28,'R','#C4A35A',10,500);
+document.getElementById('d2').innerHTML=h;
 
-s='';
-s+=circ(lx-w/2,CY,w,'#6B9B7A',0.4,0.12);s+=circ(lx+w/2,CY,w,'#6B9B7A',0.4,0.12);
-s+=circ(CX-wc/2,CY,wc,'#C4A35A',0.5,0.08,true);s+=circ(CX+wc/2,CY,wc,'#C4A35A',0.5,0.08,true);
-s+=circ(rx-w/2,CY,w,'#6B9B7A',0.4,0.12);s+=circ(rx+w/2,CY,w,'#6B9B7A',0.4,0.12);
-s+=dot(CX-wc/2,CY,2,'#C4A35A',0.4);s+=dot(CX+wc/2,CY,2,'#C4A35A',0.4);
-s+=beanPath(lx,CY,w,w,'rgba(74,124,89,0.4)','#4A7C59',0.9);
-s+=beanPath(CX,CY,wc,wc,'rgba(196,163,90,0.35)','#C4A35A',0.9);
-s+=beanPath(rx,CY,w,w,'rgba(74,124,89,0.4)','#4A7C59',0.9);
-s+=tx(lx,CY+hSide/2+20,'R','rgba(255,255,255,0.2)',10);
-s+=tx(CX,CY+hCenter/2+20,String.fromCharCode(966)+'R','#C4A35A',10,600);
-s+=tx(rx,CY+hSide/2+20,'R','rgba(255,255,255,0.2)',10);
-s+=tx(CX,CY+hCenter/2+40,'center '+String.fromCharCode(247)+' side = '+String.fromCharCode(966)+' = 1.618','#C4A35A',11,500);
-document.getElementById('d3').innerHTML=s;
+h='';
+var w3=44,wc3=w3*PHI,gap3=6,CY3=200;
+var total3=w3+gap3+wc3+gap3+w3;
+var lx3=Cs-total3/2+w3/2,rx3=Cs+total3/2-w3/2;
+h+=ci(lx3-w3/2,CY3,w3,'#6B9B7A',.4,.1);h+=ci(lx3+w3/2,CY3,w3,'#6B9B7A',.4,.1);
+h+=ci(Cs-wc3/2,CY3,wc3,'#C4A35A',.5,.07,true);h+=ci(Cs+wc3/2,CY3,wc3,'#C4A35A',.5,.07,true);
+h+=ci(rx3-w3/2,CY3,w3,'#6B9B7A',.4,.1);h+=ci(rx3+w3/2,CY3,w3,'#6B9B7A',.4,.1);
+h+=drawBean(lx3,CY3,w3,w3,'rgba(74,124,89,.35)','#4A7C59');
+h+=drawBean(Cs,CY3,wc3,wc3,'rgba(196,163,90,.3)','#C4A35A');
+h+=drawBean(rx3,CY3,w3,w3,'rgba(74,124,89,.35)','#4A7C59');
+h+=tx(lx3,CY3+w3*S3/2+18,'R','rgba(255,255,255,.18)',10);
+h+=tx(Cs,CY3+wc3*S3/2+18,'phi*R','#C4A35A',10,600);
+h+=tx(rx3,CY3+w3*S3/2+18,'R','rgba(255,255,255,.18)',10);
+h+=tx(Cs,CY3+wc3*S3/2+38,'center / side = phi = 1.618','#C4A35A',11,500);
+document.getElementById('d3').innerHTML=h;
 
-s='';
-s+=circ(lx-w/2,CY,w,'#ffffff',0.3,0.04);s+=circ(lx+w/2,CY,w,'#ffffff',0.3,0.04);
-s+=circ(CX-wc/2,CY,wc,'#ffffff',0.3,0.04);s+=circ(CX+wc/2,CY,wc,'#ffffff',0.3,0.04);
-s+=circ(rx-w/2,CY,w,'#ffffff',0.3,0.04);s+=circ(rx+w/2,CY,w,'#ffffff',0.3,0.04);
-var dummy1=(lx-w/2+lx+w/2)/2, dummy2=(rx-w/2+rx+w/2)/2;
-s+=circ(CX,CY-50,90,'#ffffff',0.3,0.03);s+=circ(CX,CY+50,90,'#ffffff',0.3,0.03);s+=circ(CX,CY,70,'#ffffff',0.3,0.03);
-s+=beanPath(lx,CY,w,w,'rgba(74,124,89,0.35)','#4A7C59',0.85);
-s+=beanPath(CX,CY,wc,wc,'rgba(196,163,90,0.3)','#C4A35A',0.85);
-s+=beanPath(rx,CY,w,w,'rgba(74,124,89,0.35)','#4A7C59',0.85);
-var bx=480,by=50;
-s+='<text x="'+bx+'" y="'+by+'" fill="#C4A35A" font-family="DM Serif Display" font-size="26" letter-spacing="-0.02em">3 '+String.fromCharCode(183)+' 6 '+String.fromCharCode(183)+' 9</text>';
-var items=[['3 beans',22],['6 generating circles',38],['9 construction circles',54]];
-items.forEach(function(item){s+=tx(bx,by+item[1],item[0],'rgba(255,255,255,0.25)',11,400,'start');});
-s+='<line x1="'+bx+'" y1="'+(by+66)+'" x2="'+(bx+120)+'" y2="'+(by+66)+'" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>';
-var items2=[['3 + 6 = 9',82],['360'+String.fromCharCode(176)+' '+String.fromCharCode(247)+' 6 = 60'+String.fromCharCode(176),98]];
-items2.forEach(function(item){s+=tx(bx,by+item[1],item[0],'rgba(255,255,255,0.18)',11,400,'start');});
-document.getElementById('d4').innerHTML=s;
+h='';
+h+=ci(lx3-w3/2,CY3,w3,'#fff',.3,.03);h+=ci(lx3+w3/2,CY3,w3,'#fff',.3,.03);
+h+=ci(Cs-wc3/2,CY3,wc3,'#fff',.3,.03);h+=ci(Cs+wc3/2,CY3,wc3,'#fff',.3,.03);
+h+=ci(rx3-w3/2,CY3,w3,'#fff',.3,.03);h+=ci(rx3+w3/2,CY3,w3,'#fff',.3,.03);
+h+=ci(Cs,CY3-48,68,'#fff',.2,.02);h+=ci(Cs,CY3+48,68,'#fff',.2,.02);h+=ci(Cs,CY3,55,'#fff',.2,.02);
+h+=drawBean(lx3,CY3,w3,w3,'rgba(74,124,89,.3)','#4A7C59');
+h+=drawBean(Cs,CY3,wc3,wc3,'rgba(196,163,90,.25)','#C4A35A');
+h+=drawBean(rx3,CY3,w3,w3,'rgba(74,124,89,.3)','#4A7C59');
+var bx4=475,by4=45;
+h+='<text x="'+bx4+'" y="'+by4+'" fill="#C4A35A" font-family="DM Serif Display" font-size="24">3  6  9</text>';
+h+=tx(bx4,by4+24,'3 beans','rgba(255,255,255,.22)',11,400,'start');
+h+=tx(bx4,by4+40,'6 generating circles','rgba(255,255,255,.22)',11,400,'start');
+h+=tx(bx4,by4+56,'9 total circles','rgba(255,255,255,.22)',11,400,'start');
+h+='<line x1="'+bx4+'" y1="'+(by4+68)+'" x2="'+(bx4+110)+'" y2="'+(by4+68)+'" stroke="rgba(255,255,255,.04)" stroke-width=".5"/>';
+h+=tx(bx4,by4+84,'3 + 6 = 9','rgba(255,255,255,.15)',11,400,'start');
+document.getElementById('d4').innerHTML=h;
 
-s='';
-for(var gi=0;gi<seedPts.length;gi++){s+=circ(seedPts[gi][0],seedPts[gi][1],R_seed,'#ffffff',0.2,0.015);}
-s+=circ(CX-wc/2,CY,wc,'#ffffff',0.2,0.012);s+=circ(CX+wc/2,CY,wc,'#ffffff',0.2,0.012);
-s+=beanPath(lx,CY,w,w,'#4A7C59','#3A6349',1);
-s+=beanPath(CX,CY,wc,wc,'#C4A35A','#b0913a',1);
-s+=beanPath(rx,CY,w,w,'#4A7C59','#3A6349',1);
-var pTop=CY-hCenter/2-6, pBot=CY+hCenter/2+6;
-var pLeft=lx-w/2-8, pRight=rx+w/2+8;
-s+='<path d="M'+(pLeft-10)+' '+pTop.toFixed(1)+' C'+(pLeft-24)+' '+(CY-36)+','+(pLeft-24)+' '+(CY+36)+','+(pLeft-10)+' '+pBot.toFixed(1)+'" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>';
-s+='<path d="M'+(pRight+10)+' '+pTop.toFixed(1)+' C'+(pRight+24)+' '+(CY-36)+','+(pRight+24)+' '+(CY+36)+','+(pRight+10)+' '+pBot.toFixed(1)+'" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>';
-s+='<text x="'+CX+'" y="'+(pBot+52)+'" text-anchor="middle" font-family="DM Sans" font-size="32" font-weight="700" fill="#ddd8ce" letter-spacing="-0.5">edamame</text>';
-s+='<text x="'+CX+'" y="'+(pBot+74)+'" text-anchor="middle" font-family="DM Sans" font-size="10" fill="rgba(255,255,255,0.18)" letter-spacing="1.5">YOUR APPS. YOUR RULES. NO CODE.</text>';
-document.getElementById('d5').innerHTML=s;
+document.getElementById('d5d').innerHTML=drawMark(120,145,0.82,true);
+document.getElementById('d5l').innerHTML=drawMark(120,145,0.82,false);
 
-var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v');});},{threshold:0.12});
+document.getElementById('cover-logo').innerHTML=drawIconOnly(80,90,1.1,true);
+
+var sizesRow=document.getElementById('sizes-row');
+var szs=[{s:1.0,l:'Full mark'},{s:0.6,l:'Medium'},{s:0.35,l:'Small'},{s:0.18,l:'Favicon'}];
+szs.forEach(function(sz){
+  var div=document.createElement('div');
+  var svgW=Math.round(180*sz.s);
+  var svgH=Math.round(160*sz.s);
+  var svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
+  svg.setAttribute('viewBox','0 0 180 160');
+  svg.setAttribute('width',svgW);
+  svg.setAttribute('height',svgH);
+  svg.innerHTML=drawIconOnly(90,80,0.62,true);
+  div.appendChild(svg);
+  var lbl=document.createElement('div');
+  lbl.className='lbl';
+  lbl.textContent=sz.l;
+  div.appendChild(lbl);
+  sizesRow.appendChild(div);
+});
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)e.target.classList.add('v');});},{threshold:.1});
 var secs=document.querySelectorAll('section');
 for(var si=0;si<secs.length;si++){io.observe(secs[si]);}
 </script>
