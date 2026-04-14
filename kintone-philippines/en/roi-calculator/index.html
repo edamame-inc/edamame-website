@@ -421,130 +421,130 @@ a{color:inherit;text-decoration:none}
 <div class="article-wrap">
 <a href="/kintone-philippines/en/blog/" class="back-link">← Back to Blog</a>
 <!-- Hero -->
-    <section class="hero">
-        <h1>💰 Kintone ROI Calculator</h1>
-        <p>See how much your business can save by consolidating multiple tools into one powerful no-code platform.</p>
-    </section>
+  <section class="hero">
+    <h1>💰 Kintone ROI Calculator</h1>
+    <p>See how much your business can save by consolidating multiple tools into one powerful no-code platform.</p>
+  </section>
 
-    <!-- Calculator -->
-    <div class="calc-container">
-        <div class="calc-card">
+  <!-- Calculator -->
+  <div class="calc-container">
+    <div class="calc-card">
 
-            <!-- Section 1: Company Info -->
-            <div class="calc-section">
-                <div class="section-title">📊 Step 1: Your Company</div>
-                <div class="section-desc">Tell us about your team size and industry.</div>
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label>Number of Employees <small>(who use business software)</small></label>
-                        <input type="number" id="employees" min="1" max="10000" value="20" oninput="calculate()">
-                    </div>
-                    <div class="form-group">
-                        <label>Industry</label>
-                        <select id="industry" onchange="calculate()">
-                            <option value="manufacturing">Manufacturing</option>
-                            <option value="logistics">Logistics & Distribution</option>
-                            <option value="real-estate">Real Estate</option>
-                            <option value="healthcare">Healthcare</option>
-                            <option value="bpo">BPO / Call Center</option>
-                            <option value="construction">Construction</option>
-                            <option value="education">Education</option>
-                            <option value="retail">Retail</option>
-                            <option value="finance">Finance & Accounting</option>
-                            <option value="other" selected>Other / General</option>
-                        </select>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 2: Current Tools -->
-            <div class="calc-section">
-                <div class="section-title">🛠️ Step 2: Your Current Tools</div>
-                <div class="section-desc">Select all the software tools you currently pay for. We'll calculate what you'd save by replacing them with Kintone.</div>
-                <div class="tools-checklist" id="toolsGrid">
-                    <!-- Populated by JS -->
-                </div>
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label>Additional monthly software spend <small>(₱ not listed above)</small></label>
-                        <input type="number" id="additionalSpend" min="0" value="0" oninput="calculate()">
-                    </div>
-                    <div class="form-group">
-                        <label>Hours/week staff spend on manual data entry</label>
-                        <input type="number" id="manualHours" min="0" max="100" value="10" oninput="calculate()">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 3: Costs -->
-            <div class="calc-section">
-                <div class="section-title">💳 Step 3: Hidden Costs</div>
-                <div class="section-desc">These often-overlooked costs add up fast.</div>
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label>Monthly IT support / freelancer cost <small>(₱)</small></label>
-                        <input type="number" id="itCost" min="0" value="15000" oninput="calculate()">
-                    </div>
-                    <div class="form-group">
-                        <label>Average employee hourly rate <small>(₱)</small></label>
-                        <input type="number" id="hourlyRate" min="0" value="200" oninput="calculate()">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Results -->
-            <div class="results-section" id="resultsSection">
-                <div class="section-title" style="margin-bottom:20px;">📈 Your ROI Results</div>
-
-                <div class="results-grid">
-                    <div class="result-card">
-                        <div class="result-label">Current Monthly Cost</div>
-                        <div class="result-value current" id="currentCost">₱0</div>
-                        <div class="result-sub">All software + hidden costs</div>
-                    </div>
-                    <div class="result-card">
-                        <div class="result-label">With Kintone</div>
-                        <div class="result-value kintone" id="kintoneCost">₱0</div>
-                        <div class="result-sub">One platform, everything included</div>
-                    </div>
-                    <div class="result-card highlight">
-                        <div class="result-label">Monthly Savings</div>
-                        <div class="result-value savings" id="monthlySavings">₱0</div>
-                        <div class="result-sub" id="annualSavings">₱0/year</div>
-                    </div>
-                </div>
-
-                <div class="breakdown" id="breakdownSection">
-                    <h4>📋 Cost Breakdown</h4>
-                    <div id="breakdownRows"></div>
-                </div>
-
-                <div class="breakdown">
-                    <h4>⏱️ Time Savings</h4>
-                    <div class="breakdown-row">
-                        <span>Manual data entry hours saved/month</span>
-                        <span class="cost new" id="hoursSaved">0 hours</span>
-                    </div>
-                    <div class="breakdown-row">
-                        <span>Value of time saved/month</span>
-                        <span class="cost new" id="timeSavingsValue">₱0</span>
-                    </div>
-                    <div class="breakdown-row">
-                        <span>Estimated productivity gain</span>
-                        <span class="cost new" id="productivityGain">0%</span>
-                    </div>
-                </div>
-
-                <div class="results-cta">
-                    <p style="margin-bottom:15px;color:var(--text-light);">Ready to see these savings become real?</p>
-                    <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="cta-btn">Get Your Free Kintone Demo →</a>
-                </div>
-            </div>
-
+      <!-- Section 1: Company Info -->
+      <div class="calc-section">
+        <div class="section-title">📊 Step 1: Your Company</div>
+        <div class="section-desc">Tell us about your team size and industry.</div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Number of Employees <small>(who use business software)</small></label>
+            <input type="number" id="employees" min="1" max="10000" value="20" oninput="calculate()">
+          </div>
+          <div class="form-group">
+            <label>Industry</label>
+            <select id="industry" onchange="calculate()">
+              <option value="manufacturing">Manufacturing</option>
+              <option value="logistics">Logistics & Distribution</option>
+              <option value="real-estate">Real Estate</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="bpo">BPO / Call Center</option>
+              <option value="construction">Construction</option>
+              <option value="education">Education</option>
+              <option value="retail">Retail</option>
+              <option value="finance">Finance & Accounting</option>
+              <option value="other" selected>Other / General</option>
+            </select>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Footer -->
+      <!-- Section 2: Current Tools -->
+      <div class="calc-section">
+        <div class="section-title">🛠️ Step 2: Your Current Tools</div>
+        <div class="section-desc">Select all the software tools you currently pay for. We'll calculate what you'd save by replacing them with Kintone.</div>
+        <div class="tools-checklist" id="toolsGrid">
+          <!-- Populated by JS -->
+        </div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Additional monthly software spend <small>(₱ not listed above)</small></label>
+            <input type="number" id="additionalSpend" min="0" value="0" oninput="calculate()">
+          </div>
+          <div class="form-group">
+            <label>Hours/week staff spend on manual data entry</label>
+            <input type="number" id="manualHours" min="0" max="100" value="10" oninput="calculate()">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Costs -->
+      <div class="calc-section">
+        <div class="section-title">💳 Step 3: Hidden Costs</div>
+        <div class="section-desc">These often-overlooked costs add up fast.</div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Monthly IT support / freelancer cost <small>(₱)</small></label>
+            <input type="number" id="itCost" min="0" value="15000" oninput="calculate()">
+          </div>
+          <div class="form-group">
+            <label>Average employee hourly rate <small>(₱)</small></label>
+            <input type="number" id="hourlyRate" min="0" value="200" oninput="calculate()">
+          </div>
+        </div>
+      </div>
+
+      <!-- Results -->
+      <div class="results-section" id="resultsSection">
+        <div class="section-title" style="margin-bottom:20px;">📈 Your ROI Results</div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-label">Current Monthly Cost</div>
+            <div class="result-value current" id="currentCost">₱0</div>
+            <div class="result-sub">All software + hidden costs</div>
+          </div>
+          <div class="result-card">
+            <div class="result-label">With Kintone</div>
+            <div class="result-value kintone" id="kintoneCost">₱0</div>
+            <div class="result-sub">One platform, everything included</div>
+          </div>
+          <div class="result-card highlight">
+            <div class="result-label">Monthly Savings</div>
+            <div class="result-value savings" id="monthlySavings">₱0</div>
+            <div class="result-sub" id="annualSavings">₱0/year</div>
+          </div>
+        </div>
+
+        <div class="breakdown" id="breakdownSection">
+          <h4>📋 Cost Breakdown</h4>
+          <div id="breakdownRows"></div>
+        </div>
+
+        <div class="breakdown">
+          <h4>⏱️ Time Savings</h4>
+          <div class="breakdown-row">
+            <span>Manual data entry hours saved/month</span>
+            <span class="cost new" id="hoursSaved">0 hours</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Value of time saved/month</span>
+            <span class="cost new" id="timeSavingsValue">₱0</span>
+          </div>
+          <div class="breakdown-row">
+            <span>Estimated productivity gain</span>
+            <span class="cost new" id="productivityGain">0%</span>
+          </div>
+        </div>
+
+        <div class="results-cta">
+          <p style="margin-bottom:15px;color:var(--text-light);">Ready to see these savings become real?</p>
+          <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="cta-btn">Get Your Free Kintone Demo →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
 </div>
 
 <section class="cta-banner"><div class="container">
