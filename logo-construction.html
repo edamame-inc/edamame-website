@@ -67,7 +67,7 @@ section.v .aside{opacity:1}
 <div class="formula">7 circles, all radius <b>R</b>
 Centers at distance <b>R</b> from origin, at <b>60°</b> intervals
 
-sin(60°) = <b>√3 / 2 ≈ 0.866</b>
+sin(60°) = <b>S3 / 2 ≈ 0.866</b>
 
 This one value positions every circle,
 defines every intersection,
@@ -84,11 +84,11 @@ and determines every bean proportion.</div>
 
 Intersection points:
   x = <b>R / 2</b>
-  y = <b>± R√3 / 2</b>
+  y = <b>± RS3 / 2</b>
 
 Width between tips  = <b>R</b>
-Height at midpoint  = <b>R × √3</b>
-Aspect ratio        = <b>√3 : 1 = 1.732 : 1</b>
+Height at midpoint  = <b>R × S3</b>
+Aspect ratio        = <b>S3 : 1 = 1.732 : 1</b>
 
 The shape is defined by two arcs.
 Each arc is a segment of a circle.
@@ -102,17 +102,17 @@ There is nothing arbitrary here.</div>
 <p class="lead">The center bean is generated from circles whose radius is φ × R. It is not "slightly bigger" — it is precisely 1.618 times the side beans in every dimension.</p>
 <div class="fig"><svg viewBox="0 0 640 460" id="d3"></svg></div>
 <div class="formula">Side beans: circles radius <b>R</b>, separation <b>R</b>
-  → Width = R, Height = R√3
+  → Width = R, Height = RS3
 
 Center bean: circles radius <b>φR</b>, separation <b>φR</b>
-  → Width = <b>φR</b>, Height = <b>φR√3</b>
+  → Width = <b>φR</b>, Height = <b>φRS3</b>
 
   <b>φ = (1 + √5) / 2 = 1.618034...</b>
 
   Center / Side = <b>φ</b> in width, height, and diagonal
   Center / Side = <b>φ²</b> in area
 
-Same aspect ratio (√3:1). Pure scaling.</div>
+Same aspect ratio (S3:1). Pure scaling.</div>
 <p class="aside">φ governs the spiral of a nautilus shell, the branching of trees, the arrangement of petals. In the edamame mark, it makes the center bean feel naturally dominant — the gold core flanked by green growth. Not by design intuition, but by mathematics.</p>
 </section>
 
@@ -146,9 +146,9 @@ sin 60° = <b>√3/2</b>     →   vertical positions, bean height
 <div class="fin">edamame · brand construction · confidential · 2026</div>
 
 <script>
-const φ=(1+Math.sqrt(5))/2,√3=Math.sqrt(3);
+const PHI=(1+Math.sqrt(5))/2,S3=Math.sqrt(3);
 const R=72,CX=320,CY=200;
-const Rφ=R*φ;
+const RPHI=R*PHI;
 const seed=[[CX,CY]];
 for(let i=0;i<6;i++){const a=i*Math.PI/3;seed.push([CX+R*Math.cos(a),CY+R*Math.sin(a)])}
 
@@ -184,13 +184,13 @@ s+=cir(CX,CY,R,'#6B9B7A',0.7,0.3);
 s+=cir(CX+R,CY,R,'#6B9B7A',0.7,0.3);
 const v2=arc(CX,CY,CX+R,CY,R);
 if(v2)s+=`<path d="${v2.d}" fill="rgba(74,124,89,0.2)" stroke="#4A7C59" stroke-width="1.2"/>`;
-const iy1=CY-R*√3/2,iy2=CY+R*√3/2,ix=CX+R/2;
+const iy1=CY-R*S3/2,iy2=CY+R*S3/2,ix=CX+R/2;
 s+=dot(ix,iy1,3.5,'#4A7C59');s+=dot(ix,iy2,3.5,'#4A7C59');
 // Dims
 s+=`<line x1="${ix+20}" y1="${iy1}" x2="${ix+20}" y2="${iy2}" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>`;
 s+=`<line x1="${ix+15}" y1="${iy1}" x2="${ix+25}" y2="${iy1}" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>`;
 s+=`<line x1="${ix+15}" y1="${iy2}" x2="${ix+25}" y2="${iy2}" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>`;
-s+=txt(ix+36,CY,'R√3','#C4A35A',11,500);
+s+=txt(ix+36,CY,'RS3','#C4A35A',11,500);
 s+=`<line x1="${CX}" y1="${iy2+16}" x2="${CX+R}" y2="${iy2+16}" stroke="rgba(255,255,255,0.1)" stroke-width="0.4"/>`;
 s+=txt(CX+R/2,iy2+30,'R','#C4A35A',11,500);
 s+=txt(CX-8,CY,'A','rgba(255,255,255,0.25)',11,600,'end');
@@ -203,17 +203,17 @@ seed.forEach(([x,y])=>{s+=cir(x,y,R,'#fff',0.3,0.02)});
 s+=cir(CX,CY,R,'#6B9B7A',0.4,0.12);
 s+=cir(CX-R,CY,R,'#6B9B7A',0.4,0.12);
 s+=cir(CX+R,CY,R,'#6B9B7A',0.4,0.12);
-s+=cir(CX,CY-Rφ/2,Rφ,'#C4A35A',0.6,0.1,true);
-s+=cir(CX,CY+Rφ/2,Rφ,'#C4A35A',0.6,0.1,true);
-s+=dot(CX,CY-Rφ/2,2.5,'#C4A35A',0.5);
-s+=dot(CX,CY+Rφ/2,2.5,'#C4A35A',0.5);
+s+=cir(CX,CY-RPHI/2,RPHI,'#C4A35A',0.6,0.1,true);
+s+=cir(CX,CY+RPHI/2,RPHI,'#C4A35A',0.6,0.1,true);
+s+=dot(CX,CY-RPHI/2,2.5,'#C4A35A',0.5);
+s+=dot(CX,CY+RPHI/2,2.5,'#C4A35A',0.5);
 s+=bean(CX,CY,CX-R,CY,R,'rgba(74,124,89,0.4)','#4A7C59',0.9);
-s+=bean(CX,CY-Rφ/2,CX,CY+Rφ/2,Rφ,'rgba(196,163,90,0.3)','#C4A35A',0.9);
+s+=bean(CX,CY-RPHI/2,CX,CY+RPHI/2,RPHI,'rgba(196,163,90,0.3)','#C4A35A',0.9);
 s+=bean(CX,CY,CX+R,CY,R,'rgba(74,124,89,0.4)','#4A7C59',0.9);
-s+=txt(CX-R/2,CY+R*√3/2+20,'R','rgba(255,255,255,0.2)',10);
-s+=txt(CX,CY+Rφ*√3/2+20,'φR','#C4A35A',10,600);
-s+=txt(CX+R/2,CY+R*√3/2+20,'R','rgba(255,255,255,0.2)',10);
-s+=txt(CX,CY+Rφ*√3/2+42,'center ÷ side = φ = 1.618','#C4A35A',11,500);
+s+=txt(CX-R/2,CY+R*S3/2+20,'R','rgba(255,255,255,0.2)',10);
+s+=txt(CX,CY+RPHI*S3/2+20,'φR','#C4A35A',10,600);
+s+=txt(CX+R/2,CY+R*S3/2+20,'R','rgba(255,255,255,0.2)',10);
+s+=txt(CX,CY+RPHI*S3/2+42,'center ÷ side = φ = 1.618','#C4A35A',11,500);
 document.getElementById('d3').innerHTML=s;
 
 // ===== D4: 369 =====
@@ -222,32 +222,32 @@ seed.forEach(([x,y],i)=>{
   s+=cir(x,y,R,'#fff',0.3,0.04);
   if(i>0){const a=Math.atan2(y-CY,x-CX);s+=txt(x+R*0.18*Math.cos(a),y+R*0.18*Math.sin(a),i,'rgba(255,255,255,0.1)',13,600)}
 });
-s+=cir(CX,CY-Rφ/2,Rφ,'#fff',0.3,0.04);
-s+=cir(CX,CY+Rφ/2,Rφ,'#fff',0.3,0.04);
-s+=txt(CX-Rφ*0.14,CY-Rφ/2,'8','rgba(255,255,255,0.1)',12,600,'end');
-s+=txt(CX-Rφ*0.14,CY+Rφ/2,'9','rgba(255,255,255,0.1)',12,600,'end');
+s+=cir(CX,CY-RPHI/2,RPHI,'#fff',0.3,0.04);
+s+=cir(CX,CY+RPHI/2,RPHI,'#fff',0.3,0.04);
+s+=txt(CX-RPHI*0.14,CY-RPHI/2,'8','rgba(255,255,255,0.1)',12,600,'end');
+s+=txt(CX-RPHI*0.14,CY+RPHI/2,'9','rgba(255,255,255,0.1)',12,600,'end');
 s+=bean(CX,CY,CX-R,CY,R,'rgba(74,124,89,0.35)','#4A7C59',0.85);
-s+=bean(CX,CY-Rφ/2,CX,CY+Rφ/2,Rφ,'rgba(196,163,90,0.28)','#C4A35A',0.85);
+s+=bean(CX,CY-RPHI/2,CX,CY+RPHI/2,RPHI,'rgba(196,163,90,0.28)','#C4A35A',0.85);
 s+=bean(CX,CY,CX+R,CY,R,'rgba(74,124,89,0.35)','#4A7C59',0.85);
 const bx=480,by=48;
 s+=`<text x="${bx}" y="${by}" fill="#C4A35A" font-family="'DM Serif Display'" font-size="26" letter-spacing="-0.02em">3 · 6 · 9</text>`;
 [['3 beans',22],['6 seed circles',38],['9 construction circles',54]].forEach(([t,dy])=>{s+=txt(bx,by+dy,t,'rgba(255,255,255,0.25)',11,400,'start')});
 s+=`<line x1="${bx}" y1="${by+66}" x2="${bx+105}" y2="${by+66}" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/>`;
-[['3 + 6 = 9',82],['360° ÷ 6 = 60°',98],['sin 60° = √3/2',114]].forEach(([t,dy])=>{s+=txt(bx,by+dy,t,'rgba(255,255,255,0.18)',11,400,'start')});
+[['3 + 6 = 9',82],['360° ÷ 6 = 60°',98],['sin 60° = S3/2',114]].forEach(([t,dy])=>{s+=txt(bx,by+dy,t,'rgba(255,255,255,0.18)',11,400,'start')});
 document.getElementById('d4').innerHTML=s;
 
 // ===== D5: Final mark =====
 s='';
 // Ghost circles
 seed.forEach(([x,y])=>{s+=cir(x,y,R,'#fff',0.2,0.015)});
-s+=cir(CX,CY-Rφ/2,Rφ,'#fff',0.2,0.015);
-s+=cir(CX,CY+Rφ/2,Rφ,'#fff',0.2,0.015);
+s+=cir(CX,CY-RPHI/2,RPHI,'#fff',0.2,0.015);
+s+=cir(CX,CY+RPHI/2,RPHI,'#fff',0.2,0.015);
 // Solid beans
 s+=bean(CX,CY,CX-R,CY,R,'#4A7C59','#3A6349');
-s+=bean(CX,CY-Rφ/2,CX,CY+Rφ/2,Rφ,'#C4A35A','#b0913a');
+s+=bean(CX,CY-RPHI/2,CX,CY+RPHI/2,RPHI,'#C4A35A','#b0913a');
 s+=bean(CX,CY,CX+R,CY,R,'#4A7C59','#3A6349');
 // Pod arcs — from the outermost construction geometry
-const cT=CY-Rφ*√3/2-5,cB=CY+Rφ*√3/2+5;
+const cT=CY-RPHI*S3/2-5,cB=CY+RPHI*S3/2+5;
 const pL=CX-R/2-R/2-4,pR=CX+R/2+R/2+4;
 s+=`<path d="M${pL-12} ${cT} C${pL-26} ${CY-36},${pL-26} ${CY+36},${pL-12} ${cB}" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>`;
 s+=`<path d="M${pR+12} ${cT} C${pR+26} ${CY-36},${pR+26} ${CY+36},${pR+12} ${cB}" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>`;
