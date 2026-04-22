@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>枝豆株式会社 — Kintoneを、自ら使う側が設計する。</title>
-<meta name="description" content="2024年Kintoneグローバル・パートナー・オブ・ザ・イヤー受賞。フィリピン・パシッグ拠点の少人数ファーム。50社・2,400名以上のエンタープライズ導入を、AIで自社運営するのと同じ規律で支えています。">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>フィリピンKintone公式パートナー | 2024年グローバル・パートナー・オブ・ザ・イヤー受賞 | 枝豆株式会社</title>
+<meta name="description" content="2024年Kintoneグローバル・パートナー・オブ・ザ・イヤー受賞。フィリピン・パシッグ拠点のKintone公式パートナー。ORIX Metro、ダイキン、Quipperなど50社・2,400名以上の導入実績。₱1,000/ユーザー/月より（最低5ユーザー）。">
 
 <link rel="canonical" href="https://edamame-jp.com/kintone-philippines/ja/" />
 <link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/" />
@@ -56,701 +56,538 @@ gtag('js', new Date());
 gtag('config', 'G-YF1198H5CL');
 </script>
 
+<link rel="icon" type="image/svg+xml" href="/edamame-icon.svg" />
+<link rel="alternate" type="application/rss+xml" title="edamame — フィールドノート" href="/rss.xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-
 :root {
-  --bg: #FAFAFA;
-  --bg-card: #FFFFFF;
-  --bg-section: #F4F4F3;
-  --bg-dark: #0A0A0A;
-  --ink: #0A0A0A;
-  --ink-2: #1F1F1F;
-  --ink-3: #525252;
-  --ink-4: #A3A3A3;
-  --line: #E5E5E5;
-  --line-2: #D4D4D4;
-  --green: #4A7C59;
-  --gold: #C4A35A;
-  --accent: #EF4444;
+  --sage: #4A7C59; --sage-deep: #3A6349; --sage-soft: #6B9B7A;
+  --gold: #C4A35A; --gold-soft: #E8D5A3;
+  --cream: #F0EDE8; --off-white: #FAFAF8;
+  --ink: #1A1A18; --ink-soft: #2D2D2A; --gray: #6B6B66;
+  --forest: #0a1e15;
+  --cta-red: #ED1C24; --cta-red-bright: #FF5A5F;
 }
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
-  font-family: 'Noto Sans JP', 'Inter Tight', -apple-system, BlinkMacSystemFont, sans-serif;
-  color: var(--ink-2);
-  background: var(--bg);
+  font-family: 'Noto Sans JP', 'DM Sans', system-ui, sans-serif;
+  color: var(--ink); background: var(--off-white);
+  line-height: 1.7; -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  line-height: 1.7;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0;
 }
-
+/* Latin display always falls back to Noto Sans JP weight for JP chars */
+.serif, h1, h2, h3 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; }
+code, .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
 a { color: inherit; text-decoration: none; }
-img, svg { display: block; max-width: 100%; }
+.container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.narrow { max-width: 840px; margin: 0 auto; padding: 0 24px; }
 
-.wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
-@media (max-width: 720px) { .wrap { padding: 0 20px; } }
-
-.mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
-
-/* ── NAV ── */
-.nav {
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(250, 250, 250, 0.8);
-  backdrop-filter: saturate(180%) blur(14px);
-  border-bottom: 1px solid var(--line);
-}
-.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.logo { display: flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 600; font-size: 15px; letter-spacing: -0.02em; }
-.nav-links { display: flex; gap: 32px; font-size: 14px; font-weight: 500; color: var(--ink-3); }
-.nav-links a:hover { color: var(--ink); }
-.nav-cta {
-  font-size: 13px; font-weight: 600; color: #fff; background: var(--ink);
-  padding: 8px 14px; border-radius: 7px; letter-spacing: -0.01em;
-  transition: background .15s;
-}
-.nav-cta:hover { background: var(--ink-2); }
+/* NAV */
+.nav { position: sticky; top: 0; z-index: 50; background: rgba(250,250,248,0.95); backdrop-filter: saturate(180%) blur(14px); border-bottom: 1px solid rgba(26,26,24,0.08); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; max-width: 1180px; margin: 0 auto; padding: 16px 24px; }
+.logo { display: flex; align-items: center; gap: 10px; color: var(--ink); font-family: 'DM Serif Display', serif; font-size: 22px; letter-spacing: -0.01em; }
+.logo svg { width: 34px; height: 30px; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--ink-soft); transition: color .15s; font-family: 'Noto Sans JP', sans-serif; }
+.nav-links a:hover { color: var(--sage); }
+.nav-cta { font-size: 13px; font-weight: 600; color: #fff; background: linear-gradient(135deg, var(--cta-red), var(--cta-red-bright)); padding: 10px 18px; border-radius: 100px; transition: transform .15s, box-shadow .15s; font-family: 'Noto Sans JP', sans-serif; }
+.nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(237,28,36,0.2); }
 @media (max-width: 820px) { .nav-links { display: none; } }
 
-/* ── HERO ── */
-.hero { padding: 100px 0 140px; position: relative; overflow: hidden; }
-.hero::before {
-  content: ''; position: absolute; inset: 0;
-  background-image:
-    linear-gradient(rgba(10,10,10,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(10,10,10,0.025) 1px, transparent 1px);
-  background-size: 80px 80px;
-  mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
-  pointer-events: none;
+/* HERO */
+.hero {
+  padding: 80px 24px 48px;
+  position: relative;
+  background:
+    linear-gradient(180deg, rgba(250,250,248,0.92) 0%, rgba(250,250,248,0.92) 100%),
+    repeating-linear-gradient(0deg, rgba(74,124,89,0.06) 0 1px, transparent 1px 32px),
+    repeating-linear-gradient(90deg, rgba(74,124,89,0.06) 0 1px, transparent 1px 32px);
 }
-/* Decorative edamame pod motifs */
-.hero-pod-decor {
-  position: absolute; pointer-events: none; z-index: 0;
-  opacity: 0.06;
-}
-.hero-pod-decor.a { top: 8%; right: 6%; width: 180px; transform: rotate(18deg); }
-.hero-pod-decor.b { bottom: 12%; right: 22%; width: 90px; transform: rotate(-8deg); opacity: 0.05; }
-.hero-pod-decor.c { top: 40%; right: -2%; width: 140px; transform: rotate(72deg); opacity: 0.04; }
-@media (max-width: 820px) {
-  .hero-pod-decor.a { width: 120px; top: 2%; right: -10%; }
-  .hero-pod-decor.b, .hero-pod-decor.c { display: none; }
-}
-.hero .wrap { position: relative; }
-.hero-pill {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 6px 12px; background: #fff; border: 1px solid var(--line);
-  border-radius: 100px; font-size: 12.5px; color: var(--ink-3);
-  margin-bottom: 32px; font-weight: 500;
-}
-.hero-pill strong { color: var(--ink); font-weight: 600; }
-.hero-pill-dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; }
+.hero-grid { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; align-items: center; }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
 
-.hero h1 {
-  font-family: 'Noto Serif JP', 'Inter Tight', serif;
-  font-size: clamp(38px, 6vw, 78px);
-  font-weight: 500;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: var(--ink);
-  margin-bottom: 24px;
-  max-width: 22ch;
-}
-.hero h1 em {
-  font-style: normal; font-weight: 500; color: var(--ink-3);
-  font-family: 'Noto Serif JP', serif;
-}
-.hero-sub {
-  font-size: clamp(17px, 1.6vw, 20px); color: var(--ink-3);
-  max-width: 580px; margin-bottom: 44px; font-weight: 400; line-height: 1.5;
-}
-.hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
-.btn-primary {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 22px; background: var(--ink); color: #fff;
-  border-radius: 10px; font-weight: 600; font-size: 15px;
-  transition: transform .12s;
-  letter-spacing: -0.01em;
-}
-.btn-primary:hover { transform: translateY(-1px); }
-.btn-primary::after { content: '→'; }
-.btn-ghost {
-  display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 22px; color: var(--ink-2);
-  border: 1px solid var(--line-2); background: #fff;
-  border-radius: 10px; font-weight: 600; font-size: 15px;
-  letter-spacing: -0.01em; transition: border-color .15s;
-}
-.btn-ghost:hover { border-color: var(--ink); }
+.hero-kicker { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.18em; color: var(--sage); text-transform: uppercase; margin-bottom: 24px; display: flex; align-items: center; gap: 10px; }
+.hero-kicker::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); animation: pulse 2.4s infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
-/* ── PROOF ── */
-.proof {
-  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
-  padding: 24px 0; background: #fff;
-}
-.proof-inner {
-  display: grid; grid-template-columns: auto 1fr; gap: 40px; align-items: center;
-}
-@media (max-width: 820px) { .proof-inner { grid-template-columns: 1fr; gap: 16px; } }
-.proof-label { font-size: 11px; letter-spacing: 0.14em; color: var(--ink-4); text-transform: uppercase; font-weight: 600; }
-.proof-clients {
-  display: flex; gap: 40px; flex-wrap: wrap; align-items: center;
-  font-family: 'Inter', sans-serif; font-weight: 700;
-  color: var(--ink-3); font-size: 15px; letter-spacing: -0.02em;
-}
+.hero h1 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: clamp(36px, 5.8vw, 62px); line-height: 1.18; letter-spacing: -0.01em; color: var(--ink); margin-bottom: 28px; }
+.hero h1 em { font-style: italic; color: var(--sage); }
 
-/* ── SECTIONS ── */
-section { padding: 120px 0; }
-@media (max-width: 720px) { section { padding: 72px 0; } }
-.section-eyebrow {
-  font-size: 12px; letter-spacing: 0.08em; font-weight: 600;
-  color: var(--green); text-transform: uppercase;
-  margin-bottom: 16px;
-}
-.section-title {
-  font-family: 'Noto Serif JP', sans-serif;
-  font-size: clamp(28px, 4.2vw, 48px); font-weight: 500;
-  letter-spacing: 0.005em; line-height: 1.25;
-  color: var(--ink); margin-bottom: 18px; max-width: 24ch;
-}
-.section-title em { font-style: normal; font-weight: 500; color: var(--ink-3); }
-.section-lede {
-  font-size: 18px; color: var(--ink-3); max-width: 600px;
-  margin-bottom: 56px; line-height: 1.55;
-}
+.hero-sub { font-size: 17px; line-height: 1.85; color: var(--ink-soft); max-width: 48ch; margin-bottom: 32px; }
 
-/* ── DIFFERENCE (section 01) ── */
-.diff-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start;
-}
-@media (max-width: 820px) { .diff-grid { grid-template-columns: 1fr; gap: 32px; } }
-.diff-text p { font-size: 17px; color: var(--ink-3); line-height: 1.65; margin-bottom: 20px; }
-.diff-text p strong { color: var(--ink); font-weight: 600; }
-.diff-text p:last-child { margin-bottom: 0; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 14px 24px; border-radius: 100px; background: linear-gradient(135deg, var(--cta-red), var(--cta-red-bright)); color: #fff; font-weight: 600; font-size: 14px; transition: transform .15s, box-shadow .15s; font-family: 'Noto Sans JP', sans-serif; }
+.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(237,28,36,0.25); }
+.btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 100px; background: transparent; color: var(--sage); border: 1px solid var(--sage); font-weight: 600; font-size: 14px; transition: all .2s; font-family: 'Noto Sans JP', sans-serif; }
+.btn-ghost:hover { background: var(--sage); color: var(--cream); }
+.hero-note { font-size: 12px; color: var(--gray); margin-left: 4px; font-family: 'Noto Sans JP', sans-serif; }
 
-/* Stat cards */
-.stat-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
-}
-.stat-card {
-  background: #fff; border: 1px solid var(--line); border-radius: 14px;
-  padding: 24px; transition: border-color .2s;
-}
-.stat-card:hover { border-color: var(--line-2); }
-.stat-label {
-  font-size: 12px; color: var(--ink-3); font-weight: 500; margin-bottom: 10px;
-  letter-spacing: -0.005em;
-}
-.stat-value {
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 38px; font-weight: 700; color: var(--ink);
-  letter-spacing: -0.03em; line-height: 1;
-  margin-bottom: 6px;
-}
-.stat-value small { font-size: 14px; color: var(--ink-4); font-weight: 500; }
-.stat-note { font-size: 12px; color: var(--green); font-weight: 500; }
+/* LIVE DATA PANEL */
+.live-panel { background: var(--ink); color: var(--cream); border-radius: 14px; padding: 26px 24px; border: 1px solid var(--gold); position: relative; overflow: hidden; }
+.live-panel::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, var(--sage) 0%, var(--gold) 50%, var(--sage) 100%); }
+.live-panel-title { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.24em; color: var(--gold); text-transform: uppercase; margin-bottom: 18px; display: flex; justify-content: space-between; align-items: center; }
+.live-panel-title::after { content: "● LIVE"; color: var(--cta-red-bright); animation: pulse 1.5s infinite; font-size: 9px; }
+.live-stat { display: flex; justify-content: space-between; align-items: baseline; padding: 12px 0; border-bottom: 1px dashed rgba(196,163,90,0.24); font-size: 13px; }
+.live-stat:last-child { border-bottom: none; }
+.live-stat-label { color: rgba(240,237,232,0.65); font-family: 'Noto Sans JP', sans-serif; }
+.live-stat-val { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--cream); }
+.live-stat-val .unit { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--gold); margin-left: 4px; }
 
-/* ── FEATURES (section 02 - what we build) ── */
-.build { background: var(--bg-section); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.build-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
-  margin-top: 8px;
-}
-@media (max-width: 900px) { .build-grid { grid-template-columns: 1fr; } }
-.build-card {
-  background: #fff; border: 1px solid var(--line);
-  border-radius: 14px; padding: 32px;
-  display: flex; flex-direction: column;
-  transition: transform .15s, border-color .15s;
-}
-.build-card:hover { border-color: var(--ink-4); transform: translateY(-2px); }
-.build-card-label {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px; color: var(--ink-4); letter-spacing: 0.08em;
-  margin-bottom: 20px;
-}
-.build-card h3 {
-  font-size: 22px; font-weight: 600; color: var(--ink);
-  letter-spacing: -0.025em; margin-bottom: 12px;
-}
-.build-card p {
-  font-size: 14.5px; color: var(--ink-3); line-height: 1.55;
-  margin-bottom: 24px;
-}
-.build-card-meta {
-  margin-top: auto; padding-top: 20px; border-top: 1px solid var(--line);
-  display: flex; justify-content: space-between; align-items: center;
-}
-.build-card-meta-label { font-size: 11.5px; color: var(--ink-4); }
-.build-card-meta-val { font-size: 14px; font-weight: 600; color: var(--ink); }
+/* TRUST BAR */
+.trust { padding: 48px 24px; background: var(--cream); border-top: 1px solid rgba(26,26,24,0.06); border-bottom: 1px solid rgba(26,26,24,0.06); }
+.trust-inner { max-width: 1180px; margin: 0 auto; text-align: center; }
+.trust-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--gray); text-transform: uppercase; margin-bottom: 24px; }
+.trust-row { display: flex; justify-content: center; align-items: center; gap: 40px; flex-wrap: wrap; font-family: 'DM Serif Display', serif; color: var(--ink-soft); font-size: 20px; letter-spacing: 0.02em; }
+.trust-row a { opacity: 0.65; transition: all .2s; }
+.trust-row a:hover { opacity: 1; color: var(--sage); }
 
-/* ── WORK ── */
-.work-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;
-}
-@media (max-width: 820px) { .work-grid { grid-template-columns: 1fr; } }
-.case {
-  background: #fff; border: 1px solid var(--line);
-  border-radius: 14px; padding: 32px;
-  transition: border-color .15s;
-}
-.case:hover { border-color: var(--line-2); }
-.case-head {
-  display: flex; justify-content: space-between; align-items: start;
-  margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid var(--line);
-}
-.case-client {
-  font-size: 17px; font-weight: 600; color: var(--ink); letter-spacing: -0.02em;
-}
-.case-industry {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px; color: var(--ink-4); letter-spacing: 0.06em;
-  text-transform: uppercase; margin-top: 4px;
-}
-.case-logo { font-size: 12px; color: var(--ink-4); font-weight: 500; }
-.case-outcome {
-  font-family: 'Noto Serif JP', sans-serif;
-  font-size: 28px; font-weight: 500; letter-spacing: 0.005em;
-  line-height: 1.3; color: var(--ink);
-  margin-bottom: 12px;
-}
-.case-outcome span { color: var(--green); }
-.case-body { font-size: 14.5px; color: var(--ink-3); line-height: 1.55; }
+/* SECTIONS */
+.section { padding: 80px 24px; max-width: 1180px; margin: 0 auto; }
+.section-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 48px; padding-bottom: 20px; border-bottom: 1px solid rgba(26,26,24,0.1); flex-wrap: wrap; gap: 20px; }
+.section-head h2 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: clamp(28px, 4.2vw, 46px); line-height: 1.2; color: var(--ink); letter-spacing: -0.01em; }
+.section-head h2 em { font-style: italic; color: var(--sage); }
+.section-meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: var(--gray); text-transform: uppercase; }
 
-/* ── PROCESS ── */
-.process { background: var(--bg-dark); color: #fff; }
-.process .section-eyebrow { color: var(--gold); }
-.process .section-title { color: #fff; }
-.process .section-lede { color: rgba(255,255,255,0.6); }
-.process-steps {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
-  margin-top: 16px;
-  background: rgba(255,255,255,0.06); padding: 2px;
-  border-radius: 14px; overflow: hidden;
-}
-@media (max-width: 900px) { .process-steps { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 520px) { .process-steps { grid-template-columns: 1fr; } }
-.step {
-  background: var(--bg-dark); padding: 32px;
-  display: flex; flex-direction: column; min-height: 200px;
-}
-.step-num {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 12px; color: var(--gold); margin-bottom: 20px;
-  letter-spacing: 0.08em;
-}
-.step h4 {
-  font-size: 20px; font-weight: 600; letter-spacing: -0.02em;
-  margin-bottom: 8px; color: #fff;
-}
-.step p {
-  font-size: 13.5px; color: rgba(255,255,255,0.6);
-  line-height: 1.55; margin-bottom: 16px;
-}
-.step-day {
-  margin-top: auto;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 11px; color: rgba(255,255,255,0.4);
-  letter-spacing: 0.08em;
+/* THREE BEANS */
+.beans-grid { display: grid; grid-template-columns: 1fr 1.1fr 1fr; gap: 20px; }
+@media (max-width: 900px) { .beans-grid { grid-template-columns: 1fr; } }
+.bean { background: var(--off-white); border: 1.5px solid rgba(74,124,89,0.2); padding: 32px 28px; text-decoration: none; color: var(--ink); transition: all .25s cubic-bezier(0.2,0.8,0.2,1); display: flex; flex-direction: column; }
+.bean-left { border-radius: 80px 20px 80px 20px; }
+.bean-center { border-radius: 100px 100px 100px 100px / 50px 50px 50px 50px; background: var(--ink); color: var(--cream); border-color: var(--gold); transform: scale(1.02); }
+.bean-right { border-radius: 20px 80px 20px 80px; }
+.bean:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(10,30,21,0.12); }
+.bean-center:hover { transform: translateY(-4px) scale(1.02); }
+@media (max-width: 900px) { .bean-center { transform: none; } .bean-center:hover { transform: translateY(-4px); } }
+.bean-marker { width: 22px; height: 22px; border-radius: 50%; background: var(--sage); margin-bottom: 20px; }
+.bean-center .bean-marker { background: var(--gold); width: 28px; height: 28px; }
+.bean-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--sage); text-transform: uppercase; margin-bottom: 10px; }
+.bean-center .bean-num { color: var(--gold); }
+.bean h3 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: 22px; line-height: 1.35; margin-bottom: 12px; }
+.bean-center h3 { color: var(--cream); }
+.bean p { font-size: 14px; line-height: 1.75; color: var(--ink-soft); margin-bottom: 18px; flex: 1; }
+.bean-center p { color: rgba(240,237,232,0.78); }
+.bean-meta { padding-top: 14px; border-top: 1px dashed rgba(74,124,89,0.3); font-size: 11px; color: var(--gray); font-family: 'JetBrains Mono', monospace; letter-spacing: 0.12em; }
+.bean-center .bean-meta { border-color: rgba(196,163,90,0.3); color: rgba(240,237,232,0.55); }
+
+/* NAMED CLIENTS (replaces Gantt) */
+.clients-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid rgba(26,26,24,0.08); }
+@media (max-width: 780px) { .clients-list { grid-template-columns: 1fr; } }
+.client-row { display: flex; align-items: center; gap: 20px; padding: 22px 4px; border-bottom: 1px solid rgba(26,26,24,0.08); color: var(--ink); text-decoration: none; transition: all .2s; }
+.client-row:nth-child(odd) { border-right: 1px solid rgba(26,26,24,0.08); padding-right: 24px; }
+@media (max-width: 780px) { .client-row:nth-child(odd) { border-right: none; padding-right: 4px; } }
+.client-row:hover { background: var(--cream); padding-left: 16px; }
+.client-row:hover .client-arrow { transform: translateX(4px); color: var(--sage); }
+.client-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.2em; color: var(--gold); }
+.client-name { font-family: 'DM Serif Display', serif; font-size: 22px; line-height: 1.2; color: var(--ink); flex: 1; }
+.client-arrow { font-size: 16px; color: var(--gray); transition: all .2s; }
+
+/* COMPARISON TABLE */
+.compare { background: var(--ink); color: var(--cream); border-radius: 16px; padding: 48px 32px; position: relative; overflow: hidden; }
+.compare::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.compare h3 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: 28px; margin-bottom: 28px; color: var(--cream); }
+.compare h3 em { color: var(--gold); font-style: italic; }
+.compare table { width: 100%; border-collapse: collapse; font-size: 14px; }
+.compare th { text-align: left; padding: 14px 12px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--gold); text-transform: uppercase; border-bottom: 1px solid rgba(196,163,90,0.3); font-weight: 500; }
+.compare td { padding: 14px 12px; border-bottom: 1px solid rgba(240,237,232,0.08); color: rgba(240,237,232,0.85); font-family: 'Noto Sans JP', sans-serif; }
+.compare td:first-child { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 600; font-size: 16px; color: var(--cream); }
+.compare td a { color: var(--gold); font-weight: 500; }
+.compare td a:hover { text-decoration: underline; }
+.check-yes { color: var(--sage-soft); font-weight: 600; }
+.check-no { color: var(--cta-red-bright); }
+.check-mid { color: var(--gold); }
+@media (max-width: 780px) {
+  .compare { padding: 32px 20px; }
+  .compare table { font-size: 12px; }
+  .compare td, .compare th { padding: 10px 6px; }
 }
 
-/* ── PRICING ── */
-.pricing-grid {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
-  margin-top: 8px;
-}
-@media (max-width: 820px) { .pricing-grid { grid-template-columns: 1fr; } }
-.price-card {
-  background: #fff; border: 1px solid var(--line);
-  border-radius: 14px; padding: 32px;
-  position: relative; display: flex; flex-direction: column;
-}
-.price-card.featured { border: 2px solid var(--ink); }
-.price-featured-tag {
-  position: absolute; top: -10px; left: 32px;
-  background: var(--ink); color: #fff;
-  font-size: 11px; font-weight: 600; letter-spacing: 0.05em;
-  padding: 4px 10px; border-radius: 6px; text-transform: uppercase;
-}
-.price-tier {
-  font-size: 18px; font-weight: 600; letter-spacing: -0.02em;
-  color: var(--ink); margin-bottom: 8px;
-}
-.price-for {
-  font-size: 13.5px; color: var(--ink-3); line-height: 1.5;
-  margin-bottom: 28px; min-height: 50px;
-}
-.price-amount {
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 38px; font-weight: 700; color: var(--ink);
-  letter-spacing: -0.035em; line-height: 1; margin-bottom: 4px;
-}
-.price-amount small {
-  font-size: 14px; color: var(--ink-4); font-weight: 500;
-  display: block; margin-top: 8px;
-}
-.price-divider {
-  margin: 24px 0 20px; border: 0; height: 1px; background: var(--line);
-}
-.price-features {
-  list-style: none; font-size: 14px; color: var(--ink-3);
-  margin-bottom: 28px;
-}
-.price-features li {
-  padding: 8px 0 8px 22px; position: relative;
-}
-.price-features li::before {
-  content: ''; position: absolute; left: 0; top: 14px;
-  width: 12px; height: 2px; background: var(--green);
-}
-.price-cta {
-  margin-top: auto;
-  display: block; padding: 11px; text-align: center;
-  border-radius: 8px; font-size: 14px; font-weight: 600;
-  border: 1px solid var(--line-2); color: var(--ink);
-  transition: border-color .15s;
-}
-.price-cta:hover { border-color: var(--ink); }
-.price-card.featured .price-cta { background: var(--ink); color: #fff; border-color: var(--ink); }
+/* FIELD NOTES */
+.field-notes { background: var(--cream); padding: 80px 24px; }
+.field-notes-inner { max-width: 1180px; margin: 0 auto; }
+.notes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 900px) { .notes-grid { grid-template-columns: 1fr; } }
+.note-card { background: var(--off-white); padding: 26px; border-radius: 40px 12px 40px 12px; border: 1px solid rgba(74,124,89,0.15); text-decoration: none; color: var(--ink); display: flex; flex-direction: column; gap: 12px; transition: all .25s cubic-bezier(0.2,0.8,0.2,1); position: relative; }
+.note-card::before { content: ""; position: absolute; top: 22px; left: 22px; width: 8px; height: 8px; border-radius: 50%; background: var(--sage); }
+.note-card.gold::before { background: var(--gold); }
+.note-card:hover { transform: translateY(-3px); border-color: var(--sage); box-shadow: 0 14px 36px rgba(10,30,21,0.1); }
+.note-tag { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--sage); text-transform: uppercase; margin-top: 22px; }
+.note-title { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: 20px; line-height: 1.35; }
+.note-deck { font-size: 14px; line-height: 1.75; color: var(--ink-soft); flex: 1; }
+.note-read { font-size: 12px; color: var(--sage); font-weight: 600; letter-spacing: 0.04em; }
 
-/* ── CTA ── */
-.final-cta {
-  background: #fff; border-top: 1px solid var(--line);
-  padding: 140px 0;
-  text-align: center;
-}
-.final-cta h2 {
-  font-family: 'Noto Serif JP', sans-serif;
-  font-size: clamp(30px, 5vw, 52px); font-weight: 500;
-  letter-spacing: 0.01em; line-height: 1.3;
-  color: var(--ink); margin-bottom: 16px; max-width: 20ch;
-  margin-left: auto; margin-right: auto;
-}
-.final-cta h2 em { font-style: normal; font-weight: 500; color: var(--ink-3); }
-.final-cta p { color: var(--ink-3); font-size: 17px; max-width: 500px; margin: 0 auto 32px; }
-.final-cta .btn-primary { font-size: 16px; padding: 16px 28px; }
+/* FAQ */
+.faq-section { padding: 80px 24px; }
+.faq-section-inner { max-width: 840px; margin: 0 auto; }
+.faq details { border-bottom: 1px solid rgba(26,26,24,0.12); padding: 24px 0; cursor: pointer; }
+.faq summary { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: 20px; line-height: 1.45; color: var(--ink); list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--sage); font-size: 28px; font-family: 'DM Sans', sans-serif; margin-left: 16px; transition: transform .2s; font-weight: 300; }
+.faq details[open] summary::after { content: "−"; }
+.faq-body { margin-top: 16px; color: var(--ink-soft); font-size: 15px; line-height: 1.85; }
 
-/* ── FOOTER ── */
-footer {
-  background: var(--bg-dark); color: rgba(255,255,255,0.6);
-  padding: 64px 0 32px; font-size: 13.5px;
-}
-.footer-grid {
-  display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
-  margin-bottom: 40px;
-}
-@media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; } }
-.footer-logo { display: flex; align-items: center; gap: 10px; color: #fff; font-weight: 600; font-size: 15px; margin-bottom: 12px; }
-.footer-desc { max-width: 280px; line-height: 1.55; }
-.footer-col h5 { font-size: 11px; text-transform: uppercase; color: rgba(255,255,255,0.85); font-weight: 600; letter-spacing: 0.08em; margin-bottom: 14px; }
-.footer-col ul { list-style: none; }
-.footer-col li { padding: 4px 0; }
-.footer-col a:hover { color: #fff; }
-.footer-base {
-  padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08);
-  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
-  font-size: 12px; color: rgba(255,255,255,0.4);
-}
+/* PRICING */
+.pricing-bar { background: var(--forest); color: var(--cream); padding: 56px 24px; text-align: center; }
+.pricing-bar-inner { max-width: 820px; margin: 0 auto; }
+.pricing-bar h2 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: clamp(26px, 4vw, 38px); line-height: 1.25; margin-bottom: 12px; color: var(--cream); }
+.pricing-bar h2 em { color: var(--gold); font-style: italic; }
+.pricing-bar p { color: rgba(240,237,232,0.72); font-size: 15px; }
+.pricing-bar .min { opacity: 0.55; font-size: 0.9em; }
+.pricing-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 32px; text-align: left; }
+@media (max-width: 780px) { .pricing-tiers { grid-template-columns: 1fr; } }
+.tier { background: rgba(240,237,232,0.05); border: 1px solid rgba(240,237,232,0.12); padding: 24px; border-radius: 40px 12px 40px 12px; }
+.tier.center { border-radius: 60px 60px 60px 60px / 30px 30px 30px 30px; border-color: var(--gold); background: rgba(196,163,90,0.08); }
+.tier.right { border-radius: 12px 40px 12px 40px; }
+.tier-name { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: var(--gold); text-transform: uppercase; margin-bottom: 12px; }
+.tier-price { font-family: 'DM Serif Display', serif; font-size: 28px; color: var(--cream); margin-bottom: 6px; }
+.tier-price .unit { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: rgba(240,237,232,0.5); margin-left: 4px; }
+.tier-desc { font-size: 13px; color: rgba(240,237,232,0.72); line-height: 1.75; }
 
+/* FINAL CTA */
+.final-cta { padding: 100px 24px 120px; text-align: center; background: var(--off-white); }
+.final-cta-inner { max-width: 720px; margin: 0 auto; }
+.final-cta h2 { font-family: 'DM Serif Display', 'Noto Sans JP', serif; font-weight: 700; font-size: clamp(30px, 5vw, 52px); line-height: 1.25; margin-bottom: 20px; letter-spacing: -0.01em; }
+.final-cta h2 em { font-style: italic; color: var(--sage); }
+.final-cta p { font-size: 16px; color: var(--ink-soft); margin-bottom: 32px; line-height: 1.75; }
+
+/* FOOTER */
+.footer { background: var(--ink); color: rgba(240,237,232,0.6); padding: 56px 24px 40px; font-size: 13px; }
+.footer-inner { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 32px; }
+@media (max-width: 780px) { .footer-inner { grid-template-columns: 1fr 1fr; } }
+.footer-col strong { color: var(--cream); display: block; margin-bottom: 12px; font-family: 'DM Serif Display', serif; font-size: 18px; font-weight: 400; }
+.footer-col a { color: rgba(240,237,232,0.6); display: block; padding: 4px 0; transition: color .15s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom { max-width: 1180px; margin: 40px auto 0; padding-top: 24px; border-top: 1px solid rgba(240,237,232,0.1); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: rgba(240,237,232,0.4); }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav class="nav">
-  <div class="wrap nav-inner">
-    <a href="/" class="logo">
-      <svg width="28" height="24" viewBox="0 0 80 70"><path d="M5 8 C-2 18, -2 52, 5 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="12" y="20" width="14" height="30" rx="7" fill="#4A7C59"/><rect x="30" y="13" width="19" height="44" rx="9.5" fill="#C4A35A"/><rect x="53" y="20" width="14" height="30" rx="7" fill="#4A7C59"/><path d="M76 8 C83 18, 83 52, 76 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
-      edamame
+<header class="nav">
+  <div class="nav-inner">
+    <a class="logo" href="/kintone-philippines/ja/">
+      <svg viewBox="0 0 80 70" aria-hidden="true">
+        <path d="M5 8 C-2 18, -2 52, 5 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="12" y="20" width="14" height="30" rx="7" fill="#4A7C59"/>
+        <rect x="30" y="13" width="19" height="44" rx="9.5" fill="#C4A35A"/>
+        <rect x="53" y="20" width="14" height="30" rx="7" fill="#4A7C59"/>
+        <path d="M76 8 C83 18, 83 52, 76 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>
+      </svg>
+      <span>edamame</span>
     </a>
-    <div class="nav-links">
-      <a href="#build">サービス</a>
-      <a href="#work">導入事例</a>
-      <a href="#process">進め方</a>
-      <a href="#pricing">料金</a>
-      <a href="/kintone-philippines/en/" style="color: var(--ink-4);">EN</a>
-    </div>
-    <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="nav-cta">無料相談</a>
+    <ul class="nav-links">
+      <li><a href="#practices">サービス</a></li>
+      <li><a href="/kintone-philippines/en/customers/">導入事例</a></li>
+      <li><a href="/kintone-philippines/ja/blog/">ブログ</a></li>
+      <li><a href="/kintone-philippines/en/industries/">業種別</a></li>
+      <li><a href="#pricing">料金</a></li>
+    </ul>
+    <a class="nav-cta" href="https://calendly.com/kintoneph/freekintoneappconsultation">無料相談</a>
   </div>
-</nav>
+</header>
 
 <!-- HERO -->
 <section class="hero">
-  <svg class="hero-pod-decor a" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 8 C-2 18, -2 52, 5 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <rect x="12" y="20" width="14" height="30" rx="7" fill="#4A7C59"/>
-    <rect x="30" y="13" width="19" height="44" rx="9.5" fill="#C4A35A"/>
-    <rect x="53" y="20" width="14" height="30" rx="7" fill="#4A7C59"/>
-    <path d="M76 8 C83 18, 83 52, 76 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>
-  </svg>
-  <svg class="hero-pod-decor b" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 8 C-2 18, -2 52, 5 62" stroke="#C4A35A" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <rect x="12" y="20" width="14" height="30" rx="7" fill="#C4A35A"/>
-    <rect x="30" y="13" width="19" height="44" rx="9.5" fill="#4A7C59"/>
-    <rect x="53" y="20" width="14" height="30" rx="7" fill="#C4A35A"/>
-    <path d="M76 8 C83 18, 83 52, 76 62" stroke="#C4A35A" stroke-width="3" fill="none" stroke-linecap="round"/>
-  </svg>
-  <svg class="hero-pod-decor c" viewBox="0 0 80 70" xmlns="http://www.w3.org/2000/svg">
-    <path d="M5 8 C-2 18, -2 52, 5 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>
-    <rect x="12" y="20" width="14" height="30" rx="7" fill="#4A7C59"/>
-    <rect x="30" y="13" width="19" height="44" rx="9.5" fill="#C4A35A"/>
-    <rect x="53" y="20" width="14" height="30" rx="7" fill="#4A7C59"/>
-    <path d="M76 8 C83 18, 83 52, 76 62" stroke="#4A7C59" stroke-width="3" fill="none" stroke-linecap="round"/>
-  </svg>
-
-  <div class="wrap">
-    <div class="hero-pill">
-      <span class="hero-pill-dot"></span>
-      <span><strong>2024年 Kintoneグローバル・パートナー・オブ・ザ・イヤー受賞。</strong> フィリピン。</span>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-kicker">2024 KINTONE GLOBAL PARTNER OF THE YEAR · PHILIPPINES</div>
+      <h1>現場で使う人が、<em>自ら設計する</em>Kintone。</h1>
+      <p class="hero-sub">フィリピン・パシッグ拠点の公認Kintoneパートナー。ORIX Metro、ダイキン、Quipperを含む50社・2,400名以上の実運用を支援しています。日本人CEOが常駐し、すべての商談・設計・納品・サポートを日本語でお受けします。</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://calendly.com/kintoneph/freekintoneappconsultation">30分の無料相談 →</a>
+        <a class="btn-ghost" href="/kintone-philippines/en/customers/">導入実績を見る</a>
+      </div>
+      <p class="hero-note" style="margin-top:16px;">営業トークなし。Tom本人が日本語で対応します。</p>
     </div>
-    <h1>Kintoneを、<em>自ら使う側が</em>設計する。</h1>
-    <p class="hero-sub">
-      フィリピン・パシッグの少人数ファーム。ORIX Metro、ダイキン、Quipperを含む50社のエンタープライズ顧客、計2,400名以上のユーザーを支えています。自社運営をAIで回すことで少人数でも回る仕組みを作り上げ、その同じ規律をお客様にも提供しています。
-    </p>
-    <div class="hero-cta">
-      <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="btn-primary">30分のデモを予約</a>
-      <a href="#work" class="btn-ghost">導入事例を見る</a>
+
+    <!-- LIVE DATA PANEL -->
+    <div class="live-panel">
+      <div class="live-panel-title">edamame · 運用中</div>
+      <div class="live-stat"><span class="live-stat-label">導入企業数</span><span class="live-stat-val">50<span class="unit">社</span></span></div>
+      <div class="live-stat"><span class="live-stat-label">利用ユーザー数</span><span class="live-stat-val">2,443</span></div>
+      <div class="live-stat"><span class="live-stat-label">月次売上</span><span class="live-stat-val">₱1.87M<span class="unit">/月</span></span></div>
+      <div class="live-stat"><span class="live-stat-label">受賞</span><span class="live-stat-val" style="font-size:18px;">Global Partner</span></div>
+      <div class="live-stat"><span class="live-stat-label">Cybozu · 2024</span><span class="live-stat-val" style="font-size:18px;">of the Year</span></div>
     </div>
   </div>
 </section>
 
-<!-- PROOF -->
-<div class="proof">
-  <div class="wrap">
-    <div class="proof-inner">
-      <div class="proof-label">導入実績</div>
-      <div class="proof-clients">
-        <span>ORIX Metro</span>
-        <span>ダイキン</span>
-        <span>Quipper</span>
-        <span>AEON Fantasy</span>
-        <span>GMA Network</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- 01 · DIFFERENCE -->
-<section>
-  <div class="wrap">
-    <div class="section-eyebrow">私たちの違い</div>
-    <h2 class="section-title">AIを「売る」のではなく、<em>AIで「動く」会社。</em></h2>
-    <p class="section-lede">ほとんどのKintoneパートナーはAIを提案します。私たちはAIで事業を運営しています。</p>
-
-    <div class="diff-grid">
-      <div class="diff-text">
-        <p>代表の新井トムは東京で修行を積み、2018年にパシッグへ移住。それから6年、少人数のまま、エンタープライズ水準のKintone案件を回し続けるにはどうすればよいか — この問いと向き合ってきました。</p>
-        <p>答えは、<strong>Digital Tom</strong>。Claude Opus 4.7 を基盤に、受信トレイ、商談パイプライン、毎朝のブリーフィング、アウトリーチまでを担うAI参謀です。これのおかげで、私たちは一般的なエージェンシーに肥大化することなく、50社・数千名規模の導入を支え続けています。</p>
-        <p>そして、それは同時に、お客様にも納める運用規律そのものです。AIによる変革を「語る」のではなく、まず自社で実装してから提供しています。</p>
-      </div>
-      <div class="stat-grid">
-        <div class="stat-card">
-          <div class="stat-label">導入ユーザー数</div>
-          <div class="stat-value">2,400<small>+</small></div>
-          <div class="stat-note">50社の稼働中契約</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">チーム体制</div>
-          <div class="stat-value" style="font-size:30px;">少人数</div>
-          <div class="stat-note">意図してこの規模</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">自社AI運用コスト</div>
-          <div class="stat-value" style="font-size:30px;">月$20<small>以下</small></div>
-          <div class="stat-note">Teacher-Studentモデル</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">初回アプリ納期</div>
-          <div class="stat-value" style="font-size:30px;">数日<small>で</small></div>
-          <div class="stat-note">数ヶ月ではなく</div>
-        </div>
-      </div>
+<!-- TRUST BAR -->
+<section class="trust">
+  <div class="trust-inner">
+    <div class="trust-label">導入実績</div>
+    <div class="trust-row">
+      <a href="/kintone-philippines/en/customers/orix-metro/">ORIX Metro</a>
+      <a href="/kintone-philippines/en/customers/daikin/">DAIKIN</a>
+      <a href="/kintone-philippines/en/customers/quipper/">Quipper</a>
+      <a href="/kintone-philippines/en/customers/aeon-fantasy/">AEON Fantasy</a>
+      <a href="/kintone-philippines/en/customers/">GMA Network</a>
+      <a href="/kintone-philippines/en/customers/">Maximum Solutions</a>
     </div>
   </div>
 </section>
 
-<!-- 02 · BUILD -->
-<section class="build" id="build">
-  <div class="wrap">
-    <div class="section-eyebrow">提供サービス</div>
-    <h2 class="section-title">3つの実務領域。<em>すべてAIネイティブ。</em></h2>
-    <p class="section-lede">Kintoneは土台。AIはその上のレイヤー。私たちは、そのどちらか一方だけを納品することはしません。</p>
+<!-- THREE BEANS / PRACTICES -->
+<section class="section" id="practices">
+  <div class="section-head">
+    <h2>3つの専門分野。<em>すべて統合可能</em>。</h2>
+    <div class="section-meta">Kintone · 実装 · AI</div>
+  </div>
+  <div class="beans-grid">
+    <a class="bean bean-left" href="/kintone-philippines/ja/blog/kintone-philippines-guide/">
+      <div class="bean-marker"></div>
+      <div class="bean-num">№ 01 · CUSTOM APPS</div>
+      <h3>業務アプリ、数日で本番稼働。</h3>
+      <p>CRM、在庫管理、HR、プロジェクト管理、オペレーションダッシュボード。日本語／英語のバイリンガルUIを標準搭載。</p>
+      <div class="bean-meta">本番稼働まで · 1週間以内</div>
+    </a>
+    <a class="bean bean-center" href="https://kinplug.com">
+      <div class="bean-marker"></div>
+      <div class="bean-num">№ 02 · KINPLUG</div>
+      <h3>自社開発のプラグイン群。</h3>
+      <p>PDF Pro、Mail、Lookup+、Flow。Kintone標準機能と企業要件の隙間を埋めるために、私たちが独自開発しました。</p>
+      <div class="bean-meta">ステータス · 本番稼働中 · 6環境</div>
+    </a>
+    <a class="bean bean-right" href="/kintone-philippines/en/blog/how-to-replace-excel-philippines/">
+      <div class="bean-marker"></div>
+      <div class="bean-num">№ 03 · MIGRATION</div>
+      <h3>Excel、Odoo、Airtableから — 数日で移行。</h3>
+      <p>私たちの多くのクライアントは、スプレッドシートや合わなくなったプラットフォームからの移行です。現状を分析し、必要な構造を構築し、整理されたデータをお返しします。</p>
+      <div class="bean-meta">移行期間 · 1〜3週間</div>
+    </a>
+  </div>
+</section>
 
-    <div class="build-grid">
-      <div class="build-card">
-        <div class="build-card-label">01 · カスタムアプリ</div>
-        <h3>業務アプリを、数日で稼働</h3>
-        <p>CRM、在庫、人事、プロジェクト管理、業務ダッシュボード。現場データに即し、日英バイリンガル対応を標準装備。</p>
-        <div class="build-card-meta">
-          <span class="build-card-meta-label">標準納期</span>
-          <span class="build-card-meta-val">1週間以内</span>
-        </div>
-      </div>
-      <div class="build-card">
-        <div class="build-card-label">02 · AI組み込み</div>
-        <h3>Claudeを、業務フローへ</h3>
-        <p>リードスコアリング、メール起案、ドキュメント解析、議事録要約。目新しさではなく、コスト対効果を最適化します。</p>
-        <div class="build-card-meta">
-          <span class="build-card-meta-label">月額コスト目安</span>
-          <span class="build-card-meta-val">低コスト</span>
-        </div>
-      </div>
-      <div class="build-card">
-        <div class="build-card-label">03 · KinPlug</div>
-        <h3>自社開発のプラグイン群</h3>
-        <p>PDF Pro、Mail、Lookup+、Flow。「標準Kintone」と「エンタープライズ要件」の差を埋めるために、自社で設計・開発。</p>
-        <p>PDF Pro, Mail, Lookup+, Flow. Built to close the gap between what Kintone does and what enterprises need.</p>
-        <div class="build-card-meta">
-          <span class="build-card-meta-label">Status</span>
-          <span class="build-card-meta-val">本番稼働中</span>
-        </div>
-      </div>
+<!-- NAMED CLIENTS -->
+<section class="section">
+  <div class="section-head">
+    <h2>名前のある<em>導入実績</em>。</h2>
+    <div class="section-meta">事例ファイル · リクエストに応じて</div>
+  </div>
+  <div class="clients-list">
+    <a class="client-row" href="/kintone-philippines/en/customers/orix-metro/">
+      <span class="client-num">01</span>
+      <span class="client-name">ORIX Metro</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/daikin/">
+      <span class="client-num">02</span>
+      <span class="client-name">DAIKIN</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/quipper/">
+      <span class="client-num">03</span>
+      <span class="client-name">Quipper</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/aeon-fantasy/">
+      <span class="client-num">04</span>
+      <span class="client-name">AEON Fantasy</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/">
+      <span class="client-num">05</span>
+      <span class="client-name">GMA Network</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/">
+      <span class="client-num">06</span>
+      <span class="client-name">Maximum Solutions</span>
+      <span class="client-arrow">→</span>
+    </a>
+  </div>
+  <p style="margin-top:28px;font-size:14px;color:var(--gray);font-family:'Noto Sans JP',sans-serif;">
+    導入詳細、スコープ、ワークフロー仕様は各クライアントとの機密事項です。
+    <a href="/kintone-philippines/en/customers/" style="color:var(--sage);font-weight:600;border-bottom:1px solid rgba(74,124,89,0.3);">顧客一覧を見る →</a>
+  </p>
+</section>
+
+<!-- COMPARISON -->
+<section class="section">
+  <div class="section-head">
+    <h2>カテゴリ<em>比較</em>。</h2>
+    <div class="section-meta">実装経験に基づく · マーケティングではない</div>
+  </div>
+  <div class="compare">
+    <h3>Kintone vs <em>他プラットフォーム</em></h3>
+    <table>
+      <thead>
+        <tr>
+          <th>評価軸</th>
+          <th>Kintone</th>
+          <th>Odoo</th>
+          <th>Airtable</th>
+          <th>Monday</th>
+          <th>Salesforce</th>
+          <th>HubSpot</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>初アプリまで</td>
+          <td class="check-yes">数日</td>
+          <td class="check-mid">数ヶ月</td>
+          <td class="check-yes">数日</td>
+          <td class="check-yes">数日</td>
+          <td class="check-no">四半期</td>
+          <td class="check-yes">数日</td>
+        </tr>
+        <tr>
+          <td>開発者不要</td>
+          <td class="check-yes">はい</td>
+          <td class="check-no">Python</td>
+          <td class="check-yes">はい</td>
+          <td class="check-yes">はい</td>
+          <td class="check-no">Apex</td>
+          <td class="check-yes">はい</td>
+        </tr>
+        <tr>
+          <td>1アプリのレコード上限</td>
+          <td class="check-yes">30万</td>
+          <td class="check-yes">無制限</td>
+          <td class="check-mid">5万</td>
+          <td class="check-mid">段階制</td>
+          <td class="check-yes">無制限</td>
+          <td class="check-mid">段階制</td>
+        </tr>
+        <tr>
+          <td>開始価格</td>
+          <td class="check-yes">₱1,000/user</td>
+          <td class="check-mid">モジュール別</td>
+          <td class="check-yes">$10/user</td>
+          <td class="check-mid">$9/user</td>
+          <td class="check-no">$25-330/user</td>
+          <td class="check-yes">無料枠</td>
+        </tr>
+        <tr>
+          <td>フィリピン現地日本語サポート</td>
+          <td class="check-yes">あり — edamame</td>
+          <td class="check-no">なし</td>
+          <td class="check-no">なし</td>
+          <td class="check-no">なし</td>
+          <td class="check-mid">パートナー</td>
+          <td class="check-no">地域</td>
+        </tr>
+        <tr>
+          <td>詳細記事</td>
+          <td>—</td>
+          <td><a href="/kintone-philippines/ja/blog/philippines-kintone-vs-salesforce/">vs詳細 →</a></td>
+          <td><a href="/kintone-philippines/en/blog/kintone-vs-airtable/">vs Airtable →</a></td>
+          <td><a href="/kintone-philippines/en/blog/kintone-vs-monday/">vs Monday →</a></td>
+          <td><a href="/kintone-philippines/ja/blog/philippines-kintone-vs-salesforce/">vs Salesforce →</a></td>
+          <td><a href="/kintone-philippines/en/blog/kintone-vs-hubspot/">vs HubSpot →</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FIELD NOTES -->
+<section class="field-notes">
+  <div class="field-notes-inner">
+    <div class="section-head">
+      <h2>フィールド<em>ノート</em>。</h2>
+      <a href="/kintone-philippines/ja/blog/" style="font-size:14px;color:var(--sage);font-weight:600;">すべての記事 →</a>
+    </div>
+    <div class="notes-grid">
+      <a href="/kintone-philippines/ja/blog/philippines-shinshutsu-kintone/" class="note-card">
+        <div class="note-tag">進出支援 · 12分</div>
+        <h3 class="note-title">フィリピン進出の業務システム選び</h3>
+        <p class="note-deck">日系企業のフィリピン進出時、Kintoneが選ばれる理由、導入期間、費用、日本語対応の実態を解説。</p>
+        <span class="note-read">記事を読む →</span>
+      </a>
+      <a href="/kintone-philippines/ja/blog/kintone-philippines-hiyou/" class="note-card gold">
+        <div class="note-tag">料金 · 10分</div>
+        <h3 class="note-title">フィリピンKintone導入費用の完全内訳</h3>
+        <p class="note-deck">ライセンス費用、実装費用、月額運用費用、隠れたコスト、他社比較まで2026年最新情報を公開。</p>
+        <span class="note-read">記事を読む →</span>
+      </a>
+      <a href="/kintone-philippines/ja/blog/philippines-kintone-vs-salesforce/" class="note-card">
+        <div class="note-tag">比較 · 14分</div>
+        <h3 class="note-title">Kintone vs Salesforce フィリピン版</h3>
+        <p class="note-deck">導入期間、費用、カスタマイズ性、日本語対応の違いを日系企業視点で徹底比較。</p>
+        <span class="note-read">記事を読む →</span>
+      </a>
+      <a href="/kintone-philippines/ja/blog/philippines-nikkei-bpo/" class="note-card">
+        <div class="note-tag">BPO · 11分</div>
+        <h3 class="note-title">フィリピンBPO業界の業務システム</h3>
+        <p class="note-deck">日系オフショア企業のSLA管理、多言語レポート、ナレッジベース統合をKintoneで。</p>
+        <span class="note-read">記事を読む →</span>
+      </a>
+      <a href="/kintone-philippines/ja/blog/philippines-nihonjin-ceo-dx/" class="note-card">
+        <div class="note-tag">会社紹介 · 8分</div>
+        <h3 class="note-title">日本人CEOが運営するフィリピンDXパートナー</h3>
+        <p class="note-deck">Tom Araiのバックグラウンド、edamameの実績、選ばれる理由を整理。</p>
+        <span class="note-read">記事を読む →</span>
+      </a>
+      <a href="/kintone-philippines/ja/blog/philippines-nikkei-dx/" class="note-card">
+        <div class="note-tag">日系DX · 10分</div>
+        <h3 class="note-title">フィリピン日系企業のDX・業務改善</h3>
+        <p class="note-deck">Excel散乱、紙の承認、IT人材不足をKintoneで解決するための実践ガイド。</p>
+        <span class="note-read">記事を読む →</span>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- 03 · WORK -->
-<section id="work">
-  <div class="wrap">
-    <div class="section-eyebrow">導入事例</div>
-    <h2 class="section-title">長く使われ続ける、<em>定着する導入。</em></h2>
-    <p class="section-lede">測定可能な成果を、実名で。ご許可をいただいたお客様のみを掲載しています。</p>
-
-    <div class="work-grid">
-      <div class="case">
-        <div class="case-head">
-          <div>
-            <div class="case-client">ORIX Metro Leasing</div>
-            <div class="case-industry">金融 · マカティ</div>
-          </div>
-          <div class="case-logo">2022年〜</div>
-        </div>
-        <div class="case-outcome">4年間稼働。<span>1,000名超。</span></div>
-        <div class="case-body">ORIXのIP制限ホワイトリスト内で稼働を許された唯一のKintoneパートナー。リース案件登録、回収管理、社内業務にまたがる複数アプリを運用しています。</div>
-      </div>
-      <div class="case">
-        <div class="case-head">
-          <div>
-            <div class="case-client">ダイキン・フィリピン</div>
-            <div class="case-industry">製造 · パサイ</div>
-          </div>
-          <div class="case-logo">2024年〜</div>
-        </div>
-        <div class="case-outcome">発注から<span>数日で本番投入。</span></div>
-        <div class="case-body">当初3ヶ月と見積もられていたサービス配車アプリを、大幅に短縮して稼働。現在はClaudeが顧客チケットを地域と緊急度で自動振り分けしています。</div>
-      </div>
-      <div class="case">
-        <div class="case-head">
-          <div>
-            <div class="case-client">Quipper</div>
-            <div class="case-industry">EdTech · BGC</div>
-          </div>
-          <div class="case-logo">2023年〜</div>
-        </div>
-        <div class="case-outcome">4つの業務フローを<span>完全自動化。</span></div>
-        <div class="case-body">以前は専任チームを要したバックオフィス業務を、Kintoneと軽量AIレイヤーで代替。コンテンツ運用、契約管理、ベンダー管理、コンプライアンスまで。</div>
-      </div>
-      <div class="case">
-        <div class="case-head">
-          <div>
-            <div class="case-client">AEON Fantasy Philippines</div>
-            <div class="case-industry">小売 · 首都圏</div>
-          </div>
-          <div class="case-logo">2023年〜</div>
-        </div>
-        <div class="case-outcome">Excel運用から<span>→ 社内プラットフォームへ。</span></div>
-        <div class="case-body">100名超のユーザーが利用するKintoneワークフローに移行。業務、人事連携、コンプライアンス追跡 — 日英両対応の統一基盤。</div>
-      </div>
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+  <div class="faq-section-inner">
+    <div class="section-head">
+      <h2>よくある<em>ご質問</em>。</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>フィリピンでKintoneを導入する費用はいくらですか？</summary>
+        <div class="faq-body">Kintoneのライセンスは1ユーザー月額₱1,000〜（最低5ユーザー）で、最小は月額₱5,000。実装費用はパッケージ料金で、Starter ₱95k（単一アプリ、10-25ユーザー）、Enterprise ₱450k〜（複数アプリ、50-500ユーザー、AIレイヤー含む）、Retainer 月額₱85k〜（継続支援）。<a href="/kintone-philippines/ja/blog/kintone-philippines-hiyou/" style="color:var(--sage);font-weight:600;">費用詳細記事を見る →</a></div>
+      </details>
+      <details>
+        <summary>導入期間はどのくらいかかりますか？</summary>
+        <div class="faq-body">単一アプリであれば数日〜1週間で本番稼働が可能です。複雑な複数アプリ構成でも4〜8週間。4ステップの標準プロセス（Discovery → Design → Build → Launch）で進めます。ダイキン・フィリピンズのサービス配信アプリは、当初3ヶ月の見積りでしたが、実際は数日で稼働しました。</div>
+      </details>
+      <details>
+        <summary>edamameが他のKintoneパートナーと違う点は？</summary>
+        <div class="faq-body">2024年Cybozuグローバル・パートナー・オブ・ザ・イヤー受賞。フィリピン現地に日本人CEO（Tom Arai）が常駐し、商談・設計・納品・サポートすべてを日本語で提供できる数少ないパートナーです。ORIX Metro、ダイキン、Quipperなど日系大手の実運用を4年以上支援しています。</div>
+      </details>
+      <details>
+        <summary>日系企業のフィリピン進出に対応できますか？</summary>
+        <div class="faq-body">はい。弊社CEO Tom Araiは東京でキャリアを積んだ後、2018年からパシッグに常駐しています。日本語・英語・フィリピン語（タガログ語）で対応可能。バイリンガルKintone UIが標準機能なので、日本本社と現地オペレーションが同じデータを異なる言語で閲覧できます。</div>
+      </details>
+      <details>
+        <summary>KintoneはOdoo、Salesforce、Airtableの代替になりますか？</summary>
+        <div class="faq-body">多くのフィリピン中小企業・中堅企業では、はい。Kintoneは数日で導入可能（Odooは数ヶ月）、開発者不要（Salesforceと異なる）、Airtableの5万レコード上限もありません。詳細は <a href="/kintone-philippines/ja/blog/philippines-kintone-vs-salesforce/" style="color:var(--sage);font-weight:600;">Kintone vs Salesforce</a>、<a href="/kintone-philippines/en/blog/kintone-vs-odoo/" style="color:var(--sage);font-weight:600;">Kintone vs Odoo</a> を参照ください。</div>
+      </details>
+      <details>
+        <summary>どのような業種を支援していますか？</summary>
+        <div class="faq-body">製造業、物流、不動産、医療、BPO、建設、教育、小売、金融サービス、プロフェッショナルサービス。業種別の詳細は <a href="/kintone-philippines/en/industries/" style="color:var(--sage);font-weight:600;">業種別ページ</a> をご覧ください。</div>
+      </details>
     </div>
   </div>
 </section>
 
-<!-- 04 · PROCESS -->
-<section class="process" id="process">
-  <div class="wrap">
-    <div class="section-eyebrow">進め方</div>
-    <h2 class="section-title">小さな一歩を、<em>素早く。</em></h2>
-    <p class="section-lede">多くの案件は1週間以内に本番稼働します。その流れをご紹介します。</p>
-
-    <div class="process-steps">
-      <div class="step">
-        <div class="step-num">01</div>
-        <h4>ヒアリング</h4>
-        <p>30分の対話。汎用テンプレートではなく、御社の実際の業務フローを把握します。</p>
-        <div class="step-day">初日</div>
+<!-- PRICING -->
+<section class="pricing-bar" id="pricing">
+  <div class="pricing-bar-inner">
+    <h2>スコープ単位の料金。<em>時間課金なし</em>。</h2>
+    <p>Kintoneライセンスは ₱1,000/ユーザー/月〜 <span class="min">（最低5ユーザー）</span>。私たちの実装エンゲージメントはスコープ単位 — タイムシートなし。</p>
+    <div class="pricing-tiers">
+      <div class="tier">
+        <div class="tier-name">№ 01 · STARTER</div>
+        <div class="tier-price">₱95k<span class="unit">一括</span></div>
+        <p class="tier-desc">単一アプリ。10〜25ユーザー。CRM、トラッカー、簡易ワークフロー。</p>
       </div>
-      <div class="step">
-        <div class="step-num">02</div>
-        <h4>構築</h4>
-        <p>実データ・実帳票でプロトタイプを作成。お客様と一緒にライブで検証します。</p>
-        <div class="step-day">中盤</div>
+      <div class="tier center">
+        <div class="tier-name">№ 02 · ENTERPRISE</div>
+        <div class="tier-price">₱450k+<span class="unit">一括</span></div>
+        <p class="tier-desc">複数アプリ連携。50〜500ユーザー。AIレイヤー + KinPlugバンドル含む。</p>
       </div>
-      <div class="step">
-        <div class="step-num">03</div>
-        <h4>AIレイヤー</h4>
-        <p>分類・振り分け・文面生成・要約。タスクごとに最適なモデルを選びます。</p>
-        <div class="step-day">終盤</div>
-      </div>
-      <div class="step">
-        <div class="step-num">04</div>
-        <h4>本番稼働</h4>
-        <p>チーム研修、データ移行、KPI計測まで。稼働後も90日間オンコールで支援します。</p>
-        <div class="step-day">納品</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 05 · PRICING -->
-<section id="pricing">
-  <div class="wrap">
-    <div class="section-eyebrow">料金</div>
-    <h2 class="section-title">スコープベースの価格。<em>時間単価ではありません。</em></h2>
-    <p class="section-lede">Kintoneのライセンスは、ユーザーあたり月額₱1,000から。私たちのサービスは案件ごとに固定価格でお見積りします。</p>
-
-    <div class="pricing-grid">
-      <div class="price-card">
-        <div class="price-tier">Starter</div>
-        <div class="price-for">単一アプリ。10〜25名。CRM、案件管理、シンプルなワークフローに。</div>
-        <div class="price-amount">₱95,000 <small>買い切り</small></div>
-        <hr class="price-divider">
-        <ul class="price-features">
-          <li>Kintoneアプリ1本・短納期構築</li>
-          <li>日英バイリンガルUI</li>
-          <li>AI組み込み1件</li>
-          <li>30日間のサポート窓口</li>
-        </ul>
-        <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="price-cta">相談する</a>
-      </div>
-      <div class="price-card featured">
-        <div class="price-featured-tag">最も選ばれています</div>
-        <div class="price-tier">Enterprise</div>
-        <div class="price-for">複数アプリ連携。50〜500名規模。AIレイヤーをフル適用。</div>
-        <div class="price-amount">₱450,000〜 <small>買い切り</small></div>
-        <hr class="price-divider">
-        <ul class="price-features">
-          <li>Kintoneアプリ最大8本</li>
-          <li>カスタムAI組み込み</li>
-          <li>KinPlug プラグイン一式</li>
-          <li>専用Slackチャンネル</li>
-          <li>90日間のサポート+研修</li>
-        </ul>
-        <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="price-cta">戦略相談を予約</a>
-      </div>
-      <div class="price-card">
-        <div class="price-tier">運営パートナーシップ</div>
-        <div class="price-for">継続的なAI変革。100名以上のチーム向け。</div>
-        <div class="price-amount">個別見積 <small>月額リテイナー</small></div>
-        <hr class="price-divider">
-        <ul class="price-features">
-          <li>アプリ改修を無制限で対応</li>
-          <li>御社専属の Digital Tom 構築</li>
-          <li>シニアエンジニアが常時対応</li>
-          <li>四半期ごとの経営向けレポート</li>
-        </ul>
-        <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="price-cta">代表トムと話す</a>
+      <div class="tier right">
+        <div class="tier-name">№ 03 · RETAINER</div>
+        <div class="tier-price">₱85k〜<span class="unit">/月</span></div>
+        <p class="tier-desc">継続的なビルドと最適化。拡大中のデプロイメントに。</p>
       </div>
     </div>
   </div>
@@ -758,32 +595,49 @@ footer {
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <div class="wrap">
-    <h2>トムと、30分。<em>提案書はありません。</em></h2>
-    <p>30分の対話で、「導入プラン」か、あるいは「Kintoneは御社には向かない」という率直な判断のどちらかをお持ち帰りいただけます。</p>
-    <a href="https://calendly.com/kintoneph/freekintoneappconsultation" class="btn-primary">デモを予約する</a>
+  <div class="final-cta-inner">
+    <h2>Tomと30分の<em>無料相談</em>。<br/>営業トーク、なし。</h2>
+    <p>貴社の実際のワークフローをヒアリングします — 汎用テンプレートではなく。Kintoneが適さない場合は、その旨を正直にお伝えします。</p>
+    <a class="btn-primary" href="https://calendly.com/kintoneph/freekintoneappconsultation">30分の無料相談を予約 →</a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo">
-          <svg width="24" height="20" viewBox="0 0 80 70"><path d="M5 8 C-2 18, -2 52, 5 62" stroke="#6B9B7A" stroke-width="3" fill="none" stroke-linecap="round"/><rect x="12" y="20" width="14" height="30" rx="7" fill="#6B9B7A"/><rect x="30" y="13" width="19" height="44" rx="9.5" fill="#C4A35A"/><rect x="53" y="20" width="14" height="30" rx="7" fill="#6B9B7A"/><path d="M76 8 C83 18, 83 52, 76 62" stroke="#6B9B7A" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
-          枝豆株式会社
-        </div>
-        <p class="footer-desc">公式Kintoneパートナー · 2024年 グローバル・パートナー・オブ・ザ・イヤー受賞。<br>オルティガス・センター、パシッグ市、メトロマニラ。</p>
-      </div>
-      <div class="footer-col"><h5>サービス</h5><ul><li><a href="#build">カスタムアプリ</a></li><li><a href="#build">AI組み込み</a></li><li><a href="https://kinplug.com">KinPlug</a></li></ul></div>
-      <div class="footer-col"><h5>会社情報</h5><ul><li><a href="#">Edamameについて</a></li><li><a href="#work">導入事例</a></li><li><a href="/kintone-philippines/ja/blog/">ブログ</a></li></ul></div>
-      <div class="footer-col"><h5>お問い合わせ</h5><ul><li><a href="mailto:kintone@edamame-jp.com">kintone@edamame-jp.com</a></li><li><a href="/kintone-philippines/en/">English</a></li></ul></div>
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <strong>edamame</strong>
+      <p style="color:rgba(240,237,232,0.6);font-size:13px;line-height:1.75;font-family:'Noto Sans JP',sans-serif;">2024年Kintoneグローバル・パートナー・オブ・ザ・イヤー受賞。フィリピン公式パートナー。50社・2,400名以上の実運用をパシッグから支援。</p>
     </div>
-    <div class="footer-base">
-      <div>© 2026 Edamame Inc.</div>
-      <div>パシッグにて制作 🇵🇭</div>
+    <div class="footer-col">
+      <strong>製品</strong>
+      <a href="#practices">サービス</a>
+      <a href="#pricing">料金</a>
+      <a href="/kintone-philippines/en/industries/">業種別</a>
+      <a href="/kintone-philippines/en/tools/">ツール</a>
     </div>
+    <div class="footer-col">
+      <strong>実績</strong>
+      <a href="/kintone-philippines/en/customers/">顧客一覧</a>
+      <a href="/kintone-philippines/en/customers/orix-metro/">ORIX Metro</a>
+      <a href="/kintone-philippines/en/customers/daikin/">DAIKIN</a>
+      <a href="/kintone-philippines/en/customers/quipper/">Quipper</a>
+    </div>
+    <div class="footer-col">
+      <strong>読む</strong>
+      <a href="/kintone-philippines/ja/blog/">ブログ</a>
+      <a href="/kintone-philippines/ja/blog/philippines-kintone-vs-salesforce/">vs Salesforce</a>
+      <a href="/kintone-philippines/ja/blog/kintone-philippines-hiyou/">導入費用</a>
+      <a href="/brand-guidelines.html">ブランド</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Edamame Inc. · All rights reserved.</span>
+    <span>
+      <a href="/kintone-philippines/en/privacy-policy/" style="color:rgba(240,237,232,0.6);">プライバシー</a> ·
+      <a href="/kintone-philippines/en/" style="color:rgba(240,237,232,0.6);">English</a> ·
+      <a href="/kintone-philippines/tl/" style="color:rgba(240,237,232,0.6);">Tagalog</a>
+    </span>
   </div>
 </footer>
 
