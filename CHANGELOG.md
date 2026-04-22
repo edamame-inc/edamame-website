@@ -1,3 +1,28 @@
+## 2026-04-22 — Brand Guidelines v2.0
+
+Major brand system upgrade codifying patterns from homepage v2 review.
+
+**New:**
+- Three sanctioned layout modes: **Field Notes** (editorial documentary), **Data Atelier** (proof-first), **Pod & Bean** (mark-driven organic)
+- **JetBrains Mono** added as data & label face (for stats, section numbers, uppercase labels, timestamps)
+- **Asymmetric pod-corner radius** system (`80px 16px 80px 16px` for side beans, elliptical for center)
+- **Dot markers** (sage/gold circles) replace bullet lists
+- **Pod divider** SVG as canonical section separator
+- **Three-bean service structure** — any group-of-three maps to left-sage / center-gold / right-sage
+- **Floating pod decorations** (6% opacity, rotated) for Pod & Bean mode
+- **Live data panel** pattern (ink bg + gold border + sage→gold→sage top rule) for Data Atelier mode
+
+**Added rules:**
+- **Homepage contract** — 10 mandatory structural elements every homepage must include. Prevents the v1→v2 regression that dropped blog links from 19 to 1 and caused organic traffic decline.
+- **Blog surfacing rules** — minimum 6 article links from homepage; never use shorthand `/blog/` (caused 404s); always full `/kintone-philippines/{lang}/blog/{slug}/`
+- **Pricing** — "₱1,000/user/month (5-user minimum)" standard phrasing; subtle (55% opacity) on marketing pages, explicit in FAQ
+
+**Files:**
+- `brand-guidelines.html` — replaced with v2.0
+- `_backups/brand-guidelines-v1-2026-04.html` — v1.0 archived
+
+---
+
 # Edamame Website Changelog
 
 ## 2026-04-20 · Homepage v2 — Editorial Premium
