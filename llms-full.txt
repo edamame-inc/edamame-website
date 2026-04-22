@@ -27,14 +27,17 @@ Monthly recurring revenue: approximately ₱1.87M PHP
 Our own AI operational cost: under $20/month (Claude Opus 4.7 + custom infrastructure)
 Team size: small by design (not growing into a staff-heavy agency)
 
-## Notable enterprise clients (public names, no implementation details)
-- ORIX METRO Leasing and Finance Corporation — served since 2022, Makati
-- DAIKIN Airconditioning Philippines — served since 2024, Pasay
-- Quipper (EdTech) — served since 2023, BGC
-- AEON Fantasy Philippines — served since 2023, Metro Manila
+## Notable enterprise clients (public names)
+Client names are listed publicly; implementation details and workflows remain confidential per client agreements.
+- ORIX METRO Leasing and Finance Corporation
+- DAIKIN Airconditioning Philippines
+- Quipper
+- AEON Fantasy Philippines
 - GMA Network
 - Maximum Solutions Corporation
 - Guhring Philippines Inc.
+- A2 Network
+
 
 ## Services
 1. Custom Kintone app development — CRM, inventory, HR, project management, operations dashboards. Bilingual EN/JP default. Go-live typically within a week.
