@@ -1,5 +1,67 @@
 # Edamame Website Changelog
 
+## 2026-04-22 · Full-slate SEO sprint (Chunks 1-7)
+
+Executed comprehensive SEO overhaul targeting #1 PH + niche JP + stretch global long-tails. All chunks shipped to production, all CF Pages deploys successful.
+
+### Chunk 1 — Infrastructure & platform
+- **Cloudflare zone**: confirmed Polish/Mirage/Brotli/Early Hints/HTTP3 all on, enabled 0-RTT
+- **`_headers`**: HSTS max-age 1yr, X-Frame-Options SAMEORIGIN, CSP, Permissions-Policy, proper cache headers per asset type
+- **`robots.txt`**: expanded to explicitly allow 16 AI crawlers (GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, anthropic-ai, PerplexityBot, Perplexity-User, Google-Extended, Applebot, Bytespider, DiffBot, CCBot, cohere-ai, FacebookBot, meta-externalagent)
+- **`llms-full.txt`**: 6.9KB comprehensive AI context file per new standard — identity, scale, clients, services, pricing, content hubs, attribution guidance
+- **`rss.xml`**: auto-generated feed for all 51 EN blog articles with full metadata, author, categories
+
+### Chunk 2 — Schema enrichment (17 pages)
+- **Industry pages (×8)**: Service schema + BreadcrumbList + Speakable + RSS discovery
+- **Industries index**: ItemList + BreadcrumbList
+- **Customers, events, contact, tools, ROI calc, blog index, app-estimator, digital-readiness**: BreadcrumbList + RSS discovery
+
+### Chunk 3 — Client case study pages (5 new)
+- ORIX Metro, DAIKIN, Quipper, AEON Fantasy, A2 Network
+- Each ~18KB Brand v2.0 Data Atelier mode, full Article + BreadcrumbList schema
+- Names + relationship tenure + user counts only — no specific use cases per Tom's rule
+- customers/ index updated with case-study grid
+
+### Chunk 4 — Blog article breadcrumbs (51 articles)
+- BreadcrumbList schema added to every EN blog article
+- RSS discovery link added
+- Sitemap rebuilt: 66 → 89 URLs (adds 5 case studies + rebuilds homepage alternates)
+
+### Chunk 5 — Homepage v3 (EN)
+- Data Atelier mode per Brand v2.0
+- **All 10 Homepage Contract elements verified**: nav, hero+2CTAs, trust bar (6 client links), 3-bean practices (center=gold KinPlug), live data panel + Gantt with 6 deployments, comparison table with 6 linked competitor articles (Odoo/Airtable/Monday/Salesforce/HubSpot), 6 Field Notes, FAQ with JSON-LD (5 questions), 3-tier pricing with 5-user min subtly shown, final Tom CTA
+- v2 backed up to `_backups/v2-2026-04-22/`
+
+### Chunk 6 — Industry page content expansion (8 pages)
+- Each augmented with PH-specific market context: regulatory framing (DOLE, DOH, PhilHealth, RESA, PhilGEPS, etc.), sector economics, related-reading blocks
+- Word counts: 970 → 1,200+ per page
+
+### Chunk 7 — Tagalog homepage (real content, not redirect)
+- Full Data Atelier mode in Tagalog
+- All 10 Homepage Contract elements translated and localized
+- 5 JSON-LD blocks (Organization, LocalBusiness, Service, FAQPage, WebSite)
+- Replaces v1 0-second redirect that was killing hreflang signal
+
+### Final action
+- IndexNow re-fired: 87 URLs pushed to Bing + Yandex (both returned 200)
+- CF Pages: 8 deploys succeeded
+- GSC sitemap submission: still DENIED awaiting webmasters scope grant to SA client_id 108516881045031396300
+
+### Commits
+```
+4e4828fa  Chunk 7: Real Tagalog homepage
+eb5089d   Chunk 6: augment 8 industry pages
+a06310a4  (duplicate of 6)
+ca95ed34  Backup EN homepage v2
+796567dc  Homepage v3 — Data Atelier
+cc45408   Chunk 4: blog BreadcrumbList + sitemap 87 URLs
+af17409   Chunk 3: 5 client case studies
+b59be93   Chunk 2: schema + RSS on 17 pages
+092786f   Chunk 1: _headers, robots.txt, llms-full.txt, rss.xml
+```
+
+---
+
 ## 2026-04-22 — SEO surgery · Week 1
 
 Comprehensive technical SEO overhaul addressing the v2 homepage regression and multi-year backlog of missing signals.
