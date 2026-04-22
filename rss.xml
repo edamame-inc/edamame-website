@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>edamame — Kintone Philippines Field Notes</title>
+    <link>https://edamame-jp.com/kintone-philippines/en/blog/</link>
+    <atom:link href="https://edamame-jp.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>No-code, AI-merged operations, and Kintone implementation field notes from the Philippines. Official Kintone Partner. 2024 Cybozu Global Partner of the Year.</description>
+    <language>en-PH</language>
+    <copyright>Copyright © 2026 Edamame Inc. All rights reserved.</copyright>
+    <lastBuildDate>Wed, 22 Apr 2026 02:40:04 +0000</lastBuildDate>
+    <generator>edamame-website / seo-sprint</generator>
+    <managingEditor>kintone@edamame-jp.com (Tom Arai)</managingEditor>
+    <webMaster>kintone@edamame-jp.com (Tom Arai)</webMaster>
+    <image>
+      <url>https://edamame-jp.com/og-image-kintone-philippines.png</url>
+      <title>edamame</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/</link>
+    </image>
+    <item>
+      <title>Airtable Alternative Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/airtable-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/airtable-alternative-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Airtable too expensive or too limited? Compare the best alternatives for Philippine businesses — Kintone, Notion, Google Tables, Baserow, and NocoDB.</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Approval Workflow Software Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/approval-workflow-software-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/approval-workflow-software-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Compare the best approval workflow software for Philippine businesses. Automate POs, leave requests, expense reports, and more — with real pricing and...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best Software for Japanese Companies Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/best-software-japanese-companies-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/best-software-japanese-companies-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Software guide for Japanese companies operating in the Philippines. Bilingual platforms, Japanese-style workflow support, and solutions that bridge...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Business Process Automation Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/business-process-automation-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/business-process-automation-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Practical guide to automating business processes in the Philippines. Which processes to automate first, realistic costs, tools comparison, and...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Customer Portal Software Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/customer-portal-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/customer-portal-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Build a customer portal for your Philippine business. Compare platforms that let clients track orders, submit requests, and access information...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Document Management System Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/document-management-system-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/document-management-system-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Compare document management systems for Philippine businesses. BIR compliance, cloud storage, access control — find the right DMS for your company size...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Employee Onboarding Software Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/employee-onboarding-software-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/employee-onboarding-software-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Compare employee onboarding software for Philippine companies. Automate 201 files, DOLE compliance, equipment requests, and training — from Day 1.</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>HubSpot Alternative Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/hubspot-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/hubspot-alternative-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Looking for a HubSpot alternative in the Philippines? Compare Kintone, Zoho, Pipedrive, Freshsales, and Bitrix24 — with real pricing in pesos and...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone Pricing Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-pricing-philippines-2026/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-pricing-philippines-2026/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Official Kintone pricing for Philippine businesses. Plans from ₱1,000/user/month. See what&apos;s included, compare tiers, understand setup costs, and...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Monday.com Alternative Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/monday-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/monday-alternative-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Looking for a Monday.com alternative in the Philippines? Compare Kintone, Asana, ClickUp, Notion, and Trello — with real pricing in pesos and honest...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>No-Code vs Low-Code Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/no-code-vs-low-code-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/no-code-vs-low-code-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Understand the difference between no-code and low-code platforms for Philippine businesses. When to use each, real costs, and which Philippine...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Smartsheet Alternative Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/smartsheet-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/smartsheet-alternative-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Smartsheet too complex or too expensive? Compare the best alternatives for Philippine businesses — Kintone, Monday.com, Asana, Wrike, and ClickUp with...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Zoho Alternative Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/zoho-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/zoho-alternative-philippines/</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Outgrown Zoho or frustrated by its complexity? Compare the best Zoho alternatives for Philippine businesses — Kintone, HubSpot, Monday.com, Freshworks...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best Database Software Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/best-database-software-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/best-database-software-philippines/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Compare database software for Philippine businesses. Kintone vs Airtable vs Notion vs Access — find the right platform to organize your business data...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Digital Transformation Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/digital-transformation-philippines-2026/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/digital-transformation-philippines-2026/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Skip the buzzwords. A practical digital transformation guide for Philippine businesses — what to digitize first, realistic costs, and how companies...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>How to Replace Excel Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/how-to-replace-excel-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/how-to-replace-excel-philippines/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Still running your Philippine business on Excel? Learn how companies like Guhring and Maximum Solutions replaced spreadsheets with Kintone — no coding...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>HubSpot Pricing Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/hubspot-pricing-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/hubspot-pricing-philippines/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>What HubSpot actually costs Philippine businesses in 2026. Complete PHP breakdown of Starter, Professional, Enterprise plans — plus hidden fees for...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Monday.com Pricing Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/monday-com-pricing-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/monday-com-pricing-philippines/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Monday.com pricing breakdown for Philippine businesses. Plans in PHP, seat minimums, hidden costs, and when Kintone is the smarter choice.</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Zoho CRM Review Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/zoho-crm-review-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/zoho-crm-review-philippines/</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Honest Zoho CRM review for Philippine businesses. Pricing in pesos, real pros and cons, comparison with Kintone, HubSpot, Salesforce. Is Zoho the best...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Why edamame</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/why-edamame-kintone-partner-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/why-edamame-kintone-partner-philippines/</guid>
+      <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Why choose Edamame Inc. as your Kintone partner in the Philippines? 2024 Global Partner of the Year. Japanese-native CEO. JavaScript customization...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>12 Best Accounting Software in Philippines 2026 (BIR-Ready Comparison)</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/best-accounting-software-philippines-2026/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/best-accounting-software-philippines-2026/</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Compare the top 12 accounting software for Philippine businesses in 2026. BIR-compliant options with real pricing in PHP. QuickBooks, Xero, QNE, Juan...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best Project Management Software Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/project-management-software-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/project-management-software-philippines/</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description>Compare the best project management software for Philippine businesses in 2026. Kintone vs Monday vs Asana vs ClickUp — find the right PM tool for your...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Salesforce Pricing Philippines 2026: The Real Cost in Pesos (Hidden Fees Revealed)</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/salesforce-pricing-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/salesforce-pricing-philippines/</guid>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description>What Salesforce actually costs Philippine businesses in 2026. Complete PHP pricing breakdown — licenses, implementation, add-ons, and hidden fees. Plus...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best ERP Software Philippines 2026: Complete Comparison Guide</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/best-erp-software-philippines-2026/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/best-erp-software-philippines-2026/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Compare the top ERP software for Philippine businesses in 2026. SAP, Oracle NetSuite, Odoo, Kintone, and more. Pricing in PHP, local support, and...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best HR Software Philippines 2026: HRIS &amp; Employee Management Guide</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/best-hr-software-philippines-2026/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/best-hr-software-philippines-2026/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Compare the best HR software and HRIS systems for Philippine businesses in 2026. Kintone, BambooHR, Sprout HR, and more. Leave management, payroll...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best Inventory Management Software Philippines 2026: Complete Guide</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/best-inventory-management-philippines-2026/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/best-inventory-management-philippines-2026/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Compare the top inventory management software for Philippine businesses in 2026. Kintone, Zoho Inventory, NetSuite, QuickBooks, and more. Features...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs ERPNext Philippines 2026: No-Code vs Open Source ERP</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-erpnext/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-erpnext/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs ERPNext comparison for Philippine businesses. No-code flexibility vs open-source ERP. Deploy time, costs, customization, and local support...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs HubSpot Philippines 2026: Complete Comparison</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-hubspot/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-hubspot/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs HubSpot CRM comparison for Philippine businesses. Free CRM vs customizable no-code platform. Which is better for your business needs?</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs Notion Philippines 2026: Complete Comparison</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-notion/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-notion/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs Notion comparison for Philippine businesses. Wiki/docs tool vs no-code business app platform. When to use each for your operations.</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs Smartsheet Philippines 2026: Complete Comparison</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-smartsheet/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-smartsheet/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs Smartsheet comparison for Philippine businesses. Spreadsheet-based project management vs no-code app platform. Features, pricing, and local...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs Zoho Philippines 2026: Complete Comparison</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-zoho/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-zoho/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs Zoho CRM comparison for Philippine businesses. Compare pricing, features, customization, and local support. Which platform fits your...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best Odoo Alternative Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/odoo-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/odoo-alternative-philippines/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Frustrated with Odoo&apos;s hidden costs, slow implementation, and poor support? Discover why Philippine businesses are switching to Kintone — deploy in...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Odoo Pricing Philippines 2026: The Real Cost (Hidden Fees Revealed)</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/odoo-pricing-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/odoo-pricing-philippines/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>What does Odoo really cost in the Philippines? We break down licensing, implementation, developer fees, and hidden costs. Compare with Kintone&apos;s...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best Retail Software Philippines 2026: POS, Inventory &amp; CRM Guide</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/retail-software-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/retail-software-philippines/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>Compare the best retail management software for Philippine businesses in 2026. POS systems, inventory tracking, customer loyalty, and multi-store...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Best SAP Alternative Philippines 2026: Affordable ERP for Growing Businesses</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/sap-alternative-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/sap-alternative-philippines/</guid>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <description>SAP too expensive or complex for your Philippine business? Compare affordable SAP alternatives including Kintone, Odoo, NetSuite, and Zoho. Deploy in...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Custom CRM Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/custom-crm-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/custom-crm-philippines/</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Build a custom CRM for your Philippine business in days — no coding, no expensive developers. Track leads, manage pipelines, automate follow-ups with...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>HR System Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/hr-system-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/hr-system-philippines/</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Build a custom HR system for your Philippine business with Kintone — leave management, expense reports, employee records, and payroll workflows. No...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs Monday.com Philippines 2026: Which is Better for Your Business?</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-monday/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-monday/</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs Monday.com for Philippine businesses: feature comparison, pricing, deployment speed, and local support. See which platform actually fits...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>Kintone vs Salesforce Philippines 2026: Is Salesforce Worth It?</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-salesforce/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-salesforce/</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Kintone vs Salesforce for Philippine businesses: real cost comparison, features, implementation time, and local support. Find out if Salesforce is...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+    <item>
+      <title>No-Code App Development Philippines 2026</title>
+      <link>https://edamame-jp.com/kintone-philippines/en/blog/no-code-app-development-philippines/</link>
+      <guid isPermaLink="true">https://edamame-jp.com/kintone-philippines/en/blog/no-code-app-development-philippines/</guid>
+      <pubDate>Thu, 19 Feb 2026 00:00:00 +0000</pubDate>
+      <description>Complete guide to no-code app development for Philippine businesses. Build CRM, inventory, HR and workflow apps in days — zero coding required. Free...</description>
+      <author>kintone@edamame-jp.com (Tom Arai)</author>
+      <category>Kintone</category>
+      <category>Philippines</category>
+    </item>
+  </channel>
+</rss>

@@ -1,40 +1,72 @@
-# Robots.txt for Edamame Inc. - Kintone Philippines
-# https://edamame-jp.com
+# robots.txt for edamame-jp.com
+# Official Kintone Partner Philippines | 2024 Cybozu Global Partner of the Year
+# Updated: 2026-04-22
 
 User-agent: *
 Allow: /
 
-# AI Search Crawlers - explicitly allowed
-User-agent: GPTBot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: PerplexityBot
-Allow: /
-
-User-agent: ClaudeBot
-Allow: /
-
-User-agent: Google-Extended
-Allow: /
-
+# Search engine crawlers — explicit allow
 User-agent: Googlebot
 Allow: /
-
+User-agent: Googlebot-Image
+Allow: /
+User-agent: Googlebot-News
+Allow: /
 User-agent: Bingbot
 Allow: /
-
 User-agent: DuckDuckBot
 Allow: /
+User-agent: YandexBot
+Allow: /
+User-agent: Baiduspider
+Allow: /
 
-# Rate limit aggressive SEO crawlers
+# AI search engines — explicit allow (Claude, ChatGPT, Perplexity, etc.)
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: DiffBot
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: FacebookBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+
+# Rate limit aggressive SEO crawlers (reduce bandwidth)
 User-agent: AhrefsBot
 Crawl-delay: 10
-
 User-agent: SemrushBot
 Crawl-delay: 10
+User-agent: MJ12bot
+Crawl-delay: 10
+
+# Block AI scrapers that don't respect content (none currently blocked —
+# reviewing quarterly. Enable by switching Allow to Disallow.)
 
 # Sitemaps
 Sitemap: https://edamame-jp.com/sitemap.xml

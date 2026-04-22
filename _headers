@@ -1,0 +1,52 @@
+# Security + Performance + SEO headers for Cloudflare Pages
+# Docs: https://developers.cloudflare.com/pages/configuration/headers/
+
+/*
+  # Security
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: accelerometer=(), camera=(), geolocation=(), microphone=(), interest-cohort=()
+  # SEO / AI crawling
+  X-Robots-Tag: index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1
+
+# Static assets — long cache
+/*.svg
+  Cache-Control: public, max-age=31536000, immutable
+/*.png
+  Cache-Control: public, max-age=31536000, immutable
+/*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+/*.webp
+  Cache-Control: public, max-age=31536000, immutable
+/*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+
+# HTML — short cache, always revalidate (content changes matter for SEO)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Sitemap and feeds — let crawlers cache briefly
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml; charset=utf-8
+/rss.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/rss+xml; charset=utf-8
+/atom.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/atom+xml; charset=utf-8
+
+# llms.txt — AI search
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+/llms-full.txt
+  Content-Type: text/plain; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# Brand guidelines (public ref for AI/design tools)
+/brand-guidelines.html
+  Cache-Control: public, max-age=86400
