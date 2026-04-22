@@ -1,29 +1,60 @@
-## 2026-04-22 — Brand Guidelines v2.0
+# Edamame Website Changelog
 
-Major brand system upgrade codifying patterns from homepage v2 review.
+## 2026-04-22 — SEO surgery · Week 1
 
-**New:**
-- Three sanctioned layout modes: **Field Notes** (editorial documentary), **Data Atelier** (proof-first), **Pod & Bean** (mark-driven organic)
-- **JetBrains Mono** added as data & label face (for stats, section numbers, uppercase labels, timestamps)
-- **Asymmetric pod-corner radius** system (`80px 16px 80px 16px` for side beans, elliptical for center)
-- **Dot markers** (sage/gold circles) replace bullet lists
-- **Pod divider** SVG as canonical section separator
-- **Three-bean service structure** — any group-of-three maps to left-sage / center-gold / right-sage
-- **Floating pod decorations** (6% opacity, rotated) for Pod & Bean mode
-- **Live data panel** pattern (ink bg + gold border + sage→gold→sage top rule) for Data Atelier mode
+Comprehensive technical SEO overhaul addressing the v2 homepage regression and multi-year backlog of missing signals.
 
-**Added rules:**
-- **Homepage contract** — 10 mandatory structural elements every homepage must include. Prevents the v1→v2 regression that dropped blog links from 19 to 1 and caused organic traffic decline.
-- **Blog surfacing rules** — minimum 6 article links from homepage; never use shorthand `/blog/` (caused 404s); always full `/kintone-philippines/{lang}/blog/{slug}/`
-- **Pricing** — "₱1,000/user/month (5-user minimum)" standard phrasing; subtle (55% opacity) on marketing pages, explicit in FAQ
+### Homepage head tags (EN, JP, TL)
+- Canonical URL on every homepage
+- `hreflang` alternates (en/ja/tl/x-default) wired across all three
+- Open Graph (type, locale, locale:alternate, site_name, title, description, url, image + image:width/height/alt) — 12 OG fields per page
+- Twitter card (`summary_large_image` with title/description/image)
+- Geo meta (`geo.region`, `geo.placename`, `geo.position`, `ICBM`) for Philippines local signals
+- `<html lang>` attribute corrected where missing
+- Robots meta with `max-image-preview:large`, `max-snippet:-1`, `max-video-preview:-1`
 
-**Files:**
-- `brand-guidelines.html` — replaced with v2.0
-- `_backups/brand-guidelines-v1-2026-04.html` — v1.0 archived
+### Structured data (JSON-LD × 5 per homepage)
+- **Organization** — legal name, logo, founding, founder, address, contactPoint, award (2024 Cybozu Global Partner of the Year), sameAs
+- **LocalBusiness** — Pasig office with geo coordinates, opening hours, areaServed=PH
+- **Service** — Kintone implementation with OfferCatalog (Starter ₱95k, Enterprise ₱450k+, Retainer ₱85k/mo) + pricing spec including 5-user minimum
+- **WebSite** — publisher linked to Organization, inLanguage=[en,ja,tl]
+- **FAQPage** — 5 canonical Q&As (pricing, timeline, differentiation, JP support, competitor replacement)
+
+### Sitemap (66 → 84 URLs)
+- Added all 16 previously-missing pages: 9 industry pages (bpo, construction, education, healthcare, logistics, manufacturing, real-estate, retail, industries index), customers, events, contact, tools/, app-estimator, digital-readiness, TL index, TL privacy
+- Homepage URLs now emit `xhtml:link` hreflang alternates inline (12 alternates total)
+- `image:image` sitemap entries on homepages
+- Priority tuning: homepages 1.0, blog articles 0.7-0.9, industry pages 0.8
+
+### Internal link integrity
+- Fixed broken `/blog/` link on EN homepage (was returning 404; now `/kintone-philippines/en/blog/`)
+
+### Blog article hreflang (51 EN articles)
+- Self-referential `hreflang="en"` + `hreflang="x-default"` added to every EN article
+
+### Industry / tools / customers / contact hreflang (16 pages, single commit)
+- Same hreflang pattern applied; single tree commit = single CF Pages deploy
+
+### Legacy URL migration (`_redirects`)
+- 301 redirects for pre-Cloudflare Wix URLs (`/en/*`, `/ja/*`, `/tl/*`) → current paths
+- `/blog/*` → `/kintone-philippines/en/blog/*` (prevents future 404s on the shorthand)
+- `/kintone`, `/pricing`, `/contact`, `/customers` shortcut redirects
+- `/demo`, `/book` 302 to Calendly
+
+### IndexNow (Bing + Yandex instant indexing)
+- Key file deployed at `/cfc06d78b70493d0af8aec24a48dee28.txt`
+- Key value: `cfc06d78b70493d0af8aec24a48dee28`
+- Endpoint: `https://api.indexnow.org/indexnow` (or `https://www.bing.com/indexnow`)
+- Can now trigger instant (re)indexing of any URL by POSTing `{host, key, keyLocation, urlList}` — ideal for Digital Tom worker to call on every content publish
+
+### Not yet done (manual steps)
+- Submit updated sitemap to Google Search Console (requires property verification)
+- Submit to Bing Webmaster Tools
+- Verify Google Business Profile for Pasig office
+- Backlink outreach (PH business media, JP chambers of commerce)
+- TL content expansion (currently v1 placeholder)
 
 ---
-
-# Edamame Website Changelog
 
 ## 2026-04-20 · Homepage v2 — Editorial Premium
 
