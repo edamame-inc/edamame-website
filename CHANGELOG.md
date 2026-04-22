@@ -1,5 +1,59 @@
 # Edamame Website Changelog
 
+## 2026-04-22 · Sprint continuation (Chunks 8-11)
+
+Continued full-slate sprint after Chunks 1-7 shipped earlier. All chunks deployed successfully.
+
+### Chunk 8 — Japanese content expansion (5 new articles)
+Target: Japan→Philippines niche long-tails where edamame can realistically rank.
+- **philippines-shinshutsu-kintone** — フィリピン進出の業務システム選び — 1,898 JA chars
+- **kintone-philippines-hiyou** — フィリピンKintone導入費用の完全内訳 2026年版 — 1,602 JA chars
+- **philippines-nikkei-bpo** — フィリピンBPO業界の業務システム — 1,807 JA chars
+- **philippines-kintone-vs-salesforce** — フィリピンで Kintone vs Salesforce — 1,869 JA chars
+- **philippines-nihonjin-ceo-dx** — 日本人CEOが運営するフィリピンDXパートナー — 1,628 JA chars
+
+Each with full schema (Article + BreadcrumbList), inline cross-links to EN case studies, Tom Arai author attribution, Calendly CTA. Total JP inventory: 7 → 12 articles.
+
+### Chunk 9 — JP blog index update
+All 5 new articles surfaced at top of JA blog index grid for organic discoverability.
+
+### Chunk 10 — Off-page authority prep
+- **edamame-inc/.github/profile/README.md** — GitHub org landing page, SEO-optimized, renders at github.com/edamame-inc
+- **BUSINESS_NAP.md** — canonical source of truth for all directory listings (40+ directory targets prioritized into 6 tiers)
+- **Person schema** for Tom Arai (Japanese national, Tokyo-trained, nationality, knowsLanguage, knowsAbout, jobTitle) — strong E-E-A-T signal
+- **rel=me links** on EN homepage for identity verification
+
+### Chunk 11 — Internal linking (biggest SEO leverage remaining)
+- **`/kintone-philippines/en/vs/`** comparison hub page — CollectionPage schema, 9 comparisons + 8 alternatives + 5 pricing, all cluster-linked
+- **"Related reading" blocks on all 51 blog articles** — cluster-aware cross-links (same-cluster 2 + adjacent-cluster 3)
+- Cluster taxonomy codified: comparisons / alternatives / pricing / best_guides / industry / how_to / apps / about
+
+### Status
+- **93 URLs in sitemap** (was 66 at start of day)
+- **14 consecutive deploys succeeded**
+- **IndexNow firing 93 URLs to Bing + Yandex** on every `/trigger/seo-submit` call
+- **GSC**: still waiting on webmasters scope grant (1-minute manual step on admin.google.com)
+
+### Total sprint delivery
+```
+4c71e0aa  Chunk 11 (hub + internal linking)        558aed50
+c8c7f139  Chunk 10 (off-page prep + Person schema + rel=me)
+a28a42b4  Chunk 10 (NAP source of truth)
+0229810c  Chunk 9 (JA blog index update)
+34c9579b  Chunk 8 (5 new JA articles + sitemap)
+780d1d7e  CHANGELOG (sprint chunks 1-7)
+4e4828fa  Chunk 7 (real TL homepage)
+a06310a4  Chunk 6 (industry page augmentation)
+ca95ed34  Chunk 5 backup (v2)
+796567dc  Chunk 5 (homepage v3)
+6d91f93e  Chunk 4 (blog breadcrumbs + sitemap)
+6a8390b6  Chunk 3 (5 case studies)
+631ac273  Chunk 2 (schema enrichment)
+9a5ca244  Chunk 1 (infrastructure)
+```
+
+---
+
 ## 2026-04-22 · Full-slate SEO sprint (Chunks 1-7)
 
 Executed comprehensive SEO overhaul targeting #1 PH + niche JP + stretch global long-tails. All chunks shipped to production, all CF Pages deploys successful.
