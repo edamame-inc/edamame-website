@@ -588,6 +588,35 @@ a { color: inherit; text-decoration: none; }
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px; letter-spacing: 0.1em; color: rgba(240,237,232,0.4);
 }
+
+/* NAMED CLIENTS (v3.1 — replaces Gantt) */
+.clients-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid rgba(26,26,24,0.08); }
+@media (max-width: 780px) { .clients-list { grid-template-columns: 1fr; } }
+.client-row {
+  display: flex; align-items: center; gap: 20px;
+  padding: 22px 4px;
+  border-bottom: 1px solid rgba(26,26,24,0.08);
+  color: var(--ink); text-decoration: none;
+  transition: all .2s;
+}
+.client-row:nth-child(odd) { border-right: 1px solid rgba(26,26,24,0.08); padding-right: 24px; }
+@media (max-width: 780px) { .client-row:nth-child(odd) { border-right: none; padding-right: 4px; } }
+.client-row:hover { background: var(--cream); padding-left: 16px; }
+.client-row:hover .client-arrow { transform: translateX(4px); color: var(--sage); }
+.client-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px; letter-spacing: 0.2em;
+  color: var(--gold);
+}
+.client-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px; line-height: 1.2;
+  color: var(--ink); flex: 1;
+}
+.client-arrow {
+  font-size: 16px; color: var(--gray);
+  transition: all .2s;
+}
 </style>
 <link rel="me" href="https://github.com/tomarai-369" />
 <link rel="me" href="mailto:kintone@edamame-jp.com" />
@@ -639,8 +668,8 @@ a { color: inherit; text-decoration: none; }
       <div class="live-stat"><span class="live-stat-label">Enterprise clients</span><span class="live-stat-val">50<span class="unit">active</span></span></div>
       <div class="live-stat"><span class="live-stat-label">Users deployed</span><span class="live-stat-val">2,443</span></div>
       <div class="live-stat"><span class="live-stat-label">Monthly recurring</span><span class="live-stat-val">₱1.87M<span class="unit">/mo</span></span></div>
-      <div class="live-stat"><span class="live-stat-label">Our own AI stack</span><span class="live-stat-val">$18<span class="unit">/mo</span></span></div>
-      <div class="live-stat"><span class="live-stat-label">Team size</span><span class="live-stat-val">3<span class="unit">humans</span></span></div>
+      <div class="live-stat"><span class="live-stat-label">Award</span><span class="live-stat-val" style="font-size:18px;">Global Partner</span></div>
+      <div class="live-stat"><span class="live-stat-label">Cybozu · 2024</span><span class="live-stat-val" style="font-size:18px;">of the Year</span></div>
     </div>
   </div>
 </section>
@@ -654,8 +683,8 @@ a { color: inherit; text-decoration: none; }
       <a href="/kintone-philippines/en/customers/daikin/">DAIKIN</a>
       <a href="/kintone-philippines/en/customers/quipper/">Quipper</a>
       <a href="/kintone-philippines/en/customers/aeon-fantasy/">AEON Fantasy</a>
-      <a href="/kintone-philippines/en/customers/a2-network/">A2 Network</a>
       <a href="/kintone-philippines/en/customers/">GMA Network</a>
+      <a href="/kintone-philippines/en/customers/">Maximum Solutions</a>
     </div>
   </div>
 </section>
@@ -681,58 +710,58 @@ a { color: inherit; text-decoration: none; }
       <p>PDF Pro, Mail, Lookup+, Flow. Built to close the gap between what Kintone ships and what enterprises actually need.</p>
       <div class="bean-meta">STATUS · IN PRODUCTION · 6 ENVS</div>
     </a>
-    <a class="bean bean-right" href="/kintone-philippines/en/blog/business-process-automation-philippines/">
+    <a class="bean bean-right" href="/kintone-philippines/en/blog/how-to-replace-excel-philippines/">
       <div class="bean-marker"></div>
-      <div class="bean-num">№ 03 · AI INTEGRATION</div>
-      <h3>Claude, inside your workflow.</h3>
-      <p>Lead scoring, email drafting, document parsing, meeting summaries. We optimize for cost, not for novelty.</p>
-      <div class="bean-meta">OUR OWN COST · UNDER $20/MO</div>
+      <div class="bean-num">№ 03 · MIGRATION</div>
+      <h3>From Excel, Odoo, Airtable — in days.</h3>
+      <p>Most of our clients came from spreadsheets or a platform that stopped fitting. We map what you have, build what you need, and hand you back your data structured, permissioned, and live.</p>
+      <div class="bean-meta">TYPICAL CUTOVER · 1 — 3 WEEKS</div>
     </a>
   </div>
 </section>
 
-<!-- DEPLOYMENTS / GANTT (element 5 — proof continued) -->
+<!-- NAMED CLIENTS (replaces Gantt per Tom's feedback) -->
 <section class="section">
   <div class="section-head">
-    <h2>Deployments that <em>lasted</em>.</h2>
-    <div class="section-meta">Client tenure · years in production</div>
+    <h2>Named <em>deployments</em>.</h2>
+    <div class="section-meta">Case files · on request</div>
   </div>
-  <div class="gantt">
-    <div class="gantt-scale">
-      <div></div>
-      <div class="gantt-years"><span>2020</span><span>2021</span><span>2022</span><span>2023</span><span>2024</span><span>2025</span><span>2026</span></div>
-    </div>
-    <div class="gantt-row">
-      <div class="gantt-client"><a href="/kintone-philippines/en/customers/orix-metro/">ORIX Metro</a></div>
-      <div class="gantt-bar-track"><div class="gantt-bar premier" style="left:33%;width:67%;">IP-whitelisted · multi-app</div></div>
-      <div class="gantt-users">1,000+ users</div>
-    </div>
-    <div class="gantt-row">
-      <div class="gantt-client"><a href="/kintone-philippines/en/customers/quipper/">Quipper</a></div>
-      <div class="gantt-bar-track"><div class="gantt-bar" style="left:50%;width:50%;">3-year · active</div></div>
-      <div class="gantt-users">200+ users</div>
-    </div>
-    <div class="gantt-row">
-      <div class="gantt-client"><a href="/kintone-philippines/en/customers/aeon-fantasy/">AEON Fantasy</a></div>
-      <div class="gantt-bar-track"><div class="gantt-bar" style="left:50%;width:50%;">3-year · bilingual UI</div></div>
-      <div class="gantt-users">100+ users</div>
-    </div>
-    <div class="gantt-row">
-      <div class="gantt-client"><a href="/kintone-philippines/en/customers/daikin/">DAIKIN</a></div>
-      <div class="gantt-bar-track"><div class="gantt-bar" style="left:67%;width:33%;">Since 2024</div></div>
-      <div class="gantt-users">450+ users</div>
-    </div>
-    <div class="gantt-row">
-      <div class="gantt-client"><a href="/kintone-philippines/en/customers/a2-network/">A2 Network</a></div>
-      <div class="gantt-bar-track"><div class="gantt-bar" style="left:67%;width:33%;">Active</div></div>
-      <div class="gantt-users">85+ users</div>
-    </div>
-    <div class="gantt-row">
-      <div class="gantt-client">Maximum Solutions</div>
-      <div class="gantt-bar-track"><div class="gantt-bar" style="left:50%;width:50%;">Field ops</div></div>
-      <div class="gantt-users">60+ users</div>
-    </div>
+  <div class="clients-list">
+    <a class="client-row" href="/kintone-philippines/en/customers/orix-metro/">
+      <span class="client-num">01</span>
+      <span class="client-name">ORIX Metro</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/daikin/">
+      <span class="client-num">02</span>
+      <span class="client-name">DAIKIN</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/quipper/">
+      <span class="client-num">03</span>
+      <span class="client-name">Quipper</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/aeon-fantasy/">
+      <span class="client-num">04</span>
+      <span class="client-name">AEON Fantasy</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/">
+      <span class="client-num">05</span>
+      <span class="client-name">GMA Network</span>
+      <span class="client-arrow">→</span>
+    </a>
+    <a class="client-row" href="/kintone-philippines/en/customers/">
+      <span class="client-num">06</span>
+      <span class="client-name">Maximum Solutions</span>
+      <span class="client-arrow">→</span>
+    </a>
   </div>
+  <p style="margin-top:28px;font-size:14px;color:var(--gray);font-family:'DM Sans',sans-serif;">
+    Deployment details, scope, and workflow specifics stay with each client.
+    <a href="/kintone-philippines/en/customers/" style="color:var(--sage);font-weight:600;border-bottom:1px solid rgba(74,124,89,0.3);">See the full customer list →</a>
+  </p>
 </section>
 
 <!-- COMPARISON SPEC SHEET (element 6) -->
