@@ -1,5 +1,22 @@
 # Edamame Website Changelog
 
+## 2026-04-30 · Live panel · Remove MRR row across all locales
+
+Strategic visibility scrub: dropped `Monthly recurring · ₱1.87M/mo` from public live-panel on all three homepage locales (EN, TL, JA) plus brand-guidelines reference doc. Replaced with `Industries served · 5 sectors` to preserve the 4-row layout and signal breadth without leaking economics.
+
+### Why
+Public MRR disclosure was leaking too much downside intel: (1) ORIX concentration (32.5%) becomes inferrable from public data — 50 clients × ₱1.87M = ₱37K avg, ORIX at ₱608K is 16× avg, signaling whale; (2) enterprise procurement (GMA, Coca-Cola, Watsons, Ayala Land) flagging business-continuity risk on small MRR; (3) pricing leverage lost in negotiations; (4) acquisition-lowball anchor; (5) talent-poaching coordinates.
+
+The remaining metrics (50 enterprise clients · 2,443 users · Global Partner of the Year) already deliver the trust/credibility signal that specific-numbers buy. MRR was the only row leaking economics.
+
+### Files changed
+- `kintone-philippines/en/index.html` — line 621
+- `kintone-philippines/tl/index.html` — line 216
+- `kintone-philippines/ja/index.html` — line 311
+- `brand-guidelines.html` — lines 423, 478, 628 (demo block + voice rules + type sample)
+
+Backup at `_backups/v2-2026-04-22/` retains original MRR row for reference.
+
 ## 2026-04-22 · Sprint continuation (Chunks 8-11)
 
 Continued full-slate sprint after Chunks 1-7 shipped earlier. All chunks deployed successfully.
