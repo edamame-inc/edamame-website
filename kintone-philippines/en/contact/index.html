@@ -216,41 +216,74 @@ a{color:inherit;text-decoration:none}
   <div class="main">
     <div>
       <div class="form-card" id="formCard">
-        <h2>Send Us a Message</h2>
-        <p>Tell us about your business challenge. We'll respond within 24 hours with practical suggestions — even if Kintone isn't the right fit.</p>
+        <h2>Tell us about your business</h2>
+        <p>We'll respond within 24 hours with practical suggestions — even if Kintone isn't the right fit.</p>
 
         <div class="error-msg" id="errorMsg"></div>
 
         <div class="field">
-          <label for="name">Your Name *</label>
+          <label for="name">Your name *</label>
           <input type="text" id="name" name="name" required placeholder="Juan dela Cruz">
         </div>
         <div class="field">
-          <label for="email">Work Email *</label>
+          <label for="email">Work email *</label>
           <input type="email" id="email" name="email" required placeholder="juan@company.com">
         </div>
         <div class="field">
-          <label for="company">Company Name</label>
-          <input type="text" id="company" name="company" placeholder="ABC Corporation">
+          <label for="company">Company name *</label>
+          <input type="text" id="company" name="company" required placeholder="ABC Corporation">
         </div>
         <div class="field">
-          <label for="interest">What are you looking for?</label>
-          <select id="interest" name="interest">
+          <label for="companySize">Company size (employees)</label>
+          <select id="companySize" name="companySize">
             <option value="">— Select —</option>
-            <option value="crm">CRM / Sales Management</option>
-            <option value="workflow">Workflow Automation / Approvals</option>
-            <option value="hr">HR / Employee Management</option>
-            <option value="inventory">Inventory / Operations</option>
-            <option value="project">Project Management</option>
-            <option value="replace-excel">Replace Excel / Spreadsheets</option>
-            <option value="custom-app">Custom Business App</option>
-            <option value="kintone-pricing">Kintone Pricing Info</option>
-            <option value="other">Other</option>
+            <option value="5-25">5–25</option>
+            <option value="26-100">26–100</option>
+            <option value="101-500">101–500</option>
+            <option value="500+">500+</option>
           </select>
         </div>
         <div class="field">
-          <label for="message">Tell us more (optional)</label>
-          <textarea id="message" name="message" placeholder="What business processes are you trying to improve? How many people on your team? Any software you're currently using?"></textarea>
+          <label for="industry">Industry</label>
+          <select id="industry" name="industry">
+            <option value="">— Select —</option>
+            <option value="HR / Manpower services">HR / Manpower services</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Retail / F&amp;B">Retail / F&B</option>
+            <option value="Finance / Banking">Finance / Banking</option>
+            <option value="Logistics / Distribution">Logistics / Distribution</option>
+            <option value="Real estate / Property">Real estate / Property</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="interest">What are you looking to solve?</label>
+          <select id="interest" name="interest">
+            <option value="">— Select —</option>
+            <option value="CRM / Sales pipeline">CRM / Sales pipeline</option>
+            <option value="Workflow / Approvals">Workflow / Approvals</option>
+            <option value="HR / HRIS / Employee records">HR / HRIS / Employee records</option>
+            <option value="Custom internal app">Custom internal app</option>
+            <option value="Not sure yet">Not sure yet</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="timeline">Timeline</label>
+          <select id="timeline" name="timeline">
+            <option value="">— Select —</option>
+            <option value="Need it now">Need it now</option>
+            <option value="1-3 months">1–3 months</option>
+            <option value="3-6 months">3–6 months</option>
+            <option value="Just exploring">Just exploring</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="currentTools">What are you using today? (optional)</label>
+          <input type="text" id="currentTools" name="currentTools" placeholder="e.g. Excel, Salesforce, paper forms, nothing yet">
+        </div>
+        <div class="field">
+          <label for="message">Anything else? (optional)</label>
+          <textarea id="message" name="message" rows="3" placeholder="Specific challenges, integrations needed, etc."></textarea>
         </div>
 
         <button class="submit-btn" id="submitBtn" onclick="submitForm()">Send Message →</button>
@@ -258,7 +291,7 @@ a{color:inherit;text-decoration:none}
 
       <div class="success-msg" id="successMsg">
         <h3>✅ Message Sent!</h3>
-        <p>Thank you! Our team will review your inquiry and respond within 24 hours. For immediate assistance, you can also <a href="https://calendly.com/kintoneph/freekintoneappconsultation" style="color:var(--gd);font-weight:700">book a free demo call</a>.</p>
+        <p>Thank you! Camille will review your inquiry and respond within 24 hours. For immediate assistance, you can also <a href="https://calendly.com/kintoneph/freekintoneappconsultation" style="color:var(--gd);font-weight:700">book a free demo call</a>.</p>
       </div>
     </div>
 
@@ -343,6 +376,61 @@ a{color:inherit;text-decoration:none}
 </div></footer>
 
 <script>function toggleMobileMenu(){const m=document.getElementById('mobileMenu');m.classList.toggle('active');document.body.style.overflow=m.classList.contains('active')?'hidden':'';}</script>
-<script src="https://camille-chatbot.tom-arai.workers.dev/widget.js"></script>
+<script>
+async function submitForm() {
+  const btn = document.getElementById('submitBtn');
+  const err = document.getElementById('errorMsg');
+  const card = document.getElementById('formCard');
+  const ok = document.getElementById('successMsg');
+  err.style.display = 'none';
+
+  const get = id => (document.getElementById(id) || {}).value || '';
+  const name = get('name').trim();
+  const email = get('email').trim();
+  const company = get('company').trim();
+  const companySize = get('companySize');
+  const industry = get('industry');
+  const interest = get('interest');
+  const timeline = get('timeline');
+  const currentTools = get('currentTools').trim();
+  const notes = get('message').trim();
+
+  if (!name || !email || !company) {
+    err.textContent = 'Please fill in your name, email, and company.';
+    err.style.display = 'block';
+    return;
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    err.textContent = 'Please enter a valid email address.';
+    err.style.display = 'block';
+    return;
+  }
+
+  // Combine richer fields into the message body for backend (which accepts name/email/company/interest/message)
+  const messageParts = [];
+  if (companySize) messageParts.push(`Company size: ${companySize}`);
+  if (industry) messageParts.push(`Industry: ${industry}`);
+  if (timeline) messageParts.push(`Timeline: ${timeline}`);
+  if (currentTools) messageParts.push(`Currently using: ${currentTools}`);
+  if (notes) messageParts.push(`Notes: ${notes}`);
+  const message = messageParts.join(' | ');
+
+  btn.disabled = true; btn.textContent = 'Sending...';
+  try {
+    const r = await fetch('https://digital-tom.tom-arai.workers.dev/webhook/contact-form', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, company, interest, message, source: 'contact-page-' + (document.documentElement.lang || 'en') })
+    });
+    if (!r.ok) throw new Error('http_' + r.status);
+    card.style.display = 'none';
+    ok.style.display = 'block';
+  } catch (e) {
+    err.textContent = "Sorry, something went wrong. Please email us directly at kintone@edamame-jp.com or call +63 928 872 7958.";
+    err.style.display = 'block';
+    btn.disabled = false; btn.textContent = document.documentElement.lang === 'ja' ? '送信する →' : (document.documentElement.lang === 'tl' ? 'Ipadala →' : 'Send Message →');
+  }
+}
+</script>
 </body>
 </html>
