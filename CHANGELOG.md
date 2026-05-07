@@ -1,5 +1,18 @@
 # Edamame Website Changelog
 
+## [Unreleased] — 2026-05-07
+
+### Removed
+- **Tagalog locale (/tl/) retired entirely.** Stub homepage + privacy policy + contact deleted. ICP analysis: B2B software buyers in PH research in English; TL added maintenance burden without lifting enterprise pipeline. Inbound /tl/* traffic 301-redirected to /en/ via _redirects.
+
+### Fixed
+- **Homepage trust bar:** ORIX Metro, DAIKIN, Quipper, AEON Fantasy were plain text while GMA Network and Maximum Solutions were links — visual inconsistency since all 6 had hover/arrow affordances. All 6 logos now uniformly link to /customers/.
+- **Homepage Named Deployments:** Same inconsistency — rows 01–04 were unwrapped spans while 05–06 were `<a>` elements. All 6 rows now uniformly clickable, all targeting /customers/ index.
+- Removed TL from hreflang and og:locale:alternate across EN home, JA home, JA blog articles (×5), customers index, privacy policies. Cleaned root sitemap.xml, kintone-philippines/sitemap.xml, ja/sitemap.xml.
+
+### Updated  
+- llms.txt + llms-full.txt: Filipino language reference removed; canonical "English and Japanese" propagated.
+
 ## 2026-04-30 · Live panel · Remove MRR row across all locales
 
 Strategic visibility scrub: dropped `Monthly recurring · ₱1.87M/mo` from public live-panel on all three homepage locales (EN, TL, JA) plus brand-guidelines reference doc. Replaced with `Industries served · 5 sectors` to preserve the 4-row layout and signal breadth without leaking economics.

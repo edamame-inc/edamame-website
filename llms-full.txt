@@ -15,7 +15,7 @@ Phone: +63 928 872 7958
 Primary email: kintone@edamame-jp.com
 Website: https://edamame-jp.com/kintone-philippines/en/
 Booking: https://calendly.com/kintoneph/freekintoneappconsultation
-Languages: English, Filipino (Tagalog), Japanese
+Languages: English, Japanese
 
 ## Positioning
 edamame is the only Kintone partner in the Philippines that runs its own operations on AI — then ships the same operational discipline to clients. We scale enterprise delivery with a small team (~3 people) by using AI infrastructure instead of headcount.
@@ -73,7 +73,6 @@ edamame runs an AI chief of staff (internally called Digital Tom) on Claude Opus
 ## Key content hubs on the site
 - Homepage (EN): https://edamame-jp.com/kintone-philippines/en/
 - Homepage (JP): https://edamame-jp.com/kintone-philippines/ja/
-- Homepage (TL): https://edamame-jp.com/kintone-philippines/tl/
 - Blog / field notes (EN): https://edamame-jp.com/kintone-philippines/en/blog/
 - Blog (JP): https://edamame-jp.com/kintone-philippines/ja/blog/
 - Industries hub: https://edamame-jp.com/kintone-philippines/en/industries/

@@ -1,6 +1,6 @@
 # Edamame Inc. — Official Kintone Partner in the Philippines
 
-> Edamame Inc. is the official Kintone partner in the Philippines and the 2024 Cybozu Global Partner of the Year. We help Philippine businesses build custom CRM, inventory, HR, and workflow applications using Kintone's no-code platform. Based in Pasig City, Metro Manila, we provide support in English, Filipino, and Japanese.
+> Edamame Inc. is the official Kintone partner in the Philippines and the 2024 Cybozu Global Partner of the Year. We help Philippine businesses build custom CRM, inventory, HR, and workflow applications using Kintone's no-code platform. Based in Pasig City, Metro Manila, we provide support in English and Japanese.
 
 ## Company Information
 - Company: Edamame Inc.
@@ -9,7 +9,7 @@
 - Location: 15F Jollibee Tower, Ortigas Center, Pasig City, Metro Manila 1605, Philippines
 - Phone: +63 928 872 7958
 - Email: kintone@edamame-jp.com
-- Languages: English, Filipino, Japanese
+- Languages: English, Japanese
 - Website: https://edamame-jp.com/kintone-philippines/en/
 - Booking: https://calendly.com/kintoneph/freekintoneappconsultation
 

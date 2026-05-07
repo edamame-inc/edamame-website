@@ -5,7 +5,7 @@
 /en/edamame-inc-terms-and-conditions  /kintone-philippines/en/privacy-policy/  301
 /en/*                            /kintone-philippines/en/:splat       301
 /ja/*                            /kintone-philippines/ja/:splat       301
-/tl/*                            /kintone-philippines/tl/:splat       301
+/tl/*                            /kintone-philippines/en/:splat       301
 
 # Blog path shorthand (prevents the /blog/ 404)
 /blog/*                          /kintone-philippines/en/blog/:splat  301
@@ -18,3 +18,7 @@
 /customers                       /kintone-philippines/en/customers/   301
 /demo                            https://calendly.com/kintoneph/freekintoneappconsultation  302
 /book                            https://calendly.com/kintoneph/freekintoneappconsultation  302
+
+# Tagalog locale retired 2026-05-07 — route to English
+/kintone-philippines/tl/*        /kintone-philippines/en/:splat       301
+/kintone-philippines/tl          /kintone-philippines/en/             301
