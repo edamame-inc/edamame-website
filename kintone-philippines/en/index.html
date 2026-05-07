@@ -168,12 +168,17 @@ a { color: inherit; text-decoration: none; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
 .btn-primary {
   display: inline-flex; align-items: center; gap: 8px;
-  padding: 14px 24px; border-radius: 100px;
-  background: linear-gradient(135deg, var(--cta-red), var(--cta-red-bright));
-  color: #fff; font-weight: 600; font-size: 14px;
-  transition: transform .15s, box-shadow .15s;
+  padding: 14px 26px; border-radius: 100px;
+  background: var(--sage); color: #fff;
+  font-weight: 600; font-size: 14px; letter-spacing: 0.01em;
+  transition: transform .15s, box-shadow .2s, background .2s;
+  box-shadow: 0 2px 0 rgba(58, 99, 73, 0.22);
 }
-.btn-primary:hover { transform: translateY(-1px); box-shadow: 0 8px 24px rgba(237,28,36,0.25); }
+.btn-primary:hover {
+  transform: translateY(-1px);
+  background: #3A6349; /* primary-dark */
+  box-shadow: 0 10px 28px rgba(74,124,89,0.28);
+}
 .btn-ghost {
   display: inline-flex; align-items: center; gap: 8px;
   padding: 13px 22px; border-radius: 100px;
@@ -185,42 +190,57 @@ a { color: inherit; text-decoration: none; }
 .hero-note { font-size: 12px; color: var(--gray); margin-left: 4px; }
 
 /* LIVE DATA PANEL (Data Atelier signature) */
+
+/* Three-pod ornament — logo signature, decoratively */
+.pod-ornament { display: block; width: 64px; height: 22px; opacity: 0.85; }
+.pod-ornament-center { margin: 0 auto 16px; }
+.pod-ornament-divider { margin: 32px auto; width: 80px; height: 28px; opacity: 0.7; }
+
 .live-panel {
-  background: var(--ink); color: var(--cream);
-  border-radius: 14px; padding: 26px 24px;
-  border: 1px solid var(--gold);
+  background: #FBF8F2; /* warm cream, ~paper */
+  color: var(--ink);
+  border-radius: 16px;
+  padding: 28px 26px;
+  border: 1px solid rgba(196,163,90,0.32);
   position: relative; overflow: hidden;
+  box-shadow: 0 1px 0 rgba(74,124,89,0.06), 0 14px 38px rgba(10,30,21,0.05);
 }
 .live-panel::before {
-  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
   background: linear-gradient(90deg, var(--sage) 0%, var(--gold) 50%, var(--sage) 100%);
 }
 .live-panel-title {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10px; letter-spacing: 0.24em;
-  color: var(--gold); text-transform: uppercase;
+  color: var(--sage); text-transform: uppercase;
   margin-bottom: 18px;
   display: flex; justify-content: space-between; align-items: center;
 }
 .live-panel-title::after {
-  content: "● LIVE"; color: var(--cta-red-bright);
+  content: "● LIVE"; color: var(--sage);
   animation: pulse 1.5s infinite; font-size: 9px;
+  font-weight: 700;
 }
 .live-stat {
   display: flex; justify-content: space-between; align-items: baseline;
-  padding: 12px 0;
-  border-bottom: 1px dashed rgba(196,163,90,0.24);
-  font-size: 13px;
+  padding: 13px 0;
+  border-bottom: 1px dashed rgba(74,124,89,0.18);
+  font-size: 13.5px;
 }
 .live-stat:last-child { border-bottom: none; }
-.live-stat-label { color: rgba(240,237,232,0.65); font-family: 'DM Sans', sans-serif; }
+.live-stat-label {
+  color: var(--gray);
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: 0.005em;
+}
 .live-stat-val {
   font-family: 'DM Serif Display', serif;
-  font-size: 28px; color: var(--cream);
+  font-size: 30px; color: var(--ink);
+  letter-spacing: -0.01em;
 }
 .live-stat-val .unit {
   font-family: 'JetBrains Mono', monospace; font-size: 11px;
-  color: var(--gold); margin-left: 4px;
+  color: var(--gold); margin-left: 6px; font-weight: 600;
 }
 
 /* TRUST BAR (Homepage Contract element 3) */
@@ -608,7 +628,7 @@ gtag('config', 'G-YF1198H5CL');
     <div>
       <div class="hero-kicker">2024 Kintone Global Partner of the Year · Philippines</div>
       <h1>Kintone, <em>engineered</em><br/>by people who run on it.</h1>
-      <p class="hero-sub">A small firm in Pasig serving 2,400+ users across fifty enterprise clients — ORIX Metro, Daikin, Quipper. We scale by running our own operations on AI, then ship the same discipline to every engagement.</p>
+      <p class="hero-sub">We're a small studio in Pasig — three people serving 2,400+ users across fifty enterprise clients. ORIX Metro, Daikin, Quipper. We scale by running our own operations on AI, then bring the same discipline to yours.</p>
       <div class="hero-actions">
         <a class="btn-primary" href="https://calendly.com/kintoneph/freekintoneappconsultation">Book a 30-min demo →</a>
         <a class="btn-ghost" href="/kintone-philippines/en/customers/">See our deployments</a>
@@ -631,7 +651,7 @@ gtag('config', 'G-YF1198H5CL');
 <!-- TRUST BAR (element 3) -->
 <section class="trust">
   <div class="trust-inner">
-    <div class="trust-label">Deployed in production for</div>
+    <div class="trust-label">Quietly running in production for</div>
     <div class="trust-row">
       <a href="/kintone-philippines/en/customers/">ORIX Metro</a>
       <a href="/kintone-philippines/en/customers/">DAIKIN</a>
@@ -643,11 +663,18 @@ gtag('config', 'G-YF1198H5CL');
   </div>
 </section>
 
+<!-- POD ORNAMENT -->
+<div style="text-align:center;padding:28px 24px 12px;"><svg class="pod-ornament pod-ornament-divider" viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/>
+  <rect x="33" y="2" width="14" height="24" rx="7" fill="#C4A35A" opacity="0.85"/>
+  <rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/>
+</svg></div>
+
 <!-- THREE BEANS — Practices (element 4) -->
 <section class="section" id="practices">
   <div class="section-head">
     <h2>Three practices. <em>All AI-native.</em></h2>
-    <div class="section-meta">Kintone + AI · shipped together</div>
+    <div class="section-meta">Kintone + AI · with you, not at you</div>
   </div>
   <div class="beans-grid">
     <a class="bean bean-left" href="/kintone-philippines/en/blog/no-code-app-development-philippines/">
@@ -677,8 +704,8 @@ gtag('config', 'G-YF1198H5CL');
 <!-- NAMED CLIENTS (replaces Gantt per Tom's feedback) -->
 <section class="section">
   <div class="section-head">
-    <h2>Named <em>deployments</em>.</h2>
-    <div class="section-meta">Case files · on request</div>
+    <h2>In <em>good company</em>.</h2>
+    <div class="section-meta">Public clients · approved names · workflows under NDA</div>
   </div>
   <div class="clients-list">
     <a class="client-row" href="/kintone-philippines/en/customers/">
@@ -798,11 +825,18 @@ gtag('config', 'G-YF1198H5CL');
   </div>
 </section>
 
+<!-- POD ORNAMENT -->
+<div style="text-align:center;padding:0 24px 20px;"><svg class="pod-ornament pod-ornament-divider" viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/>
+  <rect x="33" y="2" width="14" height="24" rx="7" fill="#C4A35A" opacity="0.85"/>
+  <rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/>
+</svg></div>
+
 <!-- FIELD NOTES — 6 blog links (element 7) -->
 <section class="field-notes">
   <div class="field-notes-inner">
     <div class="section-head">
-      <h2>Field <em>notes</em>.</h2>
+      <h2>From the <em>field</em>.</h2>
       <a href="/kintone-philippines/en/blog/" style="font-size:14px;color:var(--sage);font-weight:600;">All 51 notes →</a>
     </div>
     <div class="notes-grid">
@@ -884,7 +918,7 @@ gtag('config', 'G-YF1198H5CL');
 <!-- PRICING (element 9) -->
 <section class="pricing-bar" id="pricing">
   <div class="pricing-bar-inner">
-    <h2>Priced by scope. <em>Not by the hour.</em></h2>
+    <h2>Priced by <em>scope</em>. Not by the hour.</h2>
     <p>Kintone itself starts at ₱1,000/user/month <span class="min">(5-user minimum)</span>. Our engagements are priced per scope — no timesheets.</p>
     <div class="pricing-tiers">
       <div class="tier">
@@ -909,8 +943,8 @@ gtag('config', 'G-YF1198H5CL');
 <!-- FINAL CTA (element 10) -->
 <section class="final-cta">
   <div class="final-cta-inner">
-    <h2>Thirty minutes with <em>Tom</em>.<br/>No pitch deck.</h2>
-    <p>We'll map your actual workflow — not a generic template. If Kintone isn't the right fit, we'll tell you.</p>
+    <h2>Thirty minutes with <em>Tom</em>.<br/>Just you, him, and your real workflow.</h2>
+    <p>We'll map your real workflow together. If Kintone isn't the right fit, we'll tell you that too — honestly.</p>
     <a class="btn-primary" href="https://calendly.com/kintoneph/freekintoneappconsultation">Book 30-min demo →</a>
   </div>
 </section>
