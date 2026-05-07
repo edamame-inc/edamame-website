@@ -1,5 +1,32 @@
 # Edamame Website Changelog
 
+## [vs-hub-deepening] — 2026-05-07
+
+### Added — /vs/ hub depth pass
+**Goal: deepest comparison destination in the PH category. Was 29KB / 4 H2 sections, now 63KB / 10 H2 sections.**
+
+- **Master matrix** (new): 10 platforms (Kintone + 9 competitors) × 8 evaluation dimensions in one scrollable table. Time-to-first-app, dev requirements, record limits, starting price, PH local support, JP business-grade, real fit per platform. Color-coded badges.
+- **3-year TCO summary** (new): Year-by-year + 3-year total in PHP for a 25-user mid-market profile. Kintone+edamame ~₱995K vs Odoo ₱2.4–3.8M vs Salesforce ₱3.4–4.8M vs HubSpot ₱1.75–2.65M vs Airtable ₱580–910K vs ERPNext ₱2.1–3.6M. Links to ROI calculator.
+- **Decision matrix** (new): 8 "If you need X, choose Y" cards. Routes prospects to HubSpot for inbound marketing, Salesforce for enterprise teams already on it, Airtable for under-50K-row use cases, Monday for project-led work, ERPNext for open-source DevOps shops, Notion for knowledge bases, Kintone for the rest. We'd rather lose the deal than mis-recommend.
+- **Migration playbook** (new): 8 source-platform cards (Excel, Odoo, Airtable, Salesforce, Monday, HubSpot, Zoho, SAP) with typical migration windows + hardest-step + first-week deliverable.
+- **By-industry recommendations** (new): 9 industry cards (manufacturing, healthcare, real estate, BPO, construction, logistics, education, retail, marketing-led B2B) with top-pick + named PH client where relevant (Daikin, A2 Network, AEON Fantasy, Quipper).
+- **Comparison FAQ** (new): 7 questions actually asked in evaluation calls (cheaper than Odoo? Airtable cap? Salesforce replacement? HubSpot free tier? Why JP popular? Open source? Trial?) — wired with FAQPage JSON-LD for rich results.
+
+### Schema enhancements
+- Added FAQPage JSON-LD with all 7 Q/A pairs (rich-result eligible).
+- BreadcrumbList + CollectionPage + ItemList retained.
+
+### Cross-linking
+- Internal blog links: 22 → 44 occurrences (23 unique articles)
+- Internal industry links: 0 → 8
+- ROI calculator linked from TCO section
+- Customer pages (MSCorp, Guhring) implicitly referenced via named PH deployments
+
+### Accessibility & local SEO on /vs/
+- Skip-to-content link
+- Landmark roles (banner/navigation/main/contentinfo)
+- Footer NAP block: address, tel, email
+
 ## [Unreleased] — 2026-05-07
 
 ### Added (Local SEO depth)
