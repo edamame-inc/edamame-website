@@ -123,6 +123,17 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 820px) { .nav-links { display: none; } }
 
 /* HERO — Data Atelier signature: graph-paper bg + live panel */
+.hero { overflow: hidden; }
+.hero-pod-decor {
+  position: absolute; top: 36px; right: 4%;
+  opacity: 0.18; pointer-events: none; z-index: 0;
+  width: clamp(160px, 18vw, 280px); height: auto;
+}
+@media (max-width: 900px) { .hero-pod-decor { display: none; } }
+.hero-grid { position: relative; z-index: 2; }
+
+/* original hero rules below */
+
 .hero {
   padding: 80px 24px 48px;
   position: relative;
@@ -314,10 +325,11 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 900px) { .bean-center { transform: none; } .bean-center:hover { transform: translateY(-4px); } }
 
 .bean-marker {
-  width: 22px; height: 22px; border-radius: 50%;
-  background: var(--sage); margin-bottom: 20px;
+  width: 64px; height: auto; margin-bottom: 22px;
+  display: block;
 }
-.bean-center .bean-marker { background: var(--gold); width: 28px; height: 28px; }
+.bean-marker svg { width: 100%; height: auto; display: block; }
+.bean-center .bean-marker { width: 76px; }
 .bean-num {
   font-family: 'JetBrains Mono', monospace;
   font-size: 11px; letter-spacing: 0.22em;
@@ -624,14 +636,22 @@ gtag('config', 'G-YF1198H5CL');
 <!-- HERO (element 2) -->
 <main id="main-content" role="main">
 <section class="hero">
+  <svg class="hero-pod-decor" viewBox="0 0 320 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M30 32 C-2 70, -2 150, 30 188" stroke="#4A7C59" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <rect x="56" y="78" width="38" height="80" rx="19" fill="#4A7C59"/>
+    <rect x="120" y="58" width="56" height="120" rx="28" fill="#C4A35A"/>
+    <rect x="206" y="78" width="38" height="80" rx="19" fill="#4A7C59"/>
+    <path d="M270 32 C302 70, 302 150, 270 188" stroke="#4A7C59" stroke-width="6" fill="none" stroke-linecap="round"/>
+  </svg>
+
   <div class="hero-grid">
     <div>
-      <div class="hero-kicker">2024 Kintone Global Partner of the Year · Philippines</div>
-      <h1>Kintone, <em>engineered</em><br/>by people who run on it.</h1>
-      <p class="hero-sub">We're a small studio in Pasig — three people serving 2,400+ users across fifty enterprise clients. ORIX Metro, Daikin, Quipper. We scale by running our own operations on AI, then bring the same discipline to yours.</p>
+      <div class="hero-kicker">● 2024 Kintone Global Partner of the Year · Philippines</div>
+      <h1>Kintone, <em>built with you</em>—<br/>by people who run on it.</h1>
+      <p class="hero-sub">Hi — we're edamame. A small studio in Pasig, partnering with fifty enterprise teams across the Philippines: ORIX Metro, Daikin, Quipper, and forty-seven others. We run our own ops on AI, so the discipline we bring to your build is the same one we use on ourselves.</p>
       <div class="hero-actions">
         <a class="btn-primary" href="https://calendly.com/kintoneph/freekintoneappconsultation">Book a 30-min demo →</a>
-        <a class="btn-ghost" href="/kintone-philippines/en/customers/">See our deployments</a>
+        <a class="btn-ghost" href="/kintone-philippines/en/customers/">Meet our partners →</a>
       </div>
       <p class="hero-note" style="margin-top:16px;">No pitch deck. Thirty minutes with Tom.</p>
     </div>
@@ -651,7 +671,7 @@ gtag('config', 'G-YF1198H5CL');
 <!-- TRUST BAR (element 3) -->
 <section class="trust">
   <div class="trust-inner">
-    <div class="trust-label">Quietly running in production for</div>
+    <div class="trust-label">In partnership with</div>
     <div class="trust-row">
       <a href="/kintone-philippines/en/customers/">ORIX Metro</a>
       <a href="/kintone-philippines/en/customers/">DAIKIN</a>
@@ -673,26 +693,26 @@ gtag('config', 'G-YF1198H5CL');
 <!-- THREE BEANS — Practices (element 4) -->
 <section class="section" id="practices">
   <div class="section-head">
-    <h2>Three practices. <em>All AI-native.</em></h2>
+    <h2>Three things <em>we do well</em>.</h2>
     <div class="section-meta">Kintone + AI · with you, not at you</div>
   </div>
   <div class="beans-grid">
     <a class="bean bean-left" href="/kintone-philippines/en/blog/no-code-app-development-philippines/">
-      <div class="bean-marker"></div>
+      <svg class="bean-marker" viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59"/><rect x="33" y="3" width="14" height="22" rx="7" fill="#C4A35A" opacity="0.55"/><rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/></svg>
       <div class="bean-num">№ 01 · CUSTOM APPS</div>
       <h3>Business apps, built in days.</h3>
       <p>CRM, inventory, HR, project management, operations dashboards. Real data, real flows, bilingual EN/JP by default.</p>
       <div class="bean-meta">TYPICAL GO-LIVE · WITHIN A WEEK</div>
     </a>
     <a class="bean bean-center" href="https://kinplug.com">
-      <div class="bean-marker"></div>
+      <svg class="bean-marker" viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/><rect x="33" y="2" width="14" height="24" rx="7" fill="#C4A35A"/><rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/></svg>
       <div class="bean-num">№ 02 · KINPLUG</div>
       <h3>Our own plugin suite.</h3>
       <p>PDF Pro, Mail, Lookup+, Flow. Built to close the gap between what Kintone ships and what enterprises actually need.</p>
       <div class="bean-meta">STATUS · IN PRODUCTION · 6 ENVS</div>
     </a>
     <a class="bean bean-right" href="/kintone-philippines/en/blog/how-to-replace-excel-philippines/">
-      <div class="bean-marker"></div>
+      <svg class="bean-marker" viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59" opacity="0.55"/><rect x="33" y="3" width="14" height="22" rx="7" fill="#C4A35A" opacity="0.55"/><rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59"/></svg>
       <div class="bean-num">№ 03 · MIGRATION</div>
       <h3>From Excel, Odoo, Airtable — in days.</h3>
       <p>Most of our clients came from spreadsheets or a platform that stopped fitting. We map what you have, build what you need, and hand you back your data structured, permissioned, and live.</p>
@@ -701,11 +721,19 @@ gtag('config', 'G-YF1198H5CL');
   </div>
 </section>
 
+
+<!-- POD ORNAMENT divider -->
+<div style="text-align:center;padding:8px 24px 16px;"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:54px;opacity:0.55;">
+  <rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59"/>
+  <rect x="33" y="2" width="14" height="24" rx="7" fill="#C4A35A"/>
+  <rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59"/>
+</svg></div>
+
 <!-- NAMED CLIENTS (replaces Gantt per Tom's feedback) -->
 <section class="section">
   <div class="section-head">
     <h2>In <em>good company</em>.</h2>
-    <div class="section-meta">Public clients · approved names · workflows under NDA</div>
+    <div class="section-meta">Approved names · workflows under NDA · partnerships in years</div>
   </div>
   <div class="clients-list">
     <a class="client-row" href="/kintone-philippines/en/customers/">
@@ -744,6 +772,14 @@ gtag('config', 'G-YF1198H5CL');
     <a href="/kintone-philippines/en/customers/" style="color:var(--sage);font-weight:600;border-bottom:1px solid rgba(74,124,89,0.3);">See the full customer list →</a>
   </p>
 </section>
+
+
+<!-- POD ORNAMENT divider -->
+<div style="text-align:center;padding:8px 24px 16px;"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:54px;opacity:0.55;">
+  <rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59"/>
+  <rect x="33" y="2" width="14" height="24" rx="7" fill="#C4A35A"/>
+  <rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59"/>
+</svg></div>
 
 <!-- COMPARISON SPEC SHEET (element 6) -->
 <section class="section">
@@ -879,6 +915,14 @@ gtag('config', 'G-YF1198H5CL');
     </div>
   </div>
 </section>
+
+
+<!-- POD ORNAMENT divider -->
+<div style="text-align:center;padding:8px 24px 16px;"><svg viewBox="0 0 80 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:54px;opacity:0.55;">
+  <rect x="6" y="6" width="14" height="16" rx="7" fill="#4A7C59"/>
+  <rect x="33" y="2" width="14" height="24" rx="7" fill="#C4A35A"/>
+  <rect x="60" y="6" width="14" height="16" rx="7" fill="#4A7C59"/>
+</svg></div>
 
 <!-- FAQ (element 8) -->
 <section class="faq-section" id="faq">
