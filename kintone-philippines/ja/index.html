@@ -61,6 +61,9 @@ gtag('config', 'G-YF1198H5CL');
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+JP:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
+
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--ink); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 14px; text-decoration: none; border-radius: 0 0 8px 0; }
+.skip-link:focus { left: 0; }
 :root {
   --sage: #4A7C59; --sage-deep: #3A6349; --sage-soft: #6B9B7A;
   --gold: #C4A35A; --gold-soft: #E8D5A3;
@@ -262,9 +265,10 @@ a { color: inherit; text-decoration: none; }
 </style>
 </head>
 <body>
+<a href="#main-content" class="skip-link">メインコンテンツへスキップ</a>
 
 <!-- NAV -->
-<header class="nav">
+<header class="nav" role="banner">
   <div class="nav-inner">
     <a class="logo" href="/kintone-philippines/ja/">
       <svg viewBox="0 0 80 70" aria-hidden="true">
@@ -276,7 +280,7 @@ a { color: inherit; text-decoration: none; }
       </svg>
       <span>edamame</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" role="navigation" aria-label="Primary">
       <li><a href="#practices">サービス</a></li>
       <li><a href="/kintone-philippines/ja/customers/">導入事例</a></li>
       <li><a href="/kintone-philippines/ja/blog/">ブログ</a></li>
@@ -288,6 +292,7 @@ a { color: inherit; text-decoration: none; }
 </header>
 
 <!-- HERO -->
+<main id="main-content" role="main">
 <section class="hero">
   <div class="hero-grid">
     <div>
@@ -600,12 +605,21 @@ a { color: inherit; text-decoration: none; }
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-col">
       <strong>edamame</strong>
       <p style="color:rgba(240,237,232,0.6);font-size:13px;line-height:1.75;font-family:'Noto Sans JP',sans-serif;">2024年Kintoneグローバル・パートナー・オブ・ザ・イヤー受賞。フィリピン公式パートナー。50社・2,400名以上の実運用をパシッグから支援。</p>
+      <address style="color:rgba(240,237,232,0.6);font-size:13px;line-height:1.7;font-style:normal;margin-top:14px;">
+        15F ジョリビータワー、オルティガスセンター<br/>
+        パシッグ市、メトロマニラ 1605<br/>
+        フィリピン<br/>
+        <a href="tel:+639288727958" style="color:rgba(240,237,232,0.85);">+63 928 872 7958</a><br/>
+        <a href="mailto:kintone@edamame-jp.com" style="color:rgba(240,237,232,0.85);">kintone@edamame-jp.com</a>
+      </address>
     </div>
     <div class="footer-col">
       <strong>製品</strong>

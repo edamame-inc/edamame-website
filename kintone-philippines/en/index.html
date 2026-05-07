@@ -73,6 +73,9 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
+
+.skip-link { position: absolute; left: -9999px; top: 0; z-index: 9999; padding: 12px 18px; background: var(--ink); color: #fff; font-family: 'DM Sans', sans-serif; font-weight: 600; font-size: 14px; text-decoration: none; border-radius: 0 0 8px 0; }
+.skip-link:focus { left: 0; }
 :root {
   --sage: #4A7C59; --sage-deep: #3A6349; --sage-soft: #6B9B7A;
   --gold: #C4A35A; --gold-soft: #E8D5A3;
@@ -572,9 +575,10 @@ gtag('config', 'G-YF1198H5CL');
 </script>
 </head>
 <body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
 <!-- NAV (element 1) -->
-<header class="nav">
+<header class="nav" role="banner">
   <div class="nav-inner">
     <a class="logo" href="/kintone-philippines/en/">
       <svg viewBox="0 0 80 70" aria-hidden="true">
@@ -586,7 +590,7 @@ gtag('config', 'G-YF1198H5CL');
       </svg>
       <span>edamame</span>
     </a>
-    <ul class="nav-links">
+    <ul class="nav-links" role="navigation" aria-label="Primary">
       <li><a href="#practices">Product</a></li>
       <li><a href="/kintone-philippines/en/customers/">Customers</a></li>
       <li><a href="/kintone-philippines/en/blog/">Notes</a></li>
@@ -598,6 +602,7 @@ gtag('config', 'G-YF1198H5CL');
 </header>
 
 <!-- HERO (element 2) -->
+<main id="main-content" role="main">
 <section class="hero">
   <div class="hero-grid">
     <div>
@@ -910,32 +915,45 @@ gtag('config', 'G-YF1198H5CL');
   </div>
 </section>
 
+</main>
+
 <!-- FOOTER -->
-<footer class="footer">
+<footer class="footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-col">
       <strong>edamame</strong>
       <p style="color:rgba(240,237,232,0.6);font-size:13px;line-height:1.6;">Official Kintone Partner Philippines. 2024 Cybozu Global Partner of the Year. 50 enterprise clients, 2,400+ users, serving from Pasig City.</p>
+      <address style="color:rgba(240,237,232,0.6);font-size:13px;line-height:1.7;font-style:normal;margin-top:14px;">
+        15F Jollibee Tower, Ortigas Center<br/>
+        Pasig City, Metro Manila 1605<br/>
+        Philippines<br/>
+        <a href="tel:+639288727958" style="color:rgba(240,237,232,0.85);">+63 928 872 7958</a><br/>
+        <a href="mailto:kintone@edamame-jp.com" style="color:rgba(240,237,232,0.85);">kintone@edamame-jp.com</a>
+      </address>
     </div>
     <div class="footer-col">
       <strong>Product</strong>
       <a href="#practices">Practices</a>
       <a href="#pricing">Pricing</a>
       <a href="/kintone-philippines/en/industries/">Industries</a>
+      <a href="/kintone-philippines/en/vs/">vs Comparisons</a>
       <a href="/kintone-philippines/en/tools/">Tools</a>
     </div>
     <div class="footer-col">
       <strong>Proof</strong>
       <a href="/kintone-philippines/en/customers/">Customers</a>
-      ORIX Metro
-      DAIKIN
-      Quipper
+      <a href="/kintone-philippines/en/customers/">ORIX Metro</a>
+      <a href="/kintone-philippines/en/customers/">DAIKIN</a>
+      <a href="/kintone-philippines/en/customers/">Quipper</a>
+      <a href="/kintone-philippines/en/customers/ms-corp/">MSCorp</a>
+      <a href="/kintone-philippines/en/customers/guhring-philippines/">Guhring</a>
     </div>
     <div class="footer-col">
       <strong>Read</strong>
       <a href="/kintone-philippines/en/blog/">Field Notes</a>
       <a href="/kintone-philippines/en/blog/kintone-vs-odoo/">vs Odoo</a>
       <a href="/kintone-philippines/en/blog/best-crm-software-philippines-2026/">Best CRM 2026</a>
+      <a href="/kintone-philippines/en/blog/best-software-japanese-companies-philippines/">For Japanese cos.</a>
       <a href="/brand-guidelines.html">Brand</a>
     </div>
   </div>

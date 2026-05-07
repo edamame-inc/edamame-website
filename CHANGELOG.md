@@ -2,6 +2,21 @@
 
 ## [Unreleased] — 2026-05-07
 
+### Added (Local SEO depth)
+- **EN homepage footer NAP block:** physical address (15F Jollibee Tower, Ortigas Center, Pasig City 1605), tel:+63 928 872 7958, mailto:kintone@edamame-jp.com — clickable on mobile.
+- **JA homepage footer NAP block:** Japanese-localized address with same phone/email.
+- **Footer columns expanded:** added MSCorp + Guhring case-file links, "vs Comparisons" hub link, "For Japanese cos." article link.
+
+### Added (Accessibility coherency)
+- **Skip-to-content link** (EN: "Skip to main content"; JA: "メインコンテンツへスキップ") — first focusable element, off-screen until focused, jumps to #main-content.
+- **Landmark roles** added to EN + JA homepages: role="banner" on <header>, role="navigation" + aria-label="Primary" on nav links, role="main" on <main id="main-content">, role="contentinfo" on <footer>.
+- Wrap hero through pricing in `<main id="main-content">` so screen readers can jump past the chrome.
+
+### Updated (LLM optimization)
+- **llms.txt** rewritten and deepened from 47 → 124 lines: full NAP, founder bio, scale metrics, all 9 comparison articles, all 7 best-of guides, all 8 industry pages, JA versions of every section, comparison link cluster, and best-of guide cluster.
+
+## [Unreleased — earlier] — 2026-05-07
+
 ### Removed
 - **Tagalog locale (/tl/) retired entirely.** Stub homepage + privacy policy + contact deleted. ICP analysis: B2B software buyers in PH research in English; TL added maintenance burden without lifting enterprise pipeline. Inbound /tl/* traffic 301-redirected to /en/ via _redirects.
 
