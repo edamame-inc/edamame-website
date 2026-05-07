@@ -1,3 +1,6 @@
+# Root redirect: edamame-jp.com → /kintone-philippines/en/ (server-side 301, no flicker)
+/                                /kintone-philippines/en/             301
+
 # Legacy Wix URL migrations (pre-Cloudflare Pages era)
 # Preserves link equity from old /en/* slugs that Google may have indexed
 
