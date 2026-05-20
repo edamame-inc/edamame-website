@@ -25,3 +25,6 @@
 # Tagalog locale retired 2026-05-07 — route to English
 /kintone-philippines/tl/*        /kintone-philippines/en/:splat       301
 /kintone-philippines/tl          /kintone-philippines/en/             301
+
+# /kintone-philippines (no trailing slash) → /kintone-philippines/en/  (was 34 404s/day)
+/kintone-philippines             /kintone-philippines/en/             301

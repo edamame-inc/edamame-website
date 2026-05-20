@@ -553,4 +553,68 @@
     <lastmod>2026-05-07</lastmod>
     <changefreq>monthly</changefreq><priority>0.85</priority>
   </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/manufacturing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/manufacturing/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/manufacturing/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/manufacturing/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/healthcare/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/healthcare/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/healthcare/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/healthcare/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/real-estate/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/real-estate/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/real-estate/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/real-estate/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/retail/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/retail/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/retail/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/retail/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/bpo/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/bpo/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/bpo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/bpo/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/construction/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/construction/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/construction/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/construction/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/logistics/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/logistics/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/logistics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/logistics/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/industries/education/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/industries/education/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/industries/education/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/industries/education/" />
+    <lastmod>2026-05-20</lastmod>
+    <changefreq>monthly</changefreq><priority>0.75</priority>
+  </url>
 </urlset>
