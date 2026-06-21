@@ -1,5 +1,14 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — pricing pass] — 2026-06-21
+
+Decision: do **not** publish specific prices. Removed every specific peso figure **and** all `[TBC]` placeholders / pending-confirmation flags from EN + JA so the pricing section reads finished, scope-based, with the number driven to the consultation.
+
+- **Pricing section:** kept "priced by scope, not by the hour" + the Starter/Enterprise/Retainer names and what each includes; replaced each tier price with a scope cue (new `.tier-scope`: "a single high-value app" / "a connected multi-app operation" / "ongoing build & support" — JA: 単一の高価値アプリ / 連携した複数アプリ運用 / 継続的なビルドとサポート). Platform line → "Per-user subscription — no six-figure upfront, no lock-in". Section CTA → "Book a free consultation for a fixed quote" (JA: 無料相談で確定見積りを).
+- **Elsewhere:** comparison-table Kintone cell now "Per-user subscription" / "月額サブスク" (competitors keep their public list prices); "safe middle path" bullet → "Per-user subscription — no six-figure license or lock-in"; FAQ pricing answers reworded to model + qualitative contrast and routed to the free consultation (removed the homepage→pricing-blog links to keep the no-figure story consistent).
+- **JSON-LD:** price fields remain stripped (no priced Offers); FAQ cost answers updated to match.
+- **Verified:** zero specific peso figures and zero `[TBC]` markers user-facing on EN or JA. (The testimonial quote remains a clearly-flagged placeholder — separate from pricing.)
+
 ## [homepage-redesign — accuracy & consent pass] — 2026-06-21
 
 Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). Branch unchanged; preview auto-redeploys.
