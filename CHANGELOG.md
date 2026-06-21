@@ -1,5 +1,16 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — award-overstatement + headline fix] — 2026-06-21
+
+### JA "world's best partner" passage corrected (provably wrong)
+- `ja/blog/edamame-kintone-partner` claimed Cybozu recognized edamame as **"世界で最も優れている" / "世界最優秀パートナー — 地域賞ではなく、世界一"** / "selected the single best partner from the entire world" — contradicting the official record (2024 Cybozu **Global Award, Asia** category; sole Asia-region recipient). Rewrote the H2 + 3 body paragraphs + the JSON-LD FAQ answer + the visible FAQ to the corrected framing: **「2024年グローバル賞（アジア）受賞 — アジア地域で唯一の受賞企業」**. All "world's best / best in the world / apex of the worldwide partner network / not-a-regional-award" claims removed. The Kintone "40,000 companies worldwide" platform stat (separate, substantiated) left intact.
+
+### Homepage problem headline — dropped unsourced geo
+- "Most enterprise software projects **in the Philippines** fail. The only question is which way." → "Most enterprise software projects fail. The only question is which way." (the sourced 50–75% stat sits below it). JA homepage carries no equivalent headline — no change needed there.
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
 ## [homepage-redesign — superlative & sourcing pass] — 2026-06-21
 
 Two evidence-based fixes; the rest inventoried for Tom (unchanged).
