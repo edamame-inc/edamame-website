@@ -1,5 +1,25 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — award correction] — 2026-06-21
+
+Corrected the site's most prominent claim to Cybozu's official record, plus two public-fact fixes. EN + JA, same wording throughout.
+
+### Award wording (site-wide)
+- Replaced every "Global / Cybozu / Kintone Partner of the Year" variant (**EN: 52 occurrences across 22 files; JA: 58 across 11 files**) with the accurate award. Cybozu's official [Award 2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html) lists Edamame under "**Global Award (グローバル賞), Asia**" — there is no "Partner of the Year" title.
+  - Short form (badges, footer, meta): **"2024 Cybozu Global Award — Asia"** / JA **「2024年グローバル賞（アジア）受賞」**.
+  - Prose: "winner of the 2024 Cybozu Global Award — Asia" (grammar) — same canonical award name.
+  - Fuller form (JSON-LD `award`, hero credential card): **"Winner of Cybozu's 2024 Global Award for Asia — sole Asia-region recipient"** (supported: Edamame is the only company listed under Global Award → Asia).
+- Fixed the embellishment "highest recognition given to any Kintone partner" → "the sole Asia-region recipient"; cred-card "worldwide" → Asia-region.
+
+### Kintone customer count
+- "37,000+" (sometimes mislabeled "in Japan") → **"40,000+ companies globally"**, source [kintone.com/company](https://www.kintone.com/en-us/company/). The 37,000 was an older *global* figure; the `/vs/` "in Japan" label was wrong and is now "globally".
+
+### MSCorp timeline (unsupported)
+- Removed the contradictory, unsourced timeline: homepage card "Days → to first cutover" → verified "3× less printing"; case-file meta "paperless in weeks — not months" → "paperless". Verified metrics (100+ apps, 12 connected order apps, 4→49 users, 3× less printing) kept.
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
 ## [homepage-redesign — proof-integrity audit] — 2026-06-21
 
 Audit of every quantitative/superlative proof claim site-wide. Verified category-A claims against public sources; flagged category-B (Tom-only) claims; changed only what's unsupportable from a cited source.
