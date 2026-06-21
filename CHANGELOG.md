@@ -1,5 +1,22 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — superlative & sourcing pass] — 2026-06-21
+
+Two evidence-based fixes; the rest inventoried for Tom (unchanged).
+
+### #1 "Only … in the Philippines" softened (disprovable — Cybozu opened a direct Manila office in 2025; other PH providers exist)
+- Replaced every absolute "only Kintone partner/consultancy in the Philippines" self-claim with the defensible **"the dedicated official Kintone partner in the Philippines"** (and JA **「フィリピン専任の…」**, 唯一→専任). 14 files: 6 industry blogs, why-edamame (EN+JA), `/vs/`, `blog/` index, JA homepage FAQ, kintone-philippines-guide (JA), edamame-kintone-partner (JA). Kept the factual differentiators (Japanese-native CEO, trilingual, AI) as non-absolute.
+
+### #2 ERP failure stat — sourced + de-localized
+- "50–75% of ERP projects **in the Philippines** fail" → **"50–75% of ERP projects fail or overrun — Gartner and Panorama Consulting"** (homepage); best-erp blog now "…according to industry research (Gartner, Panorama Consulting)". The 50–75% range is a **general/global** figure (Gartner: >70% miss business-case goals; Panorama: ~73%), not PH-specific, so the "in the Philippines" framing was dropped. `kintone-vs-odoo` already read "industry estimates suggest 50-70%" — left as-is.
+
+### #3 Superlative inventory (NOT changed — for Tom's batch review; see report)
+- Unsubstantiated self-claims flagged: "#1 Kintone partner in the Philippines" (×2 blogs), "Best Kintone Partner in the Philippines" (why-edamame title + card), "#1 Choice for Japanese Companies", "highest client count in Southeast Asia" (homepage ×3 + cred card), "most comprehensive local support", and JA "No.1 / 最良のパートナー / 世界で最も優れている" (the last overstates the Asia award — recommend fixing for consistency).
+- Substantiated (fine): "sole Asia-region recipient / 2024 Cybozu Global Award — Asia", "official Kintone partner", "Cybozu, Japan's #1 groupware company".
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
 ## [homepage-redesign — award correction] — 2026-06-21
 
 Corrected the site's most prominent claim to Cybozu's official record, plus two public-fact fixes. EN + JA, same wording throughout.
