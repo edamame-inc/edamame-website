@@ -1,5 +1,41 @@
 # Edamame Website Changelog
 
+## [homepage-redesign] — 2026-06-21
+
+**EN homepage rebuilt for conversion + enterprise authority. Branch `homepage-redesign` → Cloudflare Pages preview. See `docs/adr/0001-homepage-positioning-and-brand-direction.md`.**
+
+### Added — new conversion architecture (`/kintone-philippines/en/`)
+- **Hero** rebuilt around ONE dominant value prop ("the official Kintone partner — the safe way to run your business on custom software"), Partner-of-the-Year badge, and a static **authority credential card** (50 clients · 2,443 users · #1 SE Asia · SEC CS20190000095) that replaces the old fake pulsing "● LIVE" panel.
+- **Problem / loss-aversion section** ("too little" paper+Excel vs "too much" SAP/Oracle/NetSuite), surfacing the **50–75% PH ERP failure rate**, funnelling into "the safe middle path."
+- **Why-a-partner section** — disintermediation defense vs Cybozu's direct Manila presence ("Cybozu builds Kintone; we make it work in your business").
+- **Proof section** — MSCorp + Guhring case files with concrete metrics, plus a flagged testimonial placeholder.
+- **"Kintone vs the alternatives" decision table** — now covers the real competitors (SAP/Oracle/NetSuite, Odoo/ERPNext, monday/Airtable, Salesforce/Power Apps, Zoho, Excel) and links out to `/vs/` + comparison blogs, elevating the #1/#2 ranking articles.
+- **Risk-reversal block** — 6 guarantees (free consultation, 30-day trial, start-small, migration handled, same-day local support, honest-fit promise).
+- **Founder/human-trust section** (Tom Arai) with flagged photo placeholder.
+- Transparent PHP pricing kept and clarified (platform line + 3 engagement tiers + "most chosen" flag).
+
+### Changed — brand direction: evolve "Data Atelier" → enterprise authority
+- DM Serif Display demoted from *every* heading to a controlled accent; **DM Sans now carries headings** for corporate clarity. Palette, bean logo, and font set retained (only DM Serif Display / DM Sans / JetBrains Mono on EN; no Inter).
+- Retired boutique tells: blob border-radii, pod-ornament dividers, "studio/atelier/field notes/three beans" voice → disciplined radius scale + confident enterprise voice.
+- **Primary CTA unified to "Book a free consultation"** (was inconsistent "Book demo"/"Book 30-min demo"); semantic colour system (sage = safe path/CTA, red = danger/failure-rate only).
+- Meta title/description + OG/Twitter copy re-led on "official partner / safe / days not months."
+
+### Fixed — factual consistency
+- **Founding date corrected 2020 → 2019-09-16 (SEC CS20190000095)** in EN + JA homepage JSON-LD and `BUSINESS_NAP.md`.
+- Removed retired Tagalog (`tl`) from JA homepage WebSite JSON-LD `inLanguage`.
+- `contactPoint.availableLanguage` on EN now reflects trilingual support (English/Filipino/Japanese) in visible copy without re-adding TL content.
+
+### SEO equity preserved
+- Homepage URL unchanged (`/kintone-philippines/en/`) — no redirect needed; **no blog/comparison/customer URLs moved or orphaned.**
+- All 6 JSON-LD blocks retained (Organization, LocalBusiness, Service, WebSite, FAQPage, Product) and validated; GA4, canonical, hreflang, RSS intact.
+- 30 internal links validated (all resolve); cross-links now actively elevate ranking comparison content.
+- Previous homepage snapshot saved to `_backups/v3-2026-06-21/`.
+
+### Open follow-ups (flagged in markup)
+- Client logos shown as text wordmarks — logo usage permission UNCONFIRMED.
+- Testimonial quote + founder photo are placeholders pending approval.
+- JA homepage + secondary pages still on old system — next workstream.
+
 ## [vs-hub-deepening] — 2026-05-07
 
 ### Added — /vs/ hub depth pass
