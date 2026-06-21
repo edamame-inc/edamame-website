@@ -1,5 +1,25 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — accuracy & consent pass] — 2026-06-21
+
+Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). Branch unchanged; preview auto-redeploys.
+
+### Pricing — provenance gate
+- **All peso price figures replaced with clearly-marked `[TBC]` placeholders** pending Tom's confirmation: Kintone base license (was ₱1,000/user/mo + 5-user min — conflicts with the old ₱1,500/3,000/5,000 tiers), and implementation tiers (was ₱95k / ₱450k+ / ₱85k-mo, carried over from the pre-redesign page, never independently confirmed).
+- Removed all price values from JSON-LD (Service `hasOfferCatalog`/`offers`, Product `AggregateOffer`) and from the FAQ/meta so no unsourced number is published as a real price. Added a visible "figures pending confirmation" flag to the pricing section. (`priceRange:"₱₱"` generic indicator retained.)
+
+### Client names — consent gate
+- Kept named (written/published consent): **MSCorp, Guhring**.
+- Genericized everywhere else (trust wall, FAQ, meta/OG, body): **ORIX Metro → "a major vehicle-leasing & finance firm"**, **Daikin → "a global HVAC manufacturer"** (incl. the "quoted at 3 months, shipped in days" claim → "a Japanese manufacturer"), **Quipper → "a leading EdTech platform"**, **AEON Fantasy / GMA Network** removed/anonymized.
+
+### Security claims — verified vs Kintone Trust Center
+- Corrected to match the official source ([trust-center.kintone.com](https://trust-center.kintone.com/)): **SOC 2 Type II** ✓, **ISO/IEC 27001 (cert IS 577142)** ✓, added **HIPAA** ✓. **Removed the unsubstantiated "99.99% uptime SLA"** (Kintone publishes a Service Level *Objective* with daily status, not a 99.99% SLA) and the unverified **AES-256** specific → "encrypted in transit and at rest."
+
+### Copy + headline numbers
+- Hero H1 tail changed from "run your business on custom software" → "**digitize how your business runs**" (plain-outcome; kept "official Kintone partner" + "safe way").
+- SEC registration number removed from the hero credential line + founder facts; **now visible in the footer only** (retained in Organization JSON-LD as accurate public-record metadata).
+- User count reconciled to a single figure (**2,400+**; hero card was 2,443).
+
 ## [homepage-redesign] — 2026-06-21
 
 **EN homepage rebuilt for conversion + enterprise authority. Branch `homepage-redesign` → Cloudflare Pages preview. See `docs/adr/0001-homepage-positioning-and-brand-direction.md`.**
