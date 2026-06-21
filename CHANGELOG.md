@@ -1,5 +1,28 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — site-wide consent + price consistency] — 2026-06-21
+
+Closed the one-click gap: pages linked from the homepage still named uncleared clients. Applied the consent gate site-wide (42 files, EN + JA).
+
+### Consent gate — every user-facing surface
+- **Only Maximum Solutions Corporation (= MSCorp) and Guhring stay named.** All others genericized to fixed canonical descriptors, EN + JA, across customers, `/vs/`, all blogs, all industries, contact, meta/OG, and JSON-LD:
+  - ORIX Metro → "a major vehicle-leasing & finance firm" / 大手リース・ファイナンス企業
+  - Daikin (incl. HVAC wording standardized to **air-conditioning**) → "a global air-conditioning manufacturer" / 大手空調メーカー
+  - Quipper → "a leading EdTech platform" / 大手EdTechプラットフォーム
+  - GMA Network → "a national broadcast network" / 大手放送局
+  - AEON Fantasy → "a major commercial-facility operator" / 大手商業施設運営企業
+- **Two more uncleared clients found and genericized** (not in the original five): **A2 Network** → "a logistics and freight operator" / 大手物流企業 (customers, `/vs/`, JA logistics meta); **Travelbook Philippines** → "an online travel agency" / 大手オンライン旅行会社 (16 industry proof-grids + 3 blogs). *(Descriptors are my choice — adjust if either is actually cleared.)*
+- De-identification: dropped the masked client from the manufacturing/retail market-context investor lists; removed office districts + parent-company tags next to descriptors in the JA founder blog.
+
+### Engagement prices — non-blog pages
+- `brand-guidelines.html` price-card reference → scope cues + qualitative framing (no ₱ figures). Homepages already done. **Confirmed zero engagement-tier prices on any non-blog page.** `/vs/` keeps its multi-platform 3-year **TCO comparison** figures (analysis, not an engagement quote) — flagged for your decision.
+
+### Testimonial
+- Removed the placeholder testimonial block from the EN homepage (JA never had one).
+
+### SEO preserved
+- No URLs changed; **302 JSON-LD blocks all valid**; no internal links broken by the edits; ranking comparison/blog pages intact (blog pricing left untouched).
+
 ## [homepage-redesign — pricing pass] — 2026-06-21
 
 Decision: do **not** publish specific prices. Removed every specific peso figure **and** all `[TBC]` placeholders / pending-confirmation flags from EN + JA so the pricing section reads finished, scope-based, with the number driven to the consultation.
