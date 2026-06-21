@@ -1,5 +1,25 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — proof-integrity audit] — 2026-06-21
+
+Audit of every quantitative/superlative proof claim site-wide. Verified category-A claims against public sources; flagged category-B (Tom-only) claims; changed only what's unsupportable from a cited source.
+
+### Verified against public sources (kept)
+- **MSCorp** proof metrics — 200 staff remote, 100+ apps, 12 connected order/sales apps, 3× less printing, 4-person pilot → 49 users, COVID/2020 paperless — all match [kintone.com/customer-stories/mscorp](https://www.kintone.com/en-us/customer-stories/mscorp/).
+- **Guhring** proof metrics — 20+ apps, single non-IT sales rep, trial-tool/expense/leave/fleet apps — match [kintone.com/customer-stories/guhring](https://www.kintone.com/en-us/customer-stories/guhring/).
+- SOC 2 Type II, ISO/IEC 27001, HIPAA — confirmed ([trust-center.kintone.com](https://trust-center.kintone.com/)).
+
+### Changed (category-A, unsupportable)
+- **"AES-256 encryption" → "encryption in transit and at rest"** on all 16 industry pages (32 occurrences). Kintone's official security page states a **512-bit key-length scheme (like BitLocker/FileVault)**, not AES-256 ([security](https://www.kintone.com/en-us/security/)); aligns with the homepage, where AES-256 was already dropped.
+
+### Flagged for Tom (NOT changed — see report)
+- **Award name:** official Cybozu Award 2024 lists Edamame under **"GLOBAL AWARD (ASIA)"**, not "Global Partner of the Year" ([partner.cybozu.co.jp/cypn/award/2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html)). Brand-central + used on Edamame's own LinkedIn — Tom to confirm exact public wording.
+- **"37,000+ companies use Kintone in Japan"** — Kintone's current official figure is **40,000+** (global). Recommend updating/sourcing.
+- Category-B (internal, only Tom can confirm): 50 clients, 2,400+ users, 8 industries, "5+ years", "#1 / highest client count in SE Asia", the former-Travelbook proof card (30–50 submissions/day, 60+ processes, 124 employees, 2 staff), the Daikin "three months → days" anecdote, MSCorp's unsourced "days/weeks to cutover" timeline (also internally inconsistent), "50–75% PH ERP failure rate."
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid.
+
 ## [homepage-redesign — site-wide consent + price consistency] — 2026-06-21
 
 Closed the one-click gap: pages linked from the homepage still named uncleared clients. Applied the consent gate site-wide (42 files, EN + JA).
