@@ -20,6 +20,11 @@ Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). 
 - SEC registration number removed from the hero credential line + founder facts; **now visible in the footer only** (retained in Organization JSON-LD as accurate public-record metadata).
 - User count reconciled to a single figure (**2,400+**; hero card was 2,443).
 
+### JA homepage — same consent + pricing scrub applied
+- Genericized the same five clients in Japanese across meta/OG/Twitter, hero, trust row, named-client list, FAQ (visible + JSON-LD), and footer (大手リース・ファイナンス企業 / 大手空調メーカー / 大手EdTechプラットフォーム / 大手放送局 / 大手商業施設運営企業). Kept **Maximum Solutions Corporation = MSCorp** (cleared) and Guhring.
+- All ₱ figures → `[TBC]` (tiers + comparison cell); stripped prices from the JA Service/Offer JSON-LD; added a Japanese "pending confirmation" pricing note. User count 2,443 → 2,400+.
+- (JA remains on the old visual system — full JA redesign is still the next workstream.)
+
 ## [homepage-redesign] — 2026-06-21
 
 **EN homepage rebuilt for conversion + enterprise authority. Branch `homepage-redesign` → Cloudflare Pages preview. See `docs/adr/0001-homepage-positioning-and-brand-direction.md`.**
