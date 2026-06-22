@@ -26,10 +26,10 @@
 
 # Interaction polish layer — cacheable, revalidated daily
 /polish.css
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate
   Content-Type: text/css; charset=utf-8
 /polish.js
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=0, must-revalidate
   Content-Type: text/javascript; charset=utf-8
 
 # HTML — short cache, always revalidate (content changes matter for SEO)
