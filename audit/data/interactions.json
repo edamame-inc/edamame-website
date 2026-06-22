@@ -1,0 +1,222 @@
+{
+  "revealOnClass": true,
+  "gatedBeforeScroll": {
+    "id": "pricing",
+    "opacity": 0,
+    "hasPolIn": false,
+    "transform": "matrix(1, 0, 0, 1, 0, 18)"
+  },
+  "afterScroll": {
+    "totalSections": 12,
+    "revealed": 12,
+    "stuckHidden": []
+  },
+  "hover": [
+    {
+      "sel": ".value",
+      "changed": true,
+      "before": {
+        "transform": "none",
+        "boxShadow": "none",
+        "color": "rgb(26, 26, 24)",
+        "borderColor": "rgba(26, 26, 24, 0.1)"
+      },
+      "after": {
+        "transform": "none",
+        "boxShadow": "rgba(10, 30, 21, 0.08) 0px 18px 40px 0px",
+        "color": "rgb(26, 26, 24)",
+        "borderColor": "rgba(74, 124, 89, 0.4)"
+      }
+    },
+    {
+      "sel": ".case",
+      "changed": true,
+      "before": {
+        "transform": "none",
+        "boxShadow": "none",
+        "color": "rgb(26, 26, 24)",
+        "borderColor": "rgba(26, 26, 24, 0.1)"
+      },
+      "after": {
+        "transform": "none",
+        "boxShadow": "rgba(10, 30, 21, 0.1) 0px 20px 44px 0px",
+        "color": "rgb(26, 26, 24)",
+        "borderColor": "rgba(26, 26, 24, 0.1)"
+      }
+    },
+    {
+      "sel": "a.btn-primary",
+      "changed": true,
+      "before": {
+        "transform": "none",
+        "boxShadow": "rgba(10, 30, 21, 0.25) 0px 2px 0px 0px, rgba(58, 99, 73, 0.22) 0px 10px 24px 0px",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "rgba(0, 0, 0, 0)"
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, 0, -2)",
+        "boxShadow": "rgba(10, 30, 21, 0.25) 0px 4px 0px 0px, rgba(58, 99, 73, 0.3) 0px 16px 34px 0px",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "rgba(0, 0, 0, 0)"
+      }
+    },
+    {
+      "sel": ".nav-cta",
+      "changed": true,
+      "before": {
+        "transform": "none",
+        "boxShadow": "rgba(10, 30, 21, 0.2) 0px 1px 0px 0px",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "rgb(255, 255, 255)"
+      },
+      "after": {
+        "transform": "matrix(1, 0, 0, 1, 0, -1)",
+        "boxShadow": "rgba(58, 99, 73, 0.28) 0px 8px 20px 0px",
+        "color": "rgb(255, 255, 255)",
+        "borderColor": "rgb(255, 255, 255)"
+      }
+    },
+    {
+      "sel": "nav a",
+      "changed": true,
+      "before": {
+        "transform": "none",
+        "boxShadow": "none",
+        "color": "rgb(45, 45, 42)",
+        "borderColor": "rgb(45, 45, 42)"
+      },
+      "after": {
+        "transform": "none",
+        "boxShadow": "none",
+        "color": "rgb(74, 124, 89)",
+        "borderColor": "rgb(74, 124, 89)"
+      }
+    },
+    {
+      "sel": ".trust-logos a",
+      "changed": true,
+      "before": {
+        "transform": "none",
+        "boxShadow": "none",
+        "color": "rgb(45, 45, 42)",
+        "borderColor": "rgb(45, 45, 42)"
+      },
+      "after": {
+        "transform": "none",
+        "boxShadow": "none",
+        "color": "rgb(74, 124, 89)",
+        "borderColor": "rgb(74, 124, 89)"
+      }
+    }
+  ],
+  "focus": [
+    {
+      "tag": "a",
+      "text": "№ 02 · MIGRATE\n        Off E",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "№ 03 · RUN\n        Local sup",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "Why edamame, in depth →",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "Case File № 01 · Technology\n",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "Case File № 02 · Manufacturi",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "See the full customer list →",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "RANKS Best ERP software PH 2",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "SAP alternative →",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "vs Odoo →",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    },
+    {
+      "tag": "a",
+      "text": "vs ERPNext →",
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "outlineColor": "rgb(74, 124, 89)",
+      "outlineOffset": "3px",
+      "visibleRing": true
+    }
+  ],
+  "anchorOffset": {
+    "anchor": "#main-content",
+    "navH": 73,
+    "targetTopAfterScroll": 73,
+    "clearsNav": true,
+    "scrollMarginTop": "0px"
+  },
+  "activePress": {
+    "transformWhilePressed": "matrix(0.992377, 0, 0, 0.992377, 0, 0.952904)",
+    "looksPressed": true
+  },
+  "reducedMotion": {
+    "htmlHasRevealOn": false,
+    "allVisible": true,
+    "hiddenSections": [],
+    "sampleTransition": "none",
+    "sampleOpacity": 1
+  }
+}

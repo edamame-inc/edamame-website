@@ -1,0 +1,66 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 54,
+    "nodes": [
+      {
+        "target": ".hero-kicker",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 9.0pt (12px), font "
+      },
+      {
+        "target": ".us > td:nth-child(2) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".us > td:nth-child(3) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".us > td:nth-child(4) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".us > td:nth-child(5) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      }
+    ]
+  },
+  {
+    "id": "link-in-text-block",
+    "impact": "serious",
+    "help": "Links must be distinguishable without relying on color",
+    "n": 1,
+    "nodes": [
+      {
+        "target": "nav > a[href$=\"en/\"]",
+        "summary": "Fix any of the following:\n  The link has insufficient color contrast of 1.1:1 with the surrounding text. (Minimum contrast is 3:1, link text: #4a7c59, surroundi"
+      }
+    ]
+  },
+  {
+    "id": "listitem",
+    "impact": "serious",
+    "help": "<li> elements must be contained in a <ul> or <ol>",
+    "n": 4,
+    "nodes": [
+      {
+        "target": "li:nth-child(1)",
+        "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+      },
+      {
+        "target": "li:nth-child(2)",
+        "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+      },
+      {
+        "target": "li:nth-child(3)",
+        "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+      },
+      {
+        "target": "li:nth-child(4)",
+        "summary": "Fix any of the following:\n  List item parent element has a role that is not role=\"list\""
+      }
+    ]
+  }
+]

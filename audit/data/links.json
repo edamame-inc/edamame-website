@@ -1,0 +1,259 @@
+{
+  "internalCount": 58,
+  "broken": [
+    {
+      "url": "/brand-guidelines.html",
+      "status": 308
+    }
+  ],
+  "ctaHrefs": [
+    [
+      "https://calendly.com/kintoneph/freekintoneappconsultation",
+      "Book 30-min demo →"
+    ],
+    [
+      "https://edamame-jp.com/kintone-philippines/en/contact/",
+      "Talk to us →"
+    ]
+  ],
+  "externalChecked": [
+    {
+      "url": "https://calendly.com/kintoneph/freekintoneappconsultation",
+      "status": 200
+    }
+  ],
+  "all": [
+    {
+      "url": "/brand-guidelines.html",
+      "status": 308
+    },
+    {
+      "url": "/kintone-philippines/en/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/airtable-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/best-crm-software-philippines-2026/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/best-erp-software-philippines-2026/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/best-software-japanese-companies-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/how-to-replace-excel-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/hubspot-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/hubspot-pricing-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-pricing-philippines-2026/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-airtable/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-erpnext/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-hubspot/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-monday/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-notion/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-odoo/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-salesforce/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-smartsheet/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/kintone-vs-zoho/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/monday-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/monday-com-pricing-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/no-code-app-development-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/odoo-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/odoo-pricing-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/salesforce-pricing-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/sap-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/smartsheet-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/why-edamame-kintone-partner-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/blog/zoho-alternative-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/contact/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/customers/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/customers/guhring-philippines/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/customers/ms-corp/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/bpo/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/construction/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/education/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/healthcare/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/logistics/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/manufacturing/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/real-estate/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/industries/retail/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/privacy-policy/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/roi-calculator/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/tools/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/en/vs/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/kintone-philippines-guide/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/kintone-philippines-hiyou/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/philippines-kintone-vs-salesforce/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/philippines-nihonjin-ceo-dx/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/philippines-nikkei-bpo/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/philippines-nikkei-dx/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/blog/philippines-shinshutsu-kintone/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/customers/",
+      "status": 200
+    },
+    {
+      "url": "/kintone-philippines/ja/industries/",
+      "status": 200
+    }
+  ]
+}
