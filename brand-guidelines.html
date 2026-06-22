@@ -234,6 +234,10 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-YF1198H5CL');
 </script>
+<!-- Interaction polish layer (additive: focus, press, smooth-scroll, section reveal) -->
+<link rel="stylesheet" href="/polish.css">
+<script>(function(){try{var R=document.documentElement;if(('IntersectionObserver'in window)&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){R.classList.add('reveal-on');window.__polRevealFailsafe=setTimeout(function(){R.classList.remove('reveal-on')},2400);}}catch(e){}})();</script>
+<script defer src="/polish.js"></script>
 </head>
 <body>
 
@@ -410,7 +414,7 @@ gtag('config', 'G-YF1198H5CL');
     <div class="type-sample type-sample--sans">
         <span class="type-label">Body &amp; UI · DM Sans</span>
         <div style="font-size:1.1rem;margin-bottom:6px;font-weight:500;">We don't pitch AI. We run on it.</div>
-        <p style="font-size:0.95rem;margin-bottom:6px;">Paragraph body text. A small firm in Pasig serving 2,400+ users across fifty enterprise clients — including ORIX Metro, Daikin, and Quipper.</p>
+        <p style="font-size:0.95rem;margin-bottom:6px;">Paragraph body text. A small firm in Pasig serving 2,400+ users across fifty enterprise clients — including a major vehicle-leasing &amp; finance firm, a global air-conditioning manufacturer, and a leading EdTech platform.</p>
         <p style="font-size:0.82rem;color:var(--muted);">Paragraphs, navigation, buttons, labels, captions. Weights: 400 body, 500 emphasis, 600 labels/nav/buttons, 700 headings. Italic 400 reserved for voice moments.</p>
     </div>
 
@@ -669,9 +673,9 @@ border-radius: 40px 12px 40px 12px;  /* gentle pod echo, default for blog cards 
     <ol class="contract-list">
         <li><strong>Sticky cream nav with pod logo, 4-5 links, and Book demo CTA</strong><span>Links required: Product / Customers / Notes (blog) / Pricing. CTA always in right slot.</span></li>
         <li><strong>Hero with headline, lede, primary + ghost CTA</strong><span>Headline uses DM Serif Display. At least one CTA to Calendly. Lede names pesos or a concrete number.</span></li>
-        <li><strong>Trust bar with 4-6 real client names</strong><span>Below the fold of hero. ORIX Metro, Daikin, Quipper at minimum. Visual or editorial presentation — never omit.</span></li>
+        <li><strong>Trust bar with 4-6 real client names</strong><span>Below the fold of hero. Cleared client names only, at minimum (e.g. Maximum Solutions, Guhring). Visual or editorial presentation — never omit.</span></li>
         <li><strong>Three practices section (the 3-bean structure)</strong><span>Apps · KinPlug (center, gold) · AI. Always in this order. Pod &amp; Bean mode uses asymmetric radii; other modes use consistent 16px.</span></li>
-        <li><strong>Proof moment — live data panel OR named case studies</strong><span>Data Atelier: live panel + Gantt. Field Notes: named case dossiers (ORIX · Daikin · Quipper · AEON). Never omit both.</span></li>
+        <li><strong>Proof moment — live data panel OR named case studies</strong><span>Data Atelier: live panel + Gantt. Field Notes: named case dossiers (cleared clients only — e.g. Maximum Solutions · Guhring). Never omit both.</span></li>
         <li><strong>Comparison section with linked competitor articles</strong><span>Minimum 4 competitor comparison links (vs Odoo, vs Airtable, vs Salesforce, vs Monday). Editorial spec-sheet or comparison table. Each row anchors to a blog article.</span></li>
         <li><strong>Field Notes / Knowledge Base — minimum 6 blog article links</strong><span>Surface 6 specific blog articles with title + category + read time. NEVER fewer than 6 links. NEVER use shorthand path like <code>/blog/</code> — always full <code>/kintone-philippines/&#123;lang&#125;/blog/&#123;slug&#125;/</code>.</span></li>
         <li><strong>FAQ section with JSON-LD schema</strong><span>4-6 questions minimum. Use &lt;details&gt;/&lt;summary&gt; for accordion. Include FAQPage JSON-LD structured data for rich snippets.</span></li>
@@ -719,22 +723,22 @@ border-radius: 40px 12px 40px 12px;  /* gentle pod echo, default for blog cards 
 <section class="page page--forest">
     <span class="section-num">10 — Pricing reference</span>
     <h2>Priced by scope. <em>Not by the hour.</em></h2>
-    <p class="lead">Kintone itself starts at ₱1,000/user/month (5-user minimum — effectively ₱5,000/month floor). Our implementation services are priced per scope, no timesheets.</p>
+    <p class="lead">Kintone is a per-user monthly subscription (no six-figure license, no lock-in). Our implementation services are priced per scope, never by the hour — book a free consultation for a fixed quote.</p>
 
     <div class="price-grid">
         <div class="price-card price-card--left">
             <div class="price-card__name">№ 01 · STARTER</div>
-            <div class="price-card__price">₱95k<span class="unit">one-time</span></div>
+            <div class="price-card__price" style="font-size:1.3rem;line-height:1.3;">A single high-value app</div>
             <p class="price-card__desc">Single app. 10-25 users. CRM, tracker, or simple workflow.</p>
         </div>
         <div class="price-card price-card--center">
             <div class="price-card__name">№ 02 · ENTERPRISE</div>
-            <div class="price-card__price">₱450k+<span class="unit">one-time</span></div>
+            <div class="price-card__price" style="font-size:1.3rem;line-height:1.3;">A connected, multi-app operation</div>
             <p class="price-card__desc">Multi-app workflow. 50-500 users. Full AI layer + KinPlug bundle.</p>
         </div>
         <div class="price-card price-card--right">
             <div class="price-card__name">№ 03 · RETAINER</div>
-            <div class="price-card__price">From ₱85k<span class="unit">/month</span></div>
+            <div class="price-card__price" style="font-size:1.3rem;line-height:1.3;">Ongoing build &amp; support</div>
             <p class="price-card__desc">Ongoing build + optimization. Expanding deployments.</p>
         </div>
     </div>

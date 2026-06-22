@@ -75,7 +75,11 @@ Local Philippine: `0928 872 7958`
 
 ## Canonical Year Founded
 
-2020
+2019 (incorporated September 16, 2019)
+
+## Canonical SEC Registration
+
+CS20190000095 (Securities and Exchange Commission, Philippines)
 
 ## Opening Hours
 

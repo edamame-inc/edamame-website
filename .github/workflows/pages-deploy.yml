@@ -2,20 +2,43 @@ name: Deploy to Cloudflare Pages
 
 on:
   push:
-    branches: [main]
+    branches:
+      - '**'
   workflow_dispatch:
 
 jobs:
+  # Production deploy — main only. Publishes the live site (--branch=main).
   deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
     steps:
       - uses: actions/checkout@v4
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Pages (production)
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy . --project-name=edamame-website --branch=main --commit-dirty=true
+
+  # Preview deploy — every NON-main branch. Same build dir + same token as the
+  # production job; deploying with --branch=<this branch> makes Cloudflare Pages
+  # publish a PREVIEW alias (e.g. https://<branch>.edamame-website.pages.dev),
+  # never production. ${{ github.ref_name }} is the short branch name, expanded
+  # by the runner (reliable equivalent of $GITHUB_REF_NAME).
+  deploy-preview:
+    if: github.ref != 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy preview to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy . --project-name=edamame-website --branch=${{ github.ref_name }} --commit-dirty=true

@@ -28,6 +28,10 @@
         .secondary:hover{transform:translateY(-2px)}
         footer{background:var(--gdd);color:rgba(255,255,255,.4);padding:20px 5%;text-align:center;font-size:.75rem}
     </style>
+<!-- Interaction polish layer (additive: focus, press, smooth-scroll, section reveal) -->
+<link rel="stylesheet" href="/polish.css">
+<script>(function(){try{var R=document.documentElement;if(('IntersectionObserver'in window)&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){R.classList.add('reveal-on');window.__polRevealFailsafe=setTimeout(function(){R.classList.remove('reveal-on')},2400);}}catch(e){}})();</script>
+<script defer src="/polish.js"></script>
 </head>
 <body>
     <header class="hdr">

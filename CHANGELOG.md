@@ -1,5 +1,186 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — UI polish / interaction layer] — 2026-06-22
+
+A restrained, additive motion + interaction layer (Stripe/Linear/Vercel level of restraint). **No content, copy, structure, claims, or URLs changed** — polish only.
+
+### Added (shared layer: `/polish.css` + `/polish.js`, injected site-wide into 105 served pages)
+- **One easing system:** `--pol-ease: cubic-bezier(.22,.61,.36,1)` (gentle ease-out), `--pol-dur: .2s` for micro-interactions (within the 150–250ms brief), `--pol-dur-reveal: .55s` for section entrances. Applied to all *added* interactions; the homepage's existing transitions already sat in the same 150–200ms band.
+- **Press feedback:** subtle `:active` "give" (`translateY(1px) scale(.992)`, transform-only) on buttons and button-styled CTAs — previously absent (0 `:active` rules).
+- **Keyboard focus:** consistent on-brand ring (`3px solid var(--sage,#4A7C59)`, `:focus-visible` only) — matches the homepage's existing ring and *adds* the same ring to pages that lacked one.
+- **Scroll-reveal on major sections:** `main > section` (excluding hero/trust, above the fold) fades + rises 18px into view; cards inside existing grids (`.values/.cases/.rr-grid/.tiers/.partner-points/.cmp-links`) carry a light ≤0.24s stagger. Gated by `html.reveal-on` (added by JS only when IntersectionObserver exists **and** motion is allowed). Active on EN home, JA home, and `/vs/`; structurally inert elsewhere.
+- **Smooth anchor scrolling** + `scroll-margin-top:88px` so smooth-scrolled headings clear the sticky nav (`:where()`, zero specificity — never fights a real rule).
+
+### Safety / constraints honored
+- **No CLS:** transform/opacity only; reveal gating set before first paint via a synchronous head bootstrap (render-blocking `polish.css` guarantees the rule exists pre-paint).
+- **prefers-reduced-motion:** bootstrap never gates; `polish.css` additionally forces sections visible + kills transitions. **No-JS / no-IntersectionObserver:** `reveal-on` never added → everything renders immediately. Triple failsafe (no-IO check, JS 1.6s full-reveal, inline 2.4s un-gate) guarantees content is never left hidden.
+- **Mobile:** no hover-revealed content (all hovers are decorative lift/shadow); touch degrades to press feedback + reveal. No parallax, autoplay, or looping motion. No heavy JS libraries (1.9KB vanilla).
+- `/polish.css` + `/polish.js` cache rule added to `_headers` (1-day, revalidated).
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
+## [homepage-redesign — award-overstatement + headline fix] — 2026-06-21
+
+### JA "world's best partner" passage corrected (provably wrong)
+- `ja/blog/edamame-kintone-partner` claimed Cybozu recognized edamame as **"世界で最も優れている" / "世界最優秀パートナー — 地域賞ではなく、世界一"** / "selected the single best partner from the entire world" — contradicting the official record (2024 Cybozu **Global Award, Asia** category; sole Asia-region recipient). Rewrote the H2 + 3 body paragraphs + the JSON-LD FAQ answer + the visible FAQ to the corrected framing: **「2024年グローバル賞（アジア）受賞 — アジア地域で唯一の受賞企業」**. All "world's best / best in the world / apex of the worldwide partner network / not-a-regional-award" claims removed. The Kintone "40,000 companies worldwide" platform stat (separate, substantiated) left intact.
+
+### Homepage problem headline — dropped unsourced geo
+- "Most enterprise software projects **in the Philippines** fail. The only question is which way." → "Most enterprise software projects fail. The only question is which way." (the sourced 50–75% stat sits below it). JA homepage carries no equivalent headline — no change needed there.
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
+## [homepage-redesign — superlative & sourcing pass] — 2026-06-21
+
+Two evidence-based fixes; the rest inventoried for Tom (unchanged).
+
+### #1 "Only … in the Philippines" softened (disprovable — Cybozu opened a direct Manila office in 2025; other PH providers exist)
+- Replaced every absolute "only Kintone partner/consultancy in the Philippines" self-claim with the defensible **"the dedicated official Kintone partner in the Philippines"** (and JA **「フィリピン専任の…」**, 唯一→専任). 14 files: 6 industry blogs, why-edamame (EN+JA), `/vs/`, `blog/` index, JA homepage FAQ, kintone-philippines-guide (JA), edamame-kintone-partner (JA). Kept the factual differentiators (Japanese-native CEO, trilingual, AI) as non-absolute.
+
+### #2 ERP failure stat — sourced + de-localized
+- "50–75% of ERP projects **in the Philippines** fail" → **"50–75% of ERP projects fail or overrun — Gartner and Panorama Consulting"** (homepage); best-erp blog now "…according to industry research (Gartner, Panorama Consulting)". The 50–75% range is a **general/global** figure (Gartner: >70% miss business-case goals; Panorama: ~73%), not PH-specific, so the "in the Philippines" framing was dropped. `kintone-vs-odoo` already read "industry estimates suggest 50-70%" — left as-is.
+
+### #3 Superlative inventory (NOT changed — for Tom's batch review; see report)
+- Unsubstantiated self-claims flagged: "#1 Kintone partner in the Philippines" (×2 blogs), "Best Kintone Partner in the Philippines" (why-edamame title + card), "#1 Choice for Japanese Companies", "highest client count in Southeast Asia" (homepage ×3 + cred card), "most comprehensive local support", and JA "No.1 / 最良のパートナー / 世界で最も優れている" (the last overstates the Asia award — recommend fixing for consistency).
+- Substantiated (fine): "sole Asia-region recipient / 2024 Cybozu Global Award — Asia", "official Kintone partner", "Cybozu, Japan's #1 groupware company".
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
+## [homepage-redesign — award correction] — 2026-06-21
+
+Corrected the site's most prominent claim to Cybozu's official record, plus two public-fact fixes. EN + JA, same wording throughout.
+
+### Award wording (site-wide)
+- Replaced every "Global / Cybozu / Kintone Partner of the Year" variant (**EN: 52 occurrences across 22 files; JA: 58 across 11 files**) with the accurate award. Cybozu's official [Award 2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html) lists Edamame under "**Global Award (グローバル賞), Asia**" — there is no "Partner of the Year" title.
+  - Short form (badges, footer, meta): **"2024 Cybozu Global Award — Asia"** / JA **「2024年グローバル賞（アジア）受賞」**.
+  - Prose: "winner of the 2024 Cybozu Global Award — Asia" (grammar) — same canonical award name.
+  - Fuller form (JSON-LD `award`, hero credential card): **"Winner of Cybozu's 2024 Global Award for Asia — sole Asia-region recipient"** (supported: Edamame is the only company listed under Global Award → Asia).
+- Fixed the embellishment "highest recognition given to any Kintone partner" → "the sole Asia-region recipient"; cred-card "worldwide" → Asia-region.
+
+### Kintone customer count
+- "37,000+" (sometimes mislabeled "in Japan") → **"40,000+ companies globally"**, source [kintone.com/company](https://www.kintone.com/en-us/company/). The 37,000 was an older *global* figure; the `/vs/` "in Japan" label was wrong and is now "globally".
+
+### MSCorp timeline (unsupported)
+- Removed the contradictory, unsourced timeline: homepage card "Days → to first cutover" → verified "3× less printing"; case-file meta "paperless in weeks — not months" → "paperless". Verified metrics (100+ apps, 12 connected order apps, 4→49 users, 3× less printing) kept.
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
+## [homepage-redesign — proof-integrity audit] — 2026-06-21
+
+Audit of every quantitative/superlative proof claim site-wide. Verified category-A claims against public sources; flagged category-B (Tom-only) claims; changed only what's unsupportable from a cited source.
+
+### Verified against public sources (kept)
+- **MSCorp** proof metrics — 200 staff remote, 100+ apps, 12 connected order/sales apps, 3× less printing, 4-person pilot → 49 users, COVID/2020 paperless — all match [kintone.com/customer-stories/mscorp](https://www.kintone.com/en-us/customer-stories/mscorp/).
+- **Guhring** proof metrics — 20+ apps, single non-IT sales rep, trial-tool/expense/leave/fleet apps — match [kintone.com/customer-stories/guhring](https://www.kintone.com/en-us/customer-stories/guhring/).
+- SOC 2 Type II, ISO/IEC 27001, HIPAA — confirmed ([trust-center.kintone.com](https://trust-center.kintone.com/)).
+
+### Changed (category-A, unsupportable)
+- **"AES-256 encryption" → "encryption in transit and at rest"** on all 16 industry pages (32 occurrences). Kintone's official security page states a **512-bit key-length scheme (like BitLocker/FileVault)**, not AES-256 ([security](https://www.kintone.com/en-us/security/)); aligns with the homepage, where AES-256 was already dropped.
+
+### Flagged for Tom (NOT changed — see report)
+- **Award name:** official Cybozu Award 2024 lists Edamame under **"GLOBAL AWARD (ASIA)"**, not "Global Partner of the Year" ([partner.cybozu.co.jp/cypn/award/2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html)). Brand-central + used on Edamame's own LinkedIn — Tom to confirm exact public wording.
+- **"37,000+ companies use Kintone in Japan"** — Kintone's current official figure is **40,000+** (global). Recommend updating/sourcing.
+- Category-B (internal, only Tom can confirm): 50 clients, 2,400+ users, 8 industries, "5+ years", "#1 / highest client count in SE Asia", the former-Travelbook proof card (30–50 submissions/day, 60+ processes, 124 employees, 2 staff), the Daikin "three months → days" anecdote, MSCorp's unsourced "days/weeks to cutover" timeline (also internally inconsistent), "50–75% PH ERP failure rate."
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid.
+
+## [homepage-redesign — site-wide consent + price consistency] — 2026-06-21
+
+Closed the one-click gap: pages linked from the homepage still named uncleared clients. Applied the consent gate site-wide (42 files, EN + JA).
+
+### Consent gate — every user-facing surface
+- **Only Maximum Solutions Corporation (= MSCorp) and Guhring stay named.** All others genericized to fixed canonical descriptors, EN + JA, across customers, `/vs/`, all blogs, all industries, contact, meta/OG, and JSON-LD:
+  - ORIX Metro → "a major vehicle-leasing & finance firm" / 大手リース・ファイナンス企業
+  - Daikin (incl. HVAC wording standardized to **air-conditioning**) → "a global air-conditioning manufacturer" / 大手空調メーカー
+  - Quipper → "a leading EdTech platform" / 大手EdTechプラットフォーム
+  - GMA Network → "a national broadcast network" / 大手放送局
+  - AEON Fantasy → "a major commercial-facility operator" / 大手商業施設運営企業
+- **Two more uncleared clients found and genericized** (not in the original five): **A2 Network** → "a logistics and freight operator" / 大手物流企業 (customers, `/vs/`, JA logistics meta); **Travelbook Philippines** → "an online travel agency" / 大手オンライン旅行会社 (16 industry proof-grids + 3 blogs). *(Descriptors are my choice — adjust if either is actually cleared.)*
+- De-identification: dropped the masked client from the manufacturing/retail market-context investor lists; removed office districts + parent-company tags next to descriptors in the JA founder blog.
+
+### Engagement prices — non-blog pages
+- `brand-guidelines.html` price-card reference → scope cues + qualitative framing (no ₱ figures). Homepages already done. **Confirmed zero engagement-tier prices on any non-blog page.** `/vs/` keeps its multi-platform 3-year **TCO comparison** figures (analysis, not an engagement quote) — flagged for your decision.
+
+### Testimonial
+- Removed the placeholder testimonial block from the EN homepage (JA never had one).
+
+### SEO preserved
+- No URLs changed; **302 JSON-LD blocks all valid**; no internal links broken by the edits; ranking comparison/blog pages intact (blog pricing left untouched).
+
+## [homepage-redesign — pricing pass] — 2026-06-21
+
+Decision: do **not** publish specific prices. Removed every specific peso figure **and** all `[TBC]` placeholders / pending-confirmation flags from EN + JA so the pricing section reads finished, scope-based, with the number driven to the consultation.
+
+- **Pricing section:** kept "priced by scope, not by the hour" + the Starter/Enterprise/Retainer names and what each includes; replaced each tier price with a scope cue (new `.tier-scope`: "a single high-value app" / "a connected multi-app operation" / "ongoing build & support" — JA: 単一の高価値アプリ / 連携した複数アプリ運用 / 継続的なビルドとサポート). Platform line → "Per-user subscription — no six-figure upfront, no lock-in". Section CTA → "Book a free consultation for a fixed quote" (JA: 無料相談で確定見積りを).
+- **Elsewhere:** comparison-table Kintone cell now "Per-user subscription" / "月額サブスク" (competitors keep their public list prices); "safe middle path" bullet → "Per-user subscription — no six-figure license or lock-in"; FAQ pricing answers reworded to model + qualitative contrast and routed to the free consultation (removed the homepage→pricing-blog links to keep the no-figure story consistent).
+- **JSON-LD:** price fields remain stripped (no priced Offers); FAQ cost answers updated to match.
+- **Verified:** zero specific peso figures and zero `[TBC]` markers user-facing on EN or JA. (The testimonial quote remains a clearly-flagged placeholder — separate from pricing.)
+
+## [homepage-redesign — accuracy & consent pass] — 2026-06-21
+
+Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). Branch unchanged; preview auto-redeploys.
+
+### Pricing — provenance gate
+- **All peso price figures replaced with clearly-marked `[TBC]` placeholders** pending Tom's confirmation: Kintone base license (was ₱1,000/user/mo + 5-user min — conflicts with the old ₱1,500/3,000/5,000 tiers), and implementation tiers (was ₱95k / ₱450k+ / ₱85k-mo, carried over from the pre-redesign page, never independently confirmed).
+- Removed all price values from JSON-LD (Service `hasOfferCatalog`/`offers`, Product `AggregateOffer`) and from the FAQ/meta so no unsourced number is published as a real price. Added a visible "figures pending confirmation" flag to the pricing section. (`priceRange:"₱₱"` generic indicator retained.)
+
+### Client names — consent gate
+- Kept named (written/published consent): **MSCorp, Guhring**.
+- Genericized everywhere else (trust wall, FAQ, meta/OG, body): **ORIX Metro → "a major vehicle-leasing & finance firm"**, **Daikin → "a global HVAC manufacturer"** (incl. the "quoted at 3 months, shipped in days" claim → "a Japanese manufacturer"), **Quipper → "a leading EdTech platform"**, **AEON Fantasy / GMA Network** removed/anonymized.
+
+### Security claims — verified vs Kintone Trust Center
+- Corrected to match the official source ([trust-center.kintone.com](https://trust-center.kintone.com/)): **SOC 2 Type II** ✓, **ISO/IEC 27001 (cert IS 577142)** ✓, added **HIPAA** ✓. **Removed the unsubstantiated "99.99% uptime SLA"** (Kintone publishes a Service Level *Objective* with daily status, not a 99.99% SLA) and the unverified **AES-256** specific → "encrypted in transit and at rest."
+
+### Copy + headline numbers
+- Hero H1 tail changed from "run your business on custom software" → "**digitize how your business runs**" (plain-outcome; kept "official Kintone partner" + "safe way").
+- SEC registration number removed from the hero credential line + founder facts; **now visible in the footer only** (retained in Organization JSON-LD as accurate public-record metadata).
+- User count reconciled to a single figure (**2,400+**; hero card was 2,443).
+
+### JA homepage — same consent + pricing scrub applied
+- Genericized the same five clients in Japanese across meta/OG/Twitter, hero, trust row, named-client list, FAQ (visible + JSON-LD), and footer (大手リース・ファイナンス企業 / 大手空調メーカー / 大手EdTechプラットフォーム / 大手放送局 / 大手商業施設運営企業). Kept **Maximum Solutions Corporation = MSCorp** (cleared) and Guhring.
+- All ₱ figures → `[TBC]` (tiers + comparison cell); stripped prices from the JA Service/Offer JSON-LD; added a Japanese "pending confirmation" pricing note. User count 2,443 → 2,400+.
+- (JA remains on the old visual system — full JA redesign is still the next workstream.)
+
+## [homepage-redesign] — 2026-06-21
+
+**EN homepage rebuilt for conversion + enterprise authority. Branch `homepage-redesign` → Cloudflare Pages preview. See `docs/adr/0001-homepage-positioning-and-brand-direction.md`.**
+
+### Added — new conversion architecture (`/kintone-philippines/en/`)
+- **Hero** rebuilt around ONE dominant value prop ("the official Kintone partner — the safe way to run your business on custom software"), Partner-of-the-Year badge, and a static **authority credential card** (50 clients · 2,443 users · #1 SE Asia · SEC CS20190000095) that replaces the old fake pulsing "● LIVE" panel.
+- **Problem / loss-aversion section** ("too little" paper+Excel vs "too much" SAP/Oracle/NetSuite), surfacing the **50–75% PH ERP failure rate**, funnelling into "the safe middle path."
+- **Why-a-partner section** — disintermediation defense vs Cybozu's direct Manila presence ("Cybozu builds Kintone; we make it work in your business").
+- **Proof section** — MSCorp + Guhring case files with concrete metrics, plus a flagged testimonial placeholder.
+- **"Kintone vs the alternatives" decision table** — now covers the real competitors (SAP/Oracle/NetSuite, Odoo/ERPNext, monday/Airtable, Salesforce/Power Apps, Zoho, Excel) and links out to `/vs/` + comparison blogs, elevating the #1/#2 ranking articles.
+- **Risk-reversal block** — 6 guarantees (free consultation, 30-day trial, start-small, migration handled, same-day local support, honest-fit promise).
+- **Founder/human-trust section** (Tom Arai) with flagged photo placeholder.
+- Transparent PHP pricing kept and clarified (platform line + 3 engagement tiers + "most chosen" flag).
+
+### Changed — brand direction: evolve "Data Atelier" → enterprise authority
+- DM Serif Display demoted from *every* heading to a controlled accent; **DM Sans now carries headings** for corporate clarity. Palette, bean logo, and font set retained (only DM Serif Display / DM Sans / JetBrains Mono on EN; no Inter).
+- Retired boutique tells: blob border-radii, pod-ornament dividers, "studio/atelier/field notes/three beans" voice → disciplined radius scale + confident enterprise voice.
+- **Primary CTA unified to "Book a free consultation"** (was inconsistent "Book demo"/"Book 30-min demo"); semantic colour system (sage = safe path/CTA, red = danger/failure-rate only).
+- Meta title/description + OG/Twitter copy re-led on "official partner / safe / days not months."
+
+### Fixed — factual consistency
+- **Founding date corrected 2020 → 2019-09-16 (SEC CS20190000095)** in EN + JA homepage JSON-LD and `BUSINESS_NAP.md`.
+- Removed retired Tagalog (`tl`) from JA homepage WebSite JSON-LD `inLanguage`.
+- `contactPoint.availableLanguage` on EN now reflects trilingual support (English/Filipino/Japanese) in visible copy without re-adding TL content.
+
+### SEO equity preserved
+- Homepage URL unchanged (`/kintone-philippines/en/`) — no redirect needed; **no blog/comparison/customer URLs moved or orphaned.**
+- All 6 JSON-LD blocks retained (Organization, LocalBusiness, Service, WebSite, FAQPage, Product) and validated; GA4, canonical, hreflang, RSS intact.
+- 30 internal links validated (all resolve); cross-links now actively elevate ranking comparison content.
+- Previous homepage snapshot saved to `_backups/v3-2026-06-21/`.
+
+### Open follow-ups (flagged in markup)
+- Client logos shown as text wordmarks — logo usage permission UNCONFIRMED.
+- Testimonial quote + founder photo are placeholders pending approval.
+- JA homepage + secondary pages still on old system — next workstream.
+
 ## [vs-hub-deepening] — 2026-05-07
 
 ### Added — /vs/ hub depth pass

@@ -32,6 +32,10 @@ h2{font-family:'DM Serif Display',serif;font-size:clamp(1.3rem,3vw,1.8rem);margi
 .sizes{display:flex;align-items:flex-end;justify-content:center;gap:clamp(16px,4vw,32px);margin:24px 0 40px}
 .sizes>div{text-align:center}
 </style>
+<!-- Interaction polish layer (additive: focus, press, smooth-scroll, section reveal) -->
+<link rel="stylesheet" href="/polish.css">
+<script>(function(){try{var R=document.documentElement;if(('IntersectionObserver'in window)&&!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){R.classList.add('reveal-on');window.__polRevealFailsafe=setTimeout(function(){R.classList.remove('reveal-on')},2400);}}catch(e){}})();</script>
+<script defer src="/polish.js"></script>
 </head>
 <body>
 <div class="page">
