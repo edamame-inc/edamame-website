@@ -4,9 +4,9 @@
 <!-- Fonts (optimized, non-blocking) -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" /></noscript>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=optional" /></noscript>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Kintone Philippines | Official Partner — Custom Business Apps in Days | edamame</title>
@@ -79,6 +79,27 @@
    Fonts (only allowed set): DM Serif Display · DM Sans ·
    JetBrains Mono. (Noto Sans JP used on /ja/.) No Inter.
    ============================================================ */
+
+/* CLS fix: metric-override fallback fonts (generated with capsize) so the
+   fallback occupies the SAME space as the web font — no reflow when DM Sans /
+   DM Serif Display swap in. Keeps font-display:swap (brand font still renders). */
+@font-face {
+  font-family: "DM Sans Fallback";
+  src: local('Arial'), local('ArialMT');
+  font-display: swap;
+  ascent-override: 94.9001%;
+  descent-override: 29.6563%;
+  line-gap-override: 0%;
+  size-adjust: 104.531%;
+}
+@font-face {
+  font-family: "DM Serif Display Fallback";
+  src: local('Georgia'), local('Times New Roman');
+  font-display: swap;
+  ascent-override: 103.5537%;
+  descent-override: 33.485%;
+  size-adjust: 100.0447%;
+}
 :root {
   --sage: #4A7C59; --sage-deep: #3A6349; --sage-soft: #6B9B7A;
   --gold: #C4A35A; --gold-soft: #E8D5A3; --gold-deep:#A8863F;
@@ -90,8 +111,8 @@
   --line-soft: rgba(26,26,24,0.07);
   --r-sm: 10px; --r: 14px; --r-lg: 20px;
   --maxw: 1180px;
-  --font-sans:'DM Sans', system-ui, -apple-system, sans-serif;
-  --font-serif:'DM Serif Display', Georgia, serif;
+  --font-sans:'DM Sans', 'DM Sans Fallback', system-ui, -apple-system, sans-serif;
+  --font-serif:'DM Serif Display', 'DM Serif Display Fallback', Georgia, serif;
   --font-mono:'JetBrains Mono', ui-monospace, monospace;
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
