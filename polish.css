@@ -20,6 +20,40 @@
   --pol-dur-reveal: .55s;                    /* section entrance */
 }
 
+/* ---------------------------------------------------------------------------
+   Section-token fallbacks — fixes a live rendering bug.
+
+   Page-specific section CSS on /industries/*, /contact/, and several older
+   blogs references legacy variables that are never defined on those pages:
+     --g --gd --gdd --gl --gm  (the SAGE/green scale — confirmed by the pages
+                                that DO define them: --g:#4A7C59, --gd:#3d6b4a…)
+     --ink --ink2 --mut --bdr --off  (ink / secondary / muted / border / off-white)
+     --fh  (heading font)
+   With them undefined, every hero/stats/proof/card gradient and text colour
+   collapsed (white-on-white / unstyled).
+
+   Provided inside @layer so they ONLY fill in undefined vars: cascade layers
+   rank below unlayered styles, so any page that sets its own value (the clean
+   pages: homepage, /vs/, moat pages, most blogs) overrides these and is left
+   completely untouched. Values alias the canonical brand tokens. The sage scale
+   meets AA as text on the off-white (#FAFAF8) section backgrounds; brand gold
+   (#C4A35A) is deliberately NOT introduced as text on light. */
+@layer edamame-section-fallbacks {
+  :root {
+    --ink:  #1A1A18;                 /* primary text */
+    --ink2: #2D2D2A;                 /* secondary text */
+    --mut:  #6B6B66;                 /* muted text (AA on white & off-white) */
+    --bdr:  rgba(26,26,24,0.10);     /* hairline border */
+    --off:  #FAFAF8;                 /* off-white section background */
+    --fh:   'DM Serif Display','DM Serif Display Fallback',Georgia,serif;
+    --g:    #4A7C59;                 /* sage  (brand --sage) */
+    --gd:   #3A6349;                 /* sage-deep */
+    --gdd:  #2C4B38;                 /* deepest sage (CTA gradients) */
+    --gl:   #E8F1EA;                 /* pale sage tint (icon/chip backgrounds) */
+    --gm:   #4A7C59;                 /* sage for large decorative numerals */
+  }
+}
+
 /* ---- 1. Keyboard focus — visible, on-brand, consistent site-wide ----------
    Matches the homepage's existing ring; ADDS the same ring to any page that
    lacks one. Mouse/touch users are unaffected (:focus-visible only). */
