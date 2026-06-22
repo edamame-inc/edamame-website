@@ -1,5 +1,25 @@
 # Edamame Website Changelog
 
+## [homepage-redesign — UI polish / interaction layer] — 2026-06-22
+
+A restrained, additive motion + interaction layer (Stripe/Linear/Vercel level of restraint). **No content, copy, structure, claims, or URLs changed** — polish only.
+
+### Added (shared layer: `/polish.css` + `/polish.js`, injected site-wide into 105 served pages)
+- **One easing system:** `--pol-ease: cubic-bezier(.22,.61,.36,1)` (gentle ease-out), `--pol-dur: .2s` for micro-interactions (within the 150–250ms brief), `--pol-dur-reveal: .55s` for section entrances. Applied to all *added* interactions; the homepage's existing transitions already sat in the same 150–200ms band.
+- **Press feedback:** subtle `:active` "give" (`translateY(1px) scale(.992)`, transform-only) on buttons and button-styled CTAs — previously absent (0 `:active` rules).
+- **Keyboard focus:** consistent on-brand ring (`3px solid var(--sage,#4A7C59)`, `:focus-visible` only) — matches the homepage's existing ring and *adds* the same ring to pages that lacked one.
+- **Scroll-reveal on major sections:** `main > section` (excluding hero/trust, above the fold) fades + rises 18px into view; cards inside existing grids (`.values/.cases/.rr-grid/.tiers/.partner-points/.cmp-links`) carry a light ≤0.24s stagger. Gated by `html.reveal-on` (added by JS only when IntersectionObserver exists **and** motion is allowed). Active on EN home, JA home, and `/vs/`; structurally inert elsewhere.
+- **Smooth anchor scrolling** + `scroll-margin-top:88px` so smooth-scrolled headings clear the sticky nav (`:where()`, zero specificity — never fights a real rule).
+
+### Safety / constraints honored
+- **No CLS:** transform/opacity only; reveal gating set before first paint via a synchronous head bootstrap (render-blocking `polish.css` guarantees the rule exists pre-paint).
+- **prefers-reduced-motion:** bootstrap never gates; `polish.css` additionally forces sections visible + kills transitions. **No-JS / no-IntersectionObserver:** `reveal-on` never added → everything renders immediately. Triple failsafe (no-IO check, JS 1.6s full-reveal, inline 2.4s un-gate) guarantees content is never left hidden.
+- **Mobile:** no hover-revealed content (all hovers are decorative lift/shadow); touch degrades to press feedback + reveal. No parallax, autoplay, or looping motion. No heavy JS libraries (1.9KB vanilla).
+- `/polish.css` + `/polish.js` cache rule added to `_headers` (1-day, revalidated).
+
+### SEO
+- No URLs changed; 302 JSON-LD blocks valid; no broken links.
+
 ## [homepage-redesign — award-overstatement + headline fix] — 2026-06-21
 
 ### JA "world's best partner" passage corrected (provably wrong)

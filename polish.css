@@ -1,0 +1,112 @@
+/* ===========================================================================
+   polish.css — interaction & motion polish layer (edamame)
+
+   An ADDITIVE layer only. It does not change content, copy, structure, or
+   layout. It adds: a consistent on-brand keyboard-focus ring, subtle press
+   feedback, smooth anchor scrolling with sticky-nav offset, and a restrained
+   scroll-reveal on major sections.
+
+   Motion principles: GPU-friendly transform/opacity only (zero layout shift),
+   one easing curve site-wide, durations in the 150–250ms band for micro-
+   interactions, ~550ms for section entrances. Fully honors
+   prefers-reduced-motion. The scroll-reveal is gated by `html.reveal-on`
+   (added by JS only when safe), so with no JS / no IntersectionObserver /
+   reduced motion, everything renders immediately — no hidden content, no FOUC.
+   =========================================================================== */
+
+:root{
+  --pol-ease: cubic-bezier(.22,.61,.36,1);   /* gentle ease-out */
+  --pol-dur: .2s;                            /* micro-interactions */
+  --pol-dur-reveal: .55s;                    /* section entrance */
+}
+
+/* ---- 1. Keyboard focus — visible, on-brand, consistent site-wide ----------
+   Matches the homepage's existing ring; ADDS the same ring to any page that
+   lacks one. Mouse/touch users are unaffected (:focus-visible only). */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible,
+[role="button"]:focus-visible{
+  outline: 3px solid var(--sage, #4A7C59);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ---- 2. Press feedback — a small tactile "give" on click ------------------
+   transform-only, so no reflow. Applies to real buttons and button-styled
+   links/CTAs. The :active rule loads after the page styles, so it overrides
+   the hover-lift while the control is held down. */
+.btn, .btn-primary, .btn-ghost, .btn-light, .btn-ghost-light,
+.nav-cta, button, [role="button"]{
+  transition: transform var(--pol-dur) var(--pol-ease),
+              box-shadow var(--pol-dur) var(--pol-ease),
+              background-color var(--pol-dur) var(--pol-ease),
+              border-color var(--pol-dur) var(--pol-ease),
+              color var(--pol-dur) var(--pol-ease);
+}
+.btn:active, .btn-primary:active, .btn-ghost:active,
+.btn-light:active, .btn-ghost-light:active,
+.nav-cta:active, button:active, [role="button"]:active{
+  transform: translateY(1px) scale(.992);
+}
+
+/* ---- 3. Smooth anchor scrolling + sticky-nav offset -----------------------
+   scroll-margin keeps a smooth-scrolled heading clear of the sticky header
+   instead of tucking it underneath. :where() => zero specificity, never
+   fights a real rule; affects scroll position only (no visual/layout change). */
+html{ scroll-behavior: smooth; }
+:where(main section[id], section[id], [id].section){ scroll-margin-top: 88px; }
+
+/* ---- 4. Scroll-reveal — major sections fade + rise into view --------------
+   Gated by html.reveal-on (JS adds it only when IntersectionObserver exists
+   and motion is allowed). Hero & trust (above the fold) are never hidden.
+   The `.pol-in` rules carry the same :not() chain so they out-specify the
+   hidden rules and win once revealed. */
+html.reveal-on main > section:not(.hero):not(.trust){
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity var(--pol-dur-reveal) var(--pol-ease),
+              transform var(--pol-dur-reveal) var(--pol-ease);
+}
+html.reveal-on main > section:not(.hero):not(.trust).pol-in{
+  opacity: 1;
+  transform: none;
+}
+
+/* Light stagger for cards inside a revealing section (existing grid classes,
+   no markup change). Children start offset and settle with a small cascade. */
+html.reveal-on main > section:not(.hero):not(.trust)
+  :is(.values, .cases, .rr-grid, .tiers, .partner-points, .cmp-links) > *{
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity var(--pol-dur-reveal) var(--pol-ease),
+              transform var(--pol-dur-reveal) var(--pol-ease);
+}
+html.reveal-on main > section:not(.hero):not(.trust).pol-in
+  :is(.values, .cases, .rr-grid, .tiers, .partner-points, .cmp-links) > *{
+  opacity: 1;
+  transform: none;
+}
+html.reveal-on main > section:not(.hero):not(.trust).pol-in :is(.values,.cases,.rr-grid,.tiers,.partner-points,.cmp-links) > *:nth-child(2){ transition-delay:.05s }
+html.reveal-on main > section:not(.hero):not(.trust).pol-in :is(.values,.cases,.rr-grid,.tiers,.partner-points,.cmp-links) > *:nth-child(3){ transition-delay:.10s }
+html.reveal-on main > section:not(.hero):not(.trust).pol-in :is(.values,.cases,.rr-grid,.tiers,.partner-points,.cmp-links) > *:nth-child(4){ transition-delay:.15s }
+html.reveal-on main > section:not(.hero):not(.trust).pol-in :is(.values,.cases,.rr-grid,.tiers,.partner-points,.cmp-links) > *:nth-child(5){ transition-delay:.20s }
+html.reveal-on main > section:not(.hero):not(.trust).pol-in :is(.values,.cases,.rr-grid,.tiers,.partner-points,.cmp-links) > *:nth-child(n+6){ transition-delay:.24s }
+
+/* ---- 5. Respect reduced motion — disable every added motion --------------- */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  .btn:active, .btn-primary:active, .btn-ghost:active,
+  .btn-light:active, .btn-ghost-light:active,
+  .nav-cta:active, button:active, [role="button"]:active{ transform: none; }
+  html.reveal-on main > section,
+  html.reveal-on main > section *{
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
