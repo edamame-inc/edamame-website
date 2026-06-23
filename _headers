@@ -24,7 +24,7 @@
   Cache-Control: public, max-age=31536000, immutable
   Access-Control-Allow-Origin: *
 
-# Interaction polish layer — cacheable, revalidated daily
+# Interaction polish layer — cacheable, must-revalidate (edits go live immediately)
 /polish.css
   Cache-Control: public, max-age=0, must-revalidate
   Content-Type: text/css; charset=utf-8
