@@ -1,5 +1,12 @@
 # Edamame Website Changelog
 
+## [Blog pricing compliance — remove Kintone's own peso figures (16 EN articles)] — 2026-06-23
+
+### Changed
+- **Removed every edamame-stated peso figure for Kintone's own price across the 16 retrofitted EN blogs**, replacing each with qualitative language (e.g. "Kintone uses simple per-user pricing — exact figures in a free consultation"). This covered per-user rate statements ("starts from …/user/month"), comparison-table "Year 1 Cost" cells, the Kintone cost/pricing boxes (kintone-vs-odoo, kintone-vs-airtable), figure-labelled price tiers (Kintone dropped from the peso-range buckets in best-crm / best-erp, leaving the competitor entries), and — critically for AI answer engines — the matching `FAQPage` JSON-LD answers. 14 of the 16 files changed (40 Kintone-own peso figures removed); kintone-vs-salesforce and best-software-japanese already carried none. `dateModified` re-set to 2026-06-23 on every changed file; all JSON-LD remains valid.
+- **All competitor and market pricing left intact** — Salesforce, Monday.com, HubSpot, Zoho, Smartsheet, Notion, QuickBooks, Xero, QNE, Odoo, ERPNext, SAP, Oracle, etc., including USD figures with their peso conversions and general "SMEs spend …" market ranges. Relative comparisons that carry no Kintone peso figure (e.g. "30–50% less than Zoho One") were preserved. Incidentally softened one pre-existing self-superlative in the sentence being edited ("Kintone offers the best value" → "strong value" in best-erp).
+- **Out of scope, flagged for a later pass:** five other EN blog articles (`approval-workflow-software-philippines`, `business-process-automation-philippines`, `custom-crm-philippines`, `customer-portal-philippines`, `digital-transformation-philippines-2026`) still state Kintone's own peso price; they were not part of the scoped 16 and were left untouched.
+
 ## [Blog GEO/E-E-A-T retrofit — top 16 EN articles] — 2026-06-23
 
 ### Changed
