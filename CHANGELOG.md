@@ -1,5 +1,13 @@
 # Edamame Website Changelog
 
+## [brand-guidelines no-price compliance + remove _backups] — 2026-06-23
+
+### Changed
+- **`brand-guidelines.html` pricing directives brought into no-price compliance.** Every rule that instructed publishing specific peso figures (copy do/don't, the "Direct" voice example, the funnel table, and the FAQ / sales / pricing-page rows — 8 directives total) now instructs communicating the licensing model *qualitatively* (per-user monthly subscription, small user minimum) and directing to a free consultation for a quote. Removed the specific peso-figure examples (the per-user rate, the monthly floor, and the "users × rate" math). As the canonical brand doc, this stops engagement-pricing copy from reappearing site-wide.
+
+### Removed
+- **`_backups/` deleted** (`git rm -r _backups`). Stale snapshots carrying the old fabricated award wording (since corrected to the canonical "2024 Cybozu Global Award — Asia"), forbidden client names, and peso prices — already 404 in production, unlinked, and absent from every sitemap. Recoverable via git history.
+
 ## [homepage-redesign — UI polish / interaction layer] — 2026-06-22
 
 A restrained, additive motion + interaction layer (Stripe/Linear/Vercel level of restraint). **No content, copy, structure, claims, or URLs changed** — polish only.
