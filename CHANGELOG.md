@@ -1,5 +1,18 @@
 # Edamame Website Changelog
 
+## [Blog pricing compliance — remove Kintone's own peso figures (16 EN articles)] — 2026-06-23
+
+### Changed
+- **Removed every edamame-stated peso figure for Kintone's own price across the 16 retrofitted EN blogs**, replacing each with qualitative language (e.g. "Kintone uses simple per-user pricing — exact figures in a free consultation"). This covered per-user rate statements ("starts from …/user/month"), comparison-table "Year 1 Cost" cells, the Kintone cost/pricing boxes (kintone-vs-odoo, kintone-vs-airtable), figure-labelled price tiers (Kintone dropped from the peso-range buckets in best-crm / best-erp, leaving the competitor entries), and — critically for AI answer engines — the matching `FAQPage` JSON-LD answers. 14 of the 16 files changed (40 Kintone-own peso figures removed); kintone-vs-salesforce and best-software-japanese already carried none. `dateModified` re-set to 2026-06-23 on every changed file; all JSON-LD remains valid.
+- **All competitor and market pricing left intact** — Salesforce, Monday.com, HubSpot, Zoho, Smartsheet, Notion, QuickBooks, Xero, QNE, Odoo, ERPNext, SAP, Oracle, etc., including USD figures with their peso conversions and general "SMEs spend …" market ranges. Relative comparisons that carry no Kintone peso figure (e.g. "30–50% less than Zoho One") were preserved. Incidentally softened one pre-existing self-superlative in the sentence being edited ("Kintone offers the best value" → "strong value" in best-erp).
+- **Out of scope, flagged for a later pass:** five other EN blog articles (`approval-workflow-software-philippines`, `business-process-automation-philippines`, `custom-crm-philippines`, `customer-portal-philippines`, `digital-transformation-philippines-2026`) still state Kintone's own peso price; they were not part of the scoped 16 and were left untouched.
+
+## [Blog GEO/E-E-A-T retrofit — top 16 EN articles] — 2026-06-23
+
+### Changed
+- **Author entity + freshness + answer-first signals applied to the 16 top EN blog articles** (9 `kintone-vs-*` comparisons + 7 `best-*` buyer's guides), bringing them in line with the landing pages. Per article: (1) a visible byline "By [Tom Arai, Founder & CEO, Edamame Inc.](/kintone-philippines/en/about/) · Updated 2026-06-23" (the two articles that already carried an ad-hoc Tom Arai credit were normalized to this exact form + About link); (2) `Article` JSON-LD `author` set to a single canonical `Person` (Tom Arai; jobTitle "Founder & CEO"; `url` → the About page) — replacing the prior `Organization` author on 12 of them and adding `jobTitle`/`url` to the rest — with `datePublished` preserved and `dateModified` refreshed to 2026-06-23; (3) an answer-first "Bottom line:" / "Short answer:" lead paragraph (BLUF) added directly after the H1, since every one of the 16 intros previously deferred its verdict. No FAQ/Breadcrumb blocks restructured; all JSON-LD remains valid.
+- **Incidental cleanups on two of the retrofitted articles** (pre-existing copy brought into no-price / no-self-superlative compliance): in `best-inventory-management-philippines-2026`, two FAQ answers that called Kintone the single best inventory option were softened to "a strong inventory management choice"; in `best-software-japanese-companies-philippines`, a section heading that called Kintone the top choice was reworded to "Why Japanese Companies in the Philippines Choose Kintone", and the one embedded edamame per-user price next to Kintone in the software-stack list was dropped (now just "Kintone"). Competitor/market pricing elsewhere in these articles is legitimate content and was left intact.
+
 ## [About page + author E-E-A-T bylines] — 2026-06-23
 
 ### Added
