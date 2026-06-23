@@ -1,5 +1,13 @@
 # Edamame Website Changelog
 
+## [About page + author E-E-A-T bylines] — 2026-06-23
+
+### Added
+- **About page, EN + JA** (`/kintone-philippines/en/about/`, `/kintone-philippines/ja/about/`) — company-led, with a prominent "Tom Arai, Founder & CEO" section (text/credentials only, no photo). JSON-LD: `AboutPage` + `Organization` (sameAs LinkedIn + Facebook) + `Person` (Tom Arai; `worksFor` the Organization; `knowsAbout` Kintone, no-code development, business process automation, Kintone customization, enterprise implementation, bilingual Japanese–English software). Added "About" to the homepage nav + footer (EN + JA) and to `sitemap.xml` with EN↔JA hreflang.
+
+### Changed
+- **Author bylines wired to the About page.** The 3 service landing pages (implementation / customization / training) gained a visible "By Tom Arai, Founder & CEO, Edamame Inc." byline linked to the About page, plus a `WebPage` JSON-LD node carrying `author` Person (url → About). The existing EN/JA what-is-kintone bylines now link to the About page, and their `Article` author Person carries `url` = the About page. No FAQ blocks or existing datePublished/dateModified changed.
+
 ## [brand-guidelines no-price compliance + remove _backups] — 2026-06-23
 
 ### Changed
