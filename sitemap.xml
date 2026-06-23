@@ -635,4 +635,20 @@
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq><priority>0.75</priority>
   </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/en/what-is-kintone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/what-is-kintone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/what-is-kintone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/what-is-kintone/" />
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://edamame-jp.com/kintone-philippines/ja/what-is-kintone/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://edamame-jp.com/kintone-philippines/en/what-is-kintone/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://edamame-jp.com/kintone-philippines/ja/what-is-kintone/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://edamame-jp.com/kintone-philippines/en/what-is-kintone/" />
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+  </url>
 </urlset>

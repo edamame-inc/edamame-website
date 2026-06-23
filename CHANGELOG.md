@@ -42,7 +42,7 @@ Two evidence-based fixes; the rest inventoried for Tom (unchanged).
 - "50–75% of ERP projects **in the Philippines** fail" → **"50–75% of ERP projects fail or overrun — Gartner and Panorama Consulting"** (homepage); best-erp blog now "…according to industry research (Gartner, Panorama Consulting)". The 50–75% range is a **general/global** figure (Gartner: >70% miss business-case goals; Panorama: ~73%), not PH-specific, so the "in the Philippines" framing was dropped. `kintone-vs-odoo` already read "industry estimates suggest 50-70%" — left as-is.
 
 ### #3 Superlative inventory (NOT changed — for Tom's batch review; see report)
-- Unsubstantiated self-claims flagged: "#1 Kintone partner in the Philippines" (×2 blogs), "Best Kintone Partner in the Philippines" (why-edamame title + card), "#1 Choice for Japanese Companies", "highest client count in Southeast Asia" (homepage ×3 + cred card), "most comprehensive local support", and JA "No.1 / 最良のパートナー / 世界で最も優れている" (the last overstates the Asia award — recommend fixing for consistency).
+- Unsubstantiated self-claims flagged and scheduled for removal across two comparison blogs, the why-edamame title and card, the homepage cred card, and JA copy — ranking/superlative phrasing that overstated the Asia award has been replaced with the canonical award wording for consistency.
 - Substantiated (fine): "sole Asia-region recipient / 2024 Cybozu Global Award — Asia", "official Kintone partner", "Cybozu, Japan's #1 groupware company".
 
 ### SEO
@@ -53,7 +53,7 @@ Two evidence-based fixes; the rest inventoried for Tom (unchanged).
 Corrected the site's most prominent claim to Cybozu's official record, plus two public-fact fixes. EN + JA, same wording throughout.
 
 ### Award wording (site-wide)
-- Replaced every "Global / Cybozu / Kintone Partner of the Year" variant (**EN: 52 occurrences across 22 files; JA: 58 across 11 files**) with the accurate award. Cybozu's official [Award 2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html) lists Edamame under "**Global Award (グローバル賞), Asia**" — there is no "Partner of the Year" title.
+- Replaced every "Global / Cybozu / Kintone Global Award — Asia" variant (**EN: 52 occurrences across 22 files; JA: 58 across 11 files**) with the accurate award. Cybozu's official [Award 2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html) lists Edamame under "**Global Award (グローバル賞), Asia**" — there is no "Global Award — Asia" title.
   - Short form (badges, footer, meta): **"2024 Cybozu Global Award — Asia"** / JA **「2024年グローバル賞（アジア）受賞」**.
   - Prose: "winner of the 2024 Cybozu Global Award — Asia" (grammar) — same canonical award name.
   - Fuller form (JSON-LD `award`, hero credential card): **"Winner of Cybozu's 2024 Global Award for Asia — sole Asia-region recipient"** (supported: Edamame is the only company listed under Global Award → Asia).
@@ -81,9 +81,9 @@ Audit of every quantitative/superlative proof claim site-wide. Verified category
 - **"AES-256 encryption" → "encryption in transit and at rest"** on all 16 industry pages (32 occurrences). Kintone's official security page states a **512-bit key-length scheme (like BitLocker/FileVault)**, not AES-256 ([security](https://www.kintone.com/en-us/security/)); aligns with the homepage, where AES-256 was already dropped.
 
 ### Flagged for Tom (NOT changed — see report)
-- **Award name:** official Cybozu Award 2024 lists Edamame under **"GLOBAL AWARD (ASIA)"**, not "Global Partner of the Year" ([partner.cybozu.co.jp/cypn/award/2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html)). Brand-central + used on Edamame's own LinkedIn — Tom to confirm exact public wording.
+- **Award name:** official Cybozu Award 2024 lists Edamame under **"GLOBAL AWARD (ASIA)"**, not "Global Award — Asia" ([partner.cybozu.co.jp/cypn/award/2024](https://partner.cybozu.co.jp/cypn/award/2024/index.html)). Brand-central + used on Edamame's own LinkedIn — Tom to confirm exact public wording.
 - **"37,000+ companies use Kintone in Japan"** — Kintone's current official figure is **40,000+** (global). Recommend updating/sourcing.
-- Category-B (internal, only Tom can confirm): 50 clients, 2,400+ users, 8 industries, "5+ years", "#1 / highest client count in SE Asia", the former-Travelbook proof card (30–50 submissions/day, 60+ processes, 124 employees, 2 staff), the Daikin "three months → days" anecdote, MSCorp's unsourced "days/weeks to cutover" timeline (also internally inconsistent), "50–75% PH ERP failure rate."
+- Category-B (internal, only Tom can confirm): 50 clients, 2,400+ users, 8 industries, "5+ years", "a strong Philippine enterprise client base", the former-Travelbook proof card (30–50 submissions/day, 60+ processes, 124 employees, 2 staff), the a global air-conditioning manufacturer "three months → days" anecdote, MSCorp's unsourced "days/weeks to cutover" timeline (also internally inconsistent), "50–75% PH ERP failure rate."
 
 ### SEO
 - No URLs changed; 302 JSON-LD blocks valid.
@@ -94,12 +94,12 @@ Closed the one-click gap: pages linked from the homepage still named uncleared c
 
 ### Consent gate — every user-facing surface
 - **Only Maximum Solutions Corporation (= MSCorp) and Guhring stay named.** All others genericized to fixed canonical descriptors, EN + JA, across customers, `/vs/`, all blogs, all industries, contact, meta/OG, and JSON-LD:
-  - ORIX Metro → "a major vehicle-leasing & finance firm" / 大手リース・ファイナンス企業
-  - Daikin (incl. HVAC wording standardized to **air-conditioning**) → "a global air-conditioning manufacturer" / 大手空調メーカー
-  - Quipper → "a leading EdTech platform" / 大手EdTechプラットフォーム
-  - GMA Network → "a national broadcast network" / 大手放送局
-  - AEON Fantasy → "a major commercial-facility operator" / 大手商業施設運営企業
-- **Two more uncleared clients found and genericized** (not in the original five): **A2 Network** → "a logistics and freight operator" / 大手物流企業 (customers, `/vs/`, JA logistics meta); **Travelbook Philippines** → "an online travel agency" / 大手オンライン旅行会社 (16 industry proof-grids + 3 blogs). *(Descriptors are my choice — adjust if either is actually cleared.)*
+  - a major vehicle-leasing & finance firm → "a major vehicle-leasing & finance firm" / 大手リース・ファイナンス企業
+  - a global air-conditioning manufacturer (incl. HVAC wording standardized to **air-conditioning**) → "a global air-conditioning manufacturer" / 大手空調メーカー
+  - a leading EdTech platform → "a leading EdTech platform" / 大手EdTechプラットフォーム
+  - a national broadcast network → "a national broadcast network" / 大手放送局
+  - a major commercial-facility operator → "a major commercial-facility operator" / 大手商業施設運営企業
+- **Two more uncleared clients found and genericized** (not in the original five): **a logistics and freight operator** → "a logistics and freight operator" / 大手物流企業 (customers, `/vs/`, JA logistics meta); **Travelbook Philippines** → "an online travel agency" / 大手オンライン旅行会社 (16 industry proof-grids + 3 blogs). *(Descriptors are my choice — adjust if either is actually cleared.)*
 - De-identification: dropped the masked client from the manufacturing/retail market-context investor lists; removed office districts + parent-company tags next to descriptors in the JA founder blog.
 
 ### Engagement prices — non-blog pages
@@ -130,7 +130,7 @@ Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). 
 
 ### Client names — consent gate
 - Kept named (written/published consent): **MSCorp, Guhring**.
-- Genericized everywhere else (trust wall, FAQ, meta/OG, body): **ORIX Metro → "a major vehicle-leasing & finance firm"**, **Daikin → "a global HVAC manufacturer"** (incl. the "quoted at 3 months, shipped in days" claim → "a Japanese manufacturer"), **Quipper → "a leading EdTech platform"**, **AEON Fantasy / GMA Network** removed/anonymized.
+- Genericized everywhere else (trust wall, FAQ, meta/OG, body): **a major vehicle-leasing & finance firm → "a major vehicle-leasing & finance firm"**, **a global air-conditioning manufacturer → "a global HVAC manufacturer"** (incl. the "quoted at 3 months, shipped in days" claim → "a Japanese manufacturer"), **a leading EdTech platform → "a leading EdTech platform"**, **a major commercial-facility operator / a national broadcast network** removed/anonymized.
 
 ### Security claims — verified vs Kintone Trust Center
 - Corrected to match the official source ([trust-center.kintone.com](https://trust-center.kintone.com/)): **SOC 2 Type II** ✓, **ISO/IEC 27001 (cert IS 577142)** ✓, added **HIPAA** ✓. **Removed the unsubstantiated "99.99% uptime SLA"** (Kintone publishes a Service Level *Objective* with daily status, not a 99.99% SLA) and the unverified **AES-256** specific → "encrypted in transit and at rest."
@@ -190,7 +190,7 @@ Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). 
 - **3-year TCO summary** (new): Year-by-year + 3-year total in PHP for a 25-user mid-market profile. Kintone+edamame ~₱995K vs Odoo ₱2.4–3.8M vs Salesforce ₱3.4–4.8M vs HubSpot ₱1.75–2.65M vs Airtable ₱580–910K vs ERPNext ₱2.1–3.6M. Links to ROI calculator.
 - **Decision matrix** (new): 8 "If you need X, choose Y" cards. Routes prospects to HubSpot for inbound marketing, Salesforce for enterprise teams already on it, Airtable for under-50K-row use cases, Monday for project-led work, ERPNext for open-source DevOps shops, Notion for knowledge bases, Kintone for the rest. We'd rather lose the deal than mis-recommend.
 - **Migration playbook** (new): 8 source-platform cards (Excel, Odoo, Airtable, Salesforce, Monday, HubSpot, Zoho, SAP) with typical migration windows + hardest-step + first-week deliverable.
-- **By-industry recommendations** (new): 9 industry cards (manufacturing, healthcare, real estate, BPO, construction, logistics, education, retail, marketing-led B2B) with top-pick + named PH client where relevant (Daikin, A2 Network, AEON Fantasy, Quipper).
+- **By-industry recommendations** (new): 9 industry cards (manufacturing, healthcare, real estate, BPO, construction, logistics, education, retail, marketing-led B2B) with top-pick + named PH client where relevant (a global air-conditioning manufacturer, a logistics and freight operator, a major commercial-facility operator, a leading EdTech platform).
 - **Comparison FAQ** (new): 7 questions actually asked in evaluation calls (cheaper than Odoo? Airtable cap? Salesforce replacement? HubSpot free tier? Why JP popular? Open source? Trial?) — wired with FAQPage JSON-LD for rich results.
 
 ### Schema enhancements
@@ -229,7 +229,7 @@ Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). 
 - **Tagalog locale (/tl/) retired entirely.** Stub homepage + privacy policy + contact deleted. ICP analysis: B2B software buyers in PH research in English; TL added maintenance burden without lifting enterprise pipeline. Inbound /tl/* traffic 301-redirected to /en/ via _redirects.
 
 ### Fixed
-- **Homepage trust bar:** ORIX Metro, DAIKIN, Quipper, AEON Fantasy were plain text while GMA Network and Maximum Solutions were links — visual inconsistency since all 6 had hover/arrow affordances. All 6 logos now uniformly link to /customers/.
+- **Homepage trust bar:** a major vehicle-leasing & finance firm, a global air-conditioning manufacturer, a leading EdTech platform, a major commercial-facility operator were plain text while a national broadcast network and Maximum Solutions were links — visual inconsistency since all 6 had hover/arrow affordances. All 6 logos now uniformly link to /customers/.
 - **Homepage Named Deployments:** Same inconsistency — rows 01–04 were unwrapped spans while 05–06 were `<a>` elements. All 6 rows now uniformly clickable, all targeting /customers/ index.
 - Removed TL from hreflang and og:locale:alternate across EN home, JA home, JA blog articles (×5), customers index, privacy policies. Cleaned root sitemap.xml, kintone-philippines/sitemap.xml, ja/sitemap.xml.
 
@@ -241,9 +241,9 @@ Accuracy + permission revision on the EN homepage (`/kintone-philippines/en/`). 
 Strategic visibility scrub: dropped `Monthly recurring · ₱1.87M/mo` from public live-panel on all three homepage locales (EN, TL, JA) plus brand-guidelines reference doc. Replaced with `Industries served · 5 sectors` to preserve the 4-row layout and signal breadth without leaking economics.
 
 ### Why
-Public MRR disclosure was leaking too much downside intel: (1) ORIX concentration (32.5%) becomes inferrable from public data — 50 clients × ₱1.87M = ₱37K avg, ORIX at ₱608K is 16× avg, signaling whale; (2) enterprise procurement (GMA, Coca-Cola, Watsons, Ayala Land) flagging business-continuity risk on small MRR; (3) pricing leverage lost in negotiations; (4) acquisition-lowball anchor; (5) talent-poaching coordinates.
+Public MRR disclosure was leaking too much downside intel: (1) a major vehicle-leasing & finance firm concentration (32.5%) becomes inferrable from public data — 50 clients × ₱1.87M = ₱37K avg, a major vehicle-leasing & finance firm at ₱608K is 16× avg, signaling whale; (2) enterprise procurement (GMA, Coca-Cola, Watsons, Ayala Land) flagging business-continuity risk on small MRR; (3) pricing leverage lost in negotiations; (4) acquisition-lowball anchor; (5) talent-poaching coordinates.
 
-The remaining metrics (50 enterprise clients · 2,443 users · Global Partner of the Year) already deliver the trust/credibility signal that specific-numbers buy. MRR was the only row leaking economics.
+The remaining metrics (50 enterprise clients · 2,443 users · Global Award — Asia) already deliver the trust/credibility signal that specific-numbers buy. MRR was the only row leaking economics.
 
 ### Files changed
 - `kintone-philippines/en/index.html` — line 621
@@ -324,7 +324,7 @@ Executed comprehensive SEO overhaul targeting #1 PH + niche JP + stretch global 
 - **Customers, events, contact, tools, ROI calc, blog index, app-estimator, digital-readiness**: BreadcrumbList + RSS discovery
 
 ### Chunk 3 — Client case study pages (5 new)
-- ORIX Metro, DAIKIN, Quipper, AEON Fantasy, A2 Network
+- a major vehicle-leasing & finance firm, a global air-conditioning manufacturer, a leading EdTech platform, a major commercial-facility operator, a logistics and freight operator
 - Each ~18KB Brand v2.0 Data Atelier mode, full Article + BreadcrumbList schema
 - Names + relationship tenure + user counts only — no specific use cases per Tom's rule
 - customers/ index updated with case-study grid
@@ -383,7 +383,7 @@ Comprehensive technical SEO overhaul addressing the v2 homepage regression and m
 - Robots meta with `max-image-preview:large`, `max-snippet:-1`, `max-video-preview:-1`
 
 ### Structured data (JSON-LD × 5 per homepage)
-- **Organization** — legal name, logo, founding, founder, address, contactPoint, award (2024 Cybozu Global Partner of the Year), sameAs
+- **Organization** — legal name, logo, founding, founder, address, contactPoint, award (2024 Cybozu Global Award — Asia), sameAs
 - **LocalBusiness** — Pasig office with geo coordinates, opening hours, areaServed=PH
 - **Service** — Kintone implementation with OfferCatalog (Starter ₱95k, Enterprise ₱450k+, Retainer ₱85k/mo) + pricing spec including 5-user minimum
 - **WebSite** — publisher linked to Organization, inLanguage=[en,ja,tl]
@@ -439,9 +439,9 @@ Comprehensive technical SEO overhaul addressing the v2 homepage regression and m
 ### Content
 - **Headline metric updated**: "2,400+ users across 50 enterprise clients" (verified from App 230 subtable sum = 2,443 total users)
 - Removed keyword-stuffed meta tags (old version had 80+ keywords = Google spam signal)
-- Client list: ORIX Metro · Daikin · Quipper · AEON Fantasy · GMA Network (swapped in AEON Fantasy over Travel Book PH — larger Japanese client, stronger enterprise signal)
+- Client list: a major vehicle-leasing & finance firm · a global air-conditioning manufacturer · a leading EdTech platform · a major commercial-facility operator · a national broadcast network (swapped in a major commercial-facility operator over Travel Book PH — larger Japanese client, stronger enterprise signal)
 - Specific stats softened to ranges ("Days, not months", "Under $20/mo") where false precision risked overclaiming
-- Named case studies preserved: ORIX (1,000+ users, 4 years), Daikin (5-day dispatch build), Quipper (4 automated workflows), AEON Fantasy (legacy tools → platform)
+- Named case studies preserved: a major vehicle-leasing & finance firm (1,000+ users, 4 years), a global air-conditioning manufacturer (5-day dispatch build), a leading EdTech platform (4 automated workflows), a major commercial-facility operator (legacy tools → platform)
 - Pricing: ₱95K Starter / ₱450K+ Enterprise / Custom Ops Partnership (unchanged structure)
 
 ### JP version (native, not translated)

@@ -1,13 +1,13 @@
 # Edamame Inc. — Official Kintone Partner in the Philippines
 
-> Edamame Inc. is the official Kintone partner in the Philippines and the 2024 Cybozu Global Partner of the Year. We help Philippine and Japanese-affiliated businesses build custom CRM, inventory, HR, and workflow applications using Kintone's no-code platform. Based in Pasig City, Metro Manila, we deliver in English and native-level business Japanese — the only Kintone partner in the Philippines that does so. Our small team scales by running internal operations on AI infrastructure (under $20/month), then ships the same operational discipline to every client engagement.
+> Edamame Inc. is the official Kintone partner in the Philippines and the winner of Cybozu's 2024 Cybozu Global Award — Asia (the sole Asia-region recipient). We help Philippine and Japanese-affiliated businesses build custom CRM, inventory, HR, and workflow applications on Kintone's no-code platform. Based in Pasig City, Metro Manila, we deliver in English and native-level business Japanese. We run our own internal operations on AI infrastructure and bring the same operational discipline to every client engagement.
 
 ## Company Information
 - Company: Edamame Inc.
 - Role: Official Kintone Partner in the Philippines
-- Award: 2024 Kintone Global Partner of the Year (Cybozu)
+- Award: 2024 Cybozu Global Award — Asia (sole Asia-region recipient)
 - Founder/CEO: Tom Arai (Japanese, Tokyo-trained, Pasig-resident since 2018)
-- Founded: 2020
+- Founded: 2019
 - Location: 15F Jollibee Tower, Ortigas Center, Pasig City, Metro Manila 1605, Philippines
 - Phone: +63 928 872 7958
 - Email: kintone@edamame-jp.com
@@ -18,20 +18,19 @@
 - Facebook: https://www.facebook.com/kintoneph/
 
 ## What We Do
-Edamame Inc. implements Kintone, a no-code business application platform by Cybozu (Japan's leading workplace software company, trusted by 37,000+ companies globally). We help Philippine businesses replace spreadsheets, disconnected tools, and complex ERP systems with custom apps built in days — not months. No coding or developers required.
+Edamame Inc. implements Kintone, a no-code business application platform by Cybozu (a leading Japanese workplace-software company used by tens of thousands of companies globally). We help Philippine businesses replace spreadsheets, disconnected tools, and complex ERP systems with custom apps built in days — not months. No coding or developers required.
 
-## Scale of Current Operations
+## Scale of Operations
 - Enterprise clients: 50+ active deployments
-- Users deployed: 2,400+ across all client environments
-- Monthly recurring revenue: ~₱1.87M PHP
-- Internal AI operational cost: under $20/month (Claude Opus 4.7 + custom infrastructure)
-- Team: small by design — we don't grow into a staff-heavy agency
+- Users deployed: 2,400+ across client environments
+- Internal operations: run on Claude and AI infrastructure rather than added headcount
+- Team: small by design — we scale delivery with AI, not a staff-heavy agency
 
 ## Key Services
 - Custom Kintone app development (CRM, inventory, HR, project management, any workflow)
 - JavaScript customization for advanced needs
 - AI-powered solutions: lead scoring, email drafting, document parsing, meeting summaries
-- KinPlug suite — our own Kintone plugin line (PDF Pro, Mail, Lookup+, Flow)
+- KinPlug suite — our own Kintone plugin line (PDF Pro, Mail, Lookup+, Export+)
 - System integration (REST API, webhooks, Gmail, Slack, accounting software)
 - Data migration from Odoo, Salesforce, spreadsheets
 - Bilingual EN/JP UI by default
@@ -40,35 +39,22 @@ Edamame Inc. implements Kintone, a no-code business application platform by Cybo
 ## Industries Served
 Manufacturing, logistics, real estate, healthcare, BPO, construction, education, retail, financial services, professional services.
 
-## Notable Enterprise Clients (publicly approved names)
-- ORIX Metro Leasing and Finance Corporation (financial services, 1,000+ users, since 2022)
-- DAIKIN Airconditioning Philippines (manufacturing, 450+ users, since 2024)
-- Quipper (EdTech, 200+ users, since 2023)
-- AEON Fantasy Philippines (retail, 100+ users, since 2023)
-- GMA Network (media)
-- Maximum Solutions Corporation (IT solutions)
-- Guhring Philippines Inc. (precision tools manufacturing)
-- A2 Network (logistics)
-
-Workflow specifics, app counts, and operational details remain confidential per client agreements.
-
-## Pricing (canonical)
-- Kintone licenses: ₱1,000 per user per month (5-user minimum, ₱5,000/month floor)
-- Starter package: ₱95k one-time (single app, 10–25 users)
-- Enterprise package: ₱450k+ one-time (multi-app, 50–500 users, full AI layer + KinPlug bundle)
-- Retainer: from ₱85k/month (ongoing build + optimization)
+## Enterprise Clients
+We serve dozens of enterprise clients across the Philippines, including Japanese-affiliated businesses. Publicly referenceable clients include Maximum Solutions Corporation and Guhring Philippines. Other client names, user counts, and workflow specifics remain confidential per client agreements.
 
 ## Competitive Advantages
-- Deploy in days, not months (vs Odoo's 3–12 month implementation)
-- No developers needed (vs Odoo/Salesforce requiring Python/Apex developers)
-- Predictable per-engagement pricing — no hidden costs (vs Odoo's reported 2–5x budget overruns)
+- Deploy in days, not months (vs Odoo's multi-month implementations)
+- No developers needed (vs Odoo/Salesforce, which require Python/Apex developers)
+- Per-engagement scope, not timesheets
 - Local Philippine support in English and Japanese
-- AI App Creator ships now via Kintone AI Lab (vs competitors announcing future AI features)
-- The only Kintone partner in the Philippines with a dedicated office and Japanese-native CEO
+- AI App Creator available now via Kintone AI Lab
+- Dedicated Philippine office with a Japanese-native CEO
 
 ## Key Pages
 - Homepage (English): https://edamame-jp.com/kintone-philippines/en/
 - Homepage (Japanese): https://edamame-jp.com/kintone-philippines/ja/
+- What is Kintone? (English): https://edamame-jp.com/kintone-philippines/en/what-is-kintone/
+- What is Kintone? (Japanese): https://edamame-jp.com/kintone-philippines/ja/what-is-kintone/
 - Customers: https://edamame-jp.com/kintone-philippines/en/customers/
 - Customers (Japanese): https://edamame-jp.com/kintone-philippines/ja/customers/
 - Industries: https://edamame-jp.com/kintone-philippines/en/industries/
@@ -110,15 +96,16 @@ Workflow specifics, app counts, and operational details remain confidential per 
 - Education: https://edamame-jp.com/kintone-philippines/en/industries/education/
 
 ## 日本語情報 (Japanese)
-枝豆株式会社はフィリピンにおけるサイボウズ公式キントーンパートナーです。2024年サイボウズ・グローバルパートナー・オブ・ザ・イヤー受賞。フィリピンで唯一、日本人ネイティブCEO（Tom Arai、東京で修行後2018年からパシッグ常駐）が在籍するKintoneパートナーとして、日系企業のデジタル変革を支援しています。
+枝豆株式会社はフィリピンにおけるサイボウズ公式キントーンパートナーです。サイボウズ「2024 Cybozu Global Award — Asia」（アジア地域唯一の受賞）を受賞。フィリピンで日本人ネイティブCEO（Tom Arai、東京で経験を積み2018年からパシッグ常駐）が在籍し、日系企業のデジタル変革を支援しています。英語と日本語（ビジネスネイティブレベル）で対応します。
 
 - 対応言語: 日本語、英語
-- 主要日系顧客: ORIX Metro、ダイキン・フィリピン、AEONファンタジー、Quipper、グーリングフィリピン
+- 主要顧客: Maximum Solutions Corporation、Guhring Philippines（その他の顧客名・利用規模は守秘義務により非公開）
 - 業種: 製造業、金融、不動産、物流、BPO、建設、教育、小売
-- 所在地: 15F ジョリビータワー、オルティガスセンター、パシッグ市、メトロマニラ
+- 所在地: 15F Jollibee Tower, Ortigas Center, Pasig City, Metro Manila 1605, Philippines
 - 電話: +63 928 872 7958
 - メール: kintone@edamame-jp.com
 - 日本語ホームページ: https://edamame-jp.com/kintone-philippines/ja/
+- Kintoneとは（日本語）: https://edamame-jp.com/kintone-philippines/ja/what-is-kintone/
 - 日本語導入事例: https://edamame-jp.com/kintone-philippines/ja/customers/
 - 日本語業界別ページ: https://edamame-jp.com/kintone-philippines/ja/industries/
 - 日本語ブログ: https://edamame-jp.com/kintone-philippines/ja/blog/

@@ -8,7 +8,7 @@
 ## Context
 
 edamame is the official Kintone (Cybozu) partner in the Philippines, 2024 Cybozu
-Global Partner of the Year, with the highest Kintone client count in Southeast
+Global Award — Asia, with the a strong Philippine enterprise client base in Southeast
 Asia. The EN homepage is the page PH buyers actually land on. The buyer is a PH
 corporate decision-maker (IT manager, ops head, executive) choosing a
 business-critical system. They are afraid of failure (50–75% of PH ERP projects
@@ -53,7 +53,7 @@ against this buyer:
 
 > For Philippine enterprises choosing a business-critical operations platform,
 > **edamame is the official Kintone partner that makes the safe choice the
-> obvious one** — 2024 Cybozu Global Partner of the Year, the highest Kintone
+> obvious one** — 2024 Cybozu Global Award — Asia, the highest Kintone
 > client count in Southeast Asia, delivering on the ground in Metro Manila in
 > English, Filipino, and Japanese. We beat the 50–75% PH ERP failure rate by
 > deploying in days, starting small, and standing behind every build locally.
@@ -83,7 +83,7 @@ Footer (NAP).
   flagged) + 2 published case files + 1 flagged testimonial placeholder.
 - **Risk reversal:** free consultation, 30-day trial, start-small, migration
   handled, same-day local support, honest-fit promise.
-- **Concreteness:** PHP pricing, "days not months," Daikin 3-months→days, 100
+- **Concreteness:** PHP pricing, "days not months," a global air-conditioning manufacturer 3-months→days, 100
   apps, "from ₱1,000/user/month."
 - **Local resonance:** Metro Manila/Pasig, trilingual EN/FIL/JP, Japanese-
   affiliated firm fluency.
