@@ -70,8 +70,8 @@ Local Philippine: `0928 872 7958`
 ## Canonical Tagline
 
 **Short (under 60 chars)**: Official Kintone Partner Philippines
-**Medium (under 120 chars)**: Official Kintone Partner in the Philippines. 2024 Cybozu Global Partner of the Year.
-**Long (under 160 chars)**: Official Kintone Partner in the Philippines. 2024 Cybozu Global Partner of the Year. Custom business apps built in days for 50+ enterprise clients.
+**Medium (under 120 chars)**: Official Kintone Partner in the Philippines. 2024 Cybozu Global Award — Asia.
+**Long (under 160 chars)**: Official Kintone Partner in the Philippines. 2024 Cybozu Global Award — Asia. Custom business apps built in days for 50+ enterprise clients.
 
 ## Canonical Year Founded
 
@@ -142,13 +142,13 @@ CS20190000095 (Securities and Exchange Commission, Philippines)
 
 ## Press release templates
 
-### Tier 1 PR: "edamame wins 2024 Cybozu Global Partner of the Year"
+### Tier 1 PR: "edamame wins 2024 Cybozu Global Award — Asia"
 
-**Headline**: edamame Inc. Named 2024 Kintone Global Partner of the Year by Cybozu
+**Headline**: edamame Inc. Named 2024 Cybozu Global Award — Asia by Cybozu
 
 **Dateline**: PASIG CITY, METRO MANILA, PHILIPPINES — [date]
 
-**Lead**: Edamame Inc., the official Kintone implementation partner in the Philippines, has been named the 2024 Global Partner of the Year by Cybozu Inc., the Japanese software company behind Kintone. The award recognizes edamame's growth, technical excellence, and enterprise client base across the Philippines, including deployments at ORIX METRO, Daikin Airconditioning Philippines, Quipper, and AEON Fantasy.
+**Lead**: Edamame Inc., the official Kintone implementation partner in the Philippines, has been named the 2024 Global Award — Asia by Cybozu Inc., the Japanese software company behind Kintone. The award recognizes edamame's growth, technical excellence, and enterprise client base across the Philippines, including deployments at a major vehicle-leasing & finance firm, a global air-conditioning manufacturer, a leading EdTech platform, and a major commercial-facility operator.
 
 [Continue with body paragraphs covering: what edamame does, the scale of operations, the AI-merged business model, the Tom Arai story, quotes from Tom, and call to action.]
 
