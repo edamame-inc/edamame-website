@@ -1,5 +1,11 @@
 # Edamame Website Changelog
 
+## [Blog GEO/E-E-A-T retrofit + de-pricing — final 5 EN articles] — 2026-06-24
+
+### Changed
+- **Applied the same proven treatment (author entity + freshness + answer-first + Kintone de-pricing) to the 5 remaining EN blogs** that still lacked it: `approval-workflow-software-philippines`, `business-process-automation-philippines`, `custom-crm-philippines`, `customer-portal-philippines`, `digital-transformation-philippines-2026`. Per article: (1) visible byline "By [Tom Arai, Founder & CEO, Edamame Inc.](/kintone-philippines/en/about/) · Updated 2026-06-24" — three articles carried an ad-hoc "Tom Arai, CEO" meta span that was normalized to this exact form + About link (their date span relabelled "Published:"), the other two got a byline paragraph under the H1; (2) `Article` JSON-LD `author` set to the canonical `Person` (Tom Arai; jobTitle "Founder & CEO"; `url` → About page), `datePublished` preserved, `dateModified` refreshed to 2026-06-24 (added where missing on custom-crm); (3) an answer-first "Short answer:" lead added to the three articles whose intro deferred its verdict (custom-crm and digital-transformation already opened with a direct answer and were left as-is).
+- **Removed every edamame-stated peso figure for Kintone's own price** across these 5 (20 figures), in body copy, the "Top solutions" lists, a cost-comparison table cell, a stat box, and the matching `FAQPage` JSON-LD answers — replaced with qualitative language ("Kintone uses simple per-user pricing — free consultation for exact figures"). All competitor/market pricing left intact (Kissflow, Monday.com, Zoho, Power Automate, Zapier, Make, Freshdesk, Zendesk, Salesforce, HubSpot, Odoo, SAP/Oracle, plus custom-development and ERP cost ranges). JSON-LD remains valid on all 5. This completes the Kintone-own-pricing scrub across the EN blog set begun with the top 16.
+
 ## [Blog pricing compliance — remove Kintone's own peso figures (16 EN articles)] — 2026-06-23
 
 ### Changed
