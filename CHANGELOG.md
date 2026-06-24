@@ -1,5 +1,12 @@
 # Edamame Website Changelog
 
+## [Blog GEO/E-E-A-T retrofit + de-pricing — 12 JA articles] — 2026-06-24
+
+### Changed
+- **Applied the GEO/E-E-A-T retrofit + Kintone de-pricing to all 12 Japanese blog articles**, in natural Japanese, matching the standard set across the 21 EN articles. Per article: (1) a visible byline 「著者：[Tom Arai（枝豆株式会社 創業者・CEO）](/kintone-philippines/ja/about/) · 最終更新：2026-06-24」 — five newer articles had an ad-hoc `<span class="author">Tom Arai</span>` normalized to this form + About link (their date span relabelled 「公開日：」), the other seven got a byline paragraph under the H1; (2) `Article` JSON-LD `author` set to the canonical `Person` (Tom Arai; jobTitle "Founder & CEO"; `url` → the JA About page), replacing the one `Organization` author and updating five that pointed at `/ja/`; `datePublished` preserved, `dateModified` refreshed to 2026-06-24 (added where missing); (3) an answer-first 「結論から言うと、…」 lead added to the nine articles whose intro deferred its verdict (three already opened with a direct answer and were left as-is). Byline title rendered as 「創業者・CEO」 to match the existing `/ja/what-is-kintone/` byline, the `/ja/about/` page, and the `jobTitle` "Founder & CEO" (the brief's wording 「代表取締役・創業者」 conflicts with all three).
+- **Removed every edamame-stated Kintone/edamame own-price figure** across the 11 non-cost articles — in `₱`, ペソ, `$`, and 円 notation — covering FAQPage JSON-LD answers, comparison/TCO tables (the Kintone "win" cells), the related-article cards, one Article JSON-LD headline, and body copy, replaced with qualitative Japanese (「シンプルなユーザー単位の月額制（正確な料金は無料相談でご案内します）」). All competitor/market/operational figures preserved (Salesforce, Odoo, SAP/Oracle, MES/ERP, PLDT/Globe/Google/Xero, Zendesk/Genesys, salary/printing/overtime ROI inputs, etc.). Also corrected one award overstatement (「全世界の…最も優れた実績」→ canonical 「2024 Cybozu Global Award（アジア地域唯一の受賞）」) and softened two self-superlatives. JSON-LD valid on all 12.
+- **Deferred:** `kintone-philippines-hiyou` (費用 = "cost"; its premise *is* Kintone pricing). It received the byline/author/date retrofit only — its pricing content (and the embedded 「最もコストパフォーマンスの高い」 line) is left untouched pending a separate decision.
+
 ## [Blog GEO/E-E-A-T retrofit + de-pricing — final 5 EN articles] — 2026-06-24
 
 ### Changed
