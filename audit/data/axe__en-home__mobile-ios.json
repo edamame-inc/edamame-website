@@ -1,0 +1,42 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 16,
+    "nodes": [
+      {
+        "target": ".cred-stat:nth-child(1) > .cred-num > .u",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #a8863f, background color: #ffffff, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".cred-stat:nth-child(3) > .cred-num > .u",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #a8863f, background color: #ffffff, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".cred-stat:nth-child(4) > .cred-num > .u",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.41 (foreground color: #a8863f, background color: #ffffff, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".trust-logos > a:nth-child(5)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.89 (foreground color: #777672, background color: #f0ede8, font size: 15.8pt (21px), fon"
+      },
+      {
+        "target": ".trust-logos > a:nth-child(6)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.89 (foreground color: #777672, background color: #f0ede8, font size: 15.8pt (21px), fon"
+      }
+    ]
+  },
+  {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "n": 1,
+    "nodes": [
+      {
+        "target": ".cmp-wrap",
+        "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      }
+    ]
+  }
+]

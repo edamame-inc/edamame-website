@@ -1,0 +1,30 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 29,
+    "nodes": [
+      {
+        "target": ".breadcrumb",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.4 (foreground color: #888883, background color: #fafaf8, font size: 10.8pt (14.4px), fo"
+      },
+      {
+        "target": ".breadcrumb > a[href$=\"en/\"]",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.03 (foreground color: #fefefe, background color: #fafaf8, font size: 10.8pt (14.4px), f"
+      },
+      {
+        "target": ".breadcrumb > a[href$=\"blog/\"]",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.03 (foreground color: #fefefe, background color: #fafaf8, font size: 10.8pt (14.4px), f"
+      },
+      {
+        "target": "tr:nth-child(2) > .check",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #4a7c59, background color: #f0ede8, font size: 10.8pt (14.4px), f"
+      },
+      {
+        "target": "tr:nth-child(4) > .check:nth-child(4)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #4a7c59, background color: #f0ede8, font size: 10.8pt (14.4px), f"
+      }
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 11,
+    "nodes": [
+      {
+        "target": ".chapter:nth-child(1) > .chapter-number",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      },
+      {
+        "target": ".chapter:nth-child(2) > .chapter-number",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      },
+      {
+        "target": "cite",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #4a7c59, background color: #f0ede8, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".chapter:nth-child(3) > .chapter-number",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      },
+      {
+        "target": ".chapter:nth-child(4) > .chapter-number",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      }
+    ]
+  }
+]

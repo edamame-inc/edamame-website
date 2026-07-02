@@ -1,0 +1,30 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 6,
+    "nodes": [
+      {
+        "target": ".footer-col:nth-child(2) > h4",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.21 (foreground color: #6a6a69, background color: #1a1a18, font size: 8.6pt (11.52px), f"
+      },
+      {
+        "target": ".footer-col:nth-child(3) > h4",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.21 (foreground color: #6a6a69, background color: #1a1a18, font size: 8.6pt (11.52px), f"
+      },
+      {
+        "target": ".footer-col:nth-child(4) > h4",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.21 (foreground color: #6a6a69, background color: #1a1a18, font size: 8.6pt (11.52px), f"
+      },
+      {
+        "target": ".footer-col:nth-child(5) > h4",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.21 (foreground color: #6a6a69, background color: #1a1a18, font size: 8.6pt (11.52px), f"
+      },
+      {
+        "target": ".footer-bottom > p",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.72 (foreground color: #5f5f5d, background color: #1a1a18, font size: 9.6pt (12.8px), fo"
+      }
+    ]
+  }
+]

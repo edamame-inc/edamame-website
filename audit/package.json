@@ -1,0 +1,13 @@
+{
+  "name": "edamame-ux-audit",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Read-only UI/UX audit harness for edamame-jp.com (not part of the site build).",
+  "dependencies": {
+    "@axe-core/playwright": "^4.10.1",
+    "playwright": "^1.49.0",
+    "lighthouse": "^12.2.1",
+    "chrome-launcher": "^1.1.2"
+  }
+}
