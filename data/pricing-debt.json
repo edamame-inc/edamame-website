@@ -1,0 +1,17 @@
+{
+  "_comment": "Known legacy TCO/comparison tables whose figures were computed at the OLD ₱1,000 licence rate, or which embed implementation cost. They are NOT auto-fixable by regex: each has different assumptions (user counts, term length, whether implementation is included). validate-pricing.mjs WARNS on these and FAILS on anything not listed, so new violations can never hide behind this list. Each must be reworked by hand and removed from this file.",
+  "owner": "next pricing pass",
+  "paths": [
+    "kintone-philippines/en/blog/custom-crm-philippines/index.html",
+    "kintone-philippines/en/blog/hubspot-pricing-philippines/index.html",
+    "kintone-philippines/en/blog/manufacturing-software-philippines/index.html",
+    "kintone-philippines/en/blog/monday-com-pricing-philippines/index.html",
+    "kintone-philippines/en/blog/odoo-alternative-philippines/index.html",
+    "kintone-philippines/en/blog/odoo-pricing-philippines/index.html",
+    "kintone-philippines/en/blog/project-management-software-philippines/index.html",
+    "kintone-philippines/en/blog/salesforce-pricing-philippines/index.html",
+    "kintone-philippines/en/blog/sap-alternative-philippines/index.html",
+    "kintone-philippines/en/roi-calculator/index.html",
+    "kintone-philippines/en/vs/index.html"
+  ]
+}

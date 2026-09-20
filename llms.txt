@@ -50,6 +50,9 @@ We serve dozens of enterprise clients across the Philippines, including Japanese
 - AI App Creator available now via Kintone AI Lab
 - Dedicated Philippine office with a Japanese-native CEO
 
+## Pricing (Kintone licence pricing)
+Kintone licence: from ₱1,050 per user/month. Implementation is scoped per engagement and quoted free after a consultation — Edamame does not publish implementation fees. Source of truth: /data/pricing.json.
+
 ## Key Pages
 - Homepage (English): https://edamame-jp.com/kintone-philippines/en/
 - Homepage (Japanese): https://edamame-jp.com/kintone-philippines/ja/

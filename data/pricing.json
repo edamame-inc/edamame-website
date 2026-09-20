@@ -1,0 +1,25 @@
+{
+  "_comment": "SINGLE SOURCE OF TRUTH for every price displayed on edamame-jp.com. Never hardcode a price in a page. Every rendered price lives inside <span data-price=\"...\">. Run scripts/sync-pricing.mjs to propagate, scripts/validate-pricing.mjs to enforce.",
+  "kintone_from": {
+    "amount": 1050,
+    "currency": "PHP",
+    "unit": "per user/month",
+    "display_en": "from ₱1,050 per user/month",
+    "display_ja": "1ユーザーあたり月額1,050ペソ〜",
+    "effective_date": "2026-09-20"
+  },
+  "implementation": {
+    "policy": "NEVER publish a figure for Edamame implementation or service fees.",
+    "display_en": "scoped per engagement — free quote",
+    "display_ja": "案件ごとのお見積り（無料）"
+  },
+  "derived": {
+    "_comment": "Computed by scripts/sync-pricing.mjs from kintone_from.amount — never hand-edit.",
+    "kintone-25u-year": {
+      "users": 25,
+      "months": 12,
+      "label_en": "₱{K}K/year",
+      "label_ja": "年間{K}万ペソ"
+    }
+  }
+}

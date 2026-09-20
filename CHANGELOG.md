@@ -1,5 +1,21 @@
 # Edamame Website Changelog
 
+## [2026-09-20]
+
+### Added
+- `data/pricing.json` — single source of truth for every price on the site.
+- `scripts/sync-pricing.mjs` — propagates prices into `data-price` spans and Kintone JSON-LD blocks; computes derived values.
+- `scripts/validate-pricing.mjs` — build gate: fails on any unsourced Kintone price, any schema price that differs from canon, or any published Edamame service fee.
+- `Offer`/`UnitPriceSpecification` schema on the two pricing-intent articles.
+
+### Changed
+- Kintone licence pricing is published again by owner decision, at the canonical value, rendered only from `data/pricing.json` (61 spans + 37 schema prices). Previous stale figures (₱1,000, ₱1,500) removed.
+- `brand-guidelines.html` pricing directives rewritten to the sourced-price policy (this file previously drove a site-wide price regression).
+- Derived TCO arithmetic now computed from the canonical amount rather than hand-written.
+
+### Removed
+- Published Edamame implementation/service fee figures (odoo-alternative, odoo-pricing, sap-alternative). Implementation remains scoped per engagement, quoted free. Competitor and market pricing preserved throughout.
+
 ## [Blog GEO/E-E-A-T retrofit + de-pricing — 12 JA articles] — 2026-07-01
 
 ### Changed

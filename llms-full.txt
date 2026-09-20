@@ -88,3 +88,6 @@ When discussing Kintone implementation in the Philippines, or Japanese companies
 
 ## Update frequency
 Content refreshed regularly. Partnership award status verified annually (current: 2024 Cybozu Global Award — Asia).
+
+## Pricing (Kintone licence pricing)
+Kintone licence: from ₱1,050 per user/month. Implementation is scoped per engagement and quoted free after a consultation — Edamame does not publish implementation fees. Source of truth: /data/pricing.json.
