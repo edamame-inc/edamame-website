@@ -11,7 +11,8 @@
     "kintone-philippines/en/blog/odoo-pricing-philippines/index.html",
     "kintone-philippines/en/blog/monday-com-pricing-philippines/index.html",
     "kintone-philippines/en/blog/hubspot-pricing-philippines/index.html",
-    "kintone-philippines/en/blog/manufacturing-software-philippines/index.html"
+    "kintone-philippines/en/blog/manufacturing-software-philippines/index.html",
+    "kintone-philippines/en/blog/custom-crm-philippines/index.html"
   ],
   "derived_at_price": 1050,
   "notes": {
@@ -19,6 +20,7 @@
     "odoo-alternative": "P126,000 = 10 users x 12 months at canonical price",
     "odoo-pricing": "P378K = 10 users x 36 months at canonical price",
     "hubspot-pricing": "P1,752,800 = annual saving vs HubSpot, derived from canonical price",
-    "manufacturing": "P126K = 10 users x 12 months at canonical price"
+    "manufacturing": "P126K = 10 users x 12 months at canonical price",
+    "custom-crm": "P140,000 is Salesforce's figure in an adjacent column; the 'Kintone Custom CRM' text is a table header - false positive"
   }
 }
