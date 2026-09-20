@@ -263,7 +263,7 @@ gtag('config', 'G-YF1198H5CL');
             <li>Asymmetric pod-shaped corner radius system</li>
             <li>Homepage structural contract (prevents v1→v2 regression)</li>
             <li>Blog surfacing rules: min. 6 article links from homepage</li>
-            <li>Pricing: communicate the licensing model qualitatively (per-user monthly subscription, small user minimum) and direct to a free consultation for a quote — never publish peso figures</li>
+            <li>Pricing: communicate the licensing model qualitatively (per-user monthly subscription, small user minimum) and direct to a free consultation for a quote — never hardcode a peso figure — render it from data/pricing.json</li>
         </ul>
     </div>
     <div class="cover__version">v2.0 · April 2026</div>
@@ -478,7 +478,7 @@ gtag('config', 'G-YF1198H5CL');
         <tr><td>English body text</td><td>Conversational, PH-market specific. DM Sans.</td></tr>
         <tr><td>Japanese body text</td><td>Native-level business Japanese. No unnecessary katakana. Noto Sans JP.</td></tr>
         <tr><td>JA CTA text</td><td>Action-oriented: "無料で相談する" not "コンサルテーションを予約する"</td></tr>
-        <tr><td>Pricing</td><td>Never publish peso figures. Describe the model: a per-user monthly subscription with a small user minimum; route to a free consultation for a quote.</td></tr>
+        <tr><td>Pricing</td><td>Kintone’s starting price MAY be published — but ONLY from data/pricing.json, rendered inside &lt;span data-price="kintone-from"&gt;. Never hardcode or invent a price. Edamame implementation/service fees are NEVER published: scope per engagement, free quote.</td></tr>
         <tr><td>Stats in copy</td><td>JetBrains Mono inline for exact figures: <code>2,443 users</code>, <code>50 clients</code></td></tr>
         <tr><td>Bylines</td><td>"By Tom Arai, edamame"</td></tr>
         <tr><td>Section numbers</td><td>№ 01, № 02, № 03 (not "Section 1" or "Part One")</td></tr>
@@ -746,10 +746,10 @@ border-radius: 40px 12px 40px 12px;  /* gentle pod echo, default for blog cards 
     <h3 style="margin-top:40px;">Copy conventions</h3>
     <table style="color:rgba(255,255,255,0.7);">
         <tr><th style="background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.5);">Context</th><th style="background:rgba(255,255,255,0.05);color:rgba(255,255,255,0.5);">Exact phrasing</th></tr>
-        <tr><td>Top of funnel (homepage, nav)</td><td>"A per-user monthly subscription with a small minimum — get your quote in a free consultation." No peso figures.</td></tr>
+        <tr><td>Top of funnel (homepage, nav)</td><td>"A per-user monthly subscription with a small minimum — get your quote in a free consultation." Prices only via data-price spans sourced from data/pricing.json.</td></tr>
         <tr><td>FAQ / buyer-ready</td><td>"Kintone is licensed per user per month with a small user minimum; implementation is scoped per engagement. Book a free consultation for exact figures." No peso amounts.</td></tr>
         <tr><td>Sales conversation</td><td>"Kintone is priced per user per month with a small user minimum, and our implementation is scoped per engagement — let's set up a free consultation to confirm your numbers." Share figures privately, never on public pages.</td></tr>
-        <tr><td>Pricing page detail</td><td>Explain the model and what drives cost (user count, scope) qualitatively; no peso figures or per-user math. Primary CTA: free consultation for a quote.</td></tr>
+        <tr><td>Pricing page detail</td><td>Explain the model and what drives cost (user count, scope) qualitatively; prices only via data-price spans sourced from data/pricing.json; no hand-written per-user math. Primary CTA: free consultation for a quote.</td></tr>
     </table>
 </section>
 
