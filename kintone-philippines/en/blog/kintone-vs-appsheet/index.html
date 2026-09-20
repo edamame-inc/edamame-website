@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kintone vs AppSheet: Which Fits a Philippine Team?</title>
+<meta name="description" content="A practical comparison of Kintone and Google AppSheet for Philippine businesses — licensing, who maintains the apps, and when each is the right call.">
+<meta name="author" content="Edamame Inc.">
+<link rel="canonical" href="https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-appsheet/">
+<meta property="og:title" content="Kintone vs AppSheet: Which Fits a Philippine Team?">
+<meta property="og:description" content="A practical comparison of Kintone and Google AppSheet for Philippine businesses — licensing, who maintains the apps, and when each is the right call.">
+<meta property="og:url" content="https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-appsheet/">
+<meta property="og:type" content="article">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/polish.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Kintone vs AppSheet: Which Fits a Philippine Team?","description":"A practical comparison of Kintone and Google AppSheet for Philippine businesses — licensing, who maintains the apps, and when each is the right call.","author":{"@type":"Person","name":"Tom Arai","jobTitle":"Founder & CEO","url":"https://edamame-jp.com/kintone-philippines/en/about/"},"publisher":{"@type":"Organization","name":"Edamame Inc.","url":"https://edamame-jp.com/kintone-philippines/en/"},"datePublished":"2026-09-20","dateModified":"2026-09-20","inLanguage":"en","mainEntityOfPage":"https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-appsheet/"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is Google AppSheet free?","acceptedAnswer":{"@type":"Answer","text":"There is a free tier, but it is a prototyping tier: you can build and test with up to ten test users with no time limit, and real production users require a paid plan. Separately, AppSheet Core is included with most paid Google Workspace editions, which is a genuinely free path for many Workspace organisations."}},{"@type":"Question","name":"How much does AppSheet cost per user?","acceptedAnswer":{"@type":"Answer","text":"Starter is around US$5 per user per month and Core around US$10 per user per month, with Enterprise Plus published at US$20 per user per month. Publicly shared apps without sign-in use Publisher Pro, which is priced per app rather than per user."}},{"@type":"Question","name":"Should we use AppSheet or Kintone in the Philippines?","acceptedAnswer":{"@type":"Answer","text":"If you already pay for Google Workspace Business Plus or Enterprise and your apps are spreadsheet-backed data capture, AppSheet is hard to beat on cost. If your apps need relational data, multi-step approvals, per-record permissions and local training and support, Kintone is the better fit."}},{"@type":"Question","name":"Can Kintone and AppSheet run side by side?","acceptedAnswer":{"@type":"Answer","text":"Yes. A common arrangement keeps light field-data apps on AppSheet where Google Sheets is already the source of truth, and runs the operational core on Kintone, with data exchanged through Kintone's REST API and webhooks."}},{"@type":"Question","name":"What happens when an AppSheet app outgrows Google Sheets?","acceptedAnswer":{"@type":"Answer","text":"That is the usual migration trigger. Spreadsheet backends struggle once records must relate to each other, approvals become multi-step, and multiple teams edit simultaneously. Kintone provides the relational structure, workflow and permissions as platform features rather than workarounds."}},{"@type":"Question","name":"Is there a Kintone partner in the Philippines?","acceptedAnswer":{"@type":"Answer","text":"Yes. Edamame Inc. is the official Kintone partner in the Philippines, based in Pasig City, and recipient of the 2024 Cybozu Global Award — Asia, delivering in English and native-level business Japanese."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://edamame-jp.com/kintone-philippines/en/"},{"@type":"ListItem","position":2,"name":"Field Notes","item":"https://edamame-jp.com/kintone-philippines/en/blog/"},{"@type":"ListItem","position":3,"name":"Kintone vs Google AppSheet: which fits a Philippine team?","item":"https://edamame-jp.com/kintone-philippines/en/blog/kintone-vs-appsheet/"}]}</script>
+<style>
+:root {
+    --bg:#FAFAF8;--bg-alt:#F0EDE8;--dark:#1A1A18;--text:#2D2D2A;--muted:#6B6B66;--light:#8A8A85;
+    --primary:#4A7C59;--primary-light:#6B9B7A;--primary-dark:#3A6349;
+    --accent:#C4A35A;--kintone:#ED1C24;--kintone-light:#FF5A5F;
+    --font:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+    --font-display:'DM Serif Display',Georgia,serif;
+    --ease:cubic-bezier(0.16,1,0.3,1);
+    --shadow-md:0 8px 24px rgba(0,0,0,0.06);--radius:16px;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{max-width:1280px;margin:0 auto;padding:0 clamp(1.5rem,5vw,4rem)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:1000;background:rgba(250,250,248,0.97);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,0.05);padding:0.85rem 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:0.65rem}
+.logo-icon{width:42px;height:35px}
+.logo-text{font-size:1.35rem;font-weight:700;letter-spacing:-0.02em;color:var(--dark);font-family:'DM Sans',sans-serif}
+.nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+.nav-link{font-size:0.85rem;font-weight:600;color:var(--muted);transition:color 0.3s}
+.nav-link:hover{color:var(--text)}
+.nav-cta{background:linear-gradient(135deg,#ED1C24,#FF5A5F);color:#fff;padding:0.6rem 1.25rem;border-radius:100px;font-size:0.85rem;font-weight:600;transition:all 0.3s var(--ease)}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(237,28,36,0.25)}
+.lang-sw{display:flex;gap:3px;background:var(--bg-alt);border-radius:100px;padding:3px;margin-left:1rem}
+.lang-btn{padding:0.35rem 0.9rem;border-radius:100px;font-size:0.8rem;font-weight:600;color:var(--muted);transition:all 0.3s;font-family:'DM Sans',sans-serif}
+.lang-btn.active{background:var(--primary);color:#fff}
+.mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px}
+.mobile-toggle span{width:22px;height:2px;background:var(--dark);border-radius:2px}
+.mobile-menu{position:fixed;inset:0;background:var(--bg);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;opacity:0;visibility:hidden;transition:all 0.4s var(--ease)}
+.mobile-menu.active{opacity:1;visibility:visible}
+.mobile-menu-close{position:absolute;top:1.5rem;right:1.5rem;width:48px;height:48px;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.mobile-menu-links{list-style:none;text-align:center}
+.mobile-menu-links li{margin-bottom:1.5rem}
+.mobile-menu-links a{font-size:1.4rem;font-weight:700;color:var(--text)}
+.mobile-cta-btn{display:inline-block;margin-top:12px;padding:14px 28px!important;background:linear-gradient(135deg,var(--primary),var(--primary-dark))!important;color:#fff!important;border-radius:100px;font-size:1rem!important}
+
+/* BREADCRUMB */
+.breadcrumb-bar{padding:16px 0;border-bottom:1px solid rgba(0,0,0,0.04)}
+.breadcrumb{font-size:0.82rem;color:var(--muted)}
+.breadcrumb a{color:var(--primary);font-weight:500}
+.breadcrumb a:hover{text-decoration:underline}
+
+/* ARTICLE */
+.article-wrap{max-width:800px;margin:0 auto;padding:clamp(32px,6vw,56px) clamp(1.5rem,5vw,4rem)}
+.article-wrap h1{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);line-height:1.2;color:var(--dark);margin-bottom:24px}
+.article-wrap h2{font-size:clamp(1.2rem,2.5vw,1.5rem);font-weight:700;color:var(--dark);margin:40px 0 16px;padding-bottom:8px;border-bottom:2px solid var(--bg-alt)}
+.article-wrap h3{font-size:clamp(1rem,2vw,1.2rem);font-weight:700;color:var(--dark);margin:28px 0 12px}
+.article-wrap p{margin-bottom:16px;color:var(--text);line-height:1.75}
+.article-wrap ul,.article-wrap ol{padding-left:24px;margin-bottom:16px}
+.article-wrap li{margin-bottom:8px}
+.article-wrap a{color:var(--primary);font-weight:500}
+.article-wrap a:hover{text-decoration:underline}
+.article-wrap img{max-width:100%;height:auto;border-radius:12px;margin:20px 0}
+.article-wrap table{width:100%;border-collapse:collapse;margin:24px 0;font-size:0.9rem}
+.article-wrap th{background:var(--primary-dark);color:#fff;padding:12px 16px;text-align:left;font-weight:600}
+.article-wrap td{padding:12px 16px;border-bottom:1px solid var(--bg-alt)}
+.article-wrap tr:nth-child(even) td{background:var(--bg-alt)}
+.article-wrap blockquote{border-left:4px solid var(--accent);padding:16px 20px;margin:24px 0;background:rgba(196,163,90,0.06);border-radius:0 12px 12px 0;font-style:italic}
+.article-wrap strong{color:var(--dark)}
+.back-link{display:inline-flex;align-items:center;gap:4px;font-size:0.85rem;font-weight:600;color:var(--primary);margin-bottom:24px}
+.back-link:hover{text-decoration:underline}
+
+/* ARTICLE-SPECIFIC LEGACY CSS */
+
+        
+        /* Hero */
+        .breadcrumb { font-size: 0.9rem; opacity: 0.9; margin-bottom: 20px; }
+        .breadcrumb a { color: var(--white); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        
+        /* Quick Stats */
+        .quick-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: -40px auto 40px;
+            max-width: 800px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .stat-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .stat-card.winner { border: 2px solid var(--primary); }
+        .stat-label { font-size: 0.85rem; color: var(--text-light); margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .stat-value { font-size: 1.4rem; font-weight: 700; }
+        .stat-value.kintone { color: var(--primary); }
+        .stat-value.odoo { color: var(--odoo); }
+        .stat-note { font-size: 0.8rem; color: var(--text-light); margin-top: 5px; }
+        
+        /* Content */
+        .content { max-width: 800px; margin: 0 auto; padding: 40px 20px 60px; }
+        
+        /* TOC */
+        .toc { background: var(--bg); padding: 30px; border-radius: 12px; margin-bottom: 50px; }
+        .toc h2 { font-size: 1.1rem; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
+        .toc ol { margin: 0; padding-left: 25px; columns: 2; column-gap: 30px; }
+        .toc li { margin-bottom: 10px; break-inside: avoid; }
+        .toc a { color: var(--primary); text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        
+        /* Sections */
+        .content h2 { font-size: 1.8rem; color: var(--text); margin: 60px 0 25px; padding-bottom: 12px; border-bottom: 3px solid var(--primary-light); display: flex; align-items: center; gap: 12px; }
+        .content h2:first-of-type { margin-top: 0; }
+        .content h3 { font-size: 1.3rem; color: var(--text); margin: 35px 0 15px; }
+        .content p { margin-bottom: 20px; color: var(--text); }
+        .content ul, .content ol { margin: 20px 0; padding-left: 25px; }
+        .content li { margin-bottom: 12px; }
+        
+        /* Comparison Table */
+        .table-wrapper { overflow-x: auto; margin: 30px 0; border-radius: 12px; box-shadow: 0 2px 15px rgba(0,0,0,0.08); }
+        .comparison-table { width: 100%; border-collapse: collapse; min-width: 500px; }
+        .comparison-table th { padding: 18px 15px; text-align: left; font-weight: 600; font-size: 0.95rem; }
+        .comparison-table th:first-child { background: var(--text); color: var(--white); border-radius: 12px 0 0 0; }
+        .comparison-table th.kintone { background: var(--primary); color: var(--white); }
+        .comparison-table th.odoo { background: var(--odoo); color: var(--white); border-radius: 0 12px 0 0; }
+        .comparison-table td { padding: 15px; border-bottom: 1px solid var(--border); vertical-align: top; }
+        .comparison-table tr:last-child td { border-bottom: none; }
+        .comparison-table tr:hover td { background: var(--bg); }
+        .comparison-table td:first-child { font-weight: 600; background: #fafafa; }
+        .check { color: var(--success); font-weight: 600; }
+        .cross { color: var(--danger); }
+        .check::before { content: '✓ '; }
+        .cross::before { content: '✗ '; }
+        
+        /* Winner Box */
+        .winner-box { background: linear-gradient(135deg, var(--primary-light) 0%, #c8e6c9 100%); border: 2px solid var(--primary); padding: 30px; border-radius: 12px; margin: 35px 0; }
+        .winner-box h3 { color: var(--success); margin: 0 0 12px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .winner-box p { margin: 0; color: var(--text); }
+        
+        /* Warning Box */
+        .warning-box { background: var(--warning-light); border: 2px solid var(--warning); padding: 30px; border-radius: 12px; margin: 35px 0; }
+        .warning-box h3 { color: #e65100; margin: 0 0 15px; font-size: 1.2rem; display: flex; align-items: center; gap: 10px; }
+        .warning-box ul { margin: 0; padding-left: 22px; }
+        .warning-box li { margin-bottom: 10px; color: var(--text); }
+        
+        /* Info Box */
+        .info-box { background: #e3f2fd; border-left: 4px solid #1976d2; padding: 20px 25px; border-radius: 0 12px 12px 0; margin: 30px 0; }
+        .info-box h4 { color: #1565c0; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .info-box p { margin: 0; }
+        
+        /* Verdict Cards */
+        .verdict-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 35px 0; }
+        .verdict-card { padding: 30px; border-radius: 12px; }
+        .verdict-card.kintone { background: var(--primary-light); border: 2px solid var(--primary); }
+        .verdict-card.odoo { background: var(--odoo-light); border: 2px solid var(--odoo); }
+        .verdict-card h4 { font-size: 1.15rem; margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+        .verdict-card.kintone h4 { color: var(--primary-dark); }
+        .verdict-card.odoo h4 { color: var(--odoo); }
+        .verdict-card ul { margin: 0; padding-left: 22px; }
+        .verdict-card li { margin-bottom: 10px; }
+        
+        /* Cost Comparison */
+        .cost-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin: 35px 0; }
+        .cost-card { background: var(--white); border: 2px solid var(--border); border-radius: 12px; overflow: hidden; }
+        .cost-card.kintone { border-color: var(--primary); }
+        .cost-card.odoo { border-color: var(--odoo); }
+        .cost-header { padding: 20px; text-align: center; font-weight: 700; font-size: 1.2rem; }
+        .cost-card.kintone .cost-header { background: var(--primary); color: var(--white); }
+        .cost-card.odoo .cost-header { background: var(--odoo); color: var(--white); }
+        .cost-body { padding: 25px; }
+        .cost-body ul { list-style: none; padding: 0; margin: 0; }
+        .cost-body li { padding: 12px 0; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; }
+        .cost-body li:last-child { border-bottom: none; font-weight: 700; font-size: 1.1rem; background: var(--bg); margin: 15px -25px -25px; padding: 15px 25px; }
+        
+        /* CTA Box */
+        .cta-box { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: var(--white); padding: 50px 40px; border-radius: 16px; text-align: center; margin: 50px 0; }
+        .cta-box h3 { font-size: 1.8rem; margin-bottom: 15px; color: var(--white); }
+        .cta-box p { font-size: 1.1rem; opacity: 0.95; margin-bottom: 25px; color: var(--white); }
+        .cta-btn { display: inline-block; padding: 16px 40px; background: var(--white); color: var(--primary); text-decoration: none; border-radius: 8px; font-weight: 700; font-size: 1.1rem; transition: transform 0.3s, box-shadow 0.3s; }
+        .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+        
+        /* FAQ */
+        .faq-item { border-bottom: 1px solid var(--border); padding: 25px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h3 { font-size: 1.15rem; margin: 0 0 12px; color: var(--primary-dark); }
+        .faq-item p { margin: 0; color: var(--text-light); }
+        
+        /* Related Posts */
+        .related-posts { background: var(--bg); padding: 40px; border-radius: 12px; margin: 50px 0; }
+        .related-posts h3 { margin: 0 0 25px; font-size: 1.3rem; }
+        .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .related-card { background: var(--white); padding: 20px; border-radius: 10px; text-decoration: none; color: var(--text); transition: transform 0.3s, box-shadow 0.3s; }
+        .related-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        .related-card h4 { font-size: 1rem; margin-bottom: 8px; color: var(--primary); }
+        .related-card p { font-size: 0.9rem; color: var(--text-light); margin: 0; }
+        
+        /* Footer */
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .quick-stats { grid-template-columns: 1fr; margin-top: -20px; }
+            .toc ol { columns: 1; }
+            .verdict-grid, .cost-grid, .related-grid { grid-template-columns: 1fr; }
+            .content h2 { font-size: 1.5rem; }
+        }
+.logo-box{width:36px;height:36px;background:rgba(255,255,255,.15);border-radius:8px;display:flex;align-items:center;justify-content:center}
+@media(max-width:768px){.hdr-nav a:not(.hdr-cta){display:none}}
+
+
+/* CTA */
+.cta-banner{background:linear-gradient(135deg,var(--primary-dark),var(--primary));padding:clamp(40px,6vw,60px) 0;text-align:center}
+.cta-banner h2{color:#fff;font-size:clamp(1.3rem,3vw,1.8rem);margin-bottom:8px;font-family:var(--font-display)}
+.cta-banner p{color:rgba(255,255,255,0.7);margin-bottom:24px;font-size:0.95rem}
+.cta-btn{display:inline-flex;padding:14px 32px;background:#fff;color:var(--primary-dark);border-radius:100px;font-weight:700;font-size:0.95rem;transition:all 0.3s var(--ease)}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,0.15)}
+
+/* FOOTER */
+.footer{background:var(--dark);color:rgba(255,255,255,0.7);padding:clamp(48px,8vw,80px) 0 32px}
+.footer .logo-text{color:#fff}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+.footer-brand p{font-size:0.85rem;line-height:1.7;margin:1.25rem 0;max-width:260px;color:rgba(255,255,255,0.5)}
+.footer-social{display:flex;gap:0.75rem}
+.social-link{width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all 0.3s}
+.social-link:hover{background:var(--kintone);transform:translateY(-2px)}
+.social-link svg{width:16px;height:16px}
+.footer-title{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.15em;margin-bottom:1.25rem;color:rgba(255,255,255,0.35);font-weight:700}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:0.5rem}
+.footer-links a,.footer-links span{color:rgba(255,255,255,0.6);font-size:0.85rem;transition:color 0.3s}
+.footer-links a:hover{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.06);font-size:0.8rem;color:rgba(255,255,255,0.3)}
+.footer-legal{display:flex;gap:1.5rem}
+.footer-legal a{color:rgba(255,255,255,0.3)}
+
+@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){
+.nav-links{display:none}.mobile-toggle{display:flex}.lang-sw{margin-left:auto;margin-right:8px}
+.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}
+}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="container"><div class="nav-inner">
+<a href="/kintone-philippines/en/" class="logo">
+<svg class="logo-icon" viewBox="0 0 108 90" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12 C0 27, 0 63, 9 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="18" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<rect x="42" y="18" width="24" height="54" rx="12" fill="#C4A35A"/>
+<rect x="72" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<path d="M99 12 C108 27, 108 63, 99 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
+<span class="logo-text">edamame</span>
+</a>
+<ul class="nav-links">
+<li><a href="/kintone-philippines/en/" class="nav-link">Home</a></li>
+<li><a href="/kintone-philippines/en/blog/" class="nav-link">Blog</a></li>
+<li><a href="/kintone-philippines/en/customers/" class="nav-link">Customers</a></li>
+<li><a href="https://calendly.com/kintoneph/freekintoneappconsultation" target="_blank" class="nav-cta">Free Demo</a></li>
+</ul>
+<div class="lang-sw">
+<a href="/kintone-philippines/en/blog/" class="lang-btn active">EN</a>
+<a href="/kintone-philippines/ja/blog/" class="lang-btn">日本語</a>
+</div>
+<div class="mobile-toggle" onclick="toggleMobileMenu()"><span></span><span></span><span></span></div>
+</div></div></nav>
+<article class="post">
+<header class="post-header">
+<h1>Kintone vs Google AppSheet: which fits a Philippine team?</h1>
+<p class="post-meta">By <a href="/kintone-philippines/en/about/">Tom Arai, Founder &amp; CEO, Edamame Inc.</a> · Updated 2026-09-20</p>
+</header>
+<p class="lead"><strong>Short answer:</strong> If your company runs on Google Workspace Business Plus or Enterprise, AppSheet Core is already included in what you pay, and for simple spreadsheet-backed apps that makes it very hard to beat on cost. We will say that plainly. AppSheet's limits show up later: the free tier is capped at ten test users and is a prototyping tier rather than a production plan, the REST API sits behind Core, single sign-on sits behind Enterprise, and per-user pricing becomes awkward for customer-facing apps. Kintone is the better fit when the app stops being a spreadsheet with a form on top and becomes an operational system with relational data, multi-step approvals and staff who need training and support in their own timezone.</p>
+
+<h2>How Google AppSheet and Kintone differ</h2>
+<p>Google AppSheet is a no-code app platform inside Google Cloud and Google Workspace. Kintone is a no-code business application platform by Cybozu, implemented in the Philippines by Edamame Inc. The table below sets out the differences that actually change a buying decision.</p>
+<table class="cmp"><tbody><tr><td><strong>Entry pricing</strong></td><td>AppSheet Starter is US$5 per user per month and Core is US$10 per user per month. Enterprise Plus is published at US$20 per user per month.</td></tr>
+<tr><td><strong>The Google Workspace bundle</strong></td><td>AppSheet Core is included at no additional cost with most paid Google Workspace editions, including Business Plus and Enterprise. For Workspace shops building internal tools, the per-seat sticker price is often irrelevant.</td></tr>
+<tr><td><strong>What the free tier really is</strong></td><td>The free tier allows building and testing with up to ten test users with no time limit. It is a prototyping tier, not a free production plan — real users require a paid plan.</td></tr>
+<tr><td><strong>Feature boundaries</strong></td><td>The REST API, full automation and machine-learning features require Core. Single sign-on and advanced governance sit in the Enterprise tier, which is a common upgrade point for mid-market teams.</td></tr>
+<tr><td><strong>Public-facing apps</strong></td><td>Apps shared publicly without sign-in need a Publisher Pro subscription, priced per app per month rather than per user.</td></tr>
+<tr><td><strong>Kintone's model</strong></td><td>One per-user monthly subscription including the relational database, workflow engine, permissions and REST API — no separate tier to unlock integration, and no spreadsheet backend to outgrow.</td></tr></tbody></table>
+<h2>When Google AppSheet is the better choice</h2>
+<p>Google AppSheet is the stronger option in these situations, and we will tell you so directly rather than talk you out of it.</p>
+<ul><li>You already pay for Google Workspace Business Plus or Enterprise, so AppSheet Core costs you nothing extra.</li><li>Your apps are essentially structured data capture on top of Google Sheets, with light automation.</li><li>You need strong offline capability for field staff collecting data on mobile.</li><li>Your data already lives in Google Sheets or Drive and you want the shortest possible path from it to an app.</li></ul>
+<h2>When Kintone is the better choice</h2>
+<p>Kintone tends to win where app ownership sits with the business team rather than with IT.</p>
+<ul><li>Your app needs genuinely relational data — linked records across customers, orders, inventory and staff — rather than a spreadsheet backend.</li><li>You need multi-step approval workflow with per-record permissions as a core feature, not an add-on.</li><li>You want implementation, training and support from a partner in Metro Manila rather than self-service documentation.</li><li>You work in English and Japanese and need both in the product and the support relationship.</li><li>You are not a Google Workspace organisation, so the bundled-Core advantage does not apply to you.</li></ul>
+<h2>Running AppSheet and Kintone together</h2>
+<p>These two coexist comfortably. Plenty of Philippine businesses keep light field-data apps on AppSheet where Google Sheets is already the source of truth, and run the operational core — inventory, approvals, customer records, quality data — on Kintone. Kintone's REST API and webhooks let the two exchange data rather than compete.</p>
+<h2>The verdict on Google AppSheet versus Kintone</h2>
+<p>AppSheet's bundled-with-Workspace position is a real advantage and we do not argue against it for simple internal apps. The decision changes when the app becomes the system your operation runs on. At that point relational structure, workflow, permissions, and a partner who trains your staff matter more than the licence line — and that is where Kintone is the stronger choice.</p>
+<h2>Frequently asked questions about AppSheet and Kintone</h2>
+<details class="faq-item"><summary>Is Google AppSheet free?</summary><p>There is a free tier, but it is a prototyping tier: you can build and test with up to ten test users with no time limit, and real production users require a paid plan. Separately, AppSheet Core is included with most paid Google Workspace editions, which is a genuinely free path for many Workspace organisations.</p></details>
+<details class="faq-item"><summary>How much does AppSheet cost per user?</summary><p>Starter is around US$5 per user per month and Core around US$10 per user per month, with Enterprise Plus published at US$20 per user per month. Publicly shared apps without sign-in use Publisher Pro, which is priced per app rather than per user.</p></details>
+<details class="faq-item"><summary>Should we use AppSheet or Kintone in the Philippines?</summary><p>If you already pay for Google Workspace Business Plus or Enterprise and your apps are spreadsheet-backed data capture, AppSheet is hard to beat on cost. If your apps need relational data, multi-step approvals, per-record permissions and local training and support, Kintone is the better fit.</p></details>
+<details class="faq-item"><summary>Can Kintone and AppSheet run side by side?</summary><p>Yes. A common arrangement keeps light field-data apps on AppSheet where Google Sheets is already the source of truth, and runs the operational core on Kintone, with data exchanged through Kintone's REST API and webhooks.</p></details>
+<details class="faq-item"><summary>What happens when an AppSheet app outgrows Google Sheets?</summary><p>That is the usual migration trigger. Spreadsheet backends struggle once records must relate to each other, approvals become multi-step, and multiple teams edit simultaneously. Kintone provides the relational structure, workflow and permissions as platform features rather than workarounds.</p></details>
+<details class="faq-item"><summary>Is there a Kintone partner in the Philippines?</summary><p>Yes. Edamame Inc. is the official Kintone partner in the Philippines, based in Pasig City, and recipient of the 2024 Cybozu Global Award — Asia, delivering in English and native-level business Japanese.</p></details>
+<section class="cta">
+<h2>Work out which fits your operation</h2>
+<p>Bring your messiest workflow to a 30-minute consultation. We will map how it would run on Kintone, what the scope looks like, and a fixed quote — no obligation. Kintone licensing starts <span data-price="kintone-from">from ₱1,050 per user/month</span>; implementation is scoped per engagement.</p>
+<p><a class="btn" href="/kintone-philippines/en/contact/">Book a free consultation →</a></p>
+</section>
+</article>
+<footer class="footer"><div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a href="/kintone-philippines/en/" class="logo">
+<svg class="logo-icon" viewBox="0 0 108 90" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 12 C0 27, 0 63, 9 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+<rect x="18" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<rect x="42" y="18" width="24" height="54" rx="12" fill="#C4A35A"/>
+<rect x="72" y="27" width="18" height="36" rx="9" fill="#4A7C59"/>
+<path d="M99 12 C108 27, 108 63, 99 78" stroke="#4A7C59" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
+<span class="logo-text">edamame</span>
+</a>
+<p>Official Kintone Partner in the Philippines.</p>
+<div class="footer-social">
+<a href="https://ph.linkedin.com/company/kintonephilippines" class="social-link" target="_blank" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+<a href="https://www.facebook.com/kintoneph/" class="social-link" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+</div>
+</div>
+<div class="footer-col"><h4 class="footer-title">Solutions</h4>
+<ul class="footer-links">
+<li><a href="/kintone-philippines/en/#possibilities">CRM & Sales</a></li>
+<li><a href="/kintone-philippines/en/#possibilities">Inventory Management</a></li>
+<li><a href="/kintone-philippines/en/#possibilities">HR & People Ops</a></li>
+</ul></div>
+<div class="footer-col"><h4 class="footer-title">Company</h4>
+<ul class="footer-links">
+<li><a href="/kintone-philippines/en/">Home</a></li>
+<li><a href="/kintone-philippines/en/blog/">Blog</a></li>
+<li><a href="/kintone-philippines/en/customers/">Customers</a></li>
+</ul></div>
+<div class="footer-col"><h4 class="footer-title">Resources</h4>
+<ul class="footer-links">
+<li><a href="/kintone-philippines/en/blog/best-crm-software-philippines-2026/">Best CRM Philippines</a></li>
+<li><a href="/kintone-philippines/en/blog/kintone-vs-odoo/">Kintone vs Odoo</a></li>
+<li><a href="/kintone-philippines/en/blog/kintone-vs-salesforce/">Kintone vs Salesforce</a></li>
+</ul></div>
+<div class="footer-col"><h4 class="footer-title">Contact</h4>
+<ul class="footer-links">
+<li><span>15F Jollibee Tower, Ortigas</span></li>
+<li><span>Metro Manila, Philippines</span></li>
+<li><a href="mailto:kintone@edamame-jp.com">kintone@edamame-jp.com</a></li>
+<li><a href="tel:+639288727958">+63 928 872 7958</a></li>
+</ul></div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Edamame Inc. All rights reserved.</p>
+<div class="footer-legal"><a href="/kintone-philippines/en/privacy-policy/">Privacy Policy</a></div>
+</div>
+</div></footer>
+</body>
+</html>
