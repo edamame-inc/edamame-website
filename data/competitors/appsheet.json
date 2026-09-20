@@ -1,0 +1,41 @@
+{
+  "name": "Google AppSheet",
+  "short": "AppSheet",
+  "slug": "appsheet",
+  "category": "no-code app platform inside Google Cloud and Google Workspace",
+  "stance": "complement",
+  "researched": "2026-09-20",
+  "bluf_vs": "If your company runs on Google Workspace Business Plus or Enterprise, AppSheet Core is already included in what you pay, and for simple spreadsheet-backed apps that makes it very hard to beat on cost. We will say that plainly. AppSheet's limits show up later: the free tier is capped at ten test users and is a prototyping tier rather than a production plan, the REST API sits behind Core, single sign-on sits behind Enterprise, and per-user pricing becomes awkward for customer-facing apps. Kintone is the better fit when the app stops being a spreadsheet with a form on top and becomes an operational system with relational data, multi-step approvals and staff who need training and support in their own timezone.",
+  "bluf_alt": "Teams usually look for an AppSheet alternative at a specific moment: the app outgrew its spreadsheet backend, approvals became multi-step, or the per-user model stopped fitting once people outside the company needed access. Kintone is built for that stage — a relational database, workflow and permissions in one platform, with a local Philippine partner for implementation and training. If you are still building simple internal apps on Google Sheets and already pay for Google Workspace, staying on AppSheet is the honest recommendation.",
+  "facts": [
+    ["Entry pricing", "AppSheet Starter is US$5 per user per month and Core is US$10 per user per month. Enterprise Plus is published at US$20 per user per month.", "https://about.appsheet.com/pricing/"],
+    ["The Google Workspace bundle", "AppSheet Core is included at no additional cost with most paid Google Workspace editions, including Business Plus and Enterprise. For Workspace shops building internal tools, the per-seat sticker price is often irrelevant.", "https://about.appsheet.com/pricing/"],
+    ["What the free tier really is", "The free tier allows building and testing with up to ten test users with no time limit. It is a prototyping tier, not a free production plan — real users require a paid plan.", "https://about.appsheet.com/pricing/"],
+    ["Feature boundaries", "The REST API, full automation and machine-learning features require Core. Single sign-on and advanced governance sit in the Enterprise tier, which is a common upgrade point for mid-market teams.", ""],
+    ["Public-facing apps", "Apps shared publicly without sign-in need a Publisher Pro subscription, priced per app per month rather than per user.", "https://about.appsheet.com/pricing/"],
+    ["Kintone's model", "One per-user monthly subscription including the relational database, workflow engine, permissions and REST API — no separate tier to unlock integration, and no spreadsheet backend to outgrow.", ""]
+  ],
+  "choose_them": [
+    "You already pay for Google Workspace Business Plus or Enterprise, so AppSheet Core costs you nothing extra.",
+    "Your apps are essentially structured data capture on top of Google Sheets, with light automation.",
+    "You need strong offline capability for field staff collecting data on mobile.",
+    "Your data already lives in Google Sheets or Drive and you want the shortest possible path from it to an app."
+  ],
+  "choose_kintone": [
+    "Your app needs genuinely relational data — linked records across customers, orders, inventory and staff — rather than a spreadsheet backend.",
+    "You need multi-step approval workflow with per-record permissions as a core feature, not an add-on.",
+    "You want implementation, training and support from a partner in Metro Manila rather than self-service documentation.",
+    "You work in English and Japanese and need both in the product and the support relationship.",
+    "You are not a Google Workspace organisation, so the bundled-Core advantage does not apply to you."
+  ],
+  "together": "These two coexist comfortably. Plenty of Philippine businesses keep light field-data apps on AppSheet where Google Sheets is already the source of truth, and run the operational core — inventory, approvals, customer records, quality data — on Kintone. Kintone's REST API and webhooks let the two exchange data rather than compete.",
+  "faq": [
+    ["Is Google AppSheet free?", "There is a free tier, but it is a prototyping tier: you can build and test with up to ten test users with no time limit, and real production users require a paid plan. Separately, AppSheet Core is included with most paid Google Workspace editions, which is a genuinely free path for many Workspace organisations."],
+    ["How much does AppSheet cost per user?", "Starter is around US$5 per user per month and Core around US$10 per user per month, with Enterprise Plus published at US$20 per user per month. Publicly shared apps without sign-in use Publisher Pro, which is priced per app rather than per user."],
+    ["Should we use AppSheet or Kintone in the Philippines?", "If you already pay for Google Workspace Business Plus or Enterprise and your apps are spreadsheet-backed data capture, AppSheet is hard to beat on cost. If your apps need relational data, multi-step approvals, per-record permissions and local training and support, Kintone is the better fit."],
+    ["Can Kintone and AppSheet run side by side?", "Yes. A common arrangement keeps light field-data apps on AppSheet where Google Sheets is already the source of truth, and runs the operational core on Kintone, with data exchanged through Kintone's REST API and webhooks."],
+    ["What happens when an AppSheet app outgrows Google Sheets?", "That is the usual migration trigger. Spreadsheet backends struggle once records must relate to each other, approvals become multi-step, and multiple teams edit simultaneously. Kintone provides the relational structure, workflow and permissions as platform features rather than workarounds."],
+    ["Is there a Kintone partner in the Philippines?", "Yes. Edamame Inc. is the official Kintone partner in the Philippines, based in Pasig City, and recipient of the 2024 Cybozu Global Award — Asia, delivering in English and native-level business Japanese."]
+  ],
+  "verdict_vs": "AppSheet's bundled-with-Workspace position is a real advantage and we do not argue against it for simple internal apps. The decision changes when the app becomes the system your operation runs on. At that point relational structure, workflow, permissions, and a partner who trains your staff matter more than the licence line — and that is where Kintone is the stronger choice."
+}
