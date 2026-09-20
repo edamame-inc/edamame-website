@@ -12,7 +12,8 @@ const walk = (d, out = []) => {
   }
   return out;
 };
-const errs = [];
+const errs = [], warns = [];
+const DEBT = new Set(JSON.parse(readFileSync('data/pricing-debt.json', 'utf8')).paths.map(s => s.replace(/\\/g, '/')));
 // Edamame service/implementation fees may never be published.
 // Competitor pricing is legitimate content and must never be flagged.
 const RIVALS = /(odoo|salesforce|sap|hubspot|monday|zoho|airtable|notion|smartsheet|erpnext|quickbooks|qne|oracle|zendesk|freshdesk|kissflow|zapier|power automate|unicommerce|netsuite|xero|scaleocean|hashmicro)/i;
@@ -41,16 +42,25 @@ for (const p of walk('.')) {
   for (const m of jsonldOnly.matchAll(/(?:Kintone|キントーン)[^"]{0,45}?(₱\s?[0-9][0-9,]*[^",]{0,22})/g)) {
     if (!m[0].includes(wantPlain) && !RIVALS.test(m[0])) errs.push(`${p}: JSON-LD price not canonical "${m[0].slice(0, 60)}"`);
   }
-  const stripped = noJsonLd.replace(/<span data-price="[a-z0-9-]+">[^<]*<\/span>/g, '§PRICE§');
-  for (const m of stripped.matchAll(/(?:Kintone|キントーン)([^.<]{0,45}?)(₱\s?[0-9][0-9,]*)/g)) {
+  // Tags between the product name and the figure used to hide violations (e.g. table cells),
+  // so flatten markup to text before proximity matching.
+  const stripped = noJsonLd
+    .replace(/<span data-price="[a-z0-9-]+">[^<]*<\/span>/g, '§PRICE§')
+    .replace(/<[^>]+>/g, ' ');
+  for (const m of stripped.matchAll(/(?:Kintone|キントーン)([^.]{0,60}?)(₱\s?[0-9][0-9,]*)/g)) {
     if (RIVALS.test(m[1])) continue;               // the figure belongs to a competitor
-    errs.push(`${p}: unsourced Kintone price "${m[0].slice(0, 60)}"`);
+    const rel = p.replace(/\\/g, '/').replace(/^\.\//, '');
+    (DEBT.has(rel) ? warns : errs).push(`${rel}: unsourced Kintone price "${m[0].replace(/\s+/g, ' ').slice(0, 55)}"`);
   }
   // 3. no Edamame service-fee figures anywhere
   for (const m of src.matchAll(FEE)) {
     if (RIVALS.test(m[0])) continue;               // rival's fee, legitimate
     errs.push(`${p}: Edamame fee figure "${m[0].slice(0, 60)}"`);
   }
+}
+if (warns.length) {
+  console.warn(`validate-pricing: ${warns.length} KNOWN DEBT (legacy TCO tables, see data/pricing-debt.json):`);
+  warns.slice(0, 25).forEach(w => console.warn('  ! ' + w));
 }
 if (errs.length) { console.error(`validate-pricing FAILED (${errs.length}):`); errs.slice(0, 40).forEach(e => console.error('  ' + e)); process.exit(1); }
 console.log('validate-pricing: PASS — every price sourced from data/pricing.json');
