@@ -6,7 +6,15 @@
     "kintone-philippines/en/blog/salesforce-pricing-philippines/index.html",
     "kintone-philippines/en/blog/sap-alternative-philippines/index.html",
     "kintone-philippines/en/roi-calculator/index.html",
-    "kintone-philippines/en/vs/index.html"
+    "kintone-philippines/en/vs/index.html",
+    "kintone-philippines/en/blog/odoo-alternative-philippines/index.html",
+    "kintone-philippines/en/blog/odoo-pricing-philippines/index.html",
+    "kintone-philippines/en/blog/monday-com-pricing-philippines/index.html"
   ],
-  "derived_at_price": 1050
+  "derived_at_price": 1050,
+  "notes": {
+    "monday-com-pricing": "P10,830 is Monday.com's own figure in an adjacent table cell - competitor pricing, false positive",
+    "odoo-alternative": "P126,000 = 10 users x 12 months at canonical price",
+    "odoo-pricing": "P378K = 10 users x 36 months at canonical price"
+  }
 }
