@@ -1,0 +1,41 @@
+{
+  "name": "Quickbase",
+  "short": "Quickbase",
+  "slug": "quickbase",
+  "category": "no-code application platform for operational workflows",
+  "stance": "replace",
+  "researched": "2026-09-20",
+  "bluf_vs": "Quickbase and Kintone are the closest structural equivalents in the no-code market: both let non-developers build relational business apps with workflow and permissions. The difference that decides it for most Philippine businesses is the seat floor. Quickbase's entry plan carries a 20-user minimum and its Business plan a 40-user minimum, so a company with eight staff still pays for twenty. Kintone charges for the users you actually have, with a small minimum. Unless you already operate at Quickbase's seat scale, Kintone reaches the same outcome at a fraction of the committed spend.",
+  "bluf_alt": "Most teams searching for a Quickbase alternative are not unhappy with the product — they are unhappy with the commitment. The 20-user minimum on Team and 40-user minimum on Business set an annual floor long before implementation, and integration-read overages are not publicly priced. Kintone offers the same core capability — relational apps, workflow, permissions, no coding — without buying seats you do not use, and with a local partner in Metro Manila.",
+  "facts": [
+    ["Entry pricing", "Quickbase Team is around US$35 per user per month and requires a minimum of 20 users, putting the annual floor near US$8,400 before any implementation work.", "https://www.capterra.com/p/157262/QuickBase/"],
+    ["Mid tier", "Quickbase Business is around US$55 per user per month with a minimum of 40 users, adding single sign-on, sandbox environments, Gantt charts and HIPAA-related compliance features.", "https://www.capterra.com/p/157262/QuickBase/"],
+    ["Enterprise", "The Enterprise tier is custom-quoted and adds advanced encryption, governance APIs, on-premises connectivity and sensitive-data scanning.", "https://www.capterra.com/p/157262/QuickBase/"],
+    ["The overage nobody budgets", "All tiers include unlimited human 'User Reads' but cap 'Integration Reads' (API calls). Exceeding them requires additional packages whose rates are not publicly disclosed — the most common source of unplanned cost.", ""],
+    ["Kintone's model", "A per-user monthly subscription with a small user minimum, covering app building, the built-in relational database, workflow and permissions — no separate seat floor to clear.", ""],
+    ["Local support", "Quickbase has no official partner in the Philippines; support runs through overseas channels or independent consultants. Kintone has Edamame Inc. in Pasig City, delivering in English and native-level business Japanese.", ""]
+  ],
+  "choose_them": [
+    "You already operate above 40 users and the seat minimums are irrelevant to you.",
+    "You need FDA or HIPAA-oriented compliance features packaged at platform level.",
+    "You require on-premises connectivity or governance APIs that enterprise IT has specified.",
+    "Your team has existing Quickbase expertise and a working app estate worth preserving."
+  ],
+  "choose_kintone": [
+    "Your headcount is below Quickbase's seat minimums and you do not want to pay for unused licences.",
+    "You want predictable cost without unpublished API-overage rates in the contract.",
+    "You want a partner in your timezone for implementation, training and support.",
+    "You operate bilingually in English and Japanese and need both in the interface and the support line.",
+    "You want a first working app in days, built by the people who own the process."
+  ],
+  "together": "There is no strong case for running both: Quickbase and Kintone occupy the same layer. Where companies do run both briefly, it is during a migration — keeping a legacy Quickbase app live while rebuilding process by process on Kintone, then retiring the Quickbase seats at renewal.",
+  "faq": [
+    ["How much does Quickbase cost for a small team in the Philippines?", "More than the headline rate suggests. Quickbase Team is around US$35 per user per month but requires at least 20 users, so the practical floor is roughly US$8,400 a year even for a team of eight. Business is around US$55 per user per month with a 40-user minimum."],
+    ["Is Kintone cheaper than Quickbase?", "For teams below Quickbase's seat minimums, substantially — because Kintone charges for the users you have rather than a committed block of seats. Kintone licensing starts at a per-user monthly rate with a small minimum; exact figures for your headcount come from a free consultation."],
+    ["Is Quickbase or Kintone easier for non-developers?", "Both are genuine no-code platforms and both are usable by operations staff. Kintone's advantage in Philippine deployments is less about the builder and more about support: a local partner trains your team and stays reachable in your timezone."],
+    ["Does Quickbase have a partner in the Philippines?", "Quickbase has no official Philippine partner, so implementation typically runs through overseas channels or independent consultants. Kintone's official Philippine partner is Edamame Inc., based in Pasig City."],
+    ["What are Quickbase integration reads?", "Quickbase counts API calls as 'Integration Reads' and caps them by tier, separately from unlimited human usage. Exceeding the cap requires buying additional packages at rates that are not published, which is where costs commonly move after signing."],
+    ["Can we migrate a Quickbase app to Kintone?", "Yes. The usual approach is process by process rather than all at once: rebuild one operational app on Kintone, run both briefly, migrate the data, then retire the Quickbase seats at renewal."]
+  ],
+  "verdict_vs": "Quickbase is a capable platform and at genuine enterprise scale the seat minimums stop mattering. Below that scale they dominate the decision: paying for twenty or forty seats you do not use is the single largest line in a small deployment. For most Philippine SMEs, Kintone delivers the same relational, no-code, workflow-driven result without the floor — and with a partner who answers the phone in your timezone."
+}
