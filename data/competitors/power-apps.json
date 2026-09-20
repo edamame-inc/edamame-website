@@ -1,0 +1,41 @@
+{
+  "name": "Microsoft Power Apps",
+  "short": "Power Apps",
+  "slug": "power-apps",
+  "category": "Low-code business application platform (Microsoft Power Platform)",
+  "stance": "complement",
+  "researched": "2026-09-20",
+  "bluf_vs": "Power Apps and Kintone solve the same problem from opposite ends. Power Apps is the right choice when your apps must live inside Microsoft 365 and your team has a Power Platform administrator. Kintone is the right choice when you want business staff building and maintaining apps without a developer, with predictable per-user pricing and no connector or database licensing to manage. For most Philippine SMEs already on Microsoft 365, the practical answer is not either-or: keep Microsoft 365 for mail, files and Teams, and run operational apps on Kintone.",
+  "bluf_alt": "Teams usually look for a Power Apps alternative for one of three reasons: licensing became unpredictable once premium connectors or Dataverse entered the picture, app maintenance ended up depending on one technical person, or a proof-of-concept never made it to production. Kintone addresses all three with a single per-user subscription, drag-and-drop app building that non-technical staff genuinely maintain, and a local partner in Metro Manila. It does not replace Microsoft 365 — it replaces the app layer on top of it.",
+  "facts": [
+    ["Licensing model", "Power Apps Premium is US$20 per user per month on annual commitment, falling to about US$12 per user per month at 2,000 or more seats. Pay-As-You-Go bills roughly US$10 per active user per app per month through Azure.", "https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing"],
+    ["The Microsoft 365 boundary", "Power Apps capability bundled with Microsoft 365 covers standard connectors only, with no Dataverse. The moment an app needs Dataverse or a premium connector, every user who runs that app needs a paid Power Apps licence.", "https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing"],
+    ["The per-app plan", "Microsoft removed the older per-app plan from its licensing guide in January 2026, so it is no longer a path most new customers can budget around. The two production routes are Premium and Pay-As-You-Go.", "https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing"],
+    ["Storage", "Dataverse storage beyond the base allocation is charged as an add-on, around US$40 per GB per month.", "https://www.microsoft.com/en-us/power-platform/products/power-apps/pricing"],
+    ["Who maintains it", "Power Platform production use in practice assumes environment governance, connector review and Dataverse capacity management — typically a named administrator.", ""],
+    ["Kintone's model", "One per-user monthly subscription covering app building, workflow, and the built-in database. No separate connector tier, no database capacity SKU.", ""]
+  ],
+  "choose_them": [
+    "Your apps must run inside Teams and read and write Microsoft 365 data natively.",
+    "You already have a Power Platform administrator, or a Microsoft partner managing governance.",
+    "You are standardising on Dataverse as an enterprise data layer.",
+    "Your organisation has an Enterprise Agreement where Power Platform is already committed."
+  ],
+  "choose_kintone": [
+    "You want operations staff — not developers — building and changing apps after go-live.",
+    "You need predictable per-user cost with no connector or storage tier to monitor.",
+    "You want a local Philippine partner for implementation, training and same-timezone support.",
+    "You work bilingually in English and Japanese and need the interface and support in both.",
+    "You need a first working app in days rather than a governed platform rollout."
+  ],
+  "together": "Most Philippine businesses evaluating this already pay for Microsoft 365. Keeping mail, files, Teams and reporting in Microsoft while running operational apps — inventory, approvals, CRM, quality records — on Kintone avoids the premium-connector and Dataverse licensing question entirely, and keeps app ownership with the team that runs the process.",
+  "faq": [
+    ["Is Power Apps included in Microsoft 365?", "Power Apps capability is bundled with Microsoft 365 plans, but only with standard connectors and without Dataverse. Once an app uses Dataverse or a premium connector, every user running that app needs a paid Power Apps licence, which is where budgets usually move unexpectedly."],
+    ["How much does Power Apps cost compared with Kintone?", "Power Apps Premium is US$20 per user per month on annual commitment, with volume pricing near US$12 at 2,000+ seats, plus Dataverse storage add-ons where applicable. Kintone is a single per-user monthly subscription with the database and workflow included. Exact Kintone figures for your user count come from a free consultation."],
+    ["Do we need a developer for either platform?", "Both are marketed as low-code. In practice Power Apps production deployments usually rely on someone who understands environments, connector tiers and Dataverse. Kintone apps are typically built and maintained by operations staff using drag-and-drop, with JavaScript available only when something genuinely custom is required."],
+    ["Can Kintone work alongside Microsoft 365 rather than replacing it?", "Yes, and that is the usual arrangement. Microsoft 365 keeps mail, files, Teams and reporting; Kintone runs the operational apps. Kintone integrates through its REST API and webhooks, so data can flow between the two without moving your whole workplace."],
+    ["Which is faster to get into production?", "Kintone deployments commonly have a first working app live within days because there is no environment strategy, connector licensing review or database capacity planning to complete first. Power Apps timelines depend on how much governance the organisation needs in place before production."],
+    ["Is there a Power Apps partner in the Philippines?", "Microsoft has many partners in the Philippines. For Kintone, Edamame Inc. is the official partner, based in Pasig City, delivering in English and native-level business Japanese."]
+  ],
+  "verdict_vs": "If your organisation is committed to the Microsoft stack and has the governance capacity, Power Apps is a credible platform and we will say so. If you want business staff owning their own apps, predictable licensing, and a local partner who answers in your timezone, Kintone is the better fit — and it sits happily on top of the Microsoft 365 you already pay for."
+}
