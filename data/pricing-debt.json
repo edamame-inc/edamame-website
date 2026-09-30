@@ -12,15 +12,19 @@
     "kintone-philippines/en/blog/monday-com-pricing-philippines/index.html",
     "kintone-philippines/en/blog/hubspot-pricing-philippines/index.html",
     "kintone-philippines/en/blog/manufacturing-software-philippines/index.html",
-    "kintone-philippines/en/blog/custom-crm-philippines/index.html"
+    "kintone-philippines/en/blog/custom-crm-philippines/index.html",
+    "kintone-philippines/en/blog/zoho-crm-review-philippines/index.html",
+    "kintone-philippines/en/blog/why-edamame-kintone-partner-philippines/index.html"
   ],
   "derived_at_price": 1050,
   "notes": {
     "monday-com-pricing": "P10,830 is Monday.com's own figure in an adjacent table cell - competitor pricing, false positive",
     "odoo-alternative": "P126,000 = 10 users x 12 months at canonical price",
-    "odoo-pricing": "P378K = 10 users x 36 months at canonical price",
-    "hubspot-pricing": "P1,752,800 = annual saving vs HubSpot, derived from canonical price",
-    "manufacturing": "P126K = 10 users x 12 months at canonical price",
-    "custom-crm": "P140,000 is Salesforce's figure in an adjacent column; the 'Kintone Custom CRM' text is a table header - false positive"
+    "odoo-pricing": "P126,000 / P126K/yr = 10 users x 12 months; P378K = 10 users x 36 months, at canonical price",
+    "hubspot-pricing": "P1,755,200 = annual saving vs HubSpot; Kintone annual P300,000 = (20 users x canonical price + Brevo P4,000/mo) x 12",
+    "manufacturing": "P126K = 10 users x 12 months; P21,000/mo = 20 users, both at canonical price",
+    "custom-crm": "P140,000 is Salesforce's figure in an adjacent column; the 'Kintone Custom CRM' text is a table header - false positive",
+    "zoho-crm-review": "~P10,500/mo = 10 users x canonical price (Kintone column of the Zoho comparison table)",
+    "why-edamame-kintone-partner": "P126K = 10 users x 12 months at canonical price (licences only; implementation quoted)"
   }
 }
