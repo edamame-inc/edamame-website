@@ -1,0 +1,22 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 3,
+    "nodes": [
+      {
+        "target": ".code",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.47 (foreground color: #c4d6c9, background color: #f8fdf9, font size: 72.0pt (96px), fon"
+      },
+      {
+        "target": "p",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #6b7f70, background color: #f8fdf9, font size: 12.0pt (16px), fon"
+      },
+      {
+        "target": "footer",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.87 (foreground color: #809586, background color: #2c4f36, font size: 9.0pt (12px), font"
+      }
+    ]
+  }
+]

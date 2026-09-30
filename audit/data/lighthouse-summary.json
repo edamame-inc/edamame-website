@@ -1,0 +1,92 @@
+{
+  "en-home__mobile": {
+    "perfScore": 57,
+    "a11yScore": 96,
+    "bestPracticesScore": 100,
+    "seoScore": 100,
+    "LCP_ms": 4849,
+    "FCP_ms": 3512,
+    "CLS": 0.33,
+    "TBT_ms": 136,
+    "SI_ms": 3636,
+    "TTI_ms": 4849,
+    "totalByteWeight_kb": 344,
+    "renderBlocking": [],
+    "oversizedImages": [],
+    "unminifiedCss": 1,
+    "fontDisplay": 1,
+    "mainThreadWork_ms": 2154,
+    "serverResponse_ms": 77
+  },
+  "en-home__desktop": {
+    "perfScore": 86,
+    "a11yScore": 96,
+    "bestPracticesScore": 100,
+    "seoScore": 100,
+    "LCP_ms": 516,
+    "FCP_ms": 491,
+    "CLS": 0.27,
+    "TBT_ms": 0,
+    "SI_ms": 491,
+    "TTI_ms": 516,
+    "totalByteWeight_kb": 344,
+    "renderBlocking": [],
+    "oversizedImages": [],
+    "unminifiedCss": 1,
+    "fontDisplay": 1,
+    "mainThreadWork_ms": 449,
+    "serverResponse_ms": 48
+  },
+  "blog-crm__mobile": {
+    "perfScore": 98,
+    "a11yScore": 93,
+    "bestPracticesScore": 100,
+    "seoScore": 100,
+    "LCP_ms": 1743,
+    "FCP_ms": 1549,
+    "CLS": 0.016,
+    "TBT_ms": 146,
+    "SI_ms": 1549,
+    "TTI_ms": 3682,
+    "totalByteWeight_kb": 282,
+    "renderBlocking": [
+      {
+        "url": "https://edamame-jp.com/polish.css",
+        "wasted": 150
+      },
+      {
+        "url": "https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&f",
+        "wasted": 771
+      }
+    ],
+    "oversizedImages": [],
+    "unminifiedCss": 1,
+    "fontDisplay": 1,
+    "mainThreadWork_ms": 1040,
+    "serverResponse_ms": 49
+  },
+  "blog-crm__desktop": {
+    "perfScore": 100,
+    "a11yScore": 93,
+    "bestPracticesScore": 100,
+    "seoScore": 100,
+    "LCP_ms": 467,
+    "FCP_ms": 446,
+    "CLS": 0.003,
+    "TBT_ms": 0,
+    "SI_ms": 446,
+    "TTI_ms": 467,
+    "totalByteWeight_kb": 282,
+    "renderBlocking": [
+      {
+        "url": "https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&f",
+        "wasted": 218
+      }
+    ],
+    "oversizedImages": [],
+    "unminifiedCss": 1,
+    "fontDisplay": 1,
+    "mainThreadWork_ms": 266,
+    "serverResponse_ms": 63
+  }
+}

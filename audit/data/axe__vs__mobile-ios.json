@@ -1,0 +1,42 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 54,
+    "nodes": [
+      {
+        "target": ".hero-kicker",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 9.0pt (12px), font "
+      },
+      {
+        "target": ".us > td:nth-child(2) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".us > td:nth-child(3) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".us > td:nth-child(4) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      },
+      {
+        "target": ".us > td:nth-child(5) > .badge-yes.badge",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.12 (foreground color: #4a7c59, background color: #e7eee9, font size: 8.3pt (11px), font"
+      }
+    ]
+  },
+  {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "n": 1,
+    "nodes": [
+      {
+        "target": "#matrix > .matrix-wrap",
+        "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+      }
+    ]
+  }
+]

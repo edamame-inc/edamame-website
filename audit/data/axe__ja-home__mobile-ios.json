@@ -1,0 +1,30 @@
+[
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "n": 10,
+    "nodes": [
+      {
+        "target": ".trust-row > a",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #71706c, background color: #f0ede8, font size: 15.0pt (20px), fon"
+      },
+      {
+        "target": ".clients-list > .client-num:nth-child(1)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      },
+      {
+        "target": ".client-num:nth-child(4)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      },
+      {
+        "target": ".client-num:nth-child(7)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      },
+      {
+        "target": ".client-num:nth-child(10)",
+        "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.3 (foreground color: #c4a35a, background color: #fafaf8, font size: 8.3pt (11px), font "
+      }
+    ]
+  }
+]
